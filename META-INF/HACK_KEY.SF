@@ -1,0 +1,186 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: QeBkmpm1ShB1HEXAf48FSrAzbp4=
+SHA1-Digest-Manifest: hjQRhKk4/gNltn1fygMfCfrx/Pg=
+Created-By: 1.8.0_161 (Oracle Corporation)
+
+Name: assets/Default-Landscape-1366h.png
+SHA1-Digest: GCVS1j/gYUhT6PZ45NXpMPulLPc=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM/platform.xml
+SHA1-Digest: +tgQVQd0KPoWYRSFYgOPvaQ/vpc=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: i+yBHWVDl57uO3SZgafB+oBHKIs=
+
+Name: assets/CSV/odb.csv
+SHA1-Digest: AW7emGcyLzwytJtfQmIwrCx6tuI=
+
+Name: res/raw/rgba8888
+SHA1-Digest: Zl1hFYFfIU3ykjjlwvkAPiOpbjU=
+
+Name: res/raw/debuginfo
+SHA1-Digest: tDkq9Am9IICKEyUpUxv9SZC2Ido=
+
+Name: res/layout/expandable_chooser_row.xml
+SHA1-Digest: MhtWSjLQOyvTjJlm+Zv5w/yDT/Q=
+
+Name: lib/armeabi-v7a/libCore.so
+SHA1-Digest: 2ce9vwTugEr1y0KV+s9FtC+qLGw=
+
+Name: lib/armeabi-v7a/libstagefright_froyo.so
+SHA1-Digest: NjUqy4xXvc3MozOnVwXYCw67NAQ=
+
+Name: assets/CSV/odb 2.csv
+SHA1-Digest: IjScAaf1L8ZzXF8vLAEKKchxBew=
+
+Name: res/raw/adobelogo.gif
+SHA1-Digest: C230O0R3bbZIa6/Fr6jyvOCeYw0=
+
+Name: assets/CSV/rdb.csv
+SHA1-Digest: EbOlTJwkzA2Sd4nX7HzCWX5ZsBI=
+
+Name: assets/25az_loading.bin
+SHA1-Digest: 6e0UM42s0ykBT2hfetc/dfBrvuc=
+
+Name: res/raw/icon.jpg
+SHA1-Digest: G9PZ8d0KDV+sap99LsRv1invMfk=
+
+Name: lib/armeabi-v7a/libysshared.so
+SHA1-Digest: rCGTCeWo+FFk5aKYXwoEafONew4=
+
+Name: res/layout/expandable_multiple_chooser_row.xml
+SHA1-Digest: VuXyQe6onpp8vDgttB+YqpRXbaM=
+
+Name: assets/CSV/ordb.numbers
+SHA1-Digest: oHBCksHLlxZtqSvUput5TF2S+7c=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: 39V7SEeHMRfQj/Nk5Db0MVY4XFs=
+
+Name: assets/adobeair.vch
+SHA1-Digest: AEAF9YKcGjJzJgInSrldQz/rPzE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/library
+ .swf
+SHA1-Digest: sJpezwwSN7WrgiN70hlDzYifSpY=
+
+Name: res/drawable-xxxhdpi-v4/icon.png
+SHA1-Digest: /+rSSOFJFeynTURKaBB6zGRlDrM=
+
+Name: res/drawable-hdpi-v4/home.png
+SHA1-Digest: UVGxK/266NV+p9TbW0VxqeJd3jQ=
+
+Name: assets/META-INF/AIR/application.xml
+SHA1-Digest: RCV3eXvIN8lwB2CQo3sK8iStaLQ=
+
+Name: resources.arsc
+SHA1-Digest: Pt28mQVIySHMNVBmoSlwaT/twLg=
+
+Name: assets/25az.bin
+SHA1-Digest: s7uBYEM5rOeSse090aC6Fmt2n5w=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/extension.xml
+SHA1-Digest: BFQ19pd+wn8J6YFV60mASBigB6A=
+
+Name: AndroidManifest.xml
+SHA1-Digest: gnAfV+DdaECePDkqr0VIYBXTgLE=
+
+Name: res/layout/multiple_file_selection_panel.xml
+SHA1-Digest: iYsLKuRwGG2DjYkPfh3gMlO9IC0=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: A5F2ssBALZJljJUAbpw/7HFUFnU=
+
+Name: res/drawable-xxhdpi-v4/icon.png
+SHA1-Digest: wxLIkYAjebNc6rKFpnf+JY8Y5+8=
+
+Name: assets/Default-Landscape-1366h@2x.png
+SHA1-Digest: Fx8m54LmloC2FuTnBIK6CXAKchE=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM/distriqt-extension-inappbilling-res/values/values.x
+ ml
+SHA1-Digest: pRQzojahy5vjEyikEj1BsovTn9o=
+
+Name: assets/CSV/cdb.csv
+SHA1-Digest: LlUASGOjuD9GKBW710JUSVfaPWM=
+
+Name: assets/CSV/cdb.numbers
+SHA1-Digest: XXa2ICcQoLiXqI9crnpA1oa0cOQ=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/META-IN
+ F/ANE/Android-ARM/library.swf
+SHA1-Digest: 5vth5/4Py6FO0K//2cba05cLnsI=
+
+Name: lib/armeabi-v7a/libstlport_shared.so
+SHA1-Digest: Aq2FBq+cleJyb0HpheejBDDyemw=
+
+Name: res/drawable-xhdpi-v4/ouya_icon.png
+SHA1-Digest: P+8PSQCDsbFnh98zV5xKhdKVJgA=
+
+Name: res/raw/startga.html
+SHA1-Digest: xgKDhZX/SnbyejdScV4RdvIOuw8=
+
+Name: lib/armeabi-v7a/libstagefright_honeycomb.so
+SHA1-Digest: JEa0fzu5bhfFuTZiMMBkoZMMeUw=
+
+Name: assets/iSFeN
+SHA1-Digest: 5nqJzktbEcPbMMl88FMJYnatGk4=
+
+Name: res/layout/ssl_certificate_warning.xml
+SHA1-Digest: 5l2aOHrrkA6T6CoSPUHJi9KaybY=
+
+Name: assets/Default-414w-736h@3x.png
+SHA1-Digest: Sh1hHRqYoJoIpI3n3QifTlewPLw=
+
+Name: assets/Chemist.swf
+SHA1-Digest: Cu4nqlSq6t3ObloE8Mff3yghhW4=
+
+Name: assets/cloudLabDb.txt
+SHA1-Digest: +zNb+Njfh77tEA4TtQIGqqURC9w=
+
+Name: assets/CSV/cdb-free.csv
+SHA1-Digest: eWdpfCKq5hEi0DAW7FUckXjdVEE=
+
+Name: res/layout/main.xml
+SHA1-Digest: O1X0i2jW3QhFWayyvVG1gX+Nxgg=
+
+Name: assets/Default-LandscapeRight@2x.png
+SHA1-Digest: BnYO2uonBjYstU+IcmOrRxU676E=
+
+Name: assets/Default-Landscape@2x~ipad.png
+SHA1-Digest: dJnXNFPbJEFshS373kRKiHL4Qvs=
+
+Name: res/drawable/air_72px_mobile_eula.png
+SHA1-Digest: hl9qFtbWmE7IX0Z0yBeGEt8APzE=
+
+Name: res/drawable/mp_warning_32x32_n.png
+SHA1-Digest: AYeAlZLgIg2apaASwxgKglh876U=
+
+Name: assets/CSV/odb.numbers
+SHA1-Digest: y3GLbPm5dYsjUmHBgoFrkcR2cJs=
+
+Name: assets/META-INF/AIR/extensions/com.distriqt.InAppBilling/catalog
+ .xml
+SHA1-Digest: RJzp4pqMqCftCajFVcfaG4w5mUA=
+
+Name: assets/CSV/ordb.csv
+SHA1-Digest: sz4rjJt4i+PpQDF6rD7lD0FuzSY=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: /hFboPaBdgxxKX6roVFwYQTDQ/8=
+
+Name: assets/CSV/cdb-free.numbers
+SHA1-Digest: /ZGSFjgvNY4jdcqlBMJ1zjx0QS0=
+
+Name: classes.dex
+SHA1-Digest: NBMMq7CHoyJk6sttBV4spRzD+7g=
+
+Name: assets/Default-568h@2x.png
+SHA1-Digest: w+Jz4YO4fSlMpePHXUJRreriTDc=
+
+Name: assets/CSV/rdb.numbers
+SHA1-Digest: +Xs4/8InoVAd0VvUT05YE2Bt5J0=
+
