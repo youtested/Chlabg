@@ -1,0 +1,457 @@
+# Virtual Chemistry Lab Equipment Documentation
+
+## Glassware
+
+### Beakers (ビーカー/烧杯/燒杯/비커)
+- Icon: Cylindrical container with spout
+- Color: Transparent glass with blue tint (#87CEEB)
+- Size Variations: 50ml, 100ml, 250ml, 500ml, 1000ml
+- Default Position: Main workspace bench, left side
+- Properties:
+  - Material: Borosilicate glass (耐熱ガラス)
+  - Temperature Range: -40°C to +400°C
+  - Accuracy: ±5-10% of marked volume
+
+### Erlenmeyer Flasks (三角フラスコ/锥形瓶/錐形瓶/삼각플라스크)
+- Icon: Conical shape with narrow neck
+- Color: Transparent glass with slight blue (#87CEEB)
+- Size Variations: 50ml, 125ml, 250ml, 500ml, 1000ml, 2000ml
+- Default Position: Main workspace bench, center
+- Properties:
+  - Material: Borosilicate glass
+  - Temperature Range: -40°C to +400°C
+  - Accuracy: ±5-10% of marked volume
+
+### Florence/Boiling Flasks (丸底フラスコ/圆底烧瓶/圓底燒瓶/원형플라스크)
+- Icon: Round bottom flask with long neck
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 250ml, 500ml, 1000ml, 2000ml
+- Default Position: Heating area (right side)
+- Properties:
+  - Material: Borosilicate glass
+  - Temperature Range: -40°C to +450°C
+  - Bottom: Round (requires stand) or flat
+
+### Volumetric Flasks (メスフラスコ/容量瓶/容量瓶/용량플라스크)
+- Icon: Pear-shaped with single calibration mark
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 1ml, 5ml, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml
+- Default Position: Measurement station
+- Properties:
+  - Material: Borosilicate glass
+  - Accuracy: Class A (±0.02ml for 10ml), Class B (±0.04ml for 10ml)
+  - Single fixed volume mark
+
+### Test Tubes and Racks (試験管/试管/試管/시험관)
+- Icon: Small cylindrical tubes in wooden/metal rack
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 13x100mm, 16x150mm, 18x150mm (5-25ml capacity)
+- Default Position: Test tube rack on main bench
+- Properties:
+  - Material: Borosilicate glass or soda-lime glass
+  - Temperature Range: -40°C to +250°C
+
+### Petri Dishes (ペトリ皿/培养皿/培養皿/페트리디쉬)
+- Icon: Circular shallow dishes
+- Color: Transparent glass or plastic (#FFFFFF to #87CEEB)
+- Size Variations: 60mm, 100mm, 150mm diameter
+- Default Position: Culture station
+- Properties:
+  - Material: Glass or polystyrene
+  - Sterilizable (glass)
+
+### Graduated Cylinder (メスシリンダー/量筒/量筒/메스실린더)
+- Icon: Tall cylindrical container with base
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml
+- Default Position: Measurement station
+- Properties:
+  - Material: Borosilicate glass
+  - Accuracy: ±1% of capacity
+
+### Pipettes (ピペット/移液管/移液管/피펫)
+- Icon: Long thin tubes
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 0.1ml, 0.5ml, 1ml, 2ml, 5ml, 10ml, 25ml, 50ml
+- Default Position: Measurement station (dedicated drawer)
+- Properties:
+  - Material: Glass or plastic
+  - Accuracy: Volumetric (±0.1%), Graduated (±0.5%)
+
+### Burettes (ビュレット/滴定管/滴定管/뷰렛)
+- Icon: Long graduated tube with stopcock
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 25ml, 50ml, 100ml
+- Default Position: Titration station
+- Properties:
+  - Material: Borosilicate glass
+  - Stopcock: Glass or PTFE
+  - Accuracy: ±0.1ml
+
+### Funnels (漏斗/漏斗/漏斗/여과러)
+- Icon: Conical shape
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 
+  - Buchner: 55mm, 70mm, 90mm, 110mm
+  - Hirsch: 80mm, 100mm
+  - Simple: 50mm, 75mm, 100mm
+- Default Position: Filtration station
+- Properties:
+  - Material: Borosilicate glass
+  - Buchner: with porcelain filter disc
+
+### Condensers (冷却器/冷凝器/冷凝器/냉각기)
+- Icon: Long tube with water jacket
+- Color: Transparent glass (#87CEEB)
+- Size Variations: 300mm, 400mm, 600mm length
+- Default Position: Distillation setup area
+- Properties:
+  - Material: Borosilicate glass
+  - Types: Liebig, Graham, Allihn
+  - Temperature Range: -40°C to +150°C
+
+### Desiccators (デシケーター/干燥器/乾燥器/건조기)
+- Icon: Glass container with lid
+- Color: Transparent glass (#87CEEB) with ground lid
+- Size Variations: 150mm, 200mm, 250mm, 300mm diameter
+- Default Position: Storage cabinet
+- Properties:
+  - Material: Borosilicate glass
+  - Vacuum version available
+  - Contains desiccant (silica gel)
+
+### Crucibles (るつぼ/坩埚/坩堝/도가니)
+- Icon: Deep cup-like container
+- Color: Porcelain white (#F5F5F5) or platinum (#E5E5E5)
+- Size Variations: 10ml, 25ml, 50ml, 100ml
+- Default Position: High temperature area
+- Properties:
+  - Material: Porcelain, silica, platinum
+  - Temperature Range: Up to 1200°C (porcelain), 1400°C (silica)
+
+### Watch Glasses (時計皿/表面皿/錶面皿/시계접시)
+- Icon: Circular convex glass
+- Color: Transparent (#87CEEB)
+- Size Variations: 50mm, 65mm, 75mm, 100mm, 150mm
+- Default Position: Evaporation station
+- Properties:
+  - Material: Borosilicate glass
+  - Used for evaporation, covering beakers
+
+### Mortar and Pestle (乳钵/研钵/研缽/막자사발)
+- Icon: Bowl with grinding tool
+- Color: Porcelain (#F5F5F5) or agate (#D3D3D3)
+- Size Variations: 50ml, 100ml, 250ml, 500ml
+- Default Position: Sample preparation area
+- Properties:
+  - Material: Porcelain, agate, marble
+  - For grinding solids to powder
+
+---
+
+## Heating Equipment
+
+### Bunsen Burners (バーナーが/本生灯/本生燈/본생등)
+- Icon: Gas flame apparatus
+- Color: Metal gray (#A9A9A9) with flame colors
+- Size Variations: Standard, micro
+- Default Position: Gas outlet station
+- Properties:
+  - Fuel: Natural gas, propane
+  - Flame Temperature: Up to 1500°C
+  - Adjustable air intake
+
+### Hot Plates (ホットプレート/电热板/電熱板/히트플레이트)
+- Icon: Flat heating surface
+- Color: White/gray (#F5F5F5) with black surface (#1C1C1C)
+- Size Variations: 120mm, 180mm, 240mm diameter
+- Default Position: Heating area
+- Properties:
+  - Temperature Range: 50°C to 350°C
+  - Surface: Ceramic, aluminum
+  - Stirrer version available
+
+### Lab Microwaves ( Laboratory Microwave/微波/微波/마이크로웨이브)
+- Icon: Microwave oven
+- Color: White (#FFFFFF)
+- Size Variations: 20L, 30L, 40L
+- Default Position: Separate heating room
+- Properties:
+  - Power: 700W to 1200W
+  - Specialized for digestion, synthesis
+
+### Heating Mantles (ヒーティングマント/加热套/加熱套/히팅맨틀)
+- Icon: Flexible heating cloth
+- Color: Gray cloth (#808080) with controller
+- Size Variations: 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml
+- Default Position: Heating area
+- Properties:
+  - Temperature Range: Up to 450°C
+  - Fits round bottom flasks
+  - Fiber glass insulation
+
+### Water Baths (湯浴/水浴/水浴/워터배스)
+- Icon: Container with water
+- Color: White (#FFFFFF) with water blue (#4169E1)
+- Size Variations: 5L, 10L, 20L, 30L
+- Default Position: Temperature control area
+- Properties:
+  - Temperature Range: 5°C above ambient to 100°C
+  - Circulating or static
+
+---
+
+## Measurement Equipment
+
+### Thermometers (温度計/温度计/溫度計/온도계)
+- Icon: Long tube with scale
+- Color: Glass (#87CEEB) with mercury/alcohol red (#DC143C)
+- Size Variations: -10°C to 150°C, -200°C to 500°C
+- Default Position: Measurement station
+- Properties:
+  - Types: Mercury, alcohol, digital
+  - Accuracy: ±1°C (liquid-in-glass)
+
+### pH Meters/Strips (pH計/pH计/pH計/pH미터)
+- Icon: Meter with electrode or strip
+- Color: White (#FFFFFF) with electrode
+- Size Variations: Portable, benchtop
+- Default Position: pH measurement station
+- Properties:
+  - Range: pH 0 to 14
+  - Accuracy: ±0.01 pH (meter), ±0.5 pH (strips)
+
+### Scales (天秤/天平/天平/저울)
+- Icon: Weighing platform
+- Color: White (#FFFFFF) or silver (#C0C0C0)
+- Size Variations:
+  - Analytical: 0.01mg precision, 100g-200g capacity
+  - Top-loading: 0.1g precision, 100g-5000g capacity
+- Default Position: Weighing station
+- Properties:
+  - Calibration: Internal or external
+  - Draft shield (analytical)
+
+### Spectrometers (分光光度計/分光光度计/分光光度計/분광광도계)
+- Icon: Box with display
+- Color: White (#FFFFFF) with blue accent (#4169E1)
+- Size Variations: UV-Vis, IR, NMR
+- Default Position: Analysis room
+- Properties:
+  - Wavelength Range: 190-1100nm (UV-Vis)
+  - Path length: 1cm, 10cm
+
+### Refractometers (屈折計/折光仪/折射計/굴절계)
+- Icon: Handheld or benchtop
+- Color: White (#FFFFFF) with prism
+- Size Variations: 0-100% Brix, 1.3000-1.7000 RI
+- Default Position: Analysis station
+- Properties:
+  - Accuracy: ±0.0002 RI
+  - Temperature compensation
+
+---
+
+## Safety Equipment
+
+### Safety Goggles (保護メガネ/护目镜/護目鏡/보안경)
+- Icon: Protective eyewear
+- Color: Transparent (#FFFFFF) with clear or tinted lens
+- Size Variations: One size (adjustable)
+- Default Position: Safety station (entrance)
+- Properties:
+  - UV protection
+  - Anti-fog coating
+  - ANSI Z87.1 certified
+
+### Gloves (手套/手套/手套/장갑)
+- Icon: Hand protection
+- Color: Various (latex white, nitrile blue #4169E1, rubber yellow)
+- Size Variations: XS, S, M, L, XL
+- Default Position: Safety station
+- Properties:
+  - Material: Latex, nitrile, vinyl, neoprene
+  - Thickness: 0.1mm to 0.5mm
+
+### Fume Hoods (ドラフトチャンバー/通风柜/通風櫃/ fume hood)
+- Icon: Large cabinet with glass door
+- Color: White (#FFFFFF) with gray frame
+- Size Variations: 120cm, 150cm, 180cm width
+- Default Position: Ventilation area (perimeter)
+- Properties:
+  - Airflow: 100-150 fpm
+  - HEPA filter (optional)
+  - Sash height: 18 inches
+
+### Fire Extinguishers (消火器/灭火器/滅火器/소화기)
+- Icon: Cylindrical red cylinder
+- Color: Red (#DC143C)
+- Size Variations: 2.5kg, 5kg, 10kg
+- Default Position: Emergency station (walls)
+- Properties:
+  - Types: ABC powder, CO2, foam
+  - Rating: 5A, 55B, C
+
+### Eye Wash Stations (洗眼器/洗眼器/洗眼器/세안기)
+- Icon: Bowl with spray nozzles
+- Color: Green (#228B22) for identification
+- Size Variations: Wall-mounted, portable
+- Default Position: Emergency station
+- Properties:
+  - Flow rate: 1.5 L/min
+  - Activation: Push handle or foot pedal
+  - Water temperature: 16°C to 38°C
+
+---
+
+## Special Equipment
+
+### Electrolysis Apparatus (電解装置/电解装置/電解裝置/전기분해장치)
+- Icon: Container with electrodes
+- Color: Transparent container (#87CEEB) with electrodes (various)
+- Size Variations: 100ml, 250ml, 500ml
+- Default Position: Electrochemistry station
+- Properties:
+  - Electrodes: Pt, graphite, stainless steel
+  - Voltage: 0-30V DC
+
+### Distillation Setup (蒸留装置/蒸馏装置/蒸餾裝置/증류장치)
+- Icon: Connected flask-condenser-receiver
+- Color: Glass assembly (#87CEEB)
+- Size Variations: 100ml to 2000ml
+- Default Position: Distillation area
+- Properties:
+  - Types: Simple, fractional
+  - Components: Distilling flask, condenser, adapter, receiver
+
+### Chromatography Equipment (クロマトグラフィー/色谱仪/層析儀/크로마토그래피)
+- Icon: Column or plate
+- Color: Glass columns (#87CEEB), TLC plates (white)
+- Size Variations:
+  - Columns: 10mm to 50mm diameter
+  - TLC: 5x10cm, 10x20cm
+- Default Position: Separation station
+- Properties:
+  - Types: Column, TLC, HPLC
+  - Stationary phase: Silica, C18
+
+### Centrifuges (遠心機/离心机/離心機/원심기)
+- Icon: Rotating machine
+- Color: White (#FFFFFF) with rotor
+- Size Variations: Micro, clinical, floor
+- Default Position: Separation area
+- Properties:
+  - Speed: 1000-50000 rpm
+  - RCF: 1000-50000 x g
+
+### Magnetic Stirrers (磁気撹拌機/磁力搅拌器/磁力攪拌器/자기교반기)
+- Icon: Flat plate with spinning bar
+- Color: White (#FFFFFF) with stir bar (#4169E1)
+- Size Variations: 100ml to 5000ml capacity
+- Default Position: Stirring station
+- Properties:
+  - Speed: 100-1500 rpm
+  - Heating option available
+
+### Gas Collection Tubes (ガス採取管/气体收集管/氣體收集管/가스채취관)
+- Icon: Inverted tube
+- Color: Glass (#87CEEB)
+- Size Variations: 25ml, 50ml, 100ml, 250ml
+- Default Position: Gas collection area
+- Properties:
+  - Types: Eudiometer, gas syringe
+  - Inverted water displacement method
+
+---
+
+## Color Schemes for Chemical Reactions
+
+### CPK Coloring (Corey-Pauling-Koltun)
+Standard element colors for molecular models:
+
+| Element | EN | JP | CN | TW | KR | Color | Hex |
+|---------|----|----|----|----|----|-------|-----|
+| Hydrogen | Hydrogen | 水素 | 氢 | 氫 | 수소 | White | #FFFFFF |
+| Carbon | Carbon | 炭素 | 碳 | 碳 | 탄소 | Black | #333333 |
+| Nitrogen | Nitrogen | 窒素 | 氮 | 氮 | 질소 | Blue | #3050F8 |
+| Oxygen | Oxygen | 酸素 | 氧 | 氧 | 산소 | Red | #FF0D0D |
+| Fluorine | Fluorine | 弗素 | 氟 | 氟 | 플루오린 | Green | #90E050 |
+| Chlorine | Chlorine | 塩素 | 氯 | 氯 | 염소 | Green | #1FF01F |
+| Bromine | Bromine | 臭素 | 溴 | 溴 | 브로민 | Dark Red | #A62929 |
+| Iodine | Iodine | 沃素 | 碘 | 碘 | 요오드 | Violet | #940094 |
+| Sulfur | Sulfur | 硫黄 | 硫 | 硫 | 황 | Yellow | #FFFF30 |
+| Phosphorus | Phosphorus | リン | 磷 | 磷 | 인 | Orange | #FF8000 |
+| Iron | Iron | 鉄 | 铁 | 鐵 | 철 | Orange | #E06633 |
+| Calcium | Calcium | カルシウム | 钙 | 鈣 | 칼슘 | Dark Green | #3DFF00 |
+
+### Reaction State Colors
+- Acid indicator: Red (#FF0000)
+- Base indicator: Blue (#0000FF)
+- Neutral: Green (#00FF00)
+- Precipitate: White (#FFFFFF)
+- Gas evolution: Cyan bubbles (#00FFFF)
+
+### Temperature Indicators
+- Cold: Blue (#4169E1)
+- Warm: Yellow (#FFD700)
+- Hot: Red (#FF4500)
+
+---
+
+## Visual/Animation Effects for Binary File Format
+
+### 25az.bin File Format
+
+**Note:** The 25az.bin format does not have publicly documented specifications. Based on general binary animation formats, possible approaches:
+
+**Potential Structure:**
+- Header section with metadata
+- Frame data (if animation)
+- Color palette
+- Texture/sprite data
+
+**Visualization Methods:**
+1. Grayscale mapping (byte value to brightness)
+2. Histogram visualization
+3. Entropy analysis
+4. Section mapping (for structured binary)
+
+**Related Tools:**
+- bin-graph: Binary visualization tool (https://github.com/8dcc/bin-graph)
+- binvis.io: Online binary visualization
+- QuickBMS: Binary file extraction
+
+**Animation Frame Extraction:**
+- If format contains frame data: sequential extraction
+- Delta compression detection (ANIM format methods)
+- Palette-based rendering
+
+**Color Palette Generation:**
+- Analyze byte distribution
+- Map to chemical element colors for thematic effect
+- Gradient-based state visualization
+
+---
+
+## Default Lab Layout Positions
+
+### Workspace Zones
+1. **Front-Left**: Sample preparation (mortar, balances)
+2. **Front-Center**: Main workspace (beakers, flasks)
+3. **Front-Right**: Heating area (Bunsen, hot plates)
+4. **Side-Wall**: Safety equipment (eyewash, fire extinguisher)
+5. **Back-Right**: Fume hood
+6. **Measurement Station**: Right side bench
+7. **Storage**: Cabinets along back wall
+
+### Equipment Hierarchy (Z-order)
+- Layer 0: Floor markers, shadow
+- Layer 1: Large equipment (fume hood, benches)
+- Layer 2: Glassware, small equipment
+- Layer 3: Active reactions, flames
+- Layer 4: Labels, UI elements
+
+---
+
+*Document Version: 1.0*
+*Created: March 2026*
