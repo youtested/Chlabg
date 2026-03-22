@@ -1,0 +1,221 @@
+package
+{
+   public class iKnowEle
+   {
+      
+      private static var iKnow:Object;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "iKnow", 0, 6
+               findproperty QName(PrivateNamespace("iKnowEle"),"iKnow")
+               findpropstrict Multiname("Object",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+               constructprop Multiname("Object",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")]), 0
+               setproperty QName(PrivateNamespace("iKnowEle"),"iKnow")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function iKnowEle()
+      {
+         method
+            name "iKnowEle/iKnowEle"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iKnowEle.as"
+                  debugline 7
+                  getlocal0
+                  pushscope
+                  debugline 8
+                  getlocal0
+                  constructsuper 0
+                  debugline 10
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function Set(e:String, n:Number, type:Number) : void
+      {
+         trait method QName(PackageNamespace(""),"Set")
+            flag FINAL
+            dispid 3
+            method
+               name "iKnowEle/Set"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 4
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iKnowEle.as"
+                     debugline 11
+                     getlocal0
+                     pushscope
+                     debug 1, "e", 0, 11
+                     debug 1, "n", 1, 11
+                     debug 1, "type", 2, 11
+                     debugline 13
+                     getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     getlocal1
+                     getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     pushnull
+                     ifne ofs0037
+                     debugline 14
+                     getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     getlocal1
+                     findpropstrict Multiname("Array",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     constructprop Multiname("Array",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")]), 0
+                     setproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+            ofs0037:
+                     debugline 17
+                     getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     getlocal1
+                     getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     getlocal3
+                     getlocal2
+                     setproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                     debugline 18
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function Get(e:String, type:Number) : Number
+         {
+            trait method QName(PackageNamespace(""),"Get")
+               flag FINAL
+               dispid 4
+               method
+                  name "iKnowEle/Get"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"Number")
+                  paramname "e"
+                  paramname "e"
+                  returns QName(PackageNamespace(""),"Number")
+                  
+                  body
+                     maxstack 2
+                     localcount 3
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iKnowEle.as"
+                        debugline 19
+                        getlocal0
+                        pushscope
+                        debug 1, "e", 0, 19
+                        debug 1, "type", 1, 19
+                        debugline 21
+                        getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        pushnull
+                        ifeq ofs0058
+                        debugline 22
+                        getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        getlocal2
+                        getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        pushnull
+                        ifeq ofs0041
+                        debugline 23
+                        getlex Multiname("iKnow",[PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        getlocal2
+                        getproperty MultinameL([PrivateNamespace("iKnowEle"),PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iKnowEle"),StaticProtectedNs("iKnowEle")])
+                        returnvalue
+               ofs0041:
+                        debugline 25
+                        getlocal2
+                        pushbyte 1
+                        ifne ofs004f
+                        debugline 26
+                        pushbyte 19
+                        returnvalue
+               ofs004f:
+                        debugline 28
+                        pushbyte 1
+                        returnvalue
+                        jump ofs0058
+               ofs0058:
+                        debugline 32
+                        getlocal2
+                        pushbyte 1
+                        ifne ofs0066
+                        debugline 33
+                        pushbyte 19
+                        returnvalue
+               ofs0066:
+                        debugline 35
+                        pushbyte 1
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 1
+            maxscopedepth 3
+            
+            code
+               getlocal0
+               pushscope
+               debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iKnowEle.as"
+               debugline 4
+               findpropstrict Multiname("iKnowEle",[PackageNamespace("")])
+               getlex QName(PackageNamespace(""),"Object")
+               pushscope
+               getlex Multiname("Object",[PrivateNamespace("iKnowEle.as$314"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+               newclass 19
+               popscope
+               initproperty QName(PackageNamespace(""),"iKnowEle")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      

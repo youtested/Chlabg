@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1671" itemID="69be9900-000002da" lastModified="1774098374">
+     <timeline>
+          <DOMTimeline name="Symbol 1671">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#9d7adf" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMDynamicText name="SubName" antiAliasSharpness="0" antiAliasThickness="0" width="92.15" height="39.0" renderAsHTML="true" isSelectable="false" lineType="multiline">
+                                             <matrix>
+                                                  <Matrix tx="-29.15" ty="1.25" a="0.633056640625" d="0.633056640625"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>CaCO3</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="center" rotation="true" indent="0.0" leftMargin="0.0" autoKern="false" letterSpacing="-1.0" rightMargin="0.0" size="15" bitmapSize="300" face="SF UI Display Medium" fillColor="#707070"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

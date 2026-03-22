@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1725" itemID="69be9900-000002f9" lastModified="1774098374">
+     <timeline>
+          <DOMTimeline name="Symbol 1725">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#faedd2" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <BitmapFill bitmapPath="Bitmap 1723.png">
+                                                            <matrix>
+                                                                 <Matrix tx="-44.4" ty="-6.25" a="1.7364501953125" d="0.6373291015625" b="0.0" c="-0.42486572265625"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <BitmapFill bitmapPath="Bitmap 1723.png">
+                                                            <matrix>
+                                                                 <Matrix tx="-62.35" ty="-23.2" a="2.2708587646484375" d="2.2708587646484375"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -770 143| -776 121| -776 117[ -772 70 -662 37[ -573 11 -478 7| -272 15[ -205 10 -114 37[ 0 72 0 121| 0 128| -3 137"/>
+                                                  <Edge fillStyle0="0" fillStyle1="2" strokeStyle="0" edges="! -3 137| -122 556| -118 572[ -118 599 -169 620| -199 630[ -279 655 -394 655[ -507 655 -588 630[ -670 607 -670 572| -670 570| -770 143"/>
+                                                  <Edge fillStyle0="1" fillStyle1="2" strokeStyle="0" edges="! -770 143[ -750 177 -662 204[ -549 239 -388 239[ -227 239 -114 204[ -19 175 -3 137"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

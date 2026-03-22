@@ -1,0 +1,209 @@
+package
+{
+   public class ActionType
+   {
+      
+      public static const ADDEQUIP:String = "Add equipment";
+      
+      public static const ADDSUB:String = "Add substances";
+      
+      public static const ADDLID:String = "Add lid";
+      
+      public static const LINKTUBE:String = "Link tube";
+      
+      public static const SETLAB:String = "Set lab";
+      
+      public static const PUT:String = "Put";
+      
+      public static const POUR:String = "Pour";
+      
+      public static const DELETE:String = "Delete";
+      
+      public static const CLEARSUB:String = "Clear sub";
+      
+      public static const IGNITE:String = "Ignite";
+      
+      public static const DISIGNITE:String = "Disignite";
+      
+      public static const REACTION:String = "Reaction Start";
+      
+      public static const STIR:String = "Stir";
+      
+      public static const TESTPH:String = "TestPh";
+      
+      public static const TESTDT:String = "TestDt";
+      
+      public static const BURN:String = "Burn";
+      
+      public static const FREEZE:String = "Freeze";
+      
+      public static const EXPLODE:String = "Explode";
+      
+      public static const CLEAN:String = "Clean";
+      
+      public static const SUCK:String = "Suck";
+      
+      public static const LEAK:String = "Leak";
+      
+      public static const TRACE:String = "Trace";
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "ADDEQUIP", 0, 5
+               findproperty QName(PackageNamespace(""),"ADDEQUIP")
+               pushstring "Add equipment"
+               initproperty QName(PackageNamespace(""),"ADDEQUIP")
+               debug 1, "ADDSUB", 1, 6
+               findproperty QName(PackageNamespace(""),"ADDSUB")
+               pushstring "Add substances"
+               initproperty QName(PackageNamespace(""),"ADDSUB")
+               debug 1, "ADDLID", 2, 7
+               findproperty QName(PackageNamespace(""),"ADDLID")
+               pushstring "Add lid"
+               initproperty QName(PackageNamespace(""),"ADDLID")
+               debug 1, "LINKTUBE", 3, 8
+               findproperty QName(PackageNamespace(""),"LINKTUBE")
+               pushstring "Link tube"
+               initproperty QName(PackageNamespace(""),"LINKTUBE")
+               debug 1, "SETLAB", 4, 9
+               findproperty QName(PackageNamespace(""),"SETLAB")
+               pushstring "Set lab"
+               initproperty QName(PackageNamespace(""),"SETLAB")
+               debug 1, "PUT", 5, 10
+               findproperty QName(PackageNamespace(""),"PUT")
+               pushstring "Put"
+               initproperty QName(PackageNamespace(""),"PUT")
+               debug 1, "POUR", 6, 11
+               findproperty QName(PackageNamespace(""),"POUR")
+               pushstring "Pour"
+               initproperty QName(PackageNamespace(""),"POUR")
+               debug 1, "DELETE", 7, 12
+               findproperty QName(PackageNamespace(""),"DELETE")
+               pushstring "Delete"
+               initproperty QName(PackageNamespace(""),"DELETE")
+               debug 1, "CLEARSUB", 8, 13
+               findproperty QName(PackageNamespace(""),"CLEARSUB")
+               pushstring "Clear sub"
+               initproperty QName(PackageNamespace(""),"CLEARSUB")
+               debug 1, "IGNITE", 9, 14
+               findproperty QName(PackageNamespace(""),"IGNITE")
+               pushstring "Ignite"
+               initproperty QName(PackageNamespace(""),"IGNITE")
+               debug 1, "DISIGNITE", 10, 15
+               findproperty QName(PackageNamespace(""),"DISIGNITE")
+               pushstring "Disignite"
+               initproperty QName(PackageNamespace(""),"DISIGNITE")
+               debug 1, "REACTION", 11, 16
+               findproperty QName(PackageNamespace(""),"REACTION")
+               pushstring "Reaction Start"
+               initproperty QName(PackageNamespace(""),"REACTION")
+               debug 1, "STIR", 12, 17
+               findproperty QName(PackageNamespace(""),"STIR")
+               pushstring "Stir"
+               initproperty QName(PackageNamespace(""),"STIR")
+               debug 1, "TESTPH", 13, 18
+               findproperty QName(PackageNamespace(""),"TESTPH")
+               pushstring "TestPh"
+               initproperty QName(PackageNamespace(""),"TESTPH")
+               debug 1, "TESTDT", 14, 19
+               findproperty QName(PackageNamespace(""),"TESTDT")
+               pushstring "TestDt"
+               initproperty QName(PackageNamespace(""),"TESTDT")
+               debug 1, "BURN", 15, 20
+               findproperty QName(PackageNamespace(""),"BURN")
+               pushstring "Burn"
+               initproperty QName(PackageNamespace(""),"BURN")
+               debug 1, "FREEZE", 16, 21
+               findproperty QName(PackageNamespace(""),"FREEZE")
+               pushstring "Freeze"
+               initproperty QName(PackageNamespace(""),"FREEZE")
+               debug 1, "EXPLODE", 17, 22
+               findproperty QName(PackageNamespace(""),"EXPLODE")
+               pushstring "Explode"
+               initproperty QName(PackageNamespace(""),"EXPLODE")
+               debug 1, "CLEAN", 18, 23
+               findproperty QName(PackageNamespace(""),"CLEAN")
+               pushstring "Clean"
+               initproperty QName(PackageNamespace(""),"CLEAN")
+               debug 1, "SUCK", 19, 24
+               findproperty QName(PackageNamespace(""),"SUCK")
+               pushstring "Suck"
+               initproperty QName(PackageNamespace(""),"SUCK")
+               debug 1, "LEAK", 20, 25
+               findproperty QName(PackageNamespace(""),"LEAK")
+               pushstring "Leak"
+               initproperty QName(PackageNamespace(""),"LEAK")
+               debug 1, "TRACE", 21, 26
+               findproperty QName(PackageNamespace(""),"TRACE")
+               pushstring "Trace"
+               initproperty QName(PackageNamespace(""),"TRACE")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function ActionType()
+      {
+         method
+            name "ActionType/ActionType"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;ActionType.as"
+                  debugline 30
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 3
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;ActionType.as"
+         debugline 3
+         findpropstrict Multiname("ActionType",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex Multiname("Object",[PackageNamespace(""),PrivateNamespace("ActionType.as$298"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+         newclass 13
+         popscope
+         initproperty QName(PackageNamespace(""),"ActionType")
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

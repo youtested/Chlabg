@@ -1,0 +1,575 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 2018" itemID="69be9900-00000341" lastModified="1774098374" linkageClassName="LSControl6" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 2018">
+               <layers>
+                    <DOMLayer name="Labels Layer" color="#7882ae">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728" name="en" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728" name="zh" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728" name="tw" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728" name="jp" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="4" keyMode="9728" name="ru" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="5" keyMode="9728" name="th" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="6" keyMode="9728" name="fr" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="7" keyMode="9728" name="du" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="8" keyMode="9728" name="ko" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="9" keyMode="9728" name="po" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="10" keyMode="9728" name="sp" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="11" keyMode="9728" name="no" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="12" keyMode="9728" name="ge" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="13" keyMode="9728" name="it" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="14" keyMode="9728" name="sw" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#4afb4c">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="574" height="287" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Remove</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.95" bitmapSize="339" letterSpacing="-0.05" indent="0" leftMargin="29" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="SF UI Display Medium"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="317" height="352" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-9.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>删除</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.45" bitmapSize="329" letterSpacing="0" indent="0" leftMargin="42" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="苹方-简 常规体"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="316" height="352" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-9.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>刪除</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.45" bitmapSize="329" letterSpacing="0" indent="0" leftMargin="42" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="蘋方-繁 標準體"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="316" height="353" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-7.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>削除</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="19.4" bitmapSize="388" letterSpacing="0" indent="0" leftMargin="42" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="苹方-简 常规体"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="574" height="291" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-9.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>удалять</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="29" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="5" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="188" height="244" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-9.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>ลบ</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="15.35" bitmapSize="307" letterSpacing="0" indent="0" leftMargin="48" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Thonburi"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="472" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Effacer</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="34" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="789" height="349" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Verwijderen</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="18" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="268" height="339" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>삭제</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.8" bitmapSize="376" letterSpacing="-0.05" indent="0" leftMargin="44" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Apple SD 산돌고딕 Neo 옅은체"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="9" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="484" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Deletar</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="33" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="10" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="533" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Eliminar</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="31" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="11" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="390" height="298" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Slette</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="38" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="522" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>löschen</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="31" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="13" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="609" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Eliminare</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="27" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="14" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="494" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-9.9" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Radera</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="33" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 3" color="#52fc3a" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="373" height="300" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Clear</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.95" bitmapSize="339" letterSpacing="-0.05" indent="0" leftMargin="39" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="SF UI Display Medium"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="309" height="355" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>清空</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.45" bitmapSize="329" letterSpacing="0" indent="0" leftMargin="42" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="苹方-简 常规体"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="309" height="356" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>清空</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.45" bitmapSize="329" letterSpacing="0" indent="0" leftMargin="42" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="蘋方-繁 標準體"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="456" height="333" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-6.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>クリア</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="19.4" bitmapSize="388" letterSpacing="0" indent="0" leftMargin="34" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="苹方-简 常规体"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="618" height="283" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>очищать</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="27" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="5" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="577" height="358" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>เคลียร์</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="15.35" bitmapSize="307" letterSpacing="-0.05" indent="0" leftMargin="28" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Thonburi"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="584" height="349" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Nettoyer</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="28" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="713" height="298" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Ontruimen</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="22" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="391" height="340" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>비우기</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.8" bitmapSize="376" letterSpacing="-0.05" indent="0" leftMargin="37" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Apple SD 산돌고딕 Neo 옅은체"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="9" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="617" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Remover</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="27" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="10" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="501" height="349" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Limpiar</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="32" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="11" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="532" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Tømme</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="31" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="402" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>leeren</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="0" indent="0" leftMargin="37" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="13" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="530" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Vuotare</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="31" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="14" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" antiAliasSharpness="0" antiAliasThickness="0" width="535" height="293" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-105.15" ty="-8.95"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Tömma</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="54.05" bitmapSize="1081" letterSpacing="-0.05" indent="0" leftMargin="31" lineSpacing="0" rightMargin="0" fillColor="#ff0000" face="Helvetica Neue Light"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,67 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1520" itemID="69be9900-00000293" lastModified="1774098374" linkageClassName="iOut" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 1520">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#9292c9">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="0" fontRenderingMode="standard" width="298" height="232" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="56.95" ty="22.45"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Label</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="13.35" bitmapSize="267" letterSpacing="0" indent="0" leftMargin="6" lineSpacing="0" rightMargin="0" fillColor="#cccccc" face="Helvetica"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#379fad">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1518" name="pShowLabel" centerPoint3DX="223.6" centerPoint3DY="111.45">
+                                             <matrix>
+                                                  <Matrix tx="78.95" ty="30.95" a="0.0" d="0.0" b="0.1379547119140625" c="-0.2635345458984375"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                             <color>
+                                                  <Color redMultiplier="0.5" greenMultiplier="0.5" blueMultiplier="0.5" redOffset="26" greenOffset="51" blueOffset="128"/>
+                                             </color>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 3" color="#c6a6d2" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1518" centerPoint3DX="223.45" centerPoint3DY="111.6">
+                                             <matrix>
+                                                  <Matrix tx="78.8" ty="31.1" a="0.0" d="0.0" b="0.136993408203125" c="-0.2657470703125"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                             <color>
+                                                  <Color alphaMultiplier="0.4296875"/>
+                                             </color>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

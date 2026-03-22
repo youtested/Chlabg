@@ -1,0 +1,652 @@
+package
+{
+   import flash.system.*;
+   
+   public class iLoc
+   {
+      
+      public static var LG:String = "en";
+      
+      public static var LG2:String = "en";
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "LG", 0, 5
+               findproperty QName(PackageNamespace(""),"LG")
+               pushstring "en"
+               setproperty QName(PackageNamespace(""),"LG")
+               debug 1, "LG2", 1, 6
+               findproperty QName(PackageNamespace(""),"LG2")
+               pushstring "en"
+               setproperty QName(PackageNamespace(""),"LG2")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function iLoc()
+      {
+         method
+            name "iLoc/iLoc"
+            returns null
+            
+            body
+               maxstack 2
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLoc.as"
+                  debugline 7
+                  getlocal0
+                  pushscope
+                  debugline 7
+                  getlocal0
+                  constructsuper 0
+                  debug 1, "t", 0, 8
+                  debugline 8
+                  getlex Multiname("Capabilities",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc"),PackageNamespace("flash.system")])
+                  getproperty Multiname("language",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  callproperty Multiname("toLowerCase",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")]), 0
+                  coerce_s
+                  setlocal1
+                  debugline 9
+                  findpropstrict Multiname("trace",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  getlocal1
+                  callpropvoid Multiname("trace",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")]), 1
+                  debugline 10
+                  findproperty Multiname("LG2",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  getlocal1
+                  setproperty Multiname("LG2",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  jump ofs02b2
+         ofs0037:
+                  label
+                  debugline 13
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "en"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 14
+                  jump ofs0565
+         ofs0049:
+                  label
+                  debugline 16
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "zh"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 17
+                  jump ofs0565
+         ofs005b:
+                  label
+                  debugline 19
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "tw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 20
+                  jump ofs0565
+         ofs006d:
+                  label
+                  debugline 22
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "tw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 23
+                  jump ofs0565
+         ofs007f:
+                  label
+                  debugline 25
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "zh"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 26
+                  jump ofs0565
+         ofs0091:
+                  label
+                  debugline 28
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "tw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 29
+                  jump ofs0565
+         ofs00a3:
+                  label
+                  debugline 31
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "jp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 32
+                  jump ofs0565
+         ofs00b5:
+                  label
+                  debugline 34
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "jp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 35
+                  jump ofs0565
+         ofs00c7:
+                  label
+                  debugline 37
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ko"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 38
+                  jump ofs0565
+         ofs00d9:
+                  label
+                  debugline 40
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ko"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 41
+                  jump ofs0565
+         ofs00eb:
+                  label
+                  debugline 43
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "du"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 44
+                  jump ofs0565
+         ofs00fd:
+                  label
+                  debugline 46
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "du"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 47
+                  jump ofs0565
+         ofs010f:
+                  label
+                  debugline 49
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ru"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 50
+                  jump ofs0565
+         ofs0121:
+                  label
+                  debugline 52
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ru"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 53
+                  jump ofs0565
+         ofs0133:
+                  label
+                  debugline 55
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "fr"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 56
+                  jump ofs0565
+         ofs0145:
+                  label
+                  debugline 58
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "fr"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 59
+                  jump ofs0565
+         ofs0157:
+                  label
+                  debugline 61
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "fr"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 62
+                  jump ofs0565
+         ofs0169:
+                  label
+                  debugline 64
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "it"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 65
+                  jump ofs0565
+         ofs017b:
+                  label
+                  debugline 67
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "it"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 68
+                  jump ofs0565
+         ofs018d:
+                  label
+                  debugline 70
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "no"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 71
+                  jump ofs0565
+         ofs019f:
+                  label
+                  debugline 73
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 74
+                  jump ofs0565
+         ofs01b1:
+                  label
+                  debugline 76
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 77
+                  jump ofs0565
+         ofs01c3:
+                  label
+                  debugline 79
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 80
+                  jump ofs0565
+         ofs01d5:
+                  label
+                  debugline 82
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 83
+                  jump ofs0565
+         ofs01e7:
+                  label
+                  debugline 85
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "po"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 86
+                  jump ofs0565
+         ofs01f9:
+                  label
+                  debugline 88
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "po"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 89
+                  jump ofs0565
+         ofs020b:
+                  label
+                  debugline 91
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sp"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 92
+                  jump ofs0565
+         ofs021d:
+                  label
+                  debugline 94
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ge"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 95
+                  jump ofs0565
+         ofs022f:
+                  label
+                  debugline 97
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "ge"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 98
+                  jump ofs0565
+         ofs0241:
+                  label
+                  debugline 100
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "po"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 101
+                  jump ofs0565
+         ofs0253:
+                  label
+                  debugline 103
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "th"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 104
+                  jump ofs0565
+         ofs0265:
+                  label
+                  debugline 106
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "th"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 107
+                  jump ofs0565
+         ofs0277:
+                  label
+                  debugline 109
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 110
+                  jump ofs0565
+         ofs0289:
+                  label
+                  debugline 112
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 113
+                  jump ofs0565
+         ofs029b:
+                  label
+                  debugline 115
+                  findproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  pushstring "sw"
+                  setproperty Multiname("LG",[PrivateNamespace("iLoc"),PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLoc"),StaticProtectedNs("iLoc")])
+                  debugline 116
+                  jump ofs0565
+         ofs02ad:
+                  label
+                  jump ofs0565
+         ofs02b2:
+                  debugline 11
+                  getlocal1
+                  setlocal2
+                  pushstring "en_us"
+                  debugline 12
+                  getlocal2
+                  ifstrictne ofs02c6
+                  pushbyte 0
+                  jump ofs04f2
+         ofs02c6:
+                  pushstring "zh-cn"
+                  debugline 15
+                  getlocal2
+                  ifstrictne ofs02d6
+                  pushbyte 1
+                  jump ofs04f2
+         ofs02d6:
+                  pushstring "zh-tw"
+                  debugline 18
+                  getlocal2
+                  ifstrictne ofs02e6
+                  pushbyte 2
+                  jump ofs04f2
+         ofs02e6:
+                  pushstring "zh-hk"
+                  debugline 21
+                  getlocal2
+                  ifstrictne ofs02f6
+                  pushbyte 3
+                  jump ofs04f2
+         ofs02f6:
+                  pushstring "zh-hans"
+                  debugline 24
+                  getlocal2
+                  ifstrictne ofs0306
+                  pushbyte 4
+                  jump ofs04f2
+         ofs0306:
+                  pushstring "zh-hant"
+                  debugline 27
+                  getlocal2
+                  ifstrictne ofs0316
+                  pushbyte 5
+                  jump ofs04f2
+         ofs0316:
+                  pushstring "ja-jp"
+                  debugline 30
+                  getlocal2
+                  ifstrictne ofs0326
+                  pushbyte 6
+                  jump ofs04f2
+         ofs0326:
+                  pushstring "ja"
+                  debugline 33
+                  getlocal2
+                  ifstrictne ofs0336
+                  pushbyte 7
+                  jump ofs04f2
+         ofs0336:
+                  pushstring "ko-kr"
+                  debugline 36
+                  getlocal2
+                  ifstrictne ofs0346
+                  pushbyte 8
+                  jump ofs04f2
+         ofs0346:
+                  pushstring "ko"
+                  debugline 39
+                  getlocal2
+                  ifstrictne ofs0356
+                  pushbyte 9
+                  jump ofs04f2
+         ofs0356:
+                  pushstring "nl-nl"
+                  debugline 42
+                  getlocal2
+                  ifstrictne ofs0366
+                  pushbyte 10
+                  jump ofs04f2
+         ofs0366:
+                  pushstring "nl"
+                  debugline 45
+                  getlocal2
+                  ifstrictne ofs0376
+                  pushbyte 11
+                  jump ofs04f2
+         ofs0376:
+                  pushstring "ru-ru"
+                  debugline 48
+                  getlocal2
+                  ifstrictne ofs0386
+                  pushbyte 12
+                  jump ofs04f2
+         ofs0386:
+                  pushstring "ru"
+                  debugline 51
+                  getlocal2
+                  ifstrictne ofs0396
+                  pushbyte 13
+                  jump ofs04f2
+         ofs0396:
+                  pushstring "fr-fr"
+                  debugline 54
+                  getlocal2
+                  ifstrictne ofs03a6
+                  pushbyte 14
+                  jump ofs04f2
+         ofs03a6:
+                  pushstring "fr"
+                  debugline 57
+                  getlocal2
+                  ifstrictne ofs03b6
+                  pushbyte 15
+                  jump ofs04f2
+         ofs03b6:
+                  pushstring "fr-ca"
+                  debugline 60
+                  getlocal2
+                  ifstrictne ofs03c6
+                  pushbyte 16
+                  jump ofs04f2
+         ofs03c6:
+                  pushstring "it-it"
+                  debugline 63
+                  getlocal2
+                  ifstrictne ofs03d6
+                  pushbyte 17
+                  jump ofs04f2
+         ofs03d6:
+                  pushstring "it"
+                  debugline 66
+                  getlocal2
+                  ifstrictne ofs03e6
+                  pushbyte 18
+                  jump ofs04f2
+         ofs03e6:
+                  pushstring "no-no"
+                  debugline 69
+                  getlocal2
+                  ifstrictne ofs03f6
+                  pushbyte 19
+                  jump ofs04f2
+         ofs03f6:
+                  pushstring "es-es"
+                  debugline 72
+                  getlocal2
+                  ifstrictne ofs0406
+                  pushbyte 20
+                  jump ofs04f2
+         ofs0406:
+                  pushstring "es-us"
+                  debugline 75
+                  getlocal2
+                  ifstrictne ofs0416
+                  pushbyte 21
+                  jump ofs04f2
+         ofs0416:
+                  pushstring "es-419"
+                  debugline 78
+                  getlocal2
+                  ifstrictne ofs0426
+                  pushbyte 22
+                  jump ofs04f2
+         ofs0426:
+                  pushstring "es"
+                  debugline 81
+                  getlocal2
+                  ifstrictne ofs0436
+                  pushbyte 23
+                  jump ofs04f2
+         ofs0436:
+                  pushstring "pt"
+                  debugline 84
+                  getlocal2
+                  ifstrictne ofs0446
+                  pushbyte 24
+                  jump ofs04f2
+         ofs0446:
+                  pushstring "pt-br"
+                  debugline 87
+                  getlocal2
+                  ifstrictne ofs0456
+                  pushbyte 25
+                  jump ofs04f2
+         ofs0456:
+                  pushstring "es-mx"
+                  debugline 90
+                  getlocal2
+                  ifstrictne ofs0466
+                  pushbyte 26
+                  jump ofs04f2
+         ofs0466:
+                  pushstring "de"
+                  debugline 93
+                  getlocal2
+                  ifstrictne ofs0476
+                  pushbyte 27
+                  jump ofs04f2
+         ofs0476:
+                  pushstring "de-de"
+                  debugline 96
+                  getlocal2
+                  ifstrictne ofs0486
+                  pushbyte 28
+                  jump ofs04f2
+         ofs0486:
+                  pushstring "pt-pt"
+                  debugline 99
+                  getlocal2
+                  ifstrictne ofs0496
+                  pushbyte 29
+                  jump ofs04f2
+         ofs0496:
+                  pushstring "th-th"
+                  debugline 102
+                  getlocal2
+                  ifstrictne ofs04a6
+                  pushbyte 30
+                  jump ofs04f2
+         ofs04a6:
+                  pushstring "th"
+                  debugline 105
+                  getlocal2
+                  ifstrictne ofs04b6
+                  pushbyte 31
+                  jump ofs04f2
+         ofs04b6:
+                  pushstring "sv-fi"
+                  debugline 108
+                  getlocal2
+                  ifstrictne ofs04c6
+                  pushbyte 32
+                  jump ofs04f2
+         ofs04c6:
+                  pushstring "sv-se"
+                  debugline 111
+                  getlocal2
+                  ifstrictne ofs04d6
+                  pushbyte 33
+                  jump ofs04f2
+         ofs04d6:
+                  pushstring "sv"
+                  debugline 114
+                  getlocal2
+                  ifstrictne ofs04e6
+                  pushbyte 34
+                  jump ofs04f2
+         ofs04e6:
+                  jump ofs04f0
+                  pushbyte 35
+                  jump ofs04f0
+         ofs04f0:
+                  pushbyte 35
+         ofs04f2:
+                  kill 2
+                  lookupswitch ofs02ad, [ofs0037, ofs0049, ofs005b, ofs006d, ofs007f, ofs0091, ofs00a3, ofs00b5, ofs00c7, ofs00d9, ofs00eb, ofs00fd, ofs010f, ofs0121, ofs0133, ofs0145, ofs0157, ofs0169, ofs017b, ofs018d, ofs019f, ofs01b1, ofs01c3, ofs01d5, ofs01e7, ofs01f9, ofs020b, ofs021d, ofs022f, ofs0241, ofs0253, ofs0265, ofs0277, ofs0289, ofs029b, ofs02ad]
+         ofs0565:
+                  debugline 119
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 3
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLoc.as"
+         debugline 4
+         findpropstrict Multiname("iLoc",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex Multiname("Object",[PackageNamespace(""),PrivateNamespace("iLoc.as$256"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+         newclass 2
+         popscope
+         initproperty QName(PackageNamespace(""),"iLoc")
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLoc.as"
+         debugline 2
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

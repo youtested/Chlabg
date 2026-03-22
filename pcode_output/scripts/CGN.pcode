@@ -1,0 +1,459 @@
+package
+{
+   public class CGN
+   {
+      
+      private static const size:Number = 17;
+      
+      private static const subsize:Number = 13;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "size", 0, 8
+               findproperty QName(PrivateNamespace("CGN"),"size")
+               pushbyte 17
+               initproperty QName(PrivateNamespace("CGN"),"size")
+               debug 1, "subsize", 1, 9
+               findproperty QName(PrivateNamespace("CGN"),"subsize")
+               pushbyte 13
+               initproperty QName(PrivateNamespace("CGN"),"subsize")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function CGN()
+      {
+         method
+            name "CGN/CGN"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CGN.as"
+                  debugline 5
+                  getlocal0
+                  pushscope
+                  debugline 5
+                  getlocal0
+                  constructsuper 0
+                  debugline 7
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function Ch(t:String) : String
+      {
+         trait method QName(PackageNamespace(""),"Ch")
+            flag FINAL
+            dispid 3
+            method
+               name "CGN/Ch"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               paramname "nt"
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 4
+                  localcount 6
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CGN.as"
+                     debugline 10
+                     getlocal0
+                     pushscope
+                     debug 1, "t", 0, 10
+                     debug 1, "nt", 1, 11
+                     debug 1, "pi", 2, 12
+                     debug 1, "isn", 3, 13
+                     debug 1, "i", 4, 14
+                     pushstring "<font size=\'40\'>"
+                     debugline 11
+                     coerce_s
+                     setlocal2
+                     debugline 12
+                     pushbyte 0
+                     convert_d
+                     setlocal3
+                     debugline 13
+                     pushfalse
+                     setlocal 4
+                     debugline 14
+                     pushbyte 0
+                     setlocal 5
+                     jump ofs00c7
+            ofs0040:
+                     label
+                     debugline 15
+                     findpropstrict Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                     getlocal1
+                     getlocal 5
+                     callproperty Multiname("charAt",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                     callproperty Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                     not
+                     dup
+                     iffalse ofs005b
+                     pop
+                     getlocal 4
+                     not
+            ofs005b:
+                     iffalse ofs0084
+                     debugline 16
+                     getlocal2
+                     getlocal1
+                     getlocal3
+                     getlocal 5
+                     callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                     add
+                     coerce_s
+                     setlocal2
+                     debugline 17
+                     getlocal 5
+                     convert_d
+                     setlocal3
+                     debugline 18
+                     pushtrue
+                     setlocal 4
+                     debugline 19
+                     getlocal2
+                     pushstring "<font size=\'23\'>"
+                     add
+                     setlocal2
+                     jump ofs00c3
+            ofs0084:
+                     debugline 20
+                     findpropstrict Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                     getlocal1
+                     getlocal 5
+                     callproperty Multiname("charAt",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                     callproperty Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                     convert_b
+                     dup
+                     iffalse ofs009e
+                     pop
+                     getlocal 4
+                     convert_b
+            ofs009e:
+                     iffalse ofs00c3
+                     debugline 21
+                     getlocal2
+                     getlocal1
+                     getlocal3
+                     getlocal 5
+                     callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                     add
+                     coerce_s
+                     setlocal2
+                     debugline 22
+                     getlocal 5
+                     convert_d
+                     setlocal3
+                     debugline 23
+                     pushfalse
+                     setlocal 4
+                     debugline 24
+                     getlocal2
+                     pushstring "<font size=\'40\'>"
+                     add
+                     setlocal2
+            ofs00c3:
+                     debugline 14
+                     inclocal_i 5
+            ofs00c7:
+                     getlocal 5
+                     getlocal1
+                     getproperty Multiname("length",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                     iflt ofs0040
+                     debugline 27
+                     getlocal2
+                     getlocal1
+                     getlocal3
+                     getlocal 5
+                     callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                     add
+                     coerce_s
+                     setlocal2
+                     debugline 28
+                     getlocal2
+                     pushstring "</font>"
+                     add
+                     setlocal2
+                     debugline 29
+                     getlocal2
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function Ch2(t:String, small:Number = 0) : String
+         {
+            trait method QName(PackageNamespace(""),"Ch2")
+               flag FINAL
+               dispid 4
+               method
+                  name "CGN/Ch2"
+                  flag HAS_OPTIONAL
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"Number")
+                  paramname "nt"
+                  paramname "nt"
+                  optional Integer(0)
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 5
+                     localcount 7
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CGN.as"
+                        debugline 31
+                        getlocal0
+                        pushscope
+                        debug 1, "t", 0, 31
+                        debug 1, "small", 1, 31
+                        debug 1, "nt", 2, 32
+                        debug 1, "pi", 3, 33
+                        debug 1, "isn", 4, 34
+                        debug 1, "i", 5, 36
+                        pushstring "<font size=\'"
+                        debugline 32
+                        findpropstrict Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlex Multiname("size",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlocal2
+                        add
+                        callproperty Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        add
+                        pushstring "\'>"
+                        add
+                        setlocal3
+                        debugline 33
+                        pushbyte 0
+                        convert_d
+                        setlocal 4
+                        debugline 34
+                        pushfalse
+                        setlocal 5
+                        debugline 36
+                        pushbyte 0
+                        setlocal 6
+                        jump ofs0106
+               ofs0057:
+                        label
+                        debugline 37
+                        findpropstrict Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlocal1
+                        getlocal 6
+                        callproperty Multiname("charAt",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        callproperty Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        not
+                        dup
+                        iffalse ofs0072
+                        pop
+                        getlocal 5
+                        not
+               ofs0072:
+                        iffalse ofs00af
+                        debugline 38
+                        getlocal3
+                        getlocal1
+                        getlocal 4
+                        getlocal 6
+                        callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                        add
+                        coerce_s
+                        setlocal3
+                        debugline 39
+                        getlocal 6
+                        convert_d
+                        setlocal 4
+                        debugline 40
+                        pushtrue
+                        setlocal 5
+                        debugline 41
+                        getlocal3
+                        pushstring "<font size=\'"
+                        findpropstrict Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlex Multiname("subsize",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlocal2
+                        add
+                        callproperty Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        add
+                        pushstring "\'>"
+                        add
+                        add
+                        coerce_s
+                        setlocal3
+                        jump ofs0102
+               ofs00af:
+                        debugline 42
+                        findpropstrict Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlocal1
+                        getlocal 6
+                        callproperty Multiname("charAt",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        callproperty Multiname("isNaN",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        convert_b
+                        dup
+                        iffalse ofs00c9
+                        pop
+                        getlocal 5
+                        convert_b
+               ofs00c9:
+                        iffalse ofs0102
+                        debugline 43
+                        getlocal3
+                        getlocal1
+                        getlocal 4
+                        getlocal 6
+                        callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                        add
+                        coerce_s
+                        setlocal3
+                        debugline 44
+                        getlocal 6
+                        convert_d
+                        setlocal 4
+                        debugline 45
+                        pushfalse
+                        setlocal 5
+                        debugline 46
+                        getlocal3
+                        pushstring "<font size=\'"
+                        findpropstrict Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlex Multiname("size",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        getlocal2
+                        add
+                        callproperty Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                        add
+                        pushstring "\'>"
+                        add
+                        add
+                        coerce_s
+                        setlocal3
+               ofs0102:
+                        debugline 36
+                        inclocal_i 6
+               ofs0106:
+                        getlocal 6
+                        getlocal1
+                        getproperty Multiname("length",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                        iflt ofs0057
+                        debugline 49
+                        getlocal3
+                        getlocal1
+                        getlocal 4
+                        getlocal 6
+                        callproperty Multiname("slice",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 2
+                        add
+                        coerce_s
+                        setlocal3
+                        debugline 50
+                        getlocal3
+                        pushstring "</font>"
+                        add
+                        setlocal3
+                        debugline 51
+                        getlocal3
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function Cn(t:Number) : String
+            {
+               trait method QName(PackageNamespace(""),"Cn")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "CGN/Cn"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"Number")
+                     paramname "nt"
+                     returns QName(PackageNamespace(""),"String")
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CGN.as"
+                           debugline 53
+                           getlocal0
+                           pushscope
+                           debug 1, "t", 0, 53
+                           debugline 54
+                           getlocal1
+                           pushbyte 1
+                           ifne ofs001b
+                           pushstring ""
+                           debugline 55
+                           returnvalue
+                  ofs001b:
+                           pushstring "<font size=\'40\'>"
+                           debugline 57
+                           findpropstrict Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")])
+                           getlocal1
+                           callproperty Multiname("String",[PrivateNamespace("CGN"),PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CGN"),StaticProtectedNs("CGN")]), 1
+                           add
+                           returnvalue
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }
+         
+         method
+            name ""
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 1
+               maxscopedepth 3
+               
+               code
+                  getlocal0
+                  pushscope
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CGN.as"
+                  debugline 3
+                  findpropstrict Multiname("CGN",[PackageNamespace("")])
+                  getlex QName(PackageNamespace(""),"Object")
+                  pushscope
+                  getlex Multiname("Object",[PrivateNamespace("CGN.as$297"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                  newclass 12
+                  popscope
+                  initproperty QName(PackageNamespace(""),"CGN")
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+         

@@ -1,0 +1,84 @@
+package
+{
+   import flash.media.Sound;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol14")]
+   public dynamic class mBoil1 extends Sound
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 5
+            maxscopedepth 6
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function mBoil1()
+      {
+         method
+            name "mBoil1/mBoil1"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 6
+               maxscopedepth 7
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 5
+      
+      code
+         getlocal0
+         pushscope
+         findpropstrict Multiname("mBoil1",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+         pushscope
+         getlex QName(PackageNamespace("flash.media"),"Sound")
+         pushscope
+         getlex QName(PackageNamespace("flash.media"),"Sound")
+         newclass 40
+         popscope
+         popscope
+         popscope
+         initproperty QName(PackageNamespace(""),"mBoil1")
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/"
+         debugline 24
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

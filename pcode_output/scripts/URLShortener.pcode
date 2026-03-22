@@ -1,0 +1,366 @@
+package
+{
+   import flash.events.*;
+   import flash.net.*;
+   
+   public class URLShortener extends EventDispatcher
+   {
+      
+      private static const IS_GD_URL:String = "http://is.gd/api.php?longurl=";
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 4
+            maxscopedepth 5
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "IS_GD_URL", 0, 32
+               findproperty QName(PrivateNamespace("URLShortener"),"IS_GD_URL")
+               pushstring "http://is.gd/api.php?longurl="
+               initproperty QName(PrivateNamespace("URLShortener"),"IS_GD_URL")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var urlLoader:URLLoader;
+      
+      private var urlRequest:URLRequest;
+      
+      private var _url:String;
+      
+      public function URLShortener()
+      {
+         method
+            name "URLShortener/URLShortener"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                  debugline 41
+                  getlocal0
+                  pushscope
+                  debugline 42
+                  getlocal0
+                  constructsuper 0
+                  debugline 43
+                  getlocal0
+                  callpropvoid Multiname("init",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  debugline 44
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function init() : void
+      {
+         trait method QName(PrivateNamespace("URLShortener"),"init")
+            dispid 0
+            method
+               name "URLShortener/private:init"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                     debugline 49
+                     getlocal0
+                     pushscope
+                     debugline 51
+                     getlocal0
+                     findpropstrict Multiname("URLLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.net")])
+                     constructprop Multiname("URLLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.net")]), 0
+                     initproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 52
+                     getlocal0
+                     findpropstrict Multiname("URLRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.net")])
+                     constructprop Multiname("URLRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.net")]), 0
+                     initproperty Multiname("urlRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 53
+                     getlocal0
+                     getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Event",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                     getproperty Multiname("COMPLETE",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("handleComplete",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("addEventListener",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                     debugline 54
+                     getlocal0
+                     getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("IOErrorEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                     getproperty Multiname("IO_ERROR",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("handleError",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("addEventListener",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                     debugline 55
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function get url() : String
+         {
+            trait getter QName(PackageNamespace(""),"url")
+               dispid 0
+               method
+                  name "URLShortener/url/get"
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 1
+                     localcount 1
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                        debugline 73
+                        getlocal0
+                        pushscope
+                        debugline 75
+                        getlocal0
+                        getproperty Multiname("_url",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function shorten(url:String) : void
+            {
+               trait method QName(PackageNamespace(""),"shorten")
+                  dispid 0
+                  method
+                     name "URLShortener/shorten"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     paramname "URLRequest"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                           debugline 88
+                           getlocal0
+                           pushscope
+                           debug 1, "url", 0, 88
+                           debugline 90
+                           getlocal0
+                           pushnull
+                           initproperty Multiname("_url",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 91
+                           getlocal0
+                           getproperty Multiname("urlRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("IS_GD_URL",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal1
+                           add
+                           setproperty Multiname("url",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 92
+                           getlocal0
+                           getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           getproperty Multiname("urlRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           callpropvoid Multiname("load",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           debugline 93
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function destroy() : void
+               {
+                  trait method QName(PackageNamespace(""),"destroy")
+                     dispid 0
+                     method
+                        name "URLShortener/destroy"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                              debugline 100
+                              getlocal0
+                              pushscope
+                              debugline 102
+                              getlocal0
+                              pushnull
+                              initproperty Multiname("_url",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              debugline 103
+                              getlocal0
+                              pushnull
+                              initproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              debugline 104
+                              getlocal0
+                              pushnull
+                              initproperty Multiname("urlRequest",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              debugline 105
+                              getlocal0
+                              getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlex Multiname("Event",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                              getproperty Multiname("COMPLETE",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal0
+                              getproperty Multiname("handleComplete",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                              debugline 106
+                              getlocal0
+                              getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlex Multiname("IOErrorEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                              getproperty Multiname("IO_ERROR",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal0
+                              getproperty Multiname("handleError",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                              debugline 107
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private function handleComplete(event:Event) : void
+                  {
+                     trait method QName(PrivateNamespace("URLShortener"),"handleComplete")
+                        dispid 0
+                        method
+                           name "URLShortener/private:handleComplete"
+                           flag HAS_PARAM_NAMES
+                           param QName(PackageNamespace("flash.events"),"Event")
+                           paramname "URLRequest"
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 3
+                              localcount 2
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                                 debugline 109
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "event", 0, 109
+                                 debugline 111
+                                 getlocal0
+                                 getlocal0
+                                 getproperty Multiname("urlLoader",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 getproperty Multiname("data",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 initproperty Multiname("_url",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 debugline 112
+                                 findpropstrict Multiname("dispatchEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 findpropstrict Multiname("Event",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                 getlex Multiname("Event",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                 getproperty Multiname("COMPLETE",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 constructprop Multiname("Event",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")]), 1
+                                 callpropvoid Multiname("dispatchEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                 debugline 113
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     private function handleError(event:IOErrorEvent) : void
+                     {
+                        trait method QName(PrivateNamespace("URLShortener"),"handleError")
+                           dispid 0
+                           method
+                              name "URLShortener/private:handleError"
+                              flag HAS_PARAM_NAMES
+                              param QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                              paramname "URLRequest"
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 6
+                                 localcount 2
+                                 initscopedepth 5
+                                 maxscopedepth 6
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                                    debugline 116
+                                    getlocal0
+                                    pushscope
+                                    debug 1, "event", 0, 116
+                                    debugline 118
+                                    findpropstrict Multiname("dispatchEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    findpropstrict Multiname("IOErrorEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                    getlex Multiname("IOErrorEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                    getproperty Multiname("IO_ERROR",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    pushfalse
+                                    pushfalse
+                                    pushstring "Shortening failed"
+                                    constructprop Multiname("IOErrorEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")]), 4
+                                    callpropvoid Multiname("dispatchEvent",[PrivateNamespace("URLShortener"),PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("URLShortener"),StaticProtectedNs("URLShortener"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                    debugline 119
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                     }
+                  }
+                  
+                  method
+                     name ""
+                     returns null
+                     
+                     body
+                        maxstack 2
+                        localcount 1
+                        initscopedepth 1
+                        maxscopedepth 4
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                           debugline 25
+                           findpropstrict Multiname("URLShortener",[PackageNamespace("")])
+                           getlex QName(PackageNamespace(""),"Object")
+                           pushscope
+                           getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                           pushscope
+                           getlex Multiname("EventDispatcher",[PrivateNamespace("URLShortener.as$261"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.events")])
+                           newclass 36
+                           popscope
+                           popscope
+                           initproperty QName(PackageNamespace(""),"URLShortener")
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;URLShortener.as"
+                           debugline 18
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+                  

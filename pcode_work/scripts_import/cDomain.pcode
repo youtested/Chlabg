@@ -1,0 +1,844 @@
+package
+{
+   import flash.utils.*;
+   
+   public class cDomain
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var cCore:Dictionary;
+      
+      public var cCoreN:int = 0;
+      
+      public var cBox:Dictionary;
+      
+      public var cFmlBox:*;
+      
+      public var cFmlBoxId:String = "";
+      
+      public var cFmlBoxIdD:*;
+      
+      public var cDbs:cDb;
+      
+      public var cCL:cCloudLab;
+      
+      public var cSpeed:Number = 1;
+      
+      public var sTemp:Number = 25;
+      
+      public var sAtmN:Number = 1;
+      
+      public var sAtm:Array;
+      
+      public var sAtmPct:Array;
+      
+      public var sCircle:Number = 20;
+      
+      public var sExp:Boolean = true;
+      
+      public var sKid:Boolean = true;
+      
+      public var sLeak:Boolean = true;
+      
+      public var sGlow:Boolean = true;
+      
+      public var sIgn:Boolean = true;
+      
+      public var sLb1:* = 0;
+      
+      public var sLb2:* = 3;
+      
+      public var sLbAry:*;
+      
+      public var sCol1:* = 16777215;
+      
+      public var sCol2:* = 5943039;
+      
+      public var sCol3:* = 10066329;
+      
+      public var sCol4:* = 15628799;
+      
+      public var sFml:Boolean = true;
+      
+      public var sMgn:* = true;
+      
+      public var sAch:* = true;
+      
+      public var sSound:* = true;
+      
+      public var sColDesk:* = 1986948;
+      
+      public var sColPen:* = 0;
+      
+      public var sColBack:* = 0;
+      
+      public var sLeakSpd:* = 1;
+      
+      public var sFilter:* = 0.00001;
+      
+      public var sIgnTemp:* = 900;
+      
+      public var sFrzTemp:* = -100;
+      
+      public var sAuto:* = false;
+      
+      public var sS:*;
+      
+      public var LabType:Number = 0;
+      
+      public function cDomain(s:*, t:*)
+      {
+         method
+            name "cDomain/cDomain"
+            flag HAS_PARAM_NAMES
+            param null
+            param null
+            paramname null
+            paramname null
+            returns null
+            
+            body
+               maxstack 7
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                  debugline 58
+                  getlocal0
+                  pushscope
+                  debug 1, "s", 0, 58
+                  debug 1, "t", 1, 58
+                  debugline 6
+                  getlocal0
+                  findpropstrict Multiname("Dictionary",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain"),PackageNamespace("flash.utils")])
+                  pushtrue
+                  constructprop Multiname("Dictionary",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain"),PackageNamespace("flash.utils")]), 1
+                  initproperty QName(PackageNamespace(""),"cCore")
+                  debugline 8
+                  getlocal0
+                  findpropstrict Multiname("Dictionary",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain"),PackageNamespace("flash.utils")])
+                  pushtrue
+                  constructprop Multiname("Dictionary",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain"),PackageNamespace("flash.utils")]), 1
+                  initproperty QName(PackageNamespace(""),"cBox")
+                  debugline 13
+                  getlocal0
+                  findpropstrict Multiname("cCloudLab",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  constructprop Multiname("cCloudLab",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 0
+                  initproperty QName(PackageNamespace(""),"cCL")
+                  debugline 19
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  constructprop Multiname("Array",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 0
+                  initproperty QName(PackageNamespace(""),"sAtm")
+                  debugline 20
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  constructprop Multiname("Array",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 0
+                  initproperty QName(PackageNamespace(""),"sAtmPct")
+                  debugline 30
+                  getlocal0
+                  pushstring ""
+                  pushstring "cMass"
+                  pushstring "cVol"
+                  pushstring "cMolar"
+                  pushstring "cTemp"
+                  pushstring "cMol"
+                  newarray 6
+                  initproperty QName(PackageNamespace(""),"sLbAry")
+                  debugline 59
+                  getlocal0
+                  constructsuper 0
+                  debugline 60
+                  getlocal0
+                  getlocal2
+                  initproperty Multiname("LabType",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  debugline 61
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("sS",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  debugline 62
+                  getlocal0
+                  pushbyte 1
+                  initproperty Multiname("sAtmN",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  debugline 63
+                  getlocal0
+                  pushstring "O2"
+                  newarray 1
+                  initproperty Multiname("sAtm",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  debugline 64
+                  getlocal0
+                  findpropstrict Multiname("Number",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  pushbyte 1
+                  callproperty Multiname("Number",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 1
+                  newarray 1
+                  initproperty Multiname("sAtmPct",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                  debugline 65
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function cFocus(b:Boolean) : void
+      {
+         trait method QName(PackageNamespace(""),"cFocus")
+            dispid 0
+            method
+               name "cDomain/cFocus"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"Boolean")
+               paramname ""
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 2
+                  localcount 2
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                     debugline 51
+                     getlocal0
+                     pushscope
+                     debug 1, "b", 0, 51
+                     debugline 52
+                     getlocal1
+                     iffalse ofs0020
+                     debugline 53
+                     getlocal0
+                     pushbyte 20
+                     initproperty Multiname("sCircle",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                     jump ofs0028
+            ofs0020:
+                     debugline 55
+                     getlocal0
+                     pushbyte 20
+                     initproperty Multiname("sCircle",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+            ofs0028:
+                     debugline 57
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function cRemove(inName:String) : *
+         {
+            trait method QName(PackageNamespace(""),"cRemove")
+               dispid 0
+               method
+                  name "cDomain/cRemove"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  paramname null
+                  returns null
+                  
+                  body
+                     maxstack 3
+                     localcount 2
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                        debugline 66
+                        getlocal0
+                        pushscope
+                        debug 1, "inName", 0, 66
+                        debugline 68
+                        getlocal0
+                        getproperty Multiname("cCore",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                        getlocal1
+                        getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                        pushfalse
+                        setproperty Multiname("cLife",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                        debugline 69
+                        getlocal0
+                        getproperty Multiname("cCore",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                        getlocal1
+                        pushnull
+                        setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                        debugline 70
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function cRemove2(inName:String) : *
+            {
+               trait method QName(PackageNamespace(""),"cRemove2")
+                  dispid 0
+                  method
+                     name "cDomain/cRemove2"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     paramname null
+                     returns null
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                           debugline 71
+                           getlocal0
+                           pushscope
+                           debug 1, "inName", 0, 71
+                           debugline 73
+                           findpropstrict Multiname("trace",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           getlocal1
+                           callpropvoid Multiname("trace",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 1
+                           debugline 74
+                           getlocal0
+                           getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           pushfalse
+                           setproperty Multiname("cLife",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           debugline 75
+                           getlocal0
+                           getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           getlocal1
+                           pushnull
+                           setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                           debugline 76
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function cCreatMatter(inName:String, inMass:Number, inTemp:Number) : String
+               {
+                  trait method QName(PackageNamespace(""),"cCreatMatter")
+                     dispid 0
+                     method
+                        name "cDomain/cCreatMatter"
+                        flag HAS_PARAM_NAMES
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"Number")
+                        param QName(PackageNamespace(""),"Number")
+                        paramname "cMass"
+                        paramname "cMass"
+                        paramname "cMass"
+                        returns QName(PackageNamespace(""),"String")
+                        
+                        body
+                           maxstack 7
+                           localcount 7
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                              debugline 77
+                              getlocal0
+                              pushscope
+                              debug 1, "inName", 0, 77
+                              debug 1, "inMass", 1, 77
+                              debug 1, "inTemp", 2, 77
+                              debug 1, "nm_temp", 3, 79
+                              debugline 79
+                              getlocal1
+                              pushstring "_"
+                              add
+                              findpropstrict Multiname("String",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              getlocal0
+                              getproperty Multiname("cCoreN",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              callproperty Multiname("String",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 1
+                              add
+                              coerce_a
+                              setlocal 4
+                              debugline 80
+                              getlocal0
+                              getproperty Multiname("cCore",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              getlocal 4
+                              findpropstrict Multiname("cMatter",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              getlocal1
+                              getlocal2
+                              getlocal3
+                              getlocal0
+                              constructprop Multiname("cMatter",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 4
+                              setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              debugline 81
+                              getlocal0
+                              getproperty Multiname("cCore",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              getlocal 4
+                              getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              getlocal0
+                              getproperty Multiname("cCoreN",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              setproperty Multiname("cSign",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              debugline 82
+                              getlocal0
+                              dup
+                              setlocal 5
+                              getproperty Multiname("cCoreN",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              increment_i
+                              setlocal 6
+                              getlocal 5
+                              getlocal 6
+                              setproperty Multiname("cCoreN",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                              kill 6
+                              kill 5
+                              debugline 83
+                              getlocal 4
+                              returnvalue
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function cCreate(inNm:*, inType:*, inLink:*, inType2:*) : *
+                  {
+                     trait method QName(PackageNamespace(""),"cCreate")
+                        dispid 0
+                        method
+                           name "cDomain/cCreate"
+                           flag HAS_PARAM_NAMES
+                           param null
+                           param null
+                           param null
+                           param null
+                           paramname null
+                           paramname null
+                           paramname null
+                           paramname null
+                           returns null
+                           
+                           body
+                              maxstack 6
+                              localcount 6
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                 debugline 85
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "inNm", 0, 85
+                                 debug 1, "inType", 1, 85
+                                 debug 1, "inLink", 2, 85
+                                 debug 1, "inType2", 3, 85
+                                 jump ofs0163
+                        ofs0023:
+                                 label
+                                 debugline 90
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cDevice",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal3
+                                 getlocal 4
+                                 getlocal0
+                                 constructprop Multiname("cDevice",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 3
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 91
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal2
+                                 setproperty Multiname("cKind",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 92
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 93
+                                 jump ofs01f4
+                        ofs005b:
+                                 label
+                                 debugline 95
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cHeater",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal 4
+                                 getlocal0
+                                 constructprop Multiname("cHeater",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 2
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 96
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal2
+                                 setproperty Multiname("cKind",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 97
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 98
+                                 jump ofs01f4
+                        ofs0092:
+                                 label
+                                 debugline 100
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cTube",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal 4
+                                 getlocal0
+                                 constructprop Multiname("cTube",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 2
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 101
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal2
+                                 setproperty Multiname("cKind",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 102
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 103
+                                 jump ofs01f4
+                        ofs00c9:
+                                 label
+                                 debugline 105
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cStructure",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal 4
+                                 getlocal0
+                                 constructprop Multiname("cStructure",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 2
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 106
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal2
+                                 setproperty Multiname("cKind",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 107
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 108
+                                 jump ofs01f4
+                        ofs0100:
+                                 label
+                                 debugline 110
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cStructure",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal 4
+                                 getlocal0
+                                 constructprop Multiname("cStructure",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 2
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 111
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal2
+                                 setproperty Multiname("cKind",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 112
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 113
+                                 jump ofs01f4
+                        ofs0137:
+                                 label
+                                 debugline 115
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 findpropstrict Multiname("cGroup",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal0
+                                 constructprop Multiname("cGroup",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 1
+                                 setproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 116
+                                 getlocal0
+                                 getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 getlocal1
+                                 setproperty Multiname("cName",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                 debugline 117
+                                 jump ofs01f4
+                        ofs015e:
+                                 label
+                                 jump ofs01f4
+                        ofs0163:
+                                 debugline 87
+                                 getlocal2
+                                 setlocal 5
+                                 pushstring "cDevice"
+                                 debugline 89
+                                 getlocal 5
+                                 ifstrictne ofs0178
+                                 pushbyte 0
+                                 jump ofs01d8
+                        ofs0178:
+                                 pushstring "cHeater"
+                                 debugline 94
+                                 getlocal 5
+                                 ifstrictne ofs0189
+                                 pushbyte 1
+                                 jump ofs01d8
+                        ofs0189:
+                                 pushstring "cTube"
+                                 debugline 99
+                                 getlocal 5
+                                 ifstrictne ofs019a
+                                 pushbyte 2
+                                 jump ofs01d8
+                        ofs019a:
+                                 pushstring "cStructure"
+                                 debugline 104
+                                 getlocal 5
+                                 ifstrictne ofs01ab
+                                 pushbyte 3
+                                 jump ofs01d8
+                        ofs01ab:
+                                 pushstring "cTripod"
+                                 debugline 109
+                                 getlocal 5
+                                 ifstrictne ofs01bc
+                                 pushbyte 4
+                                 jump ofs01d8
+                        ofs01bc:
+                                 pushstring "cGroup"
+                                 debugline 114
+                                 getlocal 5
+                                 ifstrictne ofs01cc
+                                 pushbyte 5
+                                 jump ofs01d8
+                        ofs01cc:
+                                 jump ofs01d6
+                                 pushbyte 6
+                                 jump ofs01d6
+                        ofs01d6:
+                                 pushbyte 6
+                        ofs01d8:
+                                 kill 5
+                                 lookupswitch ofs015e, [ofs0023, ofs005b, ofs0092, ofs00c9, ofs0100, ofs0137, ofs015e]
+                        ofs01f4:
+                                 debugline 120
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function cExist() : *
+                     {
+                        trait method QName(PackageNamespace(""),"cExist")
+                           dispid 0
+                           method
+                              name "cDomain/cExist"
+                              returns null
+                              
+                              body
+                                 maxstack 2
+                                 localcount 4
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                    debugline 121
+                                    getlocal0
+                                    pushscope
+                                    pushundefined
+                                    coerce_a
+                                    setlocal1
+                                    debug 1, "i", 0, 123
+                                    debugline 123
+                                    pushbyte 0
+                                    setlocal2
+                                    getlocal0
+                                    getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                    coerce_a
+                                    setlocal3
+                                    jump ofs0042
+                           ofs001f:
+                                    label
+                                    getlocal3
+                                    getlocal2
+                                    nextname
+                                    coerce_a
+                                    setlocal1
+                                    debugline 125
+                                    getlocal0
+                                    getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                    getlocal1
+                                    getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                    pushnull
+                                    ifeq ofs0042
+                                    debugline 127
+                                    getlocal0
+                                    getproperty Multiname("cBox",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                    getlocal1
+                                    getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                    callpropvoid Multiname("cExist",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")]), 0
+                           ofs0042:
+                                    debugline 123
+                                    hasnext2 3, 2
+                                    iftrue ofs001f
+                                    kill 3
+                                    kill 2
+                                    debugline 130
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function cData(inS:*, conf:*) : *
+                        {
+                           trait method QName(PackageNamespace(""),"cData")
+                              dispid 0
+                              method
+                                 name "cDomain/cData"
+                                 flag HAS_PARAM_NAMES
+                                 param null
+                                 param null
+                                 paramname null
+                                 paramname null
+                                 returns null
+                                 
+                                 body
+                                    maxstack 2
+                                    localcount 3
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                       debugline 131
+                                       getlocal0
+                                       pushscope
+                                       debug 1, "inS", 0, 131
+                                       debug 1, "conf", 1, 131
+                                       debugline 132
+                                       getlocal0
+                                       getproperty Multiname("cDbs",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                       getproperty Multiname("cData",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                       getlocal1
+                                       getproperty Multiname("cType",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                       getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                       getlocal2
+                                       getproperty MultinameL([PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                       returnvalue
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function cNoteFml(inID:String, inIDD:*) : *
+                           {
+                              trait method QName(PackageNamespace(""),"cNoteFml")
+                                 dispid 0
+                                 method
+                                    name "cDomain/cNoteFml"
+                                    flag HAS_PARAM_NAMES
+                                    param QName(PackageNamespace(""),"String")
+                                    param null
+                                    paramname null
+                                    paramname null
+                                    returns null
+                                    
+                                    body
+                                       maxstack 2
+                                       localcount 3
+                                       initscopedepth 4
+                                       maxscopedepth 5
+                                       
+                                       code
+                                          debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                          debugline 134
+                                          getlocal0
+                                          pushscope
+                                          debug 1, "inID", 0, 134
+                                          debug 1, "inIDD", 1, 134
+                                          debugline 136
+                                          getlocal0
+                                          getlocal2
+                                          initproperty Multiname("cFmlBoxIdD",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                          debugline 137
+                                          getlocal0
+                                          getlocal1
+                                          initproperty Multiname("cFmlBoxId",[PrivateNamespace("cDomain"),PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cDomain"),StaticProtectedNs("cDomain")])
+                                          debugline 140
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                           }
+                        }
+                        
+                        method
+                           name ""
+                           returns null
+                           
+                           body
+                              maxstack 2
+                              localcount 1
+                              initscopedepth 1
+                              maxscopedepth 3
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                 debugline 4
+                                 findpropstrict Multiname("cDomain",[PackageNamespace("")])
+                                 getlex QName(PackageNamespace(""),"Object")
+                                 pushscope
+                                 getlex Multiname("Object",[PrivateNamespace("cDomain.as$252"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                                 newclass 1
+                                 popscope
+                                 initproperty QName(PackageNamespace(""),"cDomain")
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cDomain.as"
+                                 debugline 3
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                        

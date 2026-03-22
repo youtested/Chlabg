@@ -1,0 +1,315 @@
+package
+{
+   public class UIDUtil
+   {
+      
+      private static const ALPHA_CHAR_CODES:Array;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 17
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "ALPHA_CHAR_CODES", 0, 11
+               findproperty QName(PrivateNamespace("UIDUtil"),"ALPHA_CHAR_CODES")
+               pushbyte 48
+               pushbyte 49
+               pushbyte 50
+               pushbyte 51
+               pushbyte 52
+               pushbyte 53
+               pushbyte 54
+               pushbyte 55
+               pushbyte 56
+               pushbyte 57
+               pushbyte 65
+               pushbyte 66
+               pushbyte 67
+               pushbyte 68
+               pushbyte 69
+               pushbyte 70
+               newarray 16
+               initproperty QName(PrivateNamespace("UIDUtil"),"ALPHA_CHAR_CODES")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function UIDUtil()
+      {
+         method
+            name "UIDUtil/UIDUtil"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;UIDUtil.as"
+                  debugline 82
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function createUID() : String
+      {
+         trait method QName(PackageNamespace(""),"createUID")
+            flag FINAL
+            dispid 3
+            method
+               name "UIDUtil/createUID"
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 6
+                  localcount 9
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;UIDUtil.as"
+                     debugline 32
+                     getlocal0
+                     pushscope
+                     pushbyte 0
+                     setlocal3
+                     pushbyte 0
+                     setlocal 4
+                     debug 1, "uid", 0, 34
+                     debug 1, "index", 1, 35
+                     debug 1, "i", 2, 37
+                     debug 1, "j", 3, 38
+                     debug 1, "time", 4, 57
+                     debug 1, "timeString", 5, 65
+                     debugline 34
+                     findpropstrict Multiname("Array",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     pushbyte 36
+                     constructprop Multiname("Array",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     coerce QName(PackageNamespace(""),"Array")
+                     setlocal1
+                     debugline 35
+                     pushbyte 0
+                     setlocal2
+                     debugline 40
+                     pushbyte 0
+                     setlocal3
+                     jump ofs0079
+            ofs004e:
+                     label
+                     debugline 42
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 7
+                     getlex Multiname("ALPHA_CHAR_CODES",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     callproperty Multiname("random",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     pushbyte 16
+                     multiply
+                     callproperty Multiname("floor",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     getproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     kill 7
+                     debugline 40
+                     inclocal_i 3
+            ofs0079:
+                     getlocal3
+                     pushbyte 8
+                     iflt ofs004e
+                     debugline 45
+                     pushbyte 0
+                     setlocal3
+                     jump ofs00dc
+            ofs0089:
+                     label
+                     debugline 47
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 7
+                     pushbyte 45
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     debugline 49
+                     pushbyte 0
+                     setlocal 4
+                     jump ofs00ce
+            ofs00a3:
+                     label
+                     debugline 51
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 8
+                     getlex Multiname("ALPHA_CHAR_CODES",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     callproperty Multiname("random",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     pushbyte 16
+                     multiply
+                     callproperty Multiname("floor",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     getproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     kill 8
+                     debugline 49
+                     inclocal_i 4
+            ofs00ce:
+                     getlocal 4
+                     pushbyte 4
+                     iflt ofs00a3
+                     kill 7
+                     debugline 45
+                     inclocal_i 3
+            ofs00dc:
+                     getlocal3
+                     pushbyte 3
+                     iflt ofs0089
+                     debugline 55
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 7
+                     pushbyte 45
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     debugline 57
+                     findpropstrict Multiname("Date",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     constructprop Multiname("Date",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     callproperty Multiname("getTime",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     convert_d
+                     setlocal 5
+                     pushstring "0000000"
+                     debugline 65
+                     getlocal 5
+                     pushbyte 16
+                     callproperty Multiname("toString",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     callproperty Multiname("toUpperCase",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     add
+                     pushbyte -8
+                     callproperty Multiname("substr",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     coerce_s
+                     setlocal 6
+                     debugline 67
+                     pushbyte 0
+                     setlocal3
+                     jump ofs0141
+            ofs0126:
+                     label
+                     debugline 69
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 8
+                     getlocal 6
+                     getlocal3
+                     callproperty Multiname("charCodeAt",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     kill 8
+                     debugline 67
+                     inclocal_i 3
+            ofs0141:
+                     getlocal3
+                     pushbyte 8
+                     iflt ofs0126
+                     debugline 72
+                     pushbyte 0
+                     setlocal3
+                     jump ofs017c
+            ofs0151:
+                     label
+                     debugline 74
+                     getlocal1
+                     getlocal2
+                     dup
+                     increment_i
+                     setlocal2
+                     dup
+                     setlocal 8
+                     getlex Multiname("ALPHA_CHAR_CODES",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getlex Multiname("Math",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     callproperty Multiname("random",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 0
+                     pushbyte 16
+                     multiply
+                     callproperty Multiname("floor",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 1
+                     getproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     setproperty MultinameL([PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     kill 8
+                     debugline 72
+                     inclocal_i 3
+            ofs017c:
+                     getlocal3
+                     pushbyte 4
+                     iflt ofs0151
+                     debugline 77
+                     getlex Multiname("String",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     getproperty Multiname("fromCharCode",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")])
+                     pushnull
+                     getlocal1
+                     callproperty Multiname("apply",[PrivateNamespace("UIDUtil"),PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("UIDUtil"),StaticProtectedNs("UIDUtil")]), 2
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 3
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;UIDUtil.as"
+            debugline 4
+            findpropstrict Multiname("UIDUtil",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex Multiname("Object",[PrivateNamespace("UIDUtil.as$304"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+            newclass 15
+            popscope
+            initproperty QName(PackageNamespace(""),"UIDUtil")
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

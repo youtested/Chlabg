@@ -1,0 +1,496 @@
+package
+{
+   import flash.events.Event;
+   import flash.events.HTTPStatusEvent;
+   import flash.events.IOErrorEvent;
+   import flash.events.SecurityErrorEvent;
+   import flash.net.URLLoader;
+   import flash.net.URLRequest;
+   
+   public class cCloudLab
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private const URL:String = "cloudLabDb.txt";
+      
+      private var cDbLoader:URLLoader;
+      
+      private var cDbReq:URLRequest;
+      
+      private var Version:String = "120";
+      
+      private var myPan:iPan;
+      
+      private var myDb:cDb;
+      
+      public function cCloudLab()
+      {
+         method
+            name "cCloudLab/cCloudLab"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                  debugline 17
+                  getlocal0
+                  pushscope
+                  debugline 17
+                  getlocal0
+                  constructsuper 0
+                  debugline 18
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private static function httpStatusHandler(e:HTTPStatusEvent) : void
+      {
+         trait method QName(PrivateNamespace("cCloudLab"),"httpStatusHandler")
+            flag FINAL
+            dispid 3
+            method
+               name "cCloudLab/private:httpStatusHandler"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace("flash.events"),"HTTPStatusEvent")
+               paramname ""
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 2
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                     debugline 39
+                     getlocal0
+                     pushscope
+                     debug 1, "e", 0, 39
+                     debugline 40
+                     findpropstrict Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                     pushstring "httpStatusHandler:"
+                     getlocal1
+                     add
+                     callpropvoid Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                     debugline 41
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private static function securityErrorHandler(e:SecurityErrorEvent) : void
+         {
+            trait method QName(PrivateNamespace("cCloudLab"),"securityErrorHandler")
+               flag FINAL
+               dispid 4
+               method
+                  name "cCloudLab/private:securityErrorHandler"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace("flash.events"),"SecurityErrorEvent")
+                  paramname ""
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 2
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                        debugline 42
+                        getlocal0
+                        pushscope
+                        debug 1, "e", 0, 42
+                        debugline 43
+                        findpropstrict Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                        pushstring "securityErrorHandler:"
+                        getlocal1
+                        add
+                        callpropvoid Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                        debugline 44
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function iSetPan(p:iPan, d:cDb) : void
+            {
+               trait method QName(PackageNamespace(""),"iSetPan")
+                  dispid 0
+                  method
+                     name "cCloudLab/iSetPan"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"iPan")
+                     param QName(PackageNamespace(""),"cDb")
+                     paramname ""
+                     paramname ""
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 2
+                        localcount 3
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                           debugline 19
+                           getlocal0
+                           pushscope
+                           debug 1, "p", 0, 19
+                           debug 1, "d", 1, 19
+                           debugline 20
+                           getlocal0
+                           getlocal1
+                           initproperty Multiname("myPan",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                           debugline 21
+                           getlocal0
+                           getlocal2
+                           initproperty Multiname("myDb",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                           debugline 22
+                           getlocal0
+                           getlocal2
+                           getproperty Multiname("cCloudVersion",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                           iffalse ofs0035
+                           getlocal2
+                           getproperty Multiname("cCloudVersion",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                           coerce_s
+                           jump ofs0038
+                  ofs0035:
+                           pushstring "120"
+                  ofs0038:
+                           initproperty Multiname("Version",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                           debugline 23
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function cLoad() : void
+               {
+                  trait method QName(PackageNamespace(""),"cLoad")
+                     dispid 0
+                     method
+                        name "cCloudLab/cLoad"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 1
+                           localcount 2
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                              debugline 24
+                              getlocal0
+                              pushscope
+                              debug 1, "rnd", 0, 27
+                              debugline 26
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private function cDbError(e:IOErrorEvent) : void
+                  {
+                     trait method QName(PrivateNamespace("cCloudLab"),"cDbError")
+                        dispid 0
+                        method
+                           name "cCloudLab/private:cDbError"
+                           flag HAS_PARAM_NAMES
+                           param QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                           paramname ""
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                                 debugline 45
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "e", 0, 45
+                                 debugline 47
+                                 findpropstrict Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                 getlocal1
+                                 getproperty Multiname("text",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                 callpropvoid Multiname("trace",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                 debugline 48
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     private function cDbLoaded(e:Event) : *
+                     {
+                        trait method QName(PrivateNamespace("cCloudLab"),"cDbLoaded")
+                           dispid 0
+                           method
+                              name "cCloudLab/private:cDbLoaded"
+                              flag HAS_PARAM_NAMES
+                              param QName(PackageNamespace("flash.events"),"Event")
+                              paramname null
+                              returns null
+                              
+                              body
+                                 maxstack 3
+                                 localcount 14
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                                    debugline 49
+                                    getlocal0
+                                    pushscope
+                                    pushnull
+                                    coerce_s
+                                    setlocal 4
+                                    pushbyte 0
+                                    convert_u
+                                    setlocal 5
+                                    pushundefined
+                                    coerce_a
+                                    setlocal 8
+                                    pushundefined
+                                    coerce_a
+                                    setlocal 9
+                                    pushnull
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 10
+                                    pushnull
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 11
+                                    debug 1, "e", 0, 49
+                                    debug 1, "Input", 1, 51
+                                    debug 1, "statues", 2, 52
+                                    debug 1, "version", 3, 53
+                                    debug 1, "gross", 4, 54
+                                    debug 1, "main", 5, 55
+                                    debug 1, "mainr", 6, 56
+                                    debugline 51
+                                    findpropstrict Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    constructprop Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 0
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal2
+                                    pushstring "N"
+                                    debugline 52
+                                    coerce_s
+                                    setlocal3
+                                    debugline 55
+                                    findpropstrict Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    constructprop Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 0
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 6
+                                    debugline 56
+                                    findpropstrict Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    constructprop Multiname("Array",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 0
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 7
+                                    debugline 57
+                                    getlocal0
+                                    getproperty Multiname("cDbLoader",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getproperty Multiname("data",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    pushnull
+                                    ifeq ofs00ab
+                                    debugline 58
+                                    findpropstrict Multiname("String",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getlocal0
+                                    getproperty Multiname("cDbLoader",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getproperty Multiname("data",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    callproperty Multiname("String",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    pushstring "|"
+                                    callproperty Multiname("split",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal2
+                                    debugline 59
+                                    getlocal2
+                                    pushbyte 0
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    coerce_s
+                                    setlocal3
+                           ofs00ab:
+                                    debugline 61
+                                    getlocal3
+                                    pushstring "A"
+                                    ifne ofs01a6
+                                    debug 1, "i", 7, 66
+                                    debug 1, "j", 8, 71
+                                    debugline 62
+                                    getlocal2
+                                    pushbyte 1
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    coerce_s
+                                    setlocal 4
+                                    debugline 63
+                                    getlocal0
+                                    getproperty Multiname("myDb",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getlocal 4
+                                    callpropvoid Multiname("cSaveVersion",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    debugline 64
+                                    findpropstrict Multiname("Number",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getlocal2
+                                    pushbyte 2
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    callproperty Multiname("Number",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    convert_u
+                                    setlocal 5
+                                    debugline 65
+                                    getlocal2
+                                    pushbyte 3
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    pushstring "*"
+                                    callproperty Multiname("split",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 6
+                                    debugline 66
+                                    pushbyte 0
+                                    setlocal 12
+                                    getlocal 6
+                                    coerce_a
+                                    setlocal 13
+                                    jump ofs013b
+                           ofs010c:
+                                    label
+                                    getlocal 13
+                                    getlocal 12
+                                    nextname
+                                    coerce_a
+                                    setlocal 8
+                                    debug 1, "submain", 9, 67
+                                    debugline 67
+                                    getlocal 6
+                                    getlocal 8
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    pushstring "~"
+                                    callproperty Multiname("split",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 10
+                                    debugline 68
+                                    getlocal0
+                                    getproperty Multiname("myDb",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getlocal 10
+                                    callpropvoid Multiname("cAddReq",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                           ofs013b:
+                                    debugline 66
+                                    hasnext2 13, 12
+                                    iftrue ofs010c
+                                    kill 13
+                                    kill 12
+                                    debugline 70
+                                    getlocal2
+                                    pushbyte 4
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    pushstring "*"
+                                    callproperty Multiname("split",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 7
+                                    debugline 71
+                                    pushbyte 0
+                                    setlocal 12
+                                    getlocal 7
+                                    coerce_a
+                                    setlocal 13
+                                    jump ofs0199
+                           ofs016a:
+                                    label
+                                    getlocal 13
+                                    getlocal 12
+                                    nextname
+                                    coerce_a
+                                    setlocal 9
+                                    debug 1, "submainr", 10, 72
+                                    debugline 72
+                                    getlocal 7
+                                    getlocal 9
+                                    getproperty MultinameL([PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    pushstring "~"
+                                    callproperty Multiname("split",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                                    coerce QName(PackageNamespace(""),"Array")
+                                    setlocal 11
+                                    debugline 73
+                                    getlocal0
+                                    getproperty Multiname("myDb",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")])
+                                    getlocal 11
+                                    callpropvoid Multiname("cAddReqR",[PrivateNamespace("cCloudLab"),PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cCloudLab"),StaticProtectedNs("cCloudLab")]), 1
+                           ofs0199:
+                                    debugline 71
+                                    hasnext2 13, 12
+                                    iftrue ofs016a
+                                    kill 13
+                                    kill 12
+                           ofs01a6:
+                                    debugline 77
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                     }
+                  }
+                  
+                  method
+                     name ""
+                     returns null
+                     
+                     body
+                        maxstack 2
+                        localcount 1
+                        initscopedepth 1
+                        maxscopedepth 3
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                           debugline 10
+                           findpropstrict Multiname("cCloudLab",[PackageNamespace("")])
+                           getlex QName(PackageNamespace(""),"Object")
+                           pushscope
+                           getlex Multiname("Object",[PrivateNamespace("cCloudLab.as$336"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                           newclass 20
+                           popscope
+                           initproperty QName(PackageNamespace(""),"cCloudLab")
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cCloudLab.as"
+                           debugline 8
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+                  

@@ -1,0 +1,452 @@
+package
+{
+   import flash.display.Stage;
+   
+   public class Window
+   {
+      
+      private static var _stage:Stage;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "_stage", 0, 4
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function Window()
+      {
+         method
+            name "Window/Window"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                  debugline 67
+                  getlocal0
+                  pushscope
+                  debugline 67
+                  getlocal0
+                  constructsuper 0
+                  debugline 69
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function getDev() : Number
+      {
+         trait method QName(PackageNamespace(""),"getDev")
+            flag FINAL
+            dispid 3
+            method
+               name "Window/getDev"
+               returns QName(PackageNamespace(""),"Number")
+               
+               body
+                  maxstack 2
+                  localcount 1
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                     debugline 5
+                     getlocal0
+                     pushscope
+                     debugline 6
+                     findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                     callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                     pushshort 2208
+                     ifne ofs001c
+                     debugline 7
+                     pushbyte 1
+                     returnvalue
+            ofs001c:
+                     debugline 8
+                     findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                     callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                     pushshort 1334
+                     ifne ofs0031
+                     debugline 9
+                     pushbyte 1
+                     returnvalue
+            ofs0031:
+                     debugline 10
+                     findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                     callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                     pushshort 1136
+                     ifne ofs0046
+                     debugline 11
+                     pushbyte 1
+                     returnvalue
+            ofs0046:
+                     debugline 12
+                     findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                     callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                     pushshort 2048
+                     ifne ofs005b
+                     debugline 13
+                     pushbyte 2
+                     returnvalue
+            ofs005b:
+                     debugline 14
+                     findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                     callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                     pushshort 1024
+                     ifne ofs0070
+                     debugline 15
+                     pushbyte 2
+                     returnvalue
+            ofs0070:
+                     debugline 17
+                     pushbyte 1
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function getRes() : Number
+         {
+            trait method QName(PackageNamespace(""),"getRes")
+               flag FINAL
+               dispid 4
+               method
+                  name "Window/getRes"
+                  returns QName(PackageNamespace(""),"Number")
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                        debugline 22
+                        getlocal0
+                        pushscope
+                        debugline 23
+                        findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                        callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                        pushshort 2208
+                        ifne ofs001c
+                        debugline 24
+                        pushdouble 1.4
+                        returnvalue
+               ofs001c:
+                        debugline 25
+                        findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                        callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                        pushshort 1334
+                        ifne ofs0031
+                        debugline 26
+                        pushdouble 1.4
+                        returnvalue
+               ofs0031:
+                        debugline 27
+                        findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                        callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                        pushshort 1136
+                        ifne ofs0046
+                        debugline 28
+                        pushdouble 1.4
+                        returnvalue
+               ofs0046:
+                        debugline 29
+                        findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                        callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                        pushshort 2048
+                        ifne ofs005b
+                        debugline 30
+                        pushbyte 1
+                        returnvalue
+               ofs005b:
+                        debugline 31
+                        findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                        callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                        pushshort 1024
+                        ifne ofs0070
+                        debugline 32
+                        pushbyte 1
+                        returnvalue
+               ofs0070:
+                        debugline 34
+                        pushdouble 1.4
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function getRes2() : Number
+            {
+               trait method QName(PackageNamespace(""),"getRes2")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "Window/getRes2"
+                     returns QName(PackageNamespace(""),"Number")
+                     
+                     body
+                        maxstack 2
+                        localcount 1
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                           debugline 39
+                           getlocal0
+                           pushscope
+                           debugline 40
+                           findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                           callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                           pushshort 2208
+                           ifne ofs001c
+                           debugline 41
+                           pushdouble 1.2
+                           returnvalue
+                  ofs001c:
+                           debugline 42
+                           findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                           callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                           pushshort 1334
+                           ifne ofs0031
+                           debugline 43
+                           pushdouble 1.2
+                           returnvalue
+                  ofs0031:
+                           debugline 44
+                           findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                           callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                           pushshort 1136
+                           ifne ofs0046
+                           debugline 45
+                           pushdouble 1.2
+                           returnvalue
+                  ofs0046:
+                           debugline 46
+                           findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                           callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                           pushshort 2048
+                           ifne ofs005b
+                           debugline 47
+                           pushbyte 1
+                           returnvalue
+                  ofs005b:
+                           debugline 48
+                           findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                           callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                           pushshort 1024
+                           ifne ofs0070
+                           debugline 49
+                           pushbyte 1
+                           returnvalue
+                  ofs0070:
+                           debugline 51
+                           pushdouble 1.2
+                           returnvalue
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public static function getWidth(_percent:Number = 100) : Number
+               {
+                  trait method QName(PackageNamespace(""),"getWidth")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "Window/getWidth"
+                        flag HAS_OPTIONAL
+                        flag HAS_PARAM_NAMES
+                        param QName(PackageNamespace(""),"Number")
+                        paramname "_stage"
+                        optional Integer(100)
+                        returns QName(PackageNamespace(""),"Number")
+                        
+                        body
+                           maxstack 2
+                           localcount 2
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                              debugline 54
+                              getlocal0
+                              pushscope
+                              debug 1, "_percent", 0, 54
+                              debugline 55
+                              getlex Multiname("_stage",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                              getproperty Multiname("fullScreenWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                              getlocal1
+                              multiply
+                              pushbyte 100
+                              divide
+                              returnvalue
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public static function getHeight(_percent:Number = 100) : Number
+                  {
+                     trait method QName(PackageNamespace(""),"getHeight")
+                        flag FINAL
+                        dispid 7
+                        method
+                           name "Window/getHeight"
+                           flag HAS_OPTIONAL
+                           flag HAS_PARAM_NAMES
+                           param QName(PackageNamespace(""),"Number")
+                           paramname "_stage"
+                           optional Integer(100)
+                           returns QName(PackageNamespace(""),"Number")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 3
+                              maxscopedepth 4
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                                 debugline 57
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "_percent", 0, 57
+                                 debugline 58
+                                 getlex Multiname("_stage",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                 getproperty Multiname("fullScreenHeight",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                 getlocal1
+                                 multiply
+                                 pushbyte 100
+                                 divide
+                                 returnvalue
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public static function init(__stage:Stage) : void
+                     {
+                        trait method QName(PackageNamespace(""),"init")
+                           flag FINAL
+                           dispid 8
+                           method
+                              name "Window/init"
+                              flag HAS_PARAM_NAMES
+                              param QName(PackageNamespace("flash.display"),"Stage")
+                              paramname "Window.as$291"
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 2
+                                 localcount 2
+                                 initscopedepth 3
+                                 maxscopedepth 4
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                                    debugline 60
+                                    getlocal0
+                                    pushscope
+                                    debug 1, "__stage", 0, 60
+                                    debugline 61
+                                    findproperty Multiname("_stage",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                    getlocal1
+                                    setproperty Multiname("_stage",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                    debugline 62
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public static function report() : void
+                        {
+                           trait method QName(PackageNamespace(""),"report")
+                              flag FINAL
+                              dispid 9
+                              method
+                                 name "Window/report"
+                                 returns QName(PackageNamespace(""),"void")
+                                 
+                                 body
+                                    maxstack 3
+                                    localcount 1
+                                    initscopedepth 3
+                                    maxscopedepth 4
+                                    
+                                    code
+                                       debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                                       debugline 63
+                                       getlocal0
+                                       pushscope
+                                       debugline 64
+                                       findpropstrict Multiname("trace",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                       findpropstrict Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                       callproperty Multiname("getWidth",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                                       findpropstrict Multiname("getHeight",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")])
+                                       callproperty Multiname("getHeight",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 0
+                                       callpropvoid Multiname("trace",[PrivateNamespace("Window"),PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Window"),StaticProtectedNs("Window")]), 2
+                                       debugline 66
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                        }
+                     }
+                     
+                     method
+                        name ""
+                        returns null
+                        
+                        body
+                           maxstack 2
+                           localcount 1
+                           initscopedepth 1
+                           maxscopedepth 3
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                              debugline 3
+                              findpropstrict Multiname("Window",[PackageNamespace("")])
+                              getlex QName(PackageNamespace(""),"Object")
+                              pushscope
+                              getlex Multiname("Object",[PrivateNamespace("Window.as$291"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                              newclass 9
+                              popscope
+                              initproperty QName(PackageNamespace(""),"Window")
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;;Window.as"
+                              debugline 2
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                     

@@ -1,0 +1,522 @@
+package Chemist_fla
+{
+   import flash.accessibility.*;
+   import flash.desktop.*;
+   import flash.display.*;
+   import flash.errors.*;
+   import flash.events.*;
+   import flash.external.*;
+   import flash.filters.*;
+   import flash.geom.*;
+   import flash.media.*;
+   import flash.net.*;
+   import flash.net.drm.*;
+   import flash.sensors.*;
+   import flash.system.*;
+   import flash.text.*;
+   import flash.text.ime.*;
+   import flash.ui.*;
+   import flash.utils.*;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol1923")]
+   public dynamic class iGlow_113 extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var Ele:MovieClip;
+      
+      public function iGlow_113()
+      {
+         method
+            name "Chemist_fla:iGlow_113/Chemist_fla:iGlow_113"
+            returns null
+            
+            body
+               maxstack 25
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  findpropstrict Multiname("addFrameScript",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugfile "Chemist_fla.iGlow_113::iGlow_113"
+                  debugline 1
+                  pushbyte 0
+                  getlocal0
+                  getproperty Multiname("frame1",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 30
+                  getlocal0
+                  getproperty Multiname("frame31",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 42
+                  getlocal0
+                  getproperty Multiname("frame43",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 120
+                  getlocal0
+                  getproperty Multiname("frame121",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 140
+                  getlocal0
+                  getproperty Multiname("frame141",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 156
+                  getlocal0
+                  getproperty Multiname("frame157",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 192
+                  getlocal0
+                  getproperty Multiname("frame193",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 223
+                  getlocal0
+                  getproperty Multiname("frame224",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 235
+                  getlocal0
+                  getproperty Multiname("frame236",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 274
+                  getlocal0
+                  getproperty Multiname("frame275",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 286
+                  getlocal0
+                  getproperty Multiname("frame287",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushshort 330
+                  getlocal0
+                  getproperty Multiname("frame331",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("addFrameScript",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 24
+                  debugline 2
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      internal function frame1() : *
+      {
+         trait method QName(PackageInternalNs("Chemist_fla"),"frame1")
+            dispid 0
+            method
+               name "Chemist_fla:iGlow_113/Chemist_fla:frame1"
+               returns null
+               
+               body
+                  maxstack 1
+                  localcount 1
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     findpropstrict Multiname("stop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("stop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     debugfile "Chemist_fla.iGlow_113::frame1"
+                     debugline 2
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         internal function frame31() : *
+         {
+            trait method QName(PackageInternalNs("Chemist_fla"),"frame31")
+               dispid 0
+               method
+                  name "Chemist_fla:iGlow_113/Chemist_fla:frame31"
+                  returns null
+                  
+                  body
+                     maxstack 4
+                     localcount 1
+                     initscopedepth 10
+                     maxscopedepth 11
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        findpropstrict Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugfile "Chemist_fla.iGlow_113::frame31"
+                        debugline 1
+                        getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        callproperty Multiname("random",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                        pushbyte 14
+                        multiply
+                        pushbyte 15
+                        add
+                        callproperty Multiname("round",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                        callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                        debugline 2
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            internal function frame43() : *
+            {
+               trait method QName(PackageInternalNs("Chemist_fla"),"frame43")
+                  dispid 0
+                  method
+                     name "Chemist_fla:iGlow_113/Chemist_fla:frame43"
+                     returns null
+                     
+                     body
+                        maxstack 2
+                        localcount 1
+                        initscopedepth 10
+                        maxscopedepth 11
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugfile "Chemist_fla.iGlow_113::frame43"
+                           debugline 1
+                           pushbyte 1
+                           callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           debugline 2
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               internal function frame121() : *
+               {
+                  trait method QName(PackageInternalNs("Chemist_fla"),"frame121")
+                     dispid 0
+                     method
+                        name "Chemist_fla:iGlow_113/Chemist_fla:frame121"
+                        returns null
+                        
+                        body
+                           maxstack 2
+                           localcount 1
+                           initscopedepth 10
+                           maxscopedepth 11
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              findpropstrict Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              debugfile "Chemist_fla.iGlow_113::frame121"
+                              debugline 1
+                              pushbyte 64
+                              callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                              debugline 2
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  internal function frame141() : *
+                  {
+                     trait method QName(PackageInternalNs("Chemist_fla"),"frame141")
+                        dispid 0
+                        method
+                           name "Chemist_fla:iGlow_113/Chemist_fla:frame141"
+                           returns null
+                           
+                           body
+                              maxstack 2
+                              localcount 1
+                              initscopedepth 10
+                              maxscopedepth 11
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 debugfile "Chemist_fla.iGlow_113::frame141"
+                                 debugline 1
+                                 pushbyte 1
+                                 callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                 debugline 2
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     internal function frame157() : *
+                     {
+                        trait method QName(PackageInternalNs("Chemist_fla"),"frame157")
+                           dispid 0
+                           method
+                              name "Chemist_fla:iGlow_113/Chemist_fla:frame157"
+                              returns null
+                              
+                              body
+                                 maxstack 2
+                                 localcount 1
+                                 initscopedepth 10
+                                 maxscopedepth 11
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    debugfile "Chemist_fla.iGlow_113::frame157"
+                                    debugline 1
+                                    pushbyte 1
+                                    callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                    debugline 2
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        internal function frame193() : *
+                        {
+                           trait method QName(PackageInternalNs("Chemist_fla"),"frame193")
+                              dispid 0
+                              method
+                                 name "Chemist_fla:iGlow_113/Chemist_fla:frame193"
+                                 returns null
+                                 
+                                 body
+                                    maxstack 2
+                                    localcount 1
+                                    initscopedepth 10
+                                    maxscopedepth 11
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       debugfile "Chemist_fla.iGlow_113::frame193"
+                                       debugline 1
+                                       pushbyte 1
+                                       callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                       debugline 2
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           internal function frame224() : *
+                           {
+                              trait method QName(PackageInternalNs("Chemist_fla"),"frame224")
+                                 dispid 0
+                                 method
+                                    name "Chemist_fla:iGlow_113/Chemist_fla:frame224"
+                                    returns null
+                                    
+                                    body
+                                       maxstack 4
+                                       localcount 1
+                                       initscopedepth 10
+                                       maxscopedepth 11
+                                       
+                                       code
+                                          getlocal0
+                                          pushscope
+                                          findpropstrict Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          debugfile "Chemist_fla.iGlow_113::frame224"
+                                          debugline 1
+                                          getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          callproperty Multiname("random",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                                          pushbyte 14
+                                          multiply
+                                          pushshort 208
+                                          add
+                                          callproperty Multiname("round",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                          callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                          debugline 2
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              internal function frame236() : *
+                              {
+                                 trait method QName(PackageInternalNs("Chemist_fla"),"frame236")
+                                    dispid 0
+                                    method
+                                       name "Chemist_fla:iGlow_113/Chemist_fla:frame236"
+                                       returns null
+                                       
+                                       body
+                                          maxstack 2
+                                          localcount 1
+                                          initscopedepth 10
+                                          maxscopedepth 11
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             debugfile "Chemist_fla.iGlow_113::frame236"
+                                             debugline 1
+                                             pushbyte 1
+                                             callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             debugline 2
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 internal function frame275() : *
+                                 {
+                                    trait method QName(PackageInternalNs("Chemist_fla"),"frame275")
+                                       dispid 0
+                                       method
+                                          name "Chemist_fla:iGlow_113/Chemist_fla:frame275"
+                                          returns null
+                                          
+                                          body
+                                             maxstack 4
+                                             localcount 1
+                                             initscopedepth 10
+                                             maxscopedepth 11
+                                             
+                                             code
+                                                getlocal0
+                                                pushscope
+                                                findpropstrict Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                                debugfile "Chemist_fla.iGlow_113::frame275"
+                                                debugline 1
+                                                getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                                getlex Multiname("Math",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                                callproperty Multiname("random",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                                                pushbyte 14
+                                                multiply
+                                                pushshort 270
+                                                add
+                                                callproperty Multiname("round",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                                callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                                debugline 2
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    internal function frame287() : *
+                                    {
+                                       trait method QName(PackageInternalNs("Chemist_fla"),"frame287")
+                                          dispid 0
+                                          method
+                                             name "Chemist_fla:iGlow_113/Chemist_fla:frame287"
+                                             returns null
+                                             
+                                             body
+                                                maxstack 2
+                                                localcount 1
+                                                initscopedepth 10
+                                                maxscopedepth 11
+                                                
+                                                code
+                                                   getlocal0
+                                                   pushscope
+                                                   findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                                   debugfile "Chemist_fla.iGlow_113::frame287"
+                                                   debugline 1
+                                                   pushbyte 1
+                                                   callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                                   debugline 2
+                                                   returnvoid
+                                                end ; code
+                                             end ; body
+                                          end ; method
+                                       }
+                                       
+                                       internal function frame331() : *
+                                       {
+                                          trait method QName(PackageInternalNs("Chemist_fla"),"frame331")
+                                             dispid 0
+                                             method
+                                                name "Chemist_fla:iGlow_113/Chemist_fla:frame331"
+                                                returns null
+                                                
+                                                body
+                                                   maxstack 2
+                                                   localcount 1
+                                                   initscopedepth 10
+                                                   maxscopedepth 11
+                                                   
+                                                   code
+                                                      getlocal0
+                                                      pushscope
+                                                      findpropstrict Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                                      debugfile "Chemist_fla.iGlow_113::frame331"
+                                                      debugline 1
+                                                      pushbyte 1
+                                                      callpropvoid Multiname("gotoAndStop",[PrivateNamespace("Chemist_fla:iGlow_113"),PrivateNamespace("$61"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:iGlow_113"),StaticProtectedNs("Chemist_fla:iGlow_113"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                                      debugline 2
+                                                      returnvoid
+                                                   end ; code
+                                                end ; body
+                                             end ; method
+                                          }
+                                       }
+                                    }
+                                    
+                                    method
+                                       name ""
+                                       returns null
+                                       
+                                       body
+                                          maxstack 2
+                                          localcount 1
+                                          initscopedepth 1
+                                          maxscopedepth 9
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             getscopeobject 0
+                                             getlex QName(PackageNamespace(""),"Object")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"Sprite")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"MovieClip")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.display"),"MovieClip")
+                                             newclass 129
+                                             popscope
+                                             popscope
+                                             popscope
+                                             popscope
+                                             popscope
+                                             popscope
+                                             popscope
+                                             initproperty QName(PackageNamespace("Chemist_fla"),"iGlow_113")
+                                             debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/"
+                                             debugline 24
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                    

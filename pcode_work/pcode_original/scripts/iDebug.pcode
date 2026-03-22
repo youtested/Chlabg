@@ -1,0 +1,136 @@
+package
+{
+   import flash.display.MovieClip;
+   import flash.text.TextField;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol1934")]
+   public class iDebug extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var itxt:TextField;
+      
+      public function iDebug()
+      {
+         method
+            name "iDebug/iDebug"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iDebug.as"
+                  debugline 6
+                  getlocal0
+                  pushscope
+                  debugline 6
+                  getlocal0
+                  constructsuper 0
+                  debugline 8
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function iTrace(t:String) : void
+      {
+         trait method QName(PackageNamespace(""),"iTrace")
+            flag FINAL
+            dispid 3
+            method
+               name "iDebug/iTrace"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               paramname "iDebug"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 1
+                  localcount 2
+                  initscopedepth 9
+                  maxscopedepth 10
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iDebug.as"
+                     debugline 9
+                     getlocal0
+                     pushscope
+                     debug 1, "t", 0, 9
+                     debugline 12
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 9
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iDebug.as"
+            debugline 4
+            findpropstrict Multiname("iDebug",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"Sprite")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"MovieClip")
+            pushscope
+            getlex Multiname("MovieClip",[PackageNamespace(""),PackageNamespace("flash.display"),PrivateNamespace("iDebug.as$130"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+            newclass 170
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            initproperty QName(PackageNamespace(""),"iDebug")
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iDebug.as"
+            debugline 2
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

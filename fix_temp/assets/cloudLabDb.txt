@@ -1,0 +1,224 @@
+*Ag|Ag~Silver~2000~~10.49~9.32~~~962~2162~107.87~0~0xD8D8D8~0xD0D0D0~~~~0.8~0.8~0.06~~~2~~~~~2~~~Silver
+*Au|Au~Gold~2000~~19.32~17.31~~~1064.2~2856~196.97~0~0xFFD700~0xDAA520~~~~1.5~1.5~0.06~~~2~~~~~2~~~Gold
+*Fe|Fe~Iron~2000~~7.87~7.12~~~1538~2861~55.85~0~0xA19D94~0x8B8378~~~~1.5~1.5~0.06~~~2~~~~~2~~~Iron
+*Cu|Cu~Copper~2000~~8.96~8.02~~~1084.6~2562~63.55~0~0xB87333~0xA0522D~~~~1.5~1.5~0.06~~~2~~~~~2~~~Copper
+*Pb|Pb~Lead~2000~~11.34~10.66~~~327.46~1749~207.2~0~0x96969A~0x89898C~~~~1~1~0.9~~~2~~~~~5~~~Lead
+*Na|Na~Sodium~1000~~0.97~0.86~~~97.8~883~22.99~0~0xC0C0C0~0xA9A9A9~~~~1~1~~~~2~~~~~2~~~Sodium
+*K|K~Potassium~1000~~0.86~~~63.4~759~39.1~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Potassium
+*Al|Al~Aluminum~2000~~2.7~~~660.3~2519~26.98~0~0xD3D3D3~0xC0C0C0~~~~1~1~0.06~~~2~~~~~2~~~Aluminum
+*Zn|Zn~Zinc~1500~~7.14~6.57~~~419.5~907~65.38~0~0xB0C4DE~0x9DB4CD~~~~1.5~1.5~0.06~~~2~~~~~2~~~Zinc
+*Ni|Ni~Nickel~2000~~8.9~~~1455~2913~58.69~0~0xC0C0C0~0xA9A9A9~~~~1.5~1.5~0.06~~~2~~~~~2~~~Nickel
+*Co|Co~Cobalt~2000~~8.86~~~1495~2927~58.93~0~0x0047AB~0x003366~~~~1.5~1.5~0.06~~~2~~~~~2~~~Cobalt
+*Sn|Sn~Tin~1500~~7.29~6.99~~~231.9~2602~118.71~0~0xB0B0B0~0xA0A0A0~~~~1~1~0.06~~~2~~~~~2~~~Tin
+*Mg|Mg~Magnesium~1500~~1.74~~~650~1090~24.31~0~0xD3D3D3~0xC0C0C0~~~~1.5~1.5~0.06~~~2~~~~~2~~~Magnesium
+*Ca|Ca~Calcium~1500~~1.55~1.34~~~842~1484~40.08~0~0xF5F5DC~0xE8E4C9~~~~1.5~1.5~0.06~~~2~~~~~2~~~Calcium
+*Ba|Ba~Barium~1000~~3.51~3.33~~~727~1845~137.3~0~0x3F4753~~~~~1~1~~~~2~~~~~2~~~Barium
+*Sr|Sr~Strontium~1000~~2.64~~~777~1377~87.62~0~0xF5F5DC~~~~~1~~~~2~~~~~2~~~Strontium
+*Ti|Ti~Titanium~2500~~4.5~~~1668~3287~47.87~0~0xC0C0C0~~~~~1.5~~~~2~~~~~2~~~Titanium
+*Cr|Cr~Chromium~2500~~7.15~~~1907~2671~52~0~0x808080~~~~~1.5~~~~2~~~~~2~~~Chromium
+*Mn|Mn~Manganese~2000~~7.44~~~1246~2061~54.94~0~0xC0C0C0~~~~~1.5~~~~2~~~~~2~~~Manganese
+*Pt|Pt~Platinum~3000~~21.45~19.77~~~1768.3~3825~195.08~0~0xE3E5DD~~~~~1.5~1.5~0.06~~~2~~~~~2~~~Platinum
+*Pd|Pd~Palladium~2500~~12.02~~~1554.9~2963~106.42~0~0xE3E5DD~~~~~1.5~~~~2~~~~~2~~~Palladium
+*W|W~Tungsten~4000~~19.25~~~3422~5555~183.84~0~0x2F2F2F~~~~~1.5~~~~2~~~~~2~~~Tungsten
+*Mo|Mo~Molybdenum~3500~~10.22~~~2623~4639~95.95~0~0xC0C0C0~~~~~1.5~~~~2~~~~~2~~~Molybdenum
+*Hg|Hg~Mercury~500~~13.53~~~-38.8~356.6~200.59~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Mercury
+*Bi|Bi~Bismuth~1500~~9.78~~~271.4~1564~208.98~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Bismuth
+*Sb|Sb~Antimony~1500~~6.69~~~630.6~1587~121.76~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Antimony
+*As|As~Arsenic~1000~~5.727~5.22~~~615~616~74.92~0~0xDCDED3~~~~~1~1~~~~2~~~~~2~~~Arsenic
+*H2|H2~Hydrogen~100~~0.00008988~~~-259.14~-252.87~2.02~0~0xFFFFFF~0xFFFFFF~~~~0.5~0.5~~2~~~~~~~~Hydrogen
+*He|He~Helium~100~~0.0001785~~~-272.2~-268.9~4~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Helium
+*Ne|Ne~Neon~100~~0.0008999~~~-248.6~-246.1~20.18~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Neon
+*Ar|Ar~Argon~100~~0.0017837~~~-189.3~-185.9~39.95~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Argon
+*Kr|Kr~Krypton~100~~0.003733~~~-157.4~-153.2~83.8~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Krypton
+*Xe|Xe~Xenon~100~~0.005887~~~-111.8~-108.1~131.29~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Xenon
+*N2|N2~Nitrogen~100~~0.0012506~~~-210~-195.8~28.02~0~0xFFFFFF~~~~~0.5~0.5~~2~~~~~~~~Nitrogen
+*O2|O2~Oxygen~100~~0.001429~~~-218.8~-182.9~32~0~0xADD8E6~~~~0.5~0.5~~2~~~~~~~~Oxygen
+*Cl2|Cl2~Chlorine~100~~0.003214~~~-101.5~-34.6~70.9~0~0xADFF2F~~~~0.5~~~~2~~~~~~~~Chlorine
+*Br2|Br2~Bromine~100~~3.122~~~-7.2~58.8~159.81~0~0x8B4513~~~~~0.8~~~~2~~~~~~~~Bromine
+*I2|I2~Iodine~300~~4.93~~~113.7~184.3~253.81~0~0x4B0082~~~~~0.8~~~~2~~~~~~~~Iodine
+*S8|S8~Sulfur~500~~2.067~~~115.2~444.7~256.48~0~0xFFFF00~~~~~1~~~~2~~~~~~~~Sulfur
+*P4|P4~Phosphorus~500~~1.82~~~44.2~280~123.9~0~0xFF0000~~~~~1~~~~2~~~~~~~~Phosphorus
+*C|C~Carbon~4000~~2.267~~~3550~4827~12.01~0~0x2F2F2F~~~~~1~~~~2~~~~~~~~Carbon
+*Si|Si~Silicon~3000~~2.3296~~~1414~3265~28.09~0~0x3F3F3F~~~~~1~~~~2~~~~~~~~Silicon
+*B|B~Boron~3000~~2.34~~~2076~3927~10.81~0~0x696969~~~~~1~~~~2~~~~~~~~Boron
+*Li|Li~Lithium~1000~~0.534~~~180.5~1342~6.94~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Lithium
+*Cs|Cs~Cesium~500~~1.87~~~28.4~671~132.91~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Cesium
+*Rb|Rb~Rubidium~500~~1.532~~~39.3~688~85.47~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Rubidium
+*Ga|Ga~Gallium~1000~~5.91~4.35~~~29.8~2204~69.72~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Gallium
+*In|In~Indium~1500~~7.31~6.99~~~156.6~2072~114.82~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Indium
+*Ge|Ge~Germanium~2000~~5.323~~~938.3~2833~72.63~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Germanium
+*Se|Se~Selenium~800~~4.809~~~221~685~78.97~0~0x3F3F3F~~~~~1~~~~2~~~~~~~~Selenium
+*Te|Te~Tellurium~1500~~6.24~~~449.5~988~127.6~0~0xC0C0C0~~~~~1~~~~2~~~~~~~~Tellurium
+*O3|O3~Ozone~100~~0.002114~~~-192.2~-112~48~0~0x0099FF~~~0.3~~~0.3~~2~~~~~~~~Ozone
+*H2O|H2O~Water~500~~1.0~0.997~~~0~100~18.02~999999~0xADD8E6~0xADD8E6~~~~0.8~0.06~~~2~~~~~1~~~Water
+*NaCl|NaCl~Sodium Chloride~2000~~2.165~~~801~1413~58.44~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Chloride
+*KCl|KCl~Potassium Chloride~2000~~1.984~~~770~1420~74.55~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Chloride
+*CaO|CaO~Calcium Oxide~3000~~3.34~~~2572~2850~56.08~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Calcium Oxide
+*MgO|MgO~Magnesium Oxide~3500~~3.58~~~2852~3600~40.3~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Magnesium Oxide
+*Al2O3|Al2O3~Aluminum Oxide~3500~~3.97~~~2072~2977~101.96~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Aluminum Oxide
+*SiO2|SiO2~Silicon Dioxide~3000~~2.65~~~1710~2230~60.08~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Silicon Dioxide
+*TiO2|TiO2~Titanium Dioxide~3500~~4.26~~~1843~2972~79.87~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Titanium Dioxide
+*ZnO|ZnO~Zinc Oxide~2500~~5.61~~~1975~99999~81.39~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Zinc Oxide
+*CuO|CuO~Copper Oxide~2500~~6.31~~~1326~99999~79.55~0~0x000000~~~~~1~~~~2~~~~~1~~~Copper Oxide
+*Fe2O3|Fe2O3~Iron Oxide~3000~~5.24~~~1566~99999~159.69~0~0x8B0000~~~~~1~~~~2~~~~~1~~~Iron Oxide
+*PbO|PbO~Lead Oxide~2000~~9.53~~~888~1477~223.2~0~0xEEDBA2~0xEEDBA2~~~~1~1~0.9~~~2~~~~~1~~~Lead Oxide
+*CO2|CO2~Carbon Dioxide~100~~0.001977~~~-78.5~-56.6~44.01~0~0xFFFFFF~~~~~0.5~0.5~~2~~~~~~~~Carbon Dioxide
+*CO|CO~Carbon Monoxide~100~~0.00125~~~-205~-191.5~28.01~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Carbon Monoxide
+*SO2|SO2~Sulfur Dioxide~100~~0.002667~~~-72.7~-10~64.07~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Sulfur Dioxide
+*NH3|NH3~Ammonia~100~~0.00073~~~-77.73~-33.34~17.03~999999~0xFFFFFF~0xFFFFFF~~~~0.5~0.06~~~2~~~~~~~~Ammonia
+*HCl|HCl~Hydrochloric Acid~100~~0.00149~~~-27.3~110~36.46~999999~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Hydrochloric Acid
+*H2S|H2S~Hydrogen Sulfide~100~~0.001363~~~-85.6~-60.3~34.08~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Hydrogen Sulfide
+*CH4|CH4~Methane~100~~0.0007165~~~-182.5~-161.5~16.04~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Methane
+*C2H2|C2H2~Acetylene~100~~0.001097~~~-80.8~-84~26.04~0~0xFFFFFF~0xFFFFFF~~~~0.5~~~~2~~~~~~~~Acetylene
+*N2O|N2O~Nitrous Oxide~100~~0.001977~~~-90.86~-88.48~44.01~0.15~0xFFFFFF~0xFFFFFF~~~~0.5~~~~2~~~~~~~~Nitrous Oxide
+*NaOH|NaOH~Sodium Hydroxide~2000~~2.13~~~323~1388~40~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Hydroxide
+*KOH|KOH~Potassium Hydroxide~2000~~2.12~~~360~1327~56.11~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Hydroxide
+*H2SO4|H2SO4~Sulfuric Acid~1000~~1.84~~~10~337~98.08~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sulfuric Acid
+*HNO3|HNO3~Nitric Acid~500~~1.51~~~-42~83~63.01~999999~0xFFFF99~~~~~1~1~~~~2~~~~~1~~~Nitric Acid
+*CaCO3|CaCO3~Calcium Carbonate~2000~~2.71~~~825~99999~100.09~0.002~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Calcium Carbonate
+*Na2CO3|Na2CO3~Sodium Carbonate~2000~~2.54~~~851~1600~105.99~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Carbonate
+*NaHCO3|NaHCO3~Sodium Bicarbonate~1000~~2.2~~~50~99999~84.01~9~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Bicarbonate
+*AgNO3|AgNO3~Silver Nitrate~1000~~4.35~~~212~440~169.87~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Silver Nitrate
+*CuSO4|CuSO4~Copper Sulfate~1500~~3.6~~~150~99999~159.61~999999~0x70B0A8~~~~~1~1~~~~2~~~~~1~~~Copper Sulfate
+*FeCl3|FeCl3~Iron Chloride~1500~~2.9~~~306~316~162.2~999999~0x8B4513~~~~~1~1~~~~2~~~~~1~~~Iron Chloride
+*KMnO4|KMnO4~Potassium Permanganate~1500~~2.7~~~240~99999~158.03~999999~0x4B0082~~~~~1~1~~~~2~~~~~1~~~Potassium Permanganate
+*PbI2|PbI2~Lead Iodide~1500~~6.16~~~402~872~461.01~0~0xFED710~~~~0xFED710~1~1~0~0~0~2~~~~~1~~~Lead(II) Iodide
+*KI|KI~Potassium Iodide~1500~~3.123~~~681~1330~166~140~0xFFFFFF~~~~0xFFFFFF~1~1~0~0~0~2~~~~~1~~~Potassium Iodide
+*AgCl|AgCl~Silver Chloride~1500~~5.56~~~455~1547~143.32~0.0002~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Silver Chloride
+*AgBr|AgBr~Silver Bromide~1500~~6.47~~~432~1502~187.77~0.0001~0xFFFF99~~~~~1~1~~~~2~~~~~1~~~Silver Bromide
+*Na2O|Na2O~Sodium Oxide~2000~~2.27~~~1132~1950~61.98~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Sodium Oxide
+*CuCO3|CuCO3~Copper Carbonate~1500~~3.9~~~200~99999~123.55~0~0x70B0A8~~~~~1~1~~~~2~~~~~1~~~Copper Carbonate
+*AsI3|AsI3~Arsenic Triiodide~1000~~4.69~~~146~403~455.64~6~0x994732~~~~0x994732~0.9~0.9~~~~2~~~~~1~~~Arsenic Triiodide
+*As4O6|As4O6~Arsenic Trioxide~1000~~3.74~~~312.2~465~395.68~0~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Arsenic Trioxide
+*NH4Cl|NH4Cl~Ammonium Chloride~1000~~1.53~~~338~520~53.49~37.2~0xFFFFFF~0xFFFFFF~~~~1~1~0.06~~~2~~~~~1~~~Ammonium Chloride
+*NH4NO3|NH4NO3~Ammonium Nitrate~1000~~1.725~~~169.6~210~80.05~150~0xE1E8EE~0xFFFFFF~~~~1~1~0.06~~~2~~~~~1~~~Ammonium Nitrate
+*CaC2|CaC2~Calcium Carbide~2500~~2.22~~~2160~2300~64.1~0~0xF9ECC9~~~~0xF9ECC9~1~1~~~~2~~~~~1~~~Calcium Carbide
+*CsBr|CsBr~Cesium Bromide~1500~~4.44~~~636~1300~212.81~124.3~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Cesium Bromide
+*Li3N|Li3N~Lithium Nitride~1500~~1.27~~~813~99999~34.83~0~0xCC3173~~~~~0.9~~~~~2~~~~~~~~Lithium Nitride
+*BaCl2|BaCl2~Barium Chloride~2500~~3.86~~~962~1560~208.23~35.8~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Chloride
+*BaO|BaO~Barium Oxide~2500~~5.72~~~1923~2000~153.3~3.48~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Oxide
+*BaOH2|BaOH2~Barium Hydroxide~2500~~5.72~~~408~780~171.3~3.89~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Hydroxide
+*BaCO3|BaCO3~Barium Carbonate~2500~~4.29~~~811~1360~197.34~0.0024~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Carbonate
+*BaSO4|BaSO4~Barium Sulfate~2500~~4.5~~~1580~99999~233.39~0~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Sulfate
+*BaNO32|BaNO32~Barium Nitrate~2500~~3.24~~~590~99999~261.3~10.5~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Barium Nitrate
+*MgCl2|MgCl2~Magnesium Chloride~2000~~2.325~~~714~1418~95.21~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Magnesium Chloride
+*ZnCl2|ZnCl2~Zinc Chloride~1500~~2.91~~~283~732~136.29~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Zinc Chloride
+*FeCl2|FeCl2~Iron Chloride~2000~~3.16~~~677~1024~126.75~999999~0x8B4513~~~~~1~1~~~~2~~~~~1~~~Iron Chloride
+*NiCl2|NiCl2~Nickel Chloride~1500~~3.51~~~1001~987~129.6~999999~0x3CB371~~~~~1~1~~~~2~~~~~1~~~Nickel Chloride
+*PbCl2|PbCl2~Lead Chloride~1500~~5.85~5.45~~~501~950~278.1~0.45~0xFFFFFF~~~~~1~1~0.8~~~2~~~~~1~~~Lead Chloride
+*CoCl2|CoCl2~Cobalt Chloride~1500~~3.36~~~726~1049~129.84~999999~0x0047AB~~~~~1~1~~~~2~~~~~1~~~Cobalt Chloride
+*PbO2|PbO2~Lead Dioxide~1500~~9.38~~~290~99999~239.2~0~0x000000~~~~~1~1~0.8~~~2~~~~~1~~~Lead Dioxide
+*PbNO32|PbNO32~Lead Nitrate~1500~~4.53~~~270~99999~331.2~52~0xFFFFFF~~~~~1~1~0.8~~~2~~~~~1~~~Lead Nitrate
+*PbSO4|PbSO4~Lead Sulfate~1500~~6.29~~~1087~99999~303.3~0.004~0xFFFFFF~~~~~1~1~0.8~~~2~~~~~1~~~Lead Sulfate
+*PbF2|PbF2~Lead Fluoride~1500~~7.75~~~824~1293~245.2~0.064~0xFFFFFF~~~~~1~1~0.8~~~2~~~~~1~~~Lead Fluoride
+*NiO|NiO~Nickel Oxide~2500~~6.67~~~1955~2600~74.69~0~0x2F4F4F~~~~~1~1~~~~2~~~~~1~~~Nickel Oxide
+*ZnS|ZnS~Zinc Sulfide~2000~~4.09~~~1850~99999~97.47~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Zinc Sulfide
+*FeSO4|FeSO4~Iron Sulfate~1000~~1.898~~~64~99999~151.91~100~0x90D6C0~~~~~1~1~~~~2~~~~~1~~~Iron Sulfate
+*CaSO4|CaSO4~Calcium Sulfate~2000~~2.96~~~1460~1630~136.14~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Calcium Sulfate
+*MgSO4|MgSO4~Magnesium Sulfate~2000~~2.66~~~1124~99999~120.37~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Magnesium Sulfate
+*ZnSO4|ZnSO4~Zinc Sulfate~1500~~3.54~~~680~99999~161.47~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Zinc Sulfate
+*NiSO4|NiSO4~Nickel Sulfate~1500~~3.65~~~100~99999~154.76~999999~0x90D6C0~~~~~1~1~~~~2~~~~~1~~~Nickel Sulfate
+*MgCO3|MgCO3~Magnesium Carbonate~2000~~3.01~~~990~99999~84.31~0.001~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Magnesium Carbonate
+*ZnCO3|ZnCO3~Zinc Carbonate~1500~~4.44~~~140~99999~125.39~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Zinc Carbonate
+*SnO|SnO~Tin Oxide~2000~~6.9~~~1080~1800~134.71~0~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Tin Oxide
+*SnO2|SnO2~Tin Dioxide~2500~~6.95~~~1127~1800~150.71~0~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Tin Dioxide
+*Cr2O3|Cr2O3~Chromium Oxide~3000~~5.21~~~2439~3000~151.99~0~0x3D3D3D~~~~~1~1~~~~2~~~~~1~~~Chromium Oxide
+*MnO2|MnO2~Manganese Dioxide~2000~~5.03~~~535~99999~86.94~0~0x4B4B4B~~~~~1~1~~~~2~~~~~1~~~Manganese Dioxide
+*HgO|HgO~Mercury Oxide~1000~~11.04~~~500~99999~216.59~0~0xFF0000~~~~~1~~~~2~~~~~1~~~Mercury Oxide
+*HgCl2|HgCl2~Mercury Chloride~1000~~5.44~~~277~304~271.52~999999~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Mercury Chloride
+*AlCl3|AlCl3~Aluminum Chloride~1000~~2.48~~~192.4~180~133.34~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Aluminum Chloride
+*AlBr3|AlBr3~Aluminum Bromide~1000~~3.01~~~97.8~265~266.69~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Aluminum Bromide
+*FeOH2|FeOH2~Iron Hydroxide~1000~~3.4~~~100~99999~89.86~0~0x3CB371~~~~~1~~~~2~~~~~1~~~Iron Hydroxide
+*FeOH3|FeOH3~Iron Hydroxide~1000~~3.12~~~100~99999~106.87~0~0x8B4513~~~~~1~~~~2~~~~~1~~~Iron Hydroxide
+*MgOH2|MgOH2~Magnesium Hydroxide~1500~~2.37~~~350~99999~58.32~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Magnesium Hydroxide
+*AlOH3|AlOH3~Aluminum Hydroxide~1500~~2.42~~~300~99999~78~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Aluminum Hydroxide
+*NI3|NI3~Nitrogen Triiodide~500~~1.5~~~200~99999~394.72~0~0x571721~~~~~1~1~~~~2~~~~~~~~Nitrogen Triiodide
+*H2O2|H2O2~Hydrogen Peroxide~1000~~1.45~~~-0.43~150.2~34.01~99999~0xFFFFFF~~~~~0.1~0.1~0.1~~~0~0.0000000000033~~~~~~~Hydrogen Peroxide
+*SO3|SO3~Sulfur Trioxide~200~~0.00272~~~16.8~44.8~80.06~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Sulfur Trioxide
+*P4O6|P4O6~Phosphorus Trioxide~500~~2.13~~~24~173~219.88~0~0xFFFFFF~~~~~1~~~~2~~~~~~~~Phosphorus Trioxide
+*P4O10|P4O10~Phosphorus Pentoxide~700~~2.3~~~300~340~283.89~0~0xFFFFFF~~~~~1~~~~2~~~~~~~~Phosphorus Pentoxide
+*Sb2O3|Sb2O3~Antimony Trioxide~2000~~5.67~~~656~1550~291.5~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Antimony Trioxide
+*ZrO2|ZrO2~Zirconium Dioxide~3500~~5.68~~~2700~4300~123.22~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Zirconium Dioxide
+*LiCl|LiCl~Lithium Chloride~1500~~2.07~~~605~1382~42.39~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Lithium Chloride
+*LiOH|LiOH~Lithium Hydroxide~1000~~1.43~~~462~924~23.95~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Lithium Hydroxide
+*KBr|KBr~Potassium Bromide~1500~~2.75~~~734~1435~119~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Bromide
+*KNO3|KNO3~Potassium Nitrate~1000~~2.11~~~334~400~101.1~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Nitrate
+*K2SO4|K2SO4~Potassium Sulfate~2000~~2.66~~~1069~1689~174.26~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Sulfate
+*K2CO3|K2CO3~Potassium Carbonate~2000~~2.43~~~891~99999~138.21~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Potassium Carbonate
+*Na2SO4|Na2SO4~Sodium Sulfate~2000~~2.68~~~884~1429~142.04~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Sulfate
+*NaNO3|NaNO3~Sodium Nitrate~1000~~2.26~~~308~380~84.99~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Sodium Nitrate
+*NH42SO4|NH42SO4~Ammonium Sulfate~1500~~1.77~~~235~99999~132.14~74.4~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Ammonium Sulfate
+*SrCl2|SrCl2~Strontium Chloride~1500~~3.05~~~875~1250~158.53~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Strontium Chloride
+*SrO|SrO~Strontium Oxide~3000~~4.7~~~2430~99999~103.62~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Strontium Oxide
+*SrCO3|SrCO3~Strontium Carbonate~2000~~3.5~~~1494~99999~147.63~0.001~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Strontium Carbonate
+*CuCl2|CuCl2~Copper Chloride~1500~~3.39~~~498~1490~134.45~999999~0x70B0A8~~~~~1~1~~~~2~~~~~1~~~Copper Chloride
+*Cu2O|Cu2O~Copper Oxide~2000~~6.0~~~1235~1800~143.09~0~0xFF0000~~~~~1~~~~2~~~~~1~~~Copper Oxide
+*AgI|AgI~Silver Iodide~1500~~5.67~~~558~1506~234.77~0~0xFFFF99~~~~~1~1~~~~2~~~~~1~~~Silver Iodide
+*AgF|AgF~Silver Fluoride~1500~~5.85~~~435~1159~126.87~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Silver Fluoride
+*Ag2O|Ag2O~Silver Oxide~1500~~7.2~~~280~99999~231.74~0~0x2F2F2F~~~~~1~~~~2~~~~~1~~~Silver Oxide
+*Ag2S|Ag2S~Silver Sulfide~1500~~7.23~~~1098~99999~247.8~0~0x2F2F2F~~~~~1~~~~2~~~~~1~~~Silver Sulfide
+*Ag2SO4|Ag2SO4~Silver Sulfate~1500~~5.45~~~652~1085~311.8~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Silver Sulfate
+*Al2S3|Al2S3~Aluminum Sulfide~1500~~2.02~~~1100~1500~150.16~0~0xFFFF99~~~~~1~~~~2~~~~~1~~~Aluminum Sulfide
+*Cd|Cd~Cadmium~1500~~8.65~~~321~767~112.41~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Cadmium
+*Ce|Ce~Cerium~2500~~6.77~~~795~3443~140.12~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Cerium
+*Sc|Sc~Scandium~2500~~2.99~~~1541~2836~44.96~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Scandium
+*Y|Y~Yttrium~2500~~4.47~~~1526~3345~88.91~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Yttrium
+*Zr|Zr~Zirconium~3500~~6.51~~~1855~4409~91.22~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Zirconium
+*Nb|Nb~Niobium~3500~~8.57~~~2477~4744~92.91~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Niobium
+*Mo|Mo~Molybdenum~4000~~10.22~~~2623~4639~95.95~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Molybdenum
+*Ru|Ru~Ruthenium~3500~~12.37~~~2334~4150~101.07~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Ruthenium
+*Rh|Rh~Rhodium~3500~~12.41~~~1964~3695~102.91~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Rhodium
+*Os|Os~Osmium~4000~~22.59~~~3033~5012~190.23~0~0x2F2F2F~~~~~1~~~~2~~~~~2~~~Osmium
+*Ir|Ir~Iridium~4000~~22.56~~~2446~4428~192.22~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Iridium
+*Re|Re~Rhenium~4000~~21.02~~~3186~5596~186.21~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Rhenium
+*Tl|Tl~Thallium~1500~~11.85~~~304~1473~204.38~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Thallium
+*U|U~Uranium~3500~~18.95~~~1135~4131~238.03~0~0x3CB371~~~~~1~~~~2~~~~~2~~~Uranium
+*V|V~Vanadium~3000~~6.11~~~1910~3407~50.94~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Vanadium
+*Be|Be~Beryllium~2500~~1.85~~~1287~2469~9.01~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Beryllium
+*Ra|Ra~Radium~1500~~5.5~~~700~1737~226~0~0xC0C0C0~~~~~1~~~~2~~~~~2~~~Radium
+*Rn|Rn~Radon~100~~0.00973~~~-71~-61.8~222~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Radon
+*H3PO4|H3PO4~Phosphoric Acid~1000~~1.88~~~42.4~158~98~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Phosphoric Acid
+*CH3OH|CH3OH~Methanol~500~~0.79~~~-97.6~64.7~32.04~999999~0xFFFFFF~~~~~0.8~0.8~~2~~~~~1~~~Methanol
+*C2H5OH|C2H5OH~Ethanol~500~~0.789~~~-114.1~78.37~46.07~999999~0xFFFFFF~~~~~0.8~0.8~~2~~~~~1~~~Ethanol
+*C6H6|C6H6~Benzene~500~~0.88~~~5.5~80.1~78.11~999999~0xFFFFFF~~~~~0.8~0.8~~2~~~~~1~~~Benzene
+*C6H5CH3|C6H5CH3~Toluene~500~~0.87~~~-95~110.6~92.14~999999~0xFFFFFF~~~~~0.8~0.8~~2~~~~~1~~~Toluene
+*CH3COOH|CH3COOH~Acetic Acid~500~~1.05~~~16.6~118.1~60.05~999999~0xFFFFFF~~~~~0.8~0.8~~2~~~~~1~~~Acetic Acid
+*SnCl4|SnCl4~Tin Chloride~500~~2.23~~~-33~114~260.52~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Tin Chloride
+*TiCl4|TiCl4~Titanium Chloride~500~~1.73~~~-24~136~189.71~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Titanium Chloride
+*AlNO33|AlNO33~Aluminum Nitrate~1000~~1.81~~~73.4~135~213~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Aluminum Nitrate
+*Al2SO43|Al2SO43~Aluminum Sulfate~2000~~2.67~~~770~99999~342.15~999999~0xFFFFFF~~~~~1~1~~~~2~~~~~1~~~Aluminum Sulfate
+*HF|HF~Hydrofluoric Acid~500~~0.000991~~~-83.6~19.5~20.01~999999~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Hydrofluoric Acid
+*HBr|HBr~Hydrobromic Acid~100~~0.002365~~~-86.9~-66.8~80.91~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Hydrobromic Acid
+*HI|HI~Hydroiodic Acid~100~~0.003104~~~-50.8~-35.4~127.91~0~0xFFFFFF~~~~~0.5~~~~2~~~~~~~~Hydroiodic Acid
+*PbCO3|PbCO3~Lead Carbonate~1500~~6.58~~~315~99999~267.21~0~0xFFFFFF~~~~~1~1~0.8~~~2~~~~~1~~~Lead Carbonate
+*CaSO3|CaSO3~Calcium Sulfite~1500~~1.595~~~600~99999~120.17~0~0xFFFFFF~~~~~1~~~~2~~~~~1~~~Calcium Sulfite
+*CuO|CuO~Cupric Oxide~2500~~6.31~~~1326~99999~79.55~0~0x000000~~~~~1~~~~2~~~~~1~~~Cupric Oxide
+*K2Cr2O7|K2Cr2O7~Potassium Dichromate~1500~~2.68~~~398~99999~294.19~999999~0xFF4500~~~~~1~1~~~~2~~~~~1~~~Potassium Dichromate
+*Burner1|Burner1~Gas Burner 100C~100~~0.01~~~100~100~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 100C
+*Burner2|Burner2~Gas Burner 200C~200~~0.01~~~200~200~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 200C
+*Burner3|Burner3~Gas Burner 300C~300~~0.01~~~300~300~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 300C
+*Burner4|Burner4~Gas Burner 400C~400~~0.01~~~400~400~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 400C
+*Burner5|Burner5~Gas Burner 500C~500~~0.01~~~500~500~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 500C
+*Burner6|Burner6~Gas Burner 600C~600~~0.01~~~600~600~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 600C
+*Burner7|Burner7~Gas Burner 700C~700~~0.01~~~700~700~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 700C
+*Burner8|Burner8~Gas Burner 800C~800~~0.01~~~800~800~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 800C
+*Burner9|Burner9~Gas Burner 900C~900~~0.01~~~900~900~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 900C
+*Burner10|Burner10~Gas Burner 1000C~1000~~0.01~~~1000~1000~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1000C
+*Burner11|Burner11~Gas Burner 1100C~1100~~0.01~~~1100~1100~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1100C
+*Burner12|Burner12~Gas Burner 1200C~1200~~0.01~~~1200~1200~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1200C
+*Burner13|Burner13~Gas Burner 1300C~1300~~0.01~~~1300~1300~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1300C
+*Burner14|Burner14~Gas Burner 1400C~1400~~0.01~~~1400~1400~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1400C
+*Burner15|Burner15~Gas Burner 1500C~1500~~0.01~~~1500~1500~0.01~0~0xFF6600~~~~~1~~~~2~~~~~8~~~Gas Burner 1500C
+*H2O|~Reactions|1|2
+|H2O2_MnO2|H2O2_MnO2~2_0~4_1~H2O_O2~2_1~0_500~0~0.8~sr~~~~~~*FeOH2_H2O2|FeOH2_H2O2~2_1~1_4~FeOH3~2~0_500~0~0.8~sr~~~~~~*H2O2_KMnO4|H2O2_KMnO4~3_2~4_4~MnO2_KOH_H2O_O2~2_2_2_3~0*_500~0~0.1~sr~~~~~~*BaCl2_H2SO4|BaCl2_H2SO4~1_1~4_4~BaSO4_HCl~1_2~0_500~0~0.1~sr~~~~~~*BaO3_HCl|BaCO3_HCl~1_2~1_4~BaCl2_CO2_H2O~1_1_1~0_500~0~0.1~sr~~~~~~*BaNO32_H2SO4|BaNO32_H2SO4~1_1~4_4~HNO3_BaSO4~2_1~0_500~0~0.1~sr~~~~~~*BaO_H2O|BaO_H2O~1_1~4_2~BaOH2~1~0_900~0~0.1~sr~~~~~~*BaOH2_HCl|BaOH2_HCl~1_2~4_4~BaCl2_H2O~1_1~0_9999~0~0.2~d~~~~~~*BaOH2_H2SO4|BaOH2_H2SO4~1_1~4_4~BaSO4_H2O~1_2~0_9999~0~0.3~d~~~~~~*BaOH2_Na2CO3|BaOH2_Na2CO3~1_1~4_4~BaCO3_NaOH~1_2~0_9999~0~0.1~d~~~~~~*BaOH2_CuSO4|BaOH2_CuSO4~1_1~4_4~BaSO4_CuOH2~1_1~0_9999~0~0.1~d~~~~~~*BaOH2_HNO3|BaOH2_HNO3~1_2~4_4~BaNO32_H2O~1_2~0_9999~0~0.1~d~~~~~~*Ba_H2O|Ba_H2O~1_2~1_2~BaOH2_H2~1_1~0_9999~0~0.2~d~~~~~~*Ba_O2|Ba_O2~1_1~1_2~BaO~1~0_500~0~0.2~d~~~~~~*Mg_H2O|Mg_H2O~1_2~1_2~MgOH2_H2~1_1~0_900~0~0.1~sr~~~~~~*Fe_H2O_O2|Fe_H2O_O2~2_2_1~2_2_1~FeOH3_H2~2_3~0_500~0~0.1~sr~~~~~~*Na_H2O|Na_H2O~2_1~2_2~NaOH_H2~1_1~0_500~0~0.8~sr~~~~~~*K_H2O|K_H2O~2_1~2_2~KOH_H2~1_1~0_500~0~0.8~sr~~~~~~*Ca_H2O|Ca_H2O~1_2~1_2~CaOH2_H2~1_1~0_900~0~0.8~sr~~~~~~*Li_H2O|Li_H2O~2_1~2_2~LiOH_H2~1_1~0_500~0~0.8~sr~~~~~~*Zn_H2O|Zn_H2O~1_1~1_2~ZnO_H2~1_1~0_500~0~0.5~sr~~~~~~*Cu_H2O_O2|Cu_H2O_O2~2_2_1~2_2_1~CuO_H2~1_1~0_500~0~0.1~sr~~~~~~*Na_Cl2|Na_Cl2~2_1~2_1~NaCl~1~0_500~0~0.8~sr~~~~~~*K_Cl2|K_Cl2~2_1~2_1~KCl~1~0_500~0~0.8~sr~~~~~~*Fe_Cl2|Fe_Cl2~1_1~1_1~FeCl2~1~0_500~0~0.8~sr~~~~~~*Mg_Cl2|Mg_Cl2~1_1~1_1~MgCl2~1~0_500~0~0.8~sr~~~~~~*Cu_S|Cu_S~1_1~1_1~CuS~1~0_500~0~0.8~sr~~~~~~*Fe_S|Fe_S~1_1~1_1~FeS~1~0_500~0~0.8~sr~~~~~~*Zn_S|Zn_S~1_1~1_1~ZnS~1~0_500~0~0.8~sr~~~~~~*Na_O2|Na_O2~4_1~4_1~Na2O~1~0_500~0~0.8~sr~~~~~~*K_O2|K_O2~4_1~4_1~K2O~1~0_500~0~0.8~sr~~~~~~*Mg_O2|Mg_O2~2_1~2_1~MgO~1~0_500~0~0.8~sr~~~~~~*Ca_O2|Ca_O2~2_1~2_1~CaO~1~0_500~0~0.8~sr~~~~~~*Fe_O2|Fe_O2~4_3~4_3~Fe2O3~1~0_500~0~0.8~sr~~~~~~*Cu_O2|Cu_O2~2_1~2_1~CuO~1~0_500~0~0.8~sr~~~~~~*Al_O2|Al_O2~4_3~4_3~Al2O3~1~0_500~0~0.8~sr~~~~~~*Zn_O2|Zn_O2~2_1~2_1~ZnO~1~0_500~0~0.8~sr~~~~~~*H2_S_O2|H2_S_O2~2_1_3~2_2_2~SO2_H2O~1_1~0_500~0~0.8~sr~~~~~~*NH3_HCl|NH3_HCl~1_1~1_1~NH4Cl~1~0_500~0~0.8~sr~~~~~~*NaOH_HCl|NaOH_HCl~1_1~1_1~NaCl_H2O~1_1~0_500~0~0.8~sr~~~~~~*KOH_HCl|KOH_HCl~1_1~1_1~KCl_H2O~1_1~0_500~0~0.8~sr~~~~~~*CaOH2_H2SO4|CaOH2_H2SO4~1_1~1_1~CaSO4_H2O~1_1~0_500~0~0.8~sr~~~~~~*Na2CO3_H2SO4|Na2CO3_H2SO4~1_1~1_1~Na2SO4_CO2_H2O~1_1_1~0_500~0~0.8~sr~~~~~~*NaHCO3_HCl|NaHCO3_HCl~1_1~1_1~NaCl_CO2_H2O~1_1_1~0_500~0~0.8~sr~~~~~~*AgNO3_NaCl|AgNO3_NaCl~1_1~1_1~AgCl_NaNO3~1_1~0_500~0~0.8~sr~~~~~~*PbNO32_KI|PbNO32_KI~1_2~1_2~PbI2_KNO3~1_2~0_500~0~0.8~sr~~~~~~*CuSO4_Fe|CuSO4_Fe~1_1~1_1~Cu_FeSO4~1_1~0_500~0~0.5~sr~~~~~~*FeCuSO4|FeCuSO4~1_1~1_1~Cu_FeSO4~1_1~0_500~0~0.5~sr~~~~~~*CuSO4_Zn|CuSO4_Zn~1_1~1_1~ZnSO4_Cu~1_1~0_500~0~0.5~sr~~~~~~*H2SO4_NaOH|H2SO4_NaOH~1_2~1_2~Na2SO4_H2O~1_1~0_500~0~0.8~sr~~~~~~*HNO3_NaOH|HNO3_NaOH~1_1~1_1~NaNO3_H2O~1_1~0_500~0~0.8~sr~~~~~~*H2SO4_CuO|H2SO4_CuO~1_1~1_1~CuSO4_H2O~1_1~0_500~0~0.8~sr~~~~~~*H2SO4_FeO|H2SO4_FeO~1_1~1_1~FeSO4_H2O~1_1~0_500~0~0.8~sr~~~~~~*HCl_Fe|HCl_Fe~2_1~2_1~FeCl2_H2~1_1~0_500~0~0.8~sr~~~~~~*HCl_Mg|HCl_Mg~2_1~2_1~MgCl2_H2~1_1~0_500~0~0.8~sr~~~~~~*HCl_Zn|HCl_Zn~1_1~1_1~ZnCl2_H2~1_1~0_500~0~0.8~sr~~~~~~*HCl_CuO|HCl_CuO~2_1~2_1~CuCl2_H2O~1_1~0_500~0~0.8~sr~~~~~~*HCl_FeO|HCl_FeO~2_1~2_1~FeCl2_H2O~1_1~0_500~0~0.8~sr~~~~~~*NaCl_AgNO3|NaCl_AgNO3~1_1~1_1~AgCl_NaNO3~1_1~0_500~0~0.8~sr~~~~~~*KCl_AgNO3|KCl_AgNO3~1_1~1_1~AgCl_KNO3~1_1~0_500~0~0.8~sr~~~~~~*BaCl2_Na2SO4|BaCl2_Na2SO4~1_1~1_1~BaSO4_NaCl~1_2~0_500~0~0.8~sr~~~~~~*MgCl2_NaOH|MgCl2_NaOH~1_2~1_2~MgOH2_NaCl~1_2~0_500~0~0.8~sr~~~~~~*FeCl3_NaOH|FeCl3_NaOH~1_3~1_3~FeOH3_NaCl~1_3~0_500~0~0.8~sr~~~~~~*CuSO4_NaOH|CuSO4_NaOH~1_2~1_2~CuOH2_Na2SO4~1_1~0_500~0~0.8~sr~~~~~~*AlCl3_NaOH|AlCl3_NaOH~1_4~1_4~AlOH3_NaCl~1_4~0_500~0~0.8~sr~~~~~~*Na2CO3_CaCl2|Na2CO3_CaCl2~1_1~1_1~CaCO3_NaCl~1_2~0_500~0~0.8~sr~~~~~~*Na2CO3_BaCl2|Na2CO3_BaCl2~1_1~1_1~BaCO3_NaCl~1_2~0_500~0~0.8~sr~~~~~~*NH4Cl_NaOH|NH4Cl_NaOH~1_1~1_1~NaCl_NH3_H2O~1_1_1~0_500~0~0.8~sr~~~~~~*NH42SO4_NaOH|NH42SO4_NaOH~1_2~1_2~Na2SO4_NH3_H2O~1_1_1~0_500~0~0.8~sr~~~~~~*AgNO3_HCl|AgNO3_HCl~1_1~1_1~AgCl_HNO3~1_1~0_500~0~0.8~sr~~~~~~*AgNO3_H2SO4|AgNO3_H2SO4~2_1~2_1~Ag2SO4_HNO3~1_2~0_500~0~0.8~sr~~~~~~*NaCl_H2SO4|NaCl_H2SO4~1_1~1_1~NaHSO4_HCl~1_1~0_500~0~0.5~d~~~~~~*KCl_H2SO4|KCl_H2SO4~1_1~1_1~KHSO4_HCl~1_1~0_500~0~0.5~d~~~~~~*NaNO3_H2SO4|NaNO3_H2SO4~1_1~1_1~NaHSO4_HNO3~1_1~0_500~0~0.5~d~~~~~~*FeS|H2SO4_FeS|1_1~1_1~FeSO4_H2S~1_1~0_500~0~0.8~d~~~~~~*CuS|H2SO4_CuS|1_2~1_1~CuSO4_SO2_H2O~1_1_1~0_500~0~0.8~d~~~~~~*Zn|H2SO4_Zn|1_1~1_1~ZnSO4_H2~1_1~0_500~0~0.8~d~~~~~~*Mg|H2SO4_Mg|1_1~1_1~MgSO4_H2~1_1~0_500~0~0.8~d~~~~~~*Al|H2SO4_Al|2_3~1_1~Al2SO43_H2~1_3~0_500~0~0.8~d~~~~~~*Fe|H2SO4_Fe|1_1~1_1~FeSO4_H2~1_1~0_500~0~0.8~d~~~~~~*HNO3_Cu|HNO3_Cu~3_2~2_2~CuNO32_NO2_H2O~2_1_1~0_500~0~0.1~d~~~~~~*HNO3_Ag|HNO3_Ag~3_1~1_1~AgNO3_NO2_H2O~1_1_1~0_500~0~0.1~d~~~~~~*NH3_H2O|NH3_H2O~1_1~1_1~NH3H2O~1~0_500~0~0.5~d~~~~~~*CH4_O2|CH4_O2~1-2-1-2~500-1000~BURN3~12~0x00FFFF
+*Ethane_O2|Ethane_O2~2-3-4-6~500-1000~BURN3~11~0x00FFFF
+*Propane_O2|Propane_O2~1-5-3-4~500-1000~BURN3~10~0x00FFFF
+*Butane_O2|Butane_O2~2-6-5-8~500-1000~BURN3~11~0x00FFFF
+*CH3OH_O2|CH3OH_O2~2-3-2-4~400-800~BURN3~10~0x00FFFF
+*C2H5OH_O2|C2H5OH_O2~1-3-2-3~400-800~BURN3~10~0x00FFFF
+*C6H6_O2|C6H6_O2~2-15-12-6~500-1000~BURN3~14~0xFFFF00
+*C6H5CH3_O2|C6H5CH3_O2~1-9-7-8~500-1000~BURN3~13~0xFFFF00
+*Benzene_O2|Benzene_O2~2-15-12-6~500-1000~BURN3~14~0xFFFF00
+*Toluene_O2|Toluene_O2~1-9-7-8~500-1000~BURN3~13~0xFFFF00
+*Glucose_O2|Glucose_O2~1-6-6-6~400-800~BURN3~10~0x00FFFF
+*Sucrose_O2|Sucrose_O2~1-12-11-12~400-800~BURN3~10~0x00FFFF

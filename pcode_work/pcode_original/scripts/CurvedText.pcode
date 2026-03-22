@@ -1,0 +1,721 @@
+package
+{
+   import flash.display.*;
+   import flash.geom.Rectangle;
+   import flash.text.*;
+   
+   public class CurvedText extends MovieClip
+   {
+      
+      public static const DIRECTION_UP:String = "up";
+      
+      public static const DIRECTION_DOWN:String = "down";
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "DIRECTION_UP", 0, 13
+               findproperty QName(PackageNamespace(""),"DIRECTION_UP")
+               pushstring "up"
+               initproperty QName(PackageNamespace(""),"DIRECTION_UP")
+               debug 1, "DIRECTION_DOWN", 1, 14
+               findproperty QName(PackageNamespace(""),"DIRECTION_DOWN")
+               pushstring "down"
+               initproperty QName(PackageNamespace(""),"DIRECTION_DOWN")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var showLetterBorder:Boolean = false;
+      
+      public var showCurve:Boolean = false;
+      
+      private var _letterHolder:MovieClip;
+      
+      private var _text:String;
+      
+      private var _radius:Number;
+      
+      private var _letters:Array;
+      
+      private var _widthOfText:Number = 0;
+      
+      private var _startAngle:Number = 0;
+      
+      private var _endAngle:Number = 360;
+      
+      private var _totalAngle:Number = 0;
+      
+      private var _textFormat:TextFormat;
+      
+      private var _direction:String;
+      
+      public function CurvedText(text:String, radius:Number = 200, startAngle:Number = 0, endAngle:Number = 360, direction:String = "up", textFormat:TextFormat = null)
+      {
+         method
+            name "CurvedText/CurvedText"
+            flag HAS_OPTIONAL
+            flag HAS_PARAM_NAMES
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace("flash.text"),"TextFormat")
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            optional Integer(200)
+            optional Integer(0)
+            optional Integer(360)
+            optional Utf8("up")
+            optional Null()
+            returns null
+            
+            body
+               maxstack 4
+               localcount 7
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                  debugline 30
+                  getlocal0
+                  pushscope
+                  debug 1, "text", 0, 30
+                  debug 1, "radius", 1, 30
+                  debug 1, "startAngle", 2, 30
+                  debug 1, "endAngle", 3, 30
+                  debug 1, "direction", 4, 30
+                  debug 1, "textFormat", 5, 30
+                  debugline 30
+                  getlocal0
+                  constructsuper 0
+                  debugline 31
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("_text",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 32
+                  getlocal0
+                  getlocal2
+                  initproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 33
+                  getlocal0
+                  getlocal3
+                  initproperty Multiname("_startAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 34
+                  getlocal0
+                  getlocal 4
+                  initproperty Multiname("_endAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 35
+                  getlocal0
+                  getlocal 5
+                  initproperty Multiname("_direction",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 36
+                  getlocal0
+                  getlocal 6
+                  initproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 37
+                  getlocal0
+                  newarray 0
+                  initproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 38
+                  getlocal0
+                  getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlocal0
+                  getproperty Multiname("_startAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("abs",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                  getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlocal0
+                  getproperty Multiname("_endAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("abs",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                  add
+                  initproperty Multiname("_totalAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 39
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function draw() : void
+      {
+         trait method QName(PackageNamespace(""),"draw")
+            dispid 0
+            method
+               name "CurvedText/draw"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 4
+                  localcount 4
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                     debugline 40
+                     getlocal0
+                     pushscope
+                     pushnull
+                     coerce QName(PackageNamespace(""),"Object")
+                     setlocal3
+                     debug 1, "numOfLetters", 0, 55
+                     debug 1, "i", 1, 56
+                     debugline 43
+                     getlocal0
+                     getproperty Multiname("_text",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushstring ""
+                     ifne ofs0026
+                     debugline 44
+                     returnvoid
+            ofs0026:
+                     debugline 48
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     convert_b
+                     dup
+                     iffalse ofs003f
+                     pop
+                     findpropstrict Multiname("contains",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("contains",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     convert_b
+            ofs003f:
+                     iffalse ofs0050
+                     debugline 49
+                     findpropstrict Multiname("removeChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("removeChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+            ofs0050:
+                     debugline 51
+                     getlocal0
+                     findpropstrict Multiname("MovieClip",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.display")])
+                     constructprop Multiname("MovieClip",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.display")]), 0
+                     initproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 52
+                     findpropstrict Multiname("addChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("addChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     debugline 55
+                     getlocal0
+                     getproperty Multiname("_text",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("length",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     convert_i
+                     setlocal1
+                     debugline 56
+                     pushbyte 0
+                     setlocal2
+                     jump ofs00d0
+            ofs007e:
+                     label
+                     debug 1, "letter", 2, 57
+                     debugline 57
+                     getlocal0
+                     getlocal0
+                     getproperty Multiname("_text",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal2
+                     callproperty Multiname("charAt",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     callproperty Multiname("getLetterObject",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     coerce QName(PackageNamespace(""),"Object")
+                     setlocal3
+                     debugline 58
+                     getlocal3
+                     getlocal0
+                     getproperty Multiname("_totalAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal1
+                     divide
+                     setproperty Multiname("stepDegrees",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 59
+                     getlocal0
+                     getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal3
+                     callpropvoid Multiname("push",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     debugline 60
+                     getlocal0
+                     getlocal0
+                     getproperty Multiname("_widthOfText",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal3
+                     getproperty Multiname("fieldWidth",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     add
+                     initproperty Multiname("_widthOfText",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 61
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal3
+                     getproperty Multiname("movie",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("addChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     debugline 56
+                     inclocal_i 2
+            ofs00d0:
+                     getlocal2
+                     getlocal1
+                     iflt ofs007e
+                     debugline 65
+                     getlocal0
+                     callpropvoid Multiname("position",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     debugline 68
+                     getlocal0
+                     getproperty Multiname("showCurve",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     iffalse ofs010e
+                     debugline 69
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("graphics",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 1
+                     pushint 16711680
+                     pushbyte 1
+                     callpropvoid Multiname("lineStyle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 3
+                     debugline 70
+                     getlocal0
+                     getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("graphics",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 0
+                     dup
+                     getlocal0
+                     getproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("drawCircle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 3
+            ofs010e:
+                     debugline 72
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private function getLetterObject(letter:String) : Object
+         {
+            trait method QName(PrivateNamespace("CurvedText"),"getLetterObject")
+               dispid 0
+               method
+                  name "CurvedText/private:getLetterObject"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  paramname "http://adobe.com/AS3/2006/builtin"
+                  returns QName(PackageNamespace(""),"Object")
+                  
+                  body
+                     maxstack 10
+                     localcount 4
+                     initscopedepth 10
+                     maxscopedepth 11
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                        debugline 73
+                        getlocal0
+                        pushscope
+                        debug 1, "letter", 0, 73
+                        debug 1, "movie", 1, 85
+                        debug 1, "field", 2, 86
+                        debugline 76
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        iftrue ofs0061
+                        debugline 77
+                        getlocal0
+                        findpropstrict Multiname("TextFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")])
+                        constructprop Multiname("TextFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")]), 0
+                        initproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 78
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        getlex Multiname("TextFormatAlign",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")])
+                        getproperty Multiname("CENTER",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        setproperty Multiname("align",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 79
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        pushstring "Verdana"
+                        setproperty Multiname("font",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 80
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        pushbyte 12
+                        setproperty Multiname("size",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 81
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        pushbyte 0
+                        setproperty Multiname("color",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+               ofs0061:
+                        debugline 85
+                        findpropstrict Multiname("MovieClip",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.display")])
+                        constructprop Multiname("MovieClip",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.display")]), 0
+                        coerce QName(PackageNamespace("flash.display"),"MovieClip")
+                        setlocal2
+                        debugline 86
+                        findpropstrict Multiname("TextField",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")])
+                        constructprop Multiname("TextField",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")]), 0
+                        coerce QName(PackageNamespace("flash.text"),"TextField")
+                        setlocal3
+                        debugline 87
+                        getlocal3
+                        pushbyte 10
+                        setproperty Multiname("width",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 88
+                        getlocal3
+                        getlocal0
+                        getproperty Multiname("_textFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        setproperty Multiname("defaultTextFormat",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 89
+                        getlocal3
+                        pushtrue
+                        setproperty Multiname("embedFonts",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 90
+                        getlocal3
+                        pushfalse
+                        setproperty Multiname("multiline",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 91
+                        getlocal3
+                        getlex Multiname("TextFieldAutoSize",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.text")])
+                        getproperty Multiname("CENTER",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        setproperty Multiname("autoSize",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 92
+                        getlocal3
+                        getlocal1
+                        setproperty Multiname("text",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 93
+                        getlocal3
+                        getlocal3
+                        getproperty Multiname("width",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        negate
+                        pushbyte 2
+                        divide
+                        setproperty Multiname("x",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 94
+                        getlocal3
+                        getlocal3
+                        getproperty Multiname("height",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        negate
+                        pushbyte 2
+                        divide
+                        setproperty Multiname("y",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        debugline 95
+                        getlocal0
+                        getproperty Multiname("showLetterBorder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        iffalse ofs00da
+                        debugline 96
+                        getlocal3
+                        pushtrue
+                        setproperty Multiname("border",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+               ofs00da:
+                        debugline 98
+                        getlocal2
+                        getlocal3
+                        callpropvoid Multiname("addChild",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                        pushstring "movie"
+                        debugline 100
+                        getlocal2
+                        pushstring "field"
+                        debugline 101
+                        getlocal3
+                        pushstring "widthInDegrees"
+                        debugline 102
+                        pushbyte 0
+                        pushstring "fieldWidth"
+                        debugline 103
+                        getlocal3
+                        getproperty Multiname("width",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        pushstring "fieldHeight"
+                        debugline 104
+                        getlocal3
+                        getproperty Multiname("height",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        newobject 5
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function position() : void
+            {
+               trait method QName(PrivateNamespace("CurvedText"),"position")
+                  dispid 0
+                  method
+                     name "CurvedText/private:position"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 8
+                        initscopedepth 10
+                        maxscopedepth 11
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                           debugline 108
+                           getlocal0
+                           pushscope
+                           pushnan
+                           setlocal 5
+                           pushbyte 0
+                           setlocal 6
+                           pushbyte 0
+                           setlocal 7
+                           debug 1, "numOfLetters", 0, 111
+                           debug 1, "degrees", 1, 112
+                           debug 1, "i", 2, 113
+                           debug 1, "bounds", 3, 131
+                           debugline 111
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("length",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           convert_i
+                           setlocal1
+                           debugline 112
+                           getlocal0
+                           getproperty Multiname("_startAngle",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           convert_d
+                           setlocal2
+                           debugline 113
+                           pushbyte 0
+                           setlocal3
+                           jump ofs0169
+                  ofs0047:
+                           label
+                           debug 1, "angle", 4, 114
+                           debug 1, "xValue", 5, 122
+                           debug 1, "yValue", 6, 123
+                           debugline 114
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("stepDegrees",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal2
+                           add
+                           convert_d
+                           setlocal 5
+                           debugline 115
+                           getlocal0
+                           getproperty Multiname("_direction",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("DIRECTION_DOWN",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           ifne ofs009a
+                           debugline 116
+                           getlocal 5
+                           pushshort 180
+                           subtract
+                           convert_d
+                           setlocal 5
+                           debugline 117
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("movie",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           pushbyte -1
+                           setproperty Multiname("scaleY",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           jump ofs00dc
+                  ofs009a:
+                           debugline 119
+                           getlocal0
+                           getproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 5
+                           pushbyte 90
+                           subtract
+                           pushshort 180
+                           divide
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("PI",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           multiply
+                           callproperty Multiname("cos",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           multiply
+                           convert_i
+                           setlocal 6
+                           debugline 120
+                           getlocal0
+                           getproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 5
+                           pushbyte 90
+                           subtract
+                           pushshort 180
+                           divide
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("PI",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           multiply
+                           callproperty Multiname("sin",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           multiply
+                           convert_i
+                           setlocal 7
+                  ofs00dc:
+                           debugline 122
+                           getlocal0
+                           getproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 5
+                           pushbyte 90
+                           subtract
+                           pushshort 180
+                           divide
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("PI",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           multiply
+                           callproperty Multiname("cos",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           multiply
+                           convert_i
+                           setlocal 6
+                           debugline 123
+                           getlocal0
+                           getproperty Multiname("_radius",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 5
+                           pushbyte 90
+                           subtract
+                           pushshort 180
+                           divide
+                           getlex Multiname("Math",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("PI",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           multiply
+                           callproperty Multiname("sin",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           multiply
+                           convert_i
+                           setlocal 7
+                           debugline 124
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("movie",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 6
+                           setproperty Multiname("x",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 125
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("movie",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 7
+                           setproperty Multiname("y",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 126
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("movie",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 5
+                           setproperty Multiname("rotation",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 127
+                           getlocal2
+                           getlocal0
+                           getproperty Multiname("_letters",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal3
+                           getproperty MultinameL([PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("stepDegrees",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           add
+                           convert_d
+                           setlocal2
+                           debugline 113
+                           inclocal_i 3
+                  ofs0169:
+                           getlocal3
+                           getlocal1
+                           iflt ofs0047
+                           debugline 131
+                           getlocal0
+                           getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           callproperty Multiname("getBounds",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                           coerce QName(PackageNamespace("flash.geom"),"Rectangle")
+                           setlocal 4
+                           debugline 132
+                           getlocal0
+                           getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 4
+                           getproperty Multiname("x",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           negate
+                           setproperty Multiname("x",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 133
+                           getlocal0
+                           getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal 4
+                           getproperty Multiname("y",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           negate
+                           setproperty Multiname("y",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           debugline 134
+                           getlocal0
+                           getproperty Multiname("_direction",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("DIRECTION_DOWN",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           ifne ofs01ba
+                           debugline 135
+                           getlocal0
+                           getproperty Multiname("_letterHolder",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           pushbyte -1
+                           setproperty Multiname("scaleX",[PrivateNamespace("CurvedText"),PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CurvedText"),StaticProtectedNs("CurvedText"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  ofs01ba:
+                           debugline 138
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+            }
+         }
+         
+         method
+            name ""
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 1
+               maxscopedepth 9
+               
+               code
+                  getlocal0
+                  pushscope
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                  debugline 11
+                  findpropstrict Multiname("CurvedText",[PackageNamespace("")])
+                  getlex QName(PackageNamespace(""),"Object")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.display"),"Sprite")
+                  pushscope
+                  getlex QName(PackageNamespace("flash.display"),"MovieClip")
+                  pushscope
+                  getlex Multiname("MovieClip",[PackageNamespace(""),PrivateNamespace("CurvedText.as$272"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display")])
+                  newclass 210
+                  popscope
+                  popscope
+                  popscope
+                  popscope
+                  popscope
+                  popscope
+                  popscope
+                  initproperty QName(PackageNamespace(""),"CurvedText")
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/components;;CurvedText.as"
+                  debugline 9
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+         

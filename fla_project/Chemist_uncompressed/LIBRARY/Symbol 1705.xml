@@ -1,0 +1,63 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1705" itemID="69be9900-000002f0" lastModified="1774098374">
+     <timeline>
+          <DOMTimeline name="Symbol 1705">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#bfaa4a" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#ffffff" alpha="0.101960786"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="11.65" ty="72.4" a="0.024688720703125" d="0.0258331298828125" b="0.024688720703125" c="-0.0258331298828125"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#000000" alpha="0.14901961" ratio="0.023529412"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.21960784" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -442 1599| -445 1596| -455 1584[ -467 1572 -468 1561| -469 1548[ -472 1535 -467 1526| -464 1519| -464 1495| -469 1466| -466 1459| -469 1456| -476 1417| -477 1388| -476 1377[ -477 1362 -467 1344| -427 1292| -426 1287[ -437 1254 -417 1230| -412 1225| -385 1218[ -374 1213 -370 1203| -356 1163| -346 1151| -333 1150| -327 1146[ -322 1137 -325 1128[ -328 1115 -319 1110| -313 1104| -309 1088| -297 1060| -284 1039| -261 1018| -257 1016| -231 986| -226 977[ -212 943 -174 959| -163 940| -152 931| -129 923| -107 916| -85 916| -76 913| -58 889| -29 890| -10 859[ -4 851 0 853[ 15 856 26 847| 53 824| 66 819| 107 820| 113 818| 132 803[ 146 787 158 807| 158 809| 161 808[ 165 806 170 811| 195 798| 204 795| 211 790[ 223 782 232 781| 240 777[ 253 764 271 772| 277 774| 298 790[ 304 795 317 784[ 323 778 332 777| 343 780| 372 809"/>
+                                                  <Edge fillStyle0="0" fillStyle1="2" strokeStyle="0" edges="! 372 809| 1015 1452[ 1046 1497 1034 1571| 1032 1573[ 1025 1618 1002 1675| 1001 1676[ 931 1844 767 2012[ 599 2176 431 2246[ 373 2270 327 2278| 326 2279[ 252 2291 206 2261| -243 1810| -242 1809| -418 1633| -442 1599"/>
+                                                  <Edge fillStyle0="1" fillStyle1="2" strokeStyle="0" edges="! -442 1599| -440 1601| -438 1603| -431 1608[ -422 1617 -414 1615| -402 1615| -384 1609| -377 1606| -356 1603| -332 1603| -326 1599| -324 1601| -292 1601| -267 1598| -258 1595| -228 1583[ -201 1564 -178 1541| -174 1539[ -147 1544 -124 1523| -120 1517| -109 1494| -95 1478| -58 1461| -47 1450| -43 1440| -40 1433| -23 1430[ -13 1430 -8 1421| -2 1415| 12 1409| 38 1395| 58 1381| 79 1358| 82 1355| 111 1328| 119 1322[ 150 1305 142 1275| 160 1263| 169 1252| 181 1233| 189 1212| 193 1194| 197 1186| 220 1167[ 242 1151 223 1142| 252 1121| 259 1112[ 258 1099 268 1089| 292 1063| 297 1050| 303 1016| 305 1010| 321 992[ 337 978 321 970| 322 969| 320 961| 335 938| 338 929| 344 923| 354 903| 360 897[ 373 884 369 870| 367 864| 358 850[ 354 845 365 832| 373 818| 372 809"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#ffffff"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <BitmapFill bitmapPath="Bitmap 1642.png" bitmapIsClipped="true">
+                                                            <matrix>
+                                                                 <Matrix tx="-30.8" ty="70.65" a="7.07122802734375" d="7.07122802734375" b="-7.0709228515625" c="7.0709228515625"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="2" strokeStyle="0" edges="! -616 1413| 176 621| 1124 1569| 332 2361| -616 1413"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="2" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

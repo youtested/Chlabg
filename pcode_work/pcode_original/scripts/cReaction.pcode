@@ -1,0 +1,339 @@
+package
+{
+   public class cReaction
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var cS:Array;
+      
+      public var cN:Array;
+      
+      public var cSP:Array;
+      
+      public var cNP:Array;
+      
+      public var cReactSub:Array;
+      
+      public var cProductSub:Array;
+      
+      public var cHR:Number;
+      
+      public var cSpeed:Number;
+      
+      public var cTp:String;
+      
+      public var cId:String;
+      
+      public var cEff:String;
+      
+      public var cExp:Boolean = false;
+      
+      public var cGExp:Boolean = false;
+      
+      public var cDet:Boolean = false;
+      
+      public var cLDet:Boolean = false;
+      
+      public var cIgn:Boolean = false;
+      
+      public var cE1:Boolean = false;
+      
+      public var cIgnCol:Number;
+      
+      public var cIgnAlp:Number;
+      
+      public var cBB:Boolean = false;
+      
+      public var cEle:Boolean = false;
+      
+      public function cReaction(inS1:cMatter, inS2:*, inAr:Object, id:String)
+      {
+         method
+            name "cReaction/cReaction"
+            flag HAS_PARAM_NAMES
+            param QName(PackageNamespace(""),"cMatter")
+            param null
+            param QName(PackageNamespace(""),"Object")
+            param QName(PackageNamespace(""),"String")
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            returns null
+            
+            body
+               maxstack 4
+               localcount 12
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cReaction.as"
+                  debugline 29
+                  getlocal0
+                  pushscope
+                  pushundefined
+                  coerce_a
+                  setlocal 8
+                  pushundefined
+                  coerce_a
+                  setlocal 9
+                  debug 1, "inS1", 0, 29
+                  debug 1, "inS2", 1, 29
+                  debug 1, "inAr", 2, 29
+                  debug 1, "id", 3, 29
+                  debugline 7
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  constructprop Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 0
+                  initproperty QName(PackageNamespace(""),"cSP")
+                  debugline 8
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  constructprop Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 0
+                  initproperty QName(PackageNamespace(""),"cNP")
+                  debugline 30
+                  getlocal0
+                  constructsuper 0
+                  debug 1, "cS1", 4, 31
+                  debug 1, "cS2", 5, 32
+                  debug 1, "cN1", 6, 34
+                  debug 1, "i", 7, 69
+                  debugline 31
+                  getlocal1
+                  coerce_a
+                  setlocal 5
+                  debugline 32
+                  getlocal2
+                  coerce_a
+                  setlocal 6
+                  debugline 33
+                  getlocal0
+                  getlocal 4
+                  initproperty Multiname("cId",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 34
+                  getlocal3
+                  getlocal 5
+                  getproperty Multiname("cName",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getproperty MultinameL([PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  coerce_a
+                  setlocal 7
+                  debugline 35
+                  getlocal 6
+                  pushnull
+                  ifeq ofs009d
+                  debug 1, "cN2", 8, 36
+                  debugline 36
+                  getlocal3
+                  getlocal 6
+                  getproperty Multiname("cName",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getproperty MultinameL([PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  coerce_a
+                  setlocal 9
+         ofs009d:
+                  debugline 38
+                  getlocal0
+                  getlocal3
+                  getproperty Multiname("cSpeed",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  initproperty Multiname("cSpeed",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 39
+                  getlocal0
+                  getlocal3
+                  getproperty Multiname("cHR",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  initproperty Multiname("cHR",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 40
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal 5
+                  getlocal 6
+                  constructprop Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 2
+                  initproperty Multiname("cS",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 41
+                  getlocal0
+                  findpropstrict Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal 7
+                  getlocal 9
+                  constructprop Multiname("Array",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 2
+                  initproperty Multiname("cN",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 43
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "EXPLODE2"
+                  ifne ofs00e7
+                  debugline 44
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cExp",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs00e7:
+                  debugline 46
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "EXPLODE3"
+                  ifne ofs00fb
+                  debugline 47
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cGExp",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs00fb:
+                  debugline 49
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "BURN1"
+                  ifne ofs010f
+                  debugline 50
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cDet",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs010f:
+                  debugline 52
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "E1"
+                  ifne ofs0123
+                  debugline 53
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cE1",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs0123:
+                  debugline 55
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "ELE"
+                  ifne ofs0137
+                  debugline 56
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cEle",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs0137:
+                  debugline 58
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "BUBBLE"
+                  ifne ofs014b
+                  debugline 59
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cBB",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs014b:
+                  debugline 61
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "BURN2"
+                  ifne ofs015f
+                  debugline 62
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cLDet",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs015f:
+                  debugline 64
+                  getlocal3
+                  getproperty Multiname("cEff",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  pushstring "BURN3"
+                  ifne ofs0187
+                  debugline 65
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cIgn",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 66
+                  getlocal0
+                  getlocal3
+                  getproperty Multiname("cIgnCol",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  initproperty Multiname("cIgnCol",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  debugline 67
+                  getlocal0
+                  getlocal3
+                  getproperty Multiname("cIgnAlp",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  initproperty Multiname("cIgnAlp",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+         ofs0187:
+                  debugline 69
+                  pushbyte 0
+                  setlocal 10
+                  getlocal3
+                  getproperty Multiname("cP",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  coerce_a
+                  setlocal 11
+                  jump ofs01cb
+         ofs0198:
+                  label
+                  getlocal 11
+                  getlocal 10
+                  nextname
+                  coerce_a
+                  setlocal 8
+                  debugline 70
+                  getlocal0
+                  getproperty Multiname("cSP",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal3
+                  getproperty Multiname("cP",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal 8
+                  getproperty MultinameL([PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  callpropvoid Multiname("push",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 1
+                  debugline 71
+                  getlocal0
+                  getproperty Multiname("cNP",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal3
+                  getlocal3
+                  getproperty Multiname("cP",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getlocal 8
+                  getproperty MultinameL([PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  getproperty MultinameL([PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")])
+                  callpropvoid Multiname("push",[PrivateNamespace("cReaction"),PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cReaction"),StaticProtectedNs("cReaction")]), 1
+         ofs01cb:
+                  debugline 69
+                  hasnext2 11, 10
+                  iftrue ofs0198
+                  kill 11
+                  kill 10
+                  debugline 75
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 3
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cReaction.as"
+         debugline 3
+         findpropstrict Multiname("cReaction",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex Multiname("Object",[PrivateNamespace("cReaction.as$337"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+         newclass 21
+         popscope
+         initproperty QName(PackageNamespace(""),"cReaction")
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1535" itemID="69be9900-0000029b" lastModified="1774098374" linkageClassName="iLabel" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 1535">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#b740b3" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1534" name="Board" centerPoint3DX="128.3" centerPoint3DY="25.3">
+                                             <matrix>
+                                                  <Matrix tx="59.55" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

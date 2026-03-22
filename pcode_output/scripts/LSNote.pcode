@@ -1,0 +1,97 @@
+package
+{
+   [Embed(source="/_assets/assets.swf", symbol="symbol1091")]
+   public dynamic class LSNote extends iLS
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 10
+            maxscopedepth 11
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function LSNote()
+      {
+         method
+            name "LSNote/LSNote"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 11
+               maxscopedepth 12
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 10
+      
+      code
+         getlocal0
+         pushscope
+         findpropstrict Multiname("LSNote",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"Sprite")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"MovieClip")
+         pushscope
+         getlex QName(PackageNamespace(""),"iLS")
+         pushscope
+         getlex Multiname("iLS",[PackageNamespace(""),PackageNamespace("flash.events"),PackageNamespace("flash.display"),PrivateNamespace("$108"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.errors"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml")])
+         newclass 228
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         initproperty QName(PackageNamespace(""),"LSNote")
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/"
+         debugline 24
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

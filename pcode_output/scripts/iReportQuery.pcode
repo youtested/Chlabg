@@ -1,0 +1,146 @@
+package
+{
+   public class iReportQuery
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var iAction:String;
+      
+      public var a:*;
+      
+      public var b:*;
+      
+      public var c:*;
+      
+      public var d:*;
+      
+      public function iReportQuery(action:String, A:* = null, B:* = null, C:* = null, D:* = null)
+      {
+         method
+            name "iReportQuery/iReportQuery"
+            flag HAS_OPTIONAL
+            flag HAS_PARAM_NAMES
+            param QName(PackageNamespace(""),"String")
+            param null
+            param null
+            param null
+            param null
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            paramname null
+            optional Null()
+            optional Null()
+            optional Null()
+            optional Null()
+            returns null
+            
+            body
+               maxstack 2
+               localcount 6
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iReportQuery.as"
+                  debugline 6
+                  getlocal0
+                  pushscope
+                  debug 1, "action", 0, 6
+                  debug 1, "A", 1, 6
+                  debug 1, "B", 2, 6
+                  debug 1, "C", 3, 6
+                  debug 1, "D", 4, 6
+                  debugline 6
+                  getlocal0
+                  constructsuper 0
+                  debugline 7
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("iAction",[PrivateNamespace("iReportQuery"),PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iReportQuery"),StaticProtectedNs("iReportQuery")])
+                  debugline 8
+                  getlocal2
+                  pushnull
+                  ifeq ofs003e
+                  getlocal0
+                  getlocal2
+                  initproperty Multiname("a",[PrivateNamespace("iReportQuery"),PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iReportQuery"),StaticProtectedNs("iReportQuery")])
+         ofs003e:
+                  debugline 9
+                  getlocal3
+                  pushnull
+                  ifeq ofs004b
+                  getlocal0
+                  getlocal3
+                  initproperty Multiname("b",[PrivateNamespace("iReportQuery"),PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iReportQuery"),StaticProtectedNs("iReportQuery")])
+         ofs004b:
+                  debugline 10
+                  getlocal 4
+                  pushnull
+                  ifeq ofs005a
+                  getlocal0
+                  getlocal 4
+                  initproperty Multiname("c",[PrivateNamespace("iReportQuery"),PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iReportQuery"),StaticProtectedNs("iReportQuery")])
+         ofs005a:
+                  debugline 11
+                  getlocal 5
+                  pushnull
+                  ifeq ofs0069
+                  getlocal0
+                  getlocal 5
+                  initproperty Multiname("d",[PrivateNamespace("iReportQuery"),PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iReportQuery"),StaticProtectedNs("iReportQuery")])
+         ofs0069:
+                  debugline 12
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 3
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iReportQuery.as"
+         debugline 3
+         findpropstrict Multiname("iReportQuery",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex Multiname("Object",[PrivateNamespace("iReportQuery.as$392"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+         newclass 28
+         popscope
+         initproperty QName(PackageNamespace(""),"iReportQuery")
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

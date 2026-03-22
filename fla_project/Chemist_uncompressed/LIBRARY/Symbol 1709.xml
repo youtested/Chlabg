@@ -1,0 +1,76 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1709" itemID="69be9900-000002f3" lastModified="1774098374" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 1709" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="0.0" ty="-29.85" a="0.0" d="0.0" b="0.012725830078125" c="-0.0109710693359375"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#000000" alpha="0.050980393" ratio="0.22745098"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.12156863" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 384 -602| 383 -586[ 376 -547 326 -514[ 303 -498 270 -486[ 158 -439 -2 -439[ -161 -439 -275 -486[ -305 -498 -330 -514[ -371 -540 -382 -572| -382 -622[ -366 -672 -275 -710[ -161 -754 -2 -754[ 158 -754 270 -710[ 378 -665 384 -602"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="0.0" ty="-29.95" a="-0.03192138671875" d="-0.0131683349609375"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ffffff" alpha="0.019607844" ratio="0.007843138"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.10980392" ratio="0.3137255"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.12156863" ratio="0.36078432"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.011764706" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes>
+                                                  <StrokeStyle index="1">
+                                                       <SolidStroke weight="0.05" solidStyle="hairline" scaleMode="normal">
+                                                            <fill>
+                                                                 <LinearGradient>
+                                                                      <matrix>
+                                                                           <Matrix tx="0.0" ty="-29.9" a="0.0049591064453125" d="0.0035552978515625" b="-0.0162353515625" c="0.0150604248046875"/>
+                                                                      </matrix>
+                                                                      <GradientEntry color="#ffffff" alpha="0.16078432" ratio="0.22745098"/>
+                                                                      <GradientEntry color="#ffffff" alpha="0.101960786" ratio="1.0"/>
+                                                                 </LinearGradient>
+                                                            </fill>
+                                                       </SolidStroke>
+                                                  </StrokeStyle>
+                                             </strokes>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="1" edges="! -522 -561| -523 -564| -523 -632[ -501 -700 -375 -751[ -220 -814 -3 -814[ 216 -814 369 -751[ 516 -691 523 -604| 522 -584| 516 -561"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 516 -561| 523 -532| 522 -511[ 514 -457 445 -411[ 413 -390 369 -373[ 216 -309 -3 -309[ -220 -309 -375 -373[ -419 -390 -451 -411[ -508 -447 -523 -491| -523 -559| -522 -561"/>
+                                                  <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="! -522 -561[ -507 -518 -451 -484[ -419 -464 -375 -446[ -220 -382 -3 -382[ 216 -382 369 -446[ 413 -464 445 -484[ 500 -520 516 -561"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

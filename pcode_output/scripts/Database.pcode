@@ -1,0 +1,696 @@
+package
+{
+   import flash.events.IOErrorEvent;
+   import flash.net.*;
+   import flash.utils.*;
+   
+   public class Database
+   {
+      
+      private static var myXML:XML;
+      
+      public static var Installed:Boolean = false;
+      
+      private static var ldr:URLLoader;
+      
+      private static var Total:Number = 0;
+      
+      private static var ChemList:Array;
+      
+      private static var ChemPool:Dictionary;
+      
+      private static var ReactionPool:Dictionary;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 3
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "myXML", 0, 10
+               debug 1, "Installed", 1, 11
+               findproperty QName(PackageNamespace(""),"Installed")
+               pushfalse
+               setproperty QName(PackageNamespace(""),"Installed")
+               debug 1, "ldr", 2, 12
+               findproperty QName(PrivateNamespace("Database"),"ldr")
+               findpropstrict Multiname("URLLoader",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.net")])
+               constructprop Multiname("URLLoader",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.net")]), 0
+               setproperty QName(PrivateNamespace("Database"),"ldr")
+               debug 1, "Total", 3, 13
+               findproperty QName(PrivateNamespace("Database"),"Total")
+               pushbyte 0
+               setproperty QName(PrivateNamespace("Database"),"Total")
+               debug 1, "ChemList", 4, 14
+               findproperty QName(PrivateNamespace("Database"),"ChemList")
+               findpropstrict Multiname("Array",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+               constructprop Multiname("Array",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 0
+               setproperty QName(PrivateNamespace("Database"),"ChemList")
+               debug 1, "ChemPool", 5, 15
+               findproperty QName(PrivateNamespace("Database"),"ChemPool")
+               findpropstrict Multiname("Dictionary",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.utils")])
+               pushfalse
+               constructprop Multiname("Dictionary",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.utils")]), 1
+               setproperty QName(PrivateNamespace("Database"),"ChemPool")
+               debug 1, "ReactionPool", 6, 16
+               findproperty QName(PrivateNamespace("Database"),"ReactionPool")
+               findpropstrict Multiname("Dictionary",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.utils")])
+               pushfalse
+               constructprop Multiname("Dictionary",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database"),PackageNamespace("flash.utils")]), 1
+               setproperty QName(PrivateNamespace("Database"),"ReactionPool")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var cdb:cDb;
+      
+      public function Database()
+      {
+         method
+            name "Database/Database"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                  debugline 17
+                  getlocal0
+                  pushscope
+                  debugline 17
+                  getlocal0
+                  constructsuper 0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function UnlockAll() : void
+      {
+         trait method QName(PackageNamespace(""),"UnlockAll")
+            flag FINAL
+            dispid 3
+            method
+               name "Database/UnlockAll"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 2
+                  localcount 4
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                     debugline 19
+                     getlocal0
+                     pushscope
+                     pushundefined
+                     coerce_a
+                     setlocal1
+                     debug 1, "i", 0, 20
+                     debugline 20
+                     pushbyte 0
+                     setlocal2
+                     getlex Multiname("ChemPool",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     coerce_a
+                     setlocal3
+                     jump ofs0032
+            ofs001e:
+                     label
+                     getlocal3
+                     getlocal2
+                     nextname
+                     coerce_a
+                     setlocal1
+                     debugline 21
+                     getlex Multiname("ChemPool",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     getlocal1
+                     getproperty MultinameL([PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     pushbyte 2
+                     setproperty Multiname("Avaliable",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+            ofs0032:
+                     debugline 20
+                     hasnext2 3, 2
+                     iftrue ofs001e
+                     kill 3
+                     kill 2
+                     debugline 23
+                     findproperty Multiname("Unlocked",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     getlex Multiname("Total",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     setproperty Multiname("Unlocked",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                     debugline 24
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function iLoad() : void
+         {
+            trait method QName(PackageNamespace(""),"iLoad")
+               flag FINAL
+               dispid 4
+               method
+                  name "Database/iLoad"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 1
+                     localcount 1
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                        debugline 25
+                        getlocal0
+                        pushscope
+                        debugline 26
+                        getlex Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                        callpropvoid Multiname("iLoad",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 0
+                        debugline 27
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function Print() : void
+            {
+               trait method QName(PackageNamespace(""),"Print")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "Database/Print"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 2
+                        localcount 4
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                           debugline 28
+                           getlocal0
+                           pushscope
+                           pushundefined
+                           coerce_a
+                           setlocal1
+                           debug 1, "i", 0, 29
+                           debugline 29
+                           pushbyte 0
+                           setlocal2
+                           getlex Multiname("ChemPool",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                           coerce_a
+                           setlocal3
+                           jump ofs0024
+                  ofs001e:
+                           label
+                           getlocal3
+                           getlocal2
+                           nextname
+                           coerce_a
+                           setlocal1
+                  ofs0024:
+                           hasnext2 3, 2
+                           iftrue ofs001e
+                           kill 3
+                           kill 2
+                           debugline 32
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public static function TotalUnlocked() : Number
+               {
+                  trait method QName(PackageNamespace(""),"TotalUnlocked")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "Database/TotalUnlocked"
+                        returns QName(PackageNamespace(""),"Number")
+                        
+                        body
+                           maxstack 1
+                           localcount 1
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                              debugline 33
+                              getlocal0
+                              pushscope
+                              debugline 34
+                              getlex Multiname("Unlocked",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                              returnvalue
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public static function TotalChemical() : Number
+                  {
+                     trait method QName(PackageNamespace(""),"TotalChemical")
+                        flag FINAL
+                        dispid 7
+                        method
+                           name "Database/TotalChemical"
+                           returns QName(PackageNamespace(""),"Number")
+                           
+                           body
+                              maxstack 1
+                              localcount 1
+                              initscopedepth 3
+                              maxscopedepth 4
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                 debugline 36
+                                 getlocal0
+                                 pushscope
+                                 debugline 37
+                                 getlex Multiname("Total",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                 returnvalue
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public static function init(_cdb:cDb) : void
+                     {
+                        trait method QName(PackageNamespace(""),"init")
+                           flag FINAL
+                           dispid 8
+                           method
+                              name "Database/init"
+                              flag HAS_PARAM_NAMES
+                              param QName(PackageNamespace(""),"cDb")
+                              paramname "flash.utils"
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 3
+                                 localcount 3
+                                 initscopedepth 3
+                                 maxscopedepth 4
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                    debugline 40
+                                    getlocal0
+                                    pushscope
+                                    debug 1, "_cdb", 0, 40
+                                    debugline 41
+                                    findproperty Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                    getlocal1
+                                    dup
+                                    setlocal2
+                                    setproperty Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                    getlocal2
+                                    kill 2
+                                    pop
+                                    debugline 42
+                                    findpropstrict Multiname("LoadCSV",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                    callpropvoid Multiname("LoadCSV",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 0
+                                    debugline 43
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public static function finishUp() : void
+                        {
+                           trait method QName(PackageNamespace(""),"finishUp")
+                              flag FINAL
+                              dispid 9
+                              method
+                                 name "Database/finishUp"
+                                 returns QName(PackageNamespace(""),"void")
+                                 
+                                 body
+                                    maxstack 1
+                                    localcount 1
+                                    initscopedepth 3
+                                    maxscopedepth 4
+                                    
+                                    code
+                                       debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                       debugline 44
+                                       getlocal0
+                                       pushscope
+                                       debugline 45
+                                       getlex Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                       callpropvoid Multiname("cLoadStar",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 0
+                                       debugline 46
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public static function Install(d:Array) : void
+                           {
+                              trait method QName(PackageNamespace(""),"Install")
+                                 flag FINAL
+                                 dispid 10
+                                 method
+                                    name "Database/Install"
+                                    flag HAS_PARAM_NAMES
+                                    param QName(PackageNamespace(""),"Array")
+                                    paramname "flash.utils"
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 3
+                                       localcount 6
+                                       initscopedepth 3
+                                       maxscopedepth 4
+                                       
+                                       code
+                                          debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                          debugline 47
+                                          getlocal0
+                                          pushscope
+                                          pushundefined
+                                          coerce_a
+                                          setlocal2
+                                          debug 1, "d", 0, 47
+                                          debug 1, "i", 1, 48
+                                          debugline 48
+                                          pushbyte 0
+                                          setlocal3
+                                          getlocal1
+                                          coerce_a
+                                          setlocal 4
+                                          jump ofs0041
+                                 ofs0023:
+                                          label
+                                          getlocal 4
+                                          getlocal3
+                                          nextname
+                                          dup
+                                          setlocal 5
+                                          coerce_a
+                                          setlocal2
+                                          getlocal 5
+                                          kill 5
+                                          pop
+                                          debugline 49
+                                          findpropstrict Multiname("AddChem",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                          getlocal1
+                                          getlocal2
+                                          getproperty MultinameL([PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                          getlocal2
+                                          callpropvoid Multiname("AddChem",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 2
+                                 ofs0041:
+                                          debugline 48
+                                          hasnext2 4, 3
+                                          iftrue ofs0023
+                                          kill 4
+                                          kill 3
+                                          debugline 51
+                                          findproperty Multiname("Installed",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                          pushtrue
+                                          dup
+                                          setlocal3
+                                          setproperty Multiname("Installed",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                          getlocal3
+                                          kill 3
+                                          pop
+                                          debugline 52
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              public static function InstallReaction(d:Array) : void
+                              {
+                                 trait method QName(PackageNamespace(""),"InstallReaction")
+                                    flag FINAL
+                                    dispid 11
+                                    method
+                                       name "Database/InstallReaction"
+                                       flag HAS_PARAM_NAMES
+                                       param QName(PackageNamespace(""),"Array")
+                                       paramname "flash.utils"
+                                       returns QName(PackageNamespace(""),"void")
+                                       
+                                       body
+                                          maxstack 3
+                                          localcount 6
+                                          initscopedepth 3
+                                          maxscopedepth 4
+                                          
+                                          code
+                                             debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                             debugline 53
+                                             getlocal0
+                                             pushscope
+                                             pushundefined
+                                             coerce_a
+                                             setlocal2
+                                             debug 1, "d", 0, 53
+                                             debug 1, "i", 1, 54
+                                             debugline 54
+                                             pushbyte 0
+                                             setlocal3
+                                             getlocal1
+                                             coerce_a
+                                             setlocal 4
+                                             jump ofs0040
+                                    ofs0023:
+                                             label
+                                             getlocal 4
+                                             getlocal3
+                                             nextname
+                                             dup
+                                             setlocal 5
+                                             coerce_a
+                                             setlocal2
+                                             getlocal 5
+                                             kill 5
+                                             pop
+                                             debugline 55
+                                             findpropstrict Multiname("AddReaction",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                             getlocal1
+                                             getlocal2
+                                             getproperty MultinameL([PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                             callpropvoid Multiname("AddReaction",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 1
+                                    ofs0040:
+                                             debugline 54
+                                             hasnext2 4, 3
+                                             iftrue ofs0023
+                                             kill 4
+                                             kill 3
+                                             debugline 57
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 private static function AddChem(a:Array, rank:Number) : void
+                                 {
+                                    trait method QName(PrivateNamespace("Database"),"AddChem")
+                                       flag FINAL
+                                       dispid 12
+                                       method
+                                          name "Database/private:AddChem"
+                                          flag HAS_PARAM_NAMES
+                                          param QName(PackageNamespace(""),"Array")
+                                          param QName(PackageNamespace(""),"Number")
+                                          paramname "flash.utils"
+                                          paramname "flash.utils"
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 3
+                                             localcount 3
+                                             initscopedepth 3
+                                             maxscopedepth 4
+                                             
+                                             code
+                                                debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                debugline 59
+                                                getlocal0
+                                                pushscope
+                                                debug 1, "a", 0, 59
+                                                debug 1, "rank", 1, 59
+                                                debugline 60
+                                                getlocal1
+                                                pushbyte 0
+                                                getproperty MultinameL([PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                pushnull
+                                                ifeq ofs002b
+                                                debugline 61
+                                                getlex Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                getlocal1
+                                                getlocal2
+                                                callpropvoid Multiname("cAddChem",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 2
+                                       ofs002b:
+                                                debugline 63
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    private static function AddReaction(a:Array) : void
+                                    {
+                                       trait method QName(PrivateNamespace("Database"),"AddReaction")
+                                          flag FINAL
+                                          dispid 13
+                                          method
+                                             name "Database/private:AddReaction"
+                                             flag HAS_PARAM_NAMES
+                                             param QName(PackageNamespace(""),"Array")
+                                             paramname "flash.utils"
+                                             returns QName(PackageNamespace(""),"void")
+                                             
+                                             body
+                                                maxstack 2
+                                                localcount 2
+                                                initscopedepth 3
+                                                maxscopedepth 4
+                                                
+                                                code
+                                                   debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                   debugline 64
+                                                   getlocal0
+                                                   pushscope
+                                                   debug 1, "a", 0, 64
+                                                   debugline 66
+                                                   getlocal1
+                                                   pushbyte 0
+                                                   getproperty MultinameL([PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                   pushnull
+                                                   ifeq ofs0024
+                                                   debugline 67
+                                                   getlex Multiname("cdb",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                   getlocal1
+                                                   callpropvoid Multiname("cAddReaction",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 1
+                                          ofs0024:
+                                                   debugline 69
+                                                   returnvoid
+                                                end ; code
+                                             end ; body
+                                          end ; method
+                                       }
+                                       
+                                       private static function LoadCSV() : void
+                                       {
+                                          trait method QName(PrivateNamespace("Database"),"LoadCSV")
+                                             flag FINAL
+                                             dispid 14
+                                             method
+                                                name "Database/private:LoadCSV"
+                                                returns QName(PackageNamespace(""),"void")
+                                                
+                                                body
+                                                   maxstack 1
+                                                   localcount 1
+                                                   initscopedepth 3
+                                                   maxscopedepth 4
+                                                   
+                                                   code
+                                                      debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                      debugline 70
+                                                      getlocal0
+                                                      pushscope
+                                                      debugline 71
+                                                      getlex Multiname("CSVLoader",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                      callpropvoid Multiname("Load",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 0
+                                                      debugline 72
+                                                      returnvoid
+                                                   end ; code
+                                                end ; body
+                                             end ; method
+                                          }
+                                          
+                                          private static function loadError(e:IOErrorEvent) : void
+                                          {
+                                             trait method QName(PrivateNamespace("Database"),"loadError")
+                                                flag FINAL
+                                                dispid 15
+                                                method
+                                                   name "Database/private:loadError"
+                                                   flag HAS_PARAM_NAMES
+                                                   param QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                                                   paramname "flash.utils"
+                                                   returns QName(PackageNamespace(""),"void")
+                                                   
+                                                   body
+                                                      maxstack 2
+                                                      localcount 2
+                                                      initscopedepth 3
+                                                      maxscopedepth 4
+                                                      
+                                                      code
+                                                         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                         debugline 74
+                                                         getlocal0
+                                                         pushscope
+                                                         debug 1, "e", 0, 74
+                                                         debugline 75
+                                                         findpropstrict Multiname("trace",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")])
+                                                         pushstring "Error reading the data file. The server may be busy. Try refreshing the page."
+                                                         callpropvoid Multiname("trace",[PrivateNamespace("Database"),PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Database"),StaticProtectedNs("Database")]), 1
+                                                         debugline 76
+                                                         returnvoid
+                                                      end ; code
+                                                   end ; body
+                                                end ; method
+                                             }
+                                          }
+                                       }
+                                       
+                                       method
+                                          name ""
+                                          returns null
+                                          
+                                          body
+                                             maxstack 2
+                                             localcount 1
+                                             initscopedepth 1
+                                             maxscopedepth 3
+                                             
+                                             code
+                                                getlocal0
+                                                pushscope
+                                                debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                debugline 9
+                                                findpropstrict Multiname("Database",[PackageNamespace("")])
+                                                getlex QName(PackageNamespace(""),"Object")
+                                                pushscope
+                                                getlex Multiname("Object",[PackageNamespace(""),PrivateNamespace("Database.as$368"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                                                newclass 27
+                                                popscope
+                                                initproperty QName(PackageNamespace(""),"Database")
+                                                debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;Database.as"
+                                                debugline 6
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                       

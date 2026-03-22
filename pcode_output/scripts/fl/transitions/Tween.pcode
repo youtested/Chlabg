@@ -1,0 +1,1179 @@
+package fl.transitions
+{
+   import flash.display.*;
+   import flash.events.*;
+   import flash.utils.*;
+   
+   public class Tween extends EventDispatcher
+   {
+      
+      protected static var _mc:MovieClip;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 4
+            maxscopedepth 5
+            
+            code
+               getlocal0
+               pushscope
+               findproperty QName(StaticProtectedNs("fl.transitions:Tween"),"_mc")
+               findpropstrict QName(PackageNamespace("flash.display"),"MovieClip")
+               constructprop QName(PackageNamespace("flash.display"),"MovieClip"), 0
+               setproperty QName(StaticProtectedNs("fl.transitions:Tween"),"_mc")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var isPlaying:Boolean = false;
+      
+      public var obj:Object = null;
+      
+      public var prop:String = "";
+      
+      public var func:Function;
+      
+      public var begin:Number = NaN;
+      
+      public var change:Number = NaN;
+      
+      public var useSeconds:Boolean = false;
+      
+      public var prevTime:Number = NaN;
+      
+      public var prevPos:Number = NaN;
+      
+      public var looping:Boolean = false;
+      
+      private var _duration:Number = NaN;
+      
+      private var _time:Number = NaN;
+      
+      private var _fps:Number = NaN;
+      
+      private var _position:Number = NaN;
+      
+      private var _startTime:Number = NaN;
+      
+      private var _intervalID:uint = 0;
+      
+      private var _finish:Number = NaN;
+      
+      private var _timer:Timer = null;
+      
+      public function Tween(param1:Object, param2:String, param3:Function, param4:Number, param5:Number, param6:Number, param7:Boolean = false)
+      {
+         method
+            name ""
+            flag HAS_OPTIONAL
+            flag NEED_ARGUMENTS
+            param QName(PackageNamespace(""),"Object")
+            param QName(PackageNamespace(""),"String")
+            param QName(PackageNamespace(""),"Function")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Boolean")
+            optional False()
+            returns null
+            
+            body
+               maxstack 3
+               localcount 9
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  newfunction 380
+                  initproperty QName(PackageNamespace(""),"func")
+                  getlocal0
+                  constructsuper 0
+                  getlocal 8
+                  getproperty QName(PackageNamespace(""),"length")
+                  iftrue ofs0016
+                  returnvoid
+         ofs0016:
+                  getlocal0
+                  getlocal1
+                  initproperty QName(PackageNamespace(""),"obj")
+                  getlocal0
+                  getlocal2
+                  initproperty QName(PackageNamespace(""),"prop")
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PackageNamespace(""),"begin")
+                  getlocal0
+                  getlocal 4
+                  initproperty QName(PackageNamespace(""),"position")
+                  getlocal0
+                  getlocal 6
+                  initproperty QName(PackageNamespace(""),"duration")
+                  getlocal0
+                  getlocal 7
+                  initproperty QName(PackageNamespace(""),"useSeconds")
+                  getlocal3
+                  getlex QName(PackageNamespace(""),"Function")
+                  istypelate
+                  iffalse ofs0045
+                  getlocal0
+                  getlocal3
+                  initproperty QName(PackageNamespace(""),"func")
+         ofs0045:
+                  getlocal0
+                  getlocal 5
+                  initproperty QName(PackageNamespace(""),"finish")
+                  getlocal0
+                  findpropstrict QName(PackageNamespace("flash.utils"),"Timer")
+                  pushbyte 100
+                  constructprop QName(PackageNamespace("flash.utils"),"Timer"), 1
+                  initproperty QName(PrivateNamespace("fl.transitions:Tween"),"_timer")
+                  getlocal0
+                  callpropvoid QName(PackageNamespace(""),"start"), 0
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function get time() : Number
+      {
+         trait getter QName(PackageNamespace(""),"time")
+            dispid 0
+            method
+               name ""
+               returns QName(PackageNamespace(""),"Number")
+               
+               body
+                  maxstack 1
+                  localcount 1
+                  initscopedepth 5
+                  maxscopedepth 6
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function set time(param1:Number) : void
+         {
+            trait setter QName(PackageNamespace(""),"time")
+               dispid 0
+               method
+                  name ""
+                  param QName(PackageNamespace(""),"Number")
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 5
+                     localcount 2
+                     initscopedepth 5
+                     maxscopedepth 6
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        getlocal0
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                        setproperty QName(PackageNamespace(""),"prevTime")
+                        getlocal1
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"duration")
+                        ifngt ofs0081
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"looping")
+                        iffalse ofs0049
+                        getlocal0
+                        getlocal1
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                        subtract
+                        callpropvoid QName(PackageNamespace(""),"rewind"), 1
+                        getlocal0
+                        callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"update"), 0
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                        getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                        getproperty QName(PackageNamespace(""),"MOTION_LOOP")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                        constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                        callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+                        jump ofs007d
+               ofs0049:
+                        getlocal0
+                        getproperty QName(PackageNamespace(""),"useSeconds")
+                        iffalse ofs005e
+                        getlocal0
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                        setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                        getlocal0
+                        callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"update"), 0
+               ofs005e:
+                        getlocal0
+                        callpropvoid QName(PackageNamespace(""),"stop"), 0
+                        getlocal0
+                        findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                        getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                        getproperty QName(PackageNamespace(""),"MOTION_FINISH")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                        getlocal0
+                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                        constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                        callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+               ofs007d:
+                        jump ofs00a0
+               ofs0081:
+                        getlocal1
+                        pushbyte 0
+                        ifnlt ofs0096
+                        getlocal0
+                        callpropvoid QName(PackageNamespace(""),"rewind"), 0
+                        getlocal0
+                        callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"update"), 0
+                        jump ofs00a0
+               ofs0096:
+                        getlocal0
+                        getlocal1
+                        setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                        getlocal0
+                        callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"update"), 0
+               ofs00a0:
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function get duration() : Number
+            {
+               trait getter QName(PackageNamespace(""),"duration")
+                  dispid 0
+                  method
+                     name ""
+                     returns QName(PackageNamespace(""),"Number")
+                     
+                     body
+                        maxstack 1
+                        localcount 1
+                        initscopedepth 5
+                        maxscopedepth 6
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           getlocal0
+                           getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                           returnvalue
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function set duration(param1:Number) : void
+               {
+                  trait setter QName(PackageNamespace(""),"duration")
+                     dispid 0
+                     method
+                        name ""
+                        param QName(PackageNamespace(""),"Number")
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 2
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              getlocal1
+                              pushbyte 0
+                              ifnle ofs0012
+                              getlex QName(PackageNamespace(""),"Infinity")
+                              convert_d
+                              jump ofs0014
+                     ofs0012:
+                              getlocal1
+                              convert_d
+                     ofs0014:
+                              setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function get FPS() : Number
+                  {
+                     trait getter QName(PackageNamespace(""),"FPS")
+                        dispid 0
+                        method
+                           name ""
+                           returns QName(PackageNamespace(""),"Number")
+                           
+                           body
+                              maxstack 1
+                              localcount 1
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 getlocal0
+                                 getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_fps")
+                                 returnvalue
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function set FPS(param1:Number) : void
+                     {
+                        trait setter QName(PackageNamespace(""),"FPS")
+                           dispid 0
+                           method
+                              name ""
+                              param QName(PackageNamespace(""),"Number")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 2
+                                 localcount 3
+                                 initscopedepth 5
+                                 maxscopedepth 6
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    getlocal0
+                                    getproperty QName(PackageNamespace(""),"isPlaying")
+                                    convert_b
+                                    setlocal2
+                                    getlocal0
+                                    callpropvoid QName(ProtectedNamespace("fl.transitions:Tween"),"stopEnterFrame"), 0
+                                    getlocal0
+                                    getlocal1
+                                    setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_fps")
+                                    getlocal2
+                                    iffalse ofs001c
+                                    getlocal0
+                                    callpropvoid QName(ProtectedNamespace("fl.transitions:Tween"),"startEnterFrame"), 0
+                           ofs001c:
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function get position() : Number
+                        {
+                           trait getter QName(PackageNamespace(""),"position")
+                              dispid 0
+                              method
+                                 name ""
+                                 returns QName(PackageNamespace(""),"Number")
+                                 
+                                 body
+                                    maxstack 2
+                                    localcount 1
+                                    initscopedepth 5
+                                    maxscopedepth 6
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       getlocal0
+                                       getlocal0
+                                       getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                       callproperty QName(PackageNamespace(""),"getPosition"), 1
+                                       returnvalue
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function set position(param1:Number) : void
+                           {
+                              trait setter QName(PackageNamespace(""),"position")
+                                 dispid 0
+                                 method
+                                    name ""
+                                    param QName(PackageNamespace(""),"Number")
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 2
+                                       localcount 2
+                                       initscopedepth 5
+                                       maxscopedepth 6
+                                       
+                                       code
+                                          getlocal0
+                                          pushscope
+                                          getlocal0
+                                          getlocal1
+                                          callpropvoid QName(PackageNamespace(""),"setPosition"), 1
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              public function getPosition(param1:Number = NaN) : Number
+                              {
+                                 trait method QName(PackageNamespace(""),"getPosition")
+                                    dispid 0
+                                    method
+                                       name ""
+                                       flag HAS_OPTIONAL
+                                       param QName(PackageNamespace(""),"Number")
+                                       optional Double(NaN)
+                                       returns QName(PackageNamespace(""),"Number")
+                                       
+                                       body
+                                          maxstack 5
+                                          localcount 2
+                                          initscopedepth 5
+                                          maxscopedepth 6
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             findpropstrict QName(PackageNamespace(""),"isNaN")
+                                             getlocal1
+                                             callproperty QName(PackageNamespace(""),"isNaN"), 1
+                                             iffalse ofs0014
+                                             getlocal0
+                                             getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                             convert_d
+                                             setlocal1
+                                    ofs0014:
+                                             getlocal0
+                                             getlocal1
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"begin")
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"change")
+                                             getlocal0
+                                             getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                                             callproperty QName(PackageNamespace(""),"func"), 4
+                                             returnvalue
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 public function setPosition(param1:Number) : void
+                                 {
+                                    trait method QName(PackageNamespace(""),"setPosition")
+                                       dispid 0
+                                       method
+                                          name ""
+                                          param QName(PackageNamespace(""),"Number")
+                                          returns QName(PackageNamespace(""),"void")
+                                          
+                                          body
+                                             maxstack 5
+                                             localcount 3
+                                             initscopedepth 5
+                                             maxscopedepth 6
+                                             
+                                             code
+                                                getlocal0
+                                                pushscope
+                                                getlocal0
+                                                getlocal0
+                                                getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                setproperty QName(PackageNamespace(""),"prevPos")
+                                                getlocal0
+                                                getproperty QName(PackageNamespace(""),"prop")
+                                                getproperty QName(PackageNamespace(""),"length")
+                                                iffalse ofs002a
+                                                getlocal0
+                                                getproperty QName(PackageNamespace(""),"obj")
+                                                getlocal0
+                                                getproperty QName(PackageNamespace(""),"prop")
+                                                getlocal0
+                                                getlocal1
+                                                dup
+                                                setlocal2
+                                                setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                getlocal2
+                                                kill 2
+                                                setproperty MultinameL([PrivateNamespace("fl.transitions:Tween"),StaticProtectedNs("fl.transitions:Tween"),PackageNamespace("flash.display"),PackageNamespace(""),PackageNamespace("fl.transitions"),ProtectedNamespace("fl.transitions:Tween"),PrivateNamespace("Tween.as$79"),PackageInternalNs("fl.transitions"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.events"),PackageNamespace("flash.utils"),StaticProtectedNs("flash.events:EventDispatcher"),StaticProtectedNs("Object")])
+                                       ofs002a:
+                                                getlocal0
+                                                findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                getproperty QName(PackageNamespace(""),"MOTION_CHANGE")
+                                                getlocal0
+                                                getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                getlocal0
+                                                getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                                                callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+                                                returnvoid
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    public function get finish() : Number
+                                    {
+                                       trait getter QName(PackageNamespace(""),"finish")
+                                          dispid 0
+                                          method
+                                             name ""
+                                             returns QName(PackageNamespace(""),"Number")
+                                             
+                                             body
+                                                maxstack 2
+                                                localcount 1
+                                                initscopedepth 5
+                                                maxscopedepth 6
+                                                
+                                                code
+                                                   getlocal0
+                                                   pushscope
+                                                   getlocal0
+                                                   getproperty QName(PackageNamespace(""),"begin")
+                                                   getlocal0
+                                                   getproperty QName(PackageNamespace(""),"change")
+                                                   add
+                                                   returnvalue
+                                                end ; code
+                                             end ; body
+                                          end ; method
+                                       }
+                                       
+                                       public function set finish(param1:Number) : void
+                                       {
+                                          trait setter QName(PackageNamespace(""),"finish")
+                                             dispid 0
+                                             method
+                                                name ""
+                                                param QName(PackageNamespace(""),"Number")
+                                                returns QName(PackageNamespace(""),"void")
+                                                
+                                                body
+                                                   maxstack 3
+                                                   localcount 2
+                                                   initscopedepth 5
+                                                   maxscopedepth 6
+                                                   
+                                                   code
+                                                      getlocal0
+                                                      pushscope
+                                                      getlocal0
+                                                      getlocal1
+                                                      getlocal0
+                                                      getproperty QName(PackageNamespace(""),"begin")
+                                                      subtract
+                                                      setproperty QName(PackageNamespace(""),"change")
+                                                      returnvoid
+                                                   end ; code
+                                                end ; body
+                                             end ; method
+                                          }
+                                          
+                                          public function continueTo(param1:Number, param2:Number) : void
+                                          {
+                                             trait method QName(PackageNamespace(""),"continueTo")
+                                                dispid 0
+                                                method
+                                                   name ""
+                                                   param QName(PackageNamespace(""),"Number")
+                                                   param QName(PackageNamespace(""),"Number")
+                                                   returns QName(PackageNamespace(""),"void")
+                                                   
+                                                   body
+                                                      maxstack 2
+                                                      localcount 3
+                                                      initscopedepth 5
+                                                      maxscopedepth 6
+                                                      
+                                                      code
+                                                         getlocal0
+                                                         pushscope
+                                                         getlocal0
+                                                         getlocal0
+                                                         getproperty QName(PackageNamespace(""),"position")
+                                                         setproperty QName(PackageNamespace(""),"begin")
+                                                         getlocal0
+                                                         getlocal1
+                                                         setproperty QName(PackageNamespace(""),"finish")
+                                                         findpropstrict QName(PackageNamespace(""),"isNaN")
+                                                         getlocal2
+                                                         callproperty QName(PackageNamespace(""),"isNaN"), 1
+                                                         iftrue ofs0020
+                                                         getlocal0
+                                                         getlocal2
+                                                         setproperty QName(PackageNamespace(""),"duration")
+                                                ofs0020:
+                                                         getlocal0
+                                                         callpropvoid QName(PackageNamespace(""),"start"), 0
+                                                         returnvoid
+                                                      end ; code
+                                                   end ; body
+                                                end ; method
+                                             }
+                                             
+                                             public function yoyo() : void
+                                             {
+                                                trait method QName(PackageNamespace(""),"yoyo")
+                                                   dispid 0
+                                                   method
+                                                      name ""
+                                                      returns QName(PackageNamespace(""),"void")
+                                                      
+                                                      body
+                                                         maxstack 3
+                                                         localcount 1
+                                                         initscopedepth 5
+                                                         maxscopedepth 6
+                                                         
+                                                         code
+                                                            getlocal0
+                                                            pushscope
+                                                            getlocal0
+                                                            getlocal0
+                                                            getproperty QName(PackageNamespace(""),"begin")
+                                                            getlocal0
+                                                            getproperty QName(PackageNamespace(""),"time")
+                                                            callpropvoid QName(PackageNamespace(""),"continueTo"), 2
+                                                            returnvoid
+                                                         end ; code
+                                                      end ; body
+                                                   end ; method
+                                                }
+                                                
+                                                protected function startEnterFrame() : void
+                                                {
+                                                   trait method QName(ProtectedNamespace("fl.transitions:Tween"),"startEnterFrame")
+                                                      dispid 0
+                                                      method
+                                                         name ""
+                                                         returns QName(PackageNamespace(""),"void")
+                                                         
+                                                         body
+                                                            maxstack 6
+                                                            localcount 2
+                                                            initscopedepth 5
+                                                            maxscopedepth 6
+                                                            
+                                                            code
+                                                               getlocal0
+                                                               pushscope
+                                                               pushnan
+                                                               setlocal1
+                                                               findpropstrict QName(PackageNamespace(""),"isNaN")
+                                                               getlocal0
+                                                               getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_fps")
+                                                               callproperty QName(PackageNamespace(""),"isNaN"), 1
+                                                               iffalse ofs002b
+                                                               getlex QName(StaticProtectedNs("fl.transitions:Tween"),"_mc")
+                                                               getlex QName(PackageNamespace("flash.events"),"Event")
+                                                               getproperty QName(PackageNamespace(""),"ENTER_FRAME")
+                                                               getlocal0
+                                                               getproperty QName(ProtectedNamespace("fl.transitions:Tween"),"onEnterFrame")
+                                                               pushfalse
+                                                               pushbyte 0
+                                                               pushtrue
+                                                               callpropvoid QName(PackageNamespace(""),"addEventListener"), 5
+                                                               jump ofs005a
+                                                      ofs002b:
+                                                               pushshort 1000
+                                                               getlocal0
+                                                               getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_fps")
+                                                               divide
+                                                               convert_d
+                                                               setlocal1
+                                                               getlocal0
+                                                               getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_timer")
+                                                               getlocal1
+                                                               setproperty QName(PackageNamespace(""),"delay")
+                                                               getlocal0
+                                                               getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_timer")
+                                                               getlex QName(PackageNamespace("flash.events"),"TimerEvent")
+                                                               getproperty QName(PackageNamespace(""),"TIMER")
+                                                               getlocal0
+                                                               getproperty QName(ProtectedNamespace("fl.transitions:Tween"),"timerHandler")
+                                                               pushfalse
+                                                               pushbyte 0
+                                                               pushtrue
+                                                               callpropvoid QName(PackageNamespace(""),"addEventListener"), 5
+                                                               getlocal0
+                                                               getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_timer")
+                                                               callpropvoid QName(PackageNamespace(""),"start"), 0
+                                                      ofs005a:
+                                                               getlocal0
+                                                               pushtrue
+                                                               setproperty QName(PackageNamespace(""),"isPlaying")
+                                                               returnvoid
+                                                            end ; code
+                                                         end ; body
+                                                      end ; method
+                                                   }
+                                                   
+                                                   protected function stopEnterFrame() : void
+                                                   {
+                                                      trait method QName(ProtectedNamespace("fl.transitions:Tween"),"stopEnterFrame")
+                                                         dispid 0
+                                                         method
+                                                            name ""
+                                                            returns QName(PackageNamespace(""),"void")
+                                                            
+                                                            body
+                                                               maxstack 3
+                                                               localcount 1
+                                                               initscopedepth 5
+                                                               maxscopedepth 6
+                                                               
+                                                               code
+                                                                  getlocal0
+                                                                  pushscope
+                                                                  findpropstrict QName(PackageNamespace(""),"isNaN")
+                                                                  getlocal0
+                                                                  getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_fps")
+                                                                  callproperty QName(PackageNamespace(""),"isNaN"), 1
+                                                                  iffalse ofs0025
+                                                                  getlex QName(StaticProtectedNs("fl.transitions:Tween"),"_mc")
+                                                                  getlex QName(PackageNamespace("flash.events"),"Event")
+                                                                  getproperty QName(PackageNamespace(""),"ENTER_FRAME")
+                                                                  getlocal0
+                                                                  getproperty QName(ProtectedNamespace("fl.transitions:Tween"),"onEnterFrame")
+                                                                  callpropvoid QName(PackageNamespace(""),"removeEventListener"), 2
+                                                                  jump ofs002d
+                                                         ofs0025:
+                                                                  getlocal0
+                                                                  getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_timer")
+                                                                  callpropvoid QName(PackageNamespace(""),"stop"), 0
+                                                         ofs002d:
+                                                                  getlocal0
+                                                                  pushfalse
+                                                                  setproperty QName(PackageNamespace(""),"isPlaying")
+                                                                  returnvoid
+                                                               end ; code
+                                                            end ; body
+                                                         end ; method
+                                                      }
+                                                      
+                                                      public function start() : void
+                                                      {
+                                                         trait method QName(PackageNamespace(""),"start")
+                                                            dispid 0
+                                                            method
+                                                               name ""
+                                                               returns QName(PackageNamespace(""),"void")
+                                                               
+                                                               body
+                                                                  maxstack 5
+                                                                  localcount 1
+                                                                  initscopedepth 5
+                                                                  maxscopedepth 6
+                                                                  
+                                                                  code
+                                                                     getlocal0
+                                                                     pushscope
+                                                                     getlocal0
+                                                                     callpropvoid QName(PackageNamespace(""),"rewind"), 0
+                                                                     getlocal0
+                                                                     callpropvoid QName(ProtectedNamespace("fl.transitions:Tween"),"startEnterFrame"), 0
+                                                                     getlocal0
+                                                                     findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                     getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                     getproperty QName(PackageNamespace(""),"MOTION_START")
+                                                                     getlocal0
+                                                                     getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                     getlocal0
+                                                                     getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                                     constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                                                                     callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+                                                                     returnvoid
+                                                                  end ; code
+                                                               end ; body
+                                                            end ; method
+                                                         }
+                                                         
+                                                         public function stop() : void
+                                                         {
+                                                            trait method QName(PackageNamespace(""),"stop")
+                                                               dispid 0
+                                                               method
+                                                                  name ""
+                                                                  returns QName(PackageNamespace(""),"void")
+                                                                  
+                                                                  body
+                                                                     maxstack 5
+                                                                     localcount 1
+                                                                     initscopedepth 5
+                                                                     maxscopedepth 6
+                                                                     
+                                                                     code
+                                                                        getlocal0
+                                                                        pushscope
+                                                                        getlocal0
+                                                                        callpropvoid QName(ProtectedNamespace("fl.transitions:Tween"),"stopEnterFrame"), 0
+                                                                        getlocal0
+                                                                        findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                        getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                        getproperty QName(PackageNamespace(""),"MOTION_STOP")
+                                                                        getlocal0
+                                                                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                        getlocal0
+                                                                        getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                                        constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                                                                        callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+                                                                        returnvoid
+                                                                     end ; code
+                                                                  end ; body
+                                                               end ; method
+                                                            }
+                                                            
+                                                            public function resume() : void
+                                                            {
+                                                               trait method QName(PackageNamespace(""),"resume")
+                                                                  dispid 0
+                                                                  method
+                                                                     name ""
+                                                                     returns QName(PackageNamespace(""),"void")
+                                                                     
+                                                                     body
+                                                                        maxstack 5
+                                                                        localcount 1
+                                                                        initscopedepth 5
+                                                                        maxscopedepth 6
+                                                                        
+                                                                        code
+                                                                           getlocal0
+                                                                           pushscope
+                                                                           getlocal0
+                                                                           callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"fixTime"), 0
+                                                                           getlocal0
+                                                                           callpropvoid QName(ProtectedNamespace("fl.transitions:Tween"),"startEnterFrame"), 0
+                                                                           getlocal0
+                                                                           findpropstrict QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                           getlex QName(PackageNamespace("fl.transitions"),"TweenEvent")
+                                                                           getproperty QName(PackageNamespace(""),"MOTION_RESUME")
+                                                                           getlocal0
+                                                                           getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                           getlocal0
+                                                                           getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_position")
+                                                                           constructprop QName(PackageNamespace("fl.transitions"),"TweenEvent"), 3
+                                                                           callpropvoid QName(PackageNamespace(""),"dispatchEvent"), 1
+                                                                           returnvoid
+                                                                        end ; code
+                                                                     end ; body
+                                                                  end ; method
+                                                               }
+                                                               
+                                                               public function rewind(param1:Number = 0) : void
+                                                               {
+                                                                  trait method QName(PackageNamespace(""),"rewind")
+                                                                     dispid 0
+                                                                     method
+                                                                        name ""
+                                                                        flag HAS_OPTIONAL
+                                                                        param QName(PackageNamespace(""),"Number")
+                                                                        optional Integer(0)
+                                                                        returns QName(PackageNamespace(""),"void")
+                                                                        
+                                                                        body
+                                                                           maxstack 2
+                                                                           localcount 2
+                                                                           initscopedepth 5
+                                                                           maxscopedepth 6
+                                                                           
+                                                                           code
+                                                                              getlocal0
+                                                                              pushscope
+                                                                              getlocal0
+                                                                              getlocal1
+                                                                              setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                              getlocal0
+                                                                              callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"fixTime"), 0
+                                                                              getlocal0
+                                                                              callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"update"), 0
+                                                                              returnvoid
+                                                                           end ; code
+                                                                        end ; body
+                                                                     end ; method
+                                                                  }
+                                                                  
+                                                                  public function fforward() : void
+                                                                  {
+                                                                     trait method QName(PackageNamespace(""),"fforward")
+                                                                        dispid 0
+                                                                        method
+                                                                           name ""
+                                                                           returns QName(PackageNamespace(""),"void")
+                                                                           
+                                                                           body
+                                                                              maxstack 2
+                                                                              localcount 1
+                                                                              initscopedepth 5
+                                                                              maxscopedepth 6
+                                                                              
+                                                                              code
+                                                                                 getlocal0
+                                                                                 pushscope
+                                                                                 getlocal0
+                                                                                 getlocal0
+                                                                                 getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_duration")
+                                                                                 setproperty QName(PackageNamespace(""),"time")
+                                                                                 getlocal0
+                                                                                 callpropvoid QName(PrivateNamespace("fl.transitions:Tween"),"fixTime"), 0
+                                                                                 returnvoid
+                                                                              end ; code
+                                                                           end ; body
+                                                                        end ; method
+                                                                     }
+                                                                     
+                                                                     public function nextFrame() : void
+                                                                     {
+                                                                        trait method QName(PackageNamespace(""),"nextFrame")
+                                                                           dispid 0
+                                                                           method
+                                                                              name ""
+                                                                              returns QName(PackageNamespace(""),"void")
+                                                                              
+                                                                              body
+                                                                                 maxstack 3
+                                                                                 localcount 1
+                                                                                 initscopedepth 5
+                                                                                 maxscopedepth 6
+                                                                                 
+                                                                                 code
+                                                                                    getlocal0
+                                                                                    pushscope
+                                                                                    getlocal0
+                                                                                    getproperty QName(PackageNamespace(""),"useSeconds")
+                                                                                    iffalse ofs0022
+                                                                                    getlocal0
+                                                                                    findpropstrict QName(PackageNamespace("flash.utils"),"getTimer")
+                                                                                    callproperty QName(PackageNamespace("flash.utils"),"getTimer"), 0
+                                                                                    getlocal0
+                                                                                    getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_startTime")
+                                                                                    subtract
+                                                                                    pushshort 1000
+                                                                                    divide
+                                                                                    setproperty QName(PackageNamespace(""),"time")
+                                                                                    jump ofs002d
+                                                                           ofs0022:
+                                                                                    getlocal0
+                                                                                    getlocal0
+                                                                                    getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                                    pushbyte 1
+                                                                                    add
+                                                                                    setproperty QName(PackageNamespace(""),"time")
+                                                                           ofs002d:
+                                                                                    returnvoid
+                                                                                 end ; code
+                                                                              end ; body
+                                                                           end ; method
+                                                                        }
+                                                                        
+                                                                        protected function onEnterFrame(param1:Event) : void
+                                                                        {
+                                                                           trait method QName(ProtectedNamespace("fl.transitions:Tween"),"onEnterFrame")
+                                                                              dispid 0
+                                                                              method
+                                                                                 name ""
+                                                                                 param QName(PackageNamespace("flash.events"),"Event")
+                                                                                 returns QName(PackageNamespace(""),"void")
+                                                                                 
+                                                                                 body
+                                                                                    maxstack 1
+                                                                                    localcount 2
+                                                                                    initscopedepth 5
+                                                                                    maxscopedepth 6
+                                                                                    
+                                                                                    code
+                                                                                       getlocal0
+                                                                                       pushscope
+                                                                                       getlocal0
+                                                                                       callpropvoid QName(PackageNamespace(""),"nextFrame"), 0
+                                                                                       returnvoid
+                                                                                    end ; code
+                                                                                 end ; body
+                                                                              end ; method
+                                                                           }
+                                                                           
+                                                                           protected function timerHandler(param1:TimerEvent) : void
+                                                                           {
+                                                                              trait method QName(ProtectedNamespace("fl.transitions:Tween"),"timerHandler")
+                                                                                 dispid 0
+                                                                                 method
+                                                                                    name ""
+                                                                                    param QName(PackageNamespace("flash.events"),"TimerEvent")
+                                                                                    returns QName(PackageNamespace(""),"void")
+                                                                                    
+                                                                                    body
+                                                                                       maxstack 1
+                                                                                       localcount 2
+                                                                                       initscopedepth 5
+                                                                                       maxscopedepth 6
+                                                                                       
+                                                                                       code
+                                                                                          getlocal0
+                                                                                          pushscope
+                                                                                          getlocal0
+                                                                                          callpropvoid QName(PackageNamespace(""),"nextFrame"), 0
+                                                                                          getlocal1
+                                                                                          callpropvoid QName(PackageNamespace(""),"updateAfterEvent"), 0
+                                                                                          returnvoid
+                                                                                       end ; code
+                                                                                    end ; body
+                                                                                 end ; method
+                                                                              }
+                                                                              
+                                                                              public function prevFrame() : void
+                                                                              {
+                                                                                 trait method QName(PackageNamespace(""),"prevFrame")
+                                                                                    dispid 0
+                                                                                    method
+                                                                                       name ""
+                                                                                       returns QName(PackageNamespace(""),"void")
+                                                                                       
+                                                                                       body
+                                                                                          maxstack 3
+                                                                                          localcount 1
+                                                                                          initscopedepth 5
+                                                                                          maxscopedepth 6
+                                                                                          
+                                                                                          code
+                                                                                             getlocal0
+                                                                                             pushscope
+                                                                                             getlocal0
+                                                                                             getproperty QName(PackageNamespace(""),"useSeconds")
+                                                                                             iftrue ofs0013
+                                                                                             getlocal0
+                                                                                             getlocal0
+                                                                                             getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                                             decrement
+                                                                                             setproperty QName(PackageNamespace(""),"time")
+                                                                                    ofs0013:
+                                                                                             returnvoid
+                                                                                          end ; code
+                                                                                       end ; body
+                                                                                    end ; method
+                                                                                 }
+                                                                                 
+                                                                                 private function fixTime() : void
+                                                                                 {
+                                                                                    trait method QName(PrivateNamespace("fl.transitions:Tween"),"fixTime")
+                                                                                       dispid 0
+                                                                                       method
+                                                                                          name ""
+                                                                                          returns QName(PackageNamespace(""),"void")
+                                                                                          
+                                                                                          body
+                                                                                             maxstack 4
+                                                                                             localcount 1
+                                                                                             initscopedepth 5
+                                                                                             maxscopedepth 6
+                                                                                             
+                                                                                             code
+                                                                                                getlocal0
+                                                                                                pushscope
+                                                                                                getlocal0
+                                                                                                getproperty QName(PackageNamespace(""),"useSeconds")
+                                                                                                iffalse ofs001e
+                                                                                                getlocal0
+                                                                                                findpropstrict QName(PackageNamespace("flash.utils"),"getTimer")
+                                                                                                callproperty QName(PackageNamespace("flash.utils"),"getTimer"), 0
+                                                                                                getlocal0
+                                                                                                getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                                                pushshort 1000
+                                                                                                multiply
+                                                                                                subtract
+                                                                                                setproperty QName(PrivateNamespace("fl.transitions:Tween"),"_startTime")
+                                                                                       ofs001e:
+                                                                                                returnvoid
+                                                                                             end ; code
+                                                                                          end ; body
+                                                                                       end ; method
+                                                                                    }
+                                                                                    
+                                                                                    private function update() : void
+                                                                                    {
+                                                                                       trait method QName(PrivateNamespace("fl.transitions:Tween"),"update")
+                                                                                          dispid 0
+                                                                                          method
+                                                                                             name ""
+                                                                                             returns QName(PackageNamespace(""),"void")
+                                                                                             
+                                                                                             body
+                                                                                                maxstack 3
+                                                                                                localcount 1
+                                                                                                initscopedepth 5
+                                                                                                maxscopedepth 6
+                                                                                                
+                                                                                                code
+                                                                                                   getlocal0
+                                                                                                   pushscope
+                                                                                                   getlocal0
+                                                                                                   getlocal0
+                                                                                                   getlocal0
+                                                                                                   getproperty QName(PrivateNamespace("fl.transitions:Tween"),"_time")
+                                                                                                   callproperty QName(PackageNamespace(""),"getPosition"), 1
+                                                                                                   callpropvoid QName(PackageNamespace(""),"setPosition"), 1
+                                                                                                   returnvoid
+                                                                                                end ; code
+                                                                                             end ; body
+                                                                                          end ; method
+                                                                                       }
+                                                                                    }
+                                                                                 }
+                                                                                 
+                                                                                 method
+                                                                                    name ""
+                                                                                    returns null
+                                                                                    
+                                                                                    body
+                                                                                       maxstack 2
+                                                                                       localcount 1
+                                                                                       initscopedepth 1
+                                                                                       maxscopedepth 4
+                                                                                       
+                                                                                       code
+                                                                                          getlocal0
+                                                                                          pushscope
+                                                                                          findpropstrict Multiname("Tween",[PackageNamespace("fl.transitions")])
+                                                                                          getlex QName(PackageNamespace(""),"Object")
+                                                                                          pushscope
+                                                                                          getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                                                                                          pushscope
+                                                                                          getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                                                                                          newclass 35
+                                                                                          popscope
+                                                                                          popscope
+                                                                                          initproperty QName(PackageNamespace("fl.transitions"),"Tween")
+                                                                                          returnvoid
+                                                                                       end ; code
+                                                                                    end ; body
+                                                                                 end ; method
+                                                                                 

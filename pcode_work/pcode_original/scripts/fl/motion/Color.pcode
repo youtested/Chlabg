@@ -1,0 +1,870 @@
+package fl.motion
+{
+   import flash.display.*;
+   import flash.geom.ColorTransform;
+   
+   public class Color extends ColorTransform
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 4
+            maxscopedepth 5
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var _tintColor:Number = 0;
+      
+      private var _tintMultiplier:Number = 0;
+      
+      public function Color(param1:Number = 1, param2:Number = 1, param3:Number = 1, param4:Number = 1, param5:Number = 0, param6:Number = 0, param7:Number = 0, param8:Number = 0)
+      {
+         method
+            name ""
+            flag HAS_OPTIONAL
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            param QName(PackageNamespace(""),"Number")
+            optional Double(1)
+            optional Double(1)
+            optional Double(1)
+            optional Double(1)
+            optional Integer(0)
+            optional Integer(0)
+            optional Integer(0)
+            optional Integer(0)
+            returns null
+            
+            body
+               maxstack 9
+               localcount 9
+               initscopedepth 5
+               maxscopedepth 6
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  getlocal1
+                  getlocal2
+                  getlocal3
+                  getlocal 4
+                  getlocal 5
+                  getlocal 6
+                  getlocal 7
+                  getlocal 8
+                  constructsuper 8
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function fromXML(param1:XML) : Color
+      {
+         trait method QName(PackageNamespace(""),"fromXML")
+            flag FINAL
+            dispid 3
+            method
+               name ""
+               param QName(PackageNamespace(""),"XML")
+               returns QName(PackageNamespace("fl.motion"),"Color")
+               
+               body
+                  maxstack 4
+                  localcount 2
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     getlocal0
+                     getscopeobject 0
+                     getlocal0
+                     construct 0
+                     getlocal1
+                     callproperty QName(PrivateNamespace("fl.motion:Color"),"parseXML"), 1
+                     call 1
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function interpolateTransform(param1:ColorTransform, param2:ColorTransform, param3:Number) : ColorTransform
+         {
+            trait method QName(PackageNamespace(""),"interpolateTransform")
+               flag FINAL
+               dispid 4
+               method
+                  name ""
+                  param QName(PackageNamespace("flash.geom"),"ColorTransform")
+                  param QName(PackageNamespace("flash.geom"),"ColorTransform")
+                  param QName(PackageNamespace(""),"Number")
+                  returns QName(PackageNamespace("flash.geom"),"ColorTransform")
+                  
+                  body
+                     maxstack 11
+                     localcount 6
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        pushbyte 1
+                        getlocal3
+                        subtract
+                        convert_d
+                        setlocal 4
+                        findpropstrict QName(PackageNamespace("flash.geom"),"ColorTransform")
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"redMultiplier")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"redMultiplier")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"greenMultiplier")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"greenMultiplier")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"blueMultiplier")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"blueMultiplier")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"alphaMultiplier")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"alphaMultiplier")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"redOffset")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"redOffset")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"greenOffset")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"greenOffset")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"blueOffset")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"blueOffset")
+                        getlocal3
+                        multiply
+                        add
+                        getlocal1
+                        getproperty QName(PackageNamespace(""),"alphaOffset")
+                        getlocal 4
+                        multiply
+                        getlocal2
+                        getproperty QName(PackageNamespace(""),"alphaOffset")
+                        getlocal3
+                        multiply
+                        add
+                        constructprop QName(PackageNamespace("flash.geom"),"ColorTransform"), 8
+                        coerce QName(PackageNamespace("flash.geom"),"ColorTransform")
+                        dup
+                        setlocal 5
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function interpolateColor(param1:uint, param2:uint, param3:Number) : uint
+            {
+               trait method QName(PackageNamespace(""),"interpolateColor")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name ""
+                     param QName(PackageNamespace(""),"uint")
+                     param QName(PackageNamespace(""),"uint")
+                     param QName(PackageNamespace(""),"Number")
+                     returns QName(PackageNamespace(""),"uint")
+                     
+                     body
+                        maxstack 3
+                        localcount 18
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           getlocal0
+                           pushscope
+                           pushbyte 1
+                           getlocal3
+                           subtract
+                           convert_d
+                           setlocal 4
+                           getlocal1
+                           pushbyte 24
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 5
+                           getlocal1
+                           pushbyte 16
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 6
+                           getlocal1
+                           pushbyte 8
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 7
+                           getlocal1
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 8
+                           getlocal2
+                           pushbyte 24
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 9
+                           getlocal2
+                           pushbyte 16
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 10
+                           getlocal2
+                           pushbyte 8
+                           rshift
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 11
+                           getlocal2
+                           pushshort 255
+                           bitand
+                           convert_u
+                           setlocal 12
+                           getlocal 5
+                           getlocal 4
+                           multiply
+                           getlocal 9
+                           getlocal3
+                           multiply
+                           add
+                           convert_u
+                           setlocal 13
+                           getlocal 6
+                           getlocal 4
+                           multiply
+                           getlocal 10
+                           getlocal3
+                           multiply
+                           add
+                           convert_u
+                           setlocal 14
+                           getlocal 7
+                           getlocal 4
+                           multiply
+                           getlocal 11
+                           getlocal3
+                           multiply
+                           add
+                           convert_u
+                           setlocal 15
+                           getlocal 8
+                           getlocal 4
+                           multiply
+                           getlocal 12
+                           getlocal3
+                           multiply
+                           add
+                           convert_u
+                           setlocal 16
+                           getlocal 13
+                           pushbyte 24
+                           lshift
+                           getlocal 14
+                           pushbyte 16
+                           lshift
+                           bitor
+                           getlocal 15
+                           pushbyte 8
+                           lshift
+                           bitor
+                           getlocal 16
+                           bitor
+                           convert_u
+                           dup
+                           setlocal 17
+                           returnvalue
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function get brightness() : Number
+               {
+                  trait getter QName(PackageNamespace(""),"brightness")
+                     dispid 0
+                     method
+                        name ""
+                        returns QName(PackageNamespace(""),"Number")
+                        
+                        body
+                           maxstack 2
+                           localcount 1
+                           initscopedepth 5
+                           maxscopedepth 6
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"redOffset")
+                              iffalse ofs0016
+                              pushbyte 1
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"redMultiplier")
+                              subtract
+                              convert_d
+                              jump ofs001c
+                     ofs0016:
+                              getlocal0
+                              getproperty QName(PackageNamespace(""),"redMultiplier")
+                              decrement
+                              convert_d
+                     ofs001c:
+                              returnvalue
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function set brightness(param1:Number) : void
+                  {
+                     trait setter QName(PackageNamespace(""),"brightness")
+                        dispid 0
+                        method
+                           name ""
+                           param QName(PackageNamespace(""),"Number")
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 5
+                              localcount 5
+                              initscopedepth 5
+                              maxscopedepth 6
+                              
+                              code
+                                 getlocal0
+                                 pushscope
+                                 getlocal1
+                                 pushbyte 1
+                                 ifngt ofs0011
+                                 pushbyte 1
+                                 convert_d
+                                 setlocal1
+                                 jump ofs001c
+                        ofs0011:
+                                 getlocal1
+                                 pushbyte -1
+                                 ifnlt ofs001c
+                                 pushbyte -1
+                                 convert_d
+                                 setlocal1
+                        ofs001c:
+                                 pushbyte 1
+                                 getlex QName(PackageNamespace(""),"Math")
+                                 getlocal1
+                                 callproperty QName(PackageNamespace(""),"abs"), 1
+                                 subtract
+                                 convert_d
+                                 setlocal2
+                                 pushbyte 0
+                                 convert_d
+                                 setlocal3
+                                 getlocal1
+                                 pushbyte 0
+                                 ifngt ofs003b
+                                 getlocal1
+                                 pushshort 255
+                                 multiply
+                                 convert_d
+                                 setlocal3
+                        ofs003b:
+                                 getlocal0
+                                 getlocal0
+                                 getlocal0
+                                 getlocal2
+                                 dup
+                                 setlocal 4
+                                 setproperty QName(PackageNamespace(""),"blueMultiplier")
+                                 getlocal 4
+                                 kill 4
+                                 dup
+                                 setlocal 4
+                                 setproperty QName(PackageNamespace(""),"greenMultiplier")
+                                 getlocal 4
+                                 kill 4
+                                 setproperty QName(PackageNamespace(""),"redMultiplier")
+                                 getlocal0
+                                 getlocal0
+                                 getlocal0
+                                 getlocal3
+                                 dup
+                                 setlocal 4
+                                 setproperty QName(PackageNamespace(""),"blueOffset")
+                                 getlocal 4
+                                 kill 4
+                                 dup
+                                 setlocal 4
+                                 setproperty QName(PackageNamespace(""),"greenOffset")
+                                 getlocal 4
+                                 kill 4
+                                 setproperty QName(PackageNamespace(""),"redOffset")
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function setTint(param1:uint, param2:Number) : void
+                     {
+                        trait method QName(PackageNamespace(""),"setTint")
+                           dispid 0
+                           method
+                              name ""
+                              param QName(PackageNamespace(""),"uint")
+                              param QName(PackageNamespace(""),"Number")
+                              returns QName(PackageNamespace(""),"void")
+                              
+                              body
+                                 maxstack 5
+                                 localcount 7
+                                 initscopedepth 5
+                                 maxscopedepth 6
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    getlocal0
+                                    getlocal1
+                                    setproperty QName(PrivateNamespace("fl.motion:Color"),"_tintColor")
+                                    getlocal0
+                                    getlocal2
+                                    setproperty QName(PrivateNamespace("fl.motion:Color"),"_tintMultiplier")
+                                    getlocal0
+                                    getlocal0
+                                    getlocal0
+                                    pushbyte 1
+                                    getlocal2
+                                    subtract
+                                    dup
+                                    setlocal 6
+                                    setproperty QName(PackageNamespace(""),"blueMultiplier")
+                                    getlocal 6
+                                    kill 6
+                                    dup
+                                    setlocal 6
+                                    setproperty QName(PackageNamespace(""),"greenMultiplier")
+                                    getlocal 6
+                                    kill 6
+                                    setproperty QName(PackageNamespace(""),"redMultiplier")
+                                    getlocal1
+                                    pushbyte 16
+                                    rshift
+                                    pushshort 255
+                                    bitand
+                                    convert_u
+                                    setlocal3
+                                    getlocal1
+                                    pushbyte 8
+                                    rshift
+                                    pushshort 255
+                                    bitand
+                                    convert_u
+                                    setlocal 4
+                                    getlocal1
+                                    pushshort 255
+                                    bitand
+                                    convert_u
+                                    setlocal 5
+                                    getlocal0
+                                    getlex QName(PackageNamespace(""),"Math")
+                                    getlocal3
+                                    getlocal2
+                                    multiply
+                                    callproperty QName(PackageNamespace(""),"round"), 1
+                                    setproperty QName(PackageNamespace(""),"redOffset")
+                                    getlocal0
+                                    getlex QName(PackageNamespace(""),"Math")
+                                    getlocal 4
+                                    getlocal2
+                                    multiply
+                                    callproperty QName(PackageNamespace(""),"round"), 1
+                                    setproperty QName(PackageNamespace(""),"greenOffset")
+                                    getlocal0
+                                    getlex QName(PackageNamespace(""),"Math")
+                                    getlocal 5
+                                    getlocal2
+                                    multiply
+                                    callproperty QName(PackageNamespace(""),"round"), 1
+                                    setproperty QName(PackageNamespace(""),"blueOffset")
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function get tintColor() : uint
+                        {
+                           trait getter QName(PackageNamespace(""),"tintColor")
+                              dispid 0
+                              method
+                                 name ""
+                                 returns QName(PackageNamespace(""),"uint")
+                                 
+                                 body
+                                    maxstack 1
+                                    localcount 1
+                                    initscopedepth 5
+                                    maxscopedepth 6
+                                    
+                                    code
+                                       getlocal0
+                                       pushscope
+                                       getlocal0
+                                       getproperty QName(PrivateNamespace("fl.motion:Color"),"_tintColor")
+                                       returnvalue
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function set tintColor(param1:uint) : void
+                           {
+                              trait setter QName(PackageNamespace(""),"tintColor")
+                                 dispid 0
+                                 method
+                                    name ""
+                                    param QName(PackageNamespace(""),"uint")
+                                    returns QName(PackageNamespace(""),"void")
+                                    
+                                    body
+                                       maxstack 3
+                                       localcount 2
+                                       initscopedepth 5
+                                       maxscopedepth 6
+                                       
+                                       code
+                                          getlocal0
+                                          pushscope
+                                          getlocal0
+                                          getlocal1
+                                          getlocal0
+                                          getproperty QName(PackageNamespace(""),"tintMultiplier")
+                                          callpropvoid QName(PackageNamespace(""),"setTint"), 2
+                                          returnvoid
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              private function deriveTintColor() : uint
+                              {
+                                 trait method QName(PrivateNamespace("fl.motion:Color"),"deriveTintColor")
+                                    dispid 0
+                                    method
+                                       name ""
+                                       returns QName(PackageNamespace(""),"uint")
+                                       
+                                       body
+                                          maxstack 3
+                                          localcount 6
+                                          initscopedepth 5
+                                          maxscopedepth 6
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             pushbyte 1
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"tintMultiplier")
+                                             divide
+                                             convert_d
+                                             setlocal1
+                                             getlex QName(PackageNamespace(""),"Math")
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"redOffset")
+                                             getlocal1
+                                             multiply
+                                             callproperty QName(PackageNamespace(""),"round"), 1
+                                             convert_u
+                                             setlocal2
+                                             getlex QName(PackageNamespace(""),"Math")
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"greenOffset")
+                                             getlocal1
+                                             multiply
+                                             callproperty QName(PackageNamespace(""),"round"), 1
+                                             convert_u
+                                             setlocal3
+                                             getlex QName(PackageNamespace(""),"Math")
+                                             getlocal0
+                                             getproperty QName(PackageNamespace(""),"blueOffset")
+                                             getlocal1
+                                             multiply
+                                             callproperty QName(PackageNamespace(""),"round"), 1
+                                             convert_u
+                                             setlocal 4
+                                             getlocal2
+                                             pushbyte 16
+                                             lshift
+                                             getlocal3
+                                             pushbyte 8
+                                             lshift
+                                             bitor
+                                             getlocal 4
+                                             bitor
+                                             convert_u
+                                             dup
+                                             setlocal 5
+                                             returnvalue
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                                 
+                                 public function get tintMultiplier() : Number
+                                 {
+                                    trait getter QName(PackageNamespace(""),"tintMultiplier")
+                                       dispid 0
+                                       method
+                                          name ""
+                                          returns QName(PackageNamespace(""),"Number")
+                                          
+                                          body
+                                             maxstack 1
+                                             localcount 1
+                                             initscopedepth 5
+                                             maxscopedepth 6
+                                             
+                                             code
+                                                getlocal0
+                                                pushscope
+                                                getlocal0
+                                                getproperty QName(PrivateNamespace("fl.motion:Color"),"_tintMultiplier")
+                                                returnvalue
+                                             end ; code
+                                          end ; body
+                                       end ; method
+                                    }
+                                    
+                                    public function set tintMultiplier(param1:Number) : void
+                                    {
+                                       trait setter QName(PackageNamespace(""),"tintMultiplier")
+                                          dispid 0
+                                          method
+                                             name ""
+                                             param QName(PackageNamespace(""),"Number")
+                                             returns QName(PackageNamespace(""),"void")
+                                             
+                                             body
+                                                maxstack 3
+                                                localcount 2
+                                                initscopedepth 5
+                                                maxscopedepth 6
+                                                
+                                                code
+                                                   getlocal0
+                                                   pushscope
+                                                   getlocal0
+                                                   getlocal0
+                                                   getproperty QName(PackageNamespace(""),"tintColor")
+                                                   getlocal1
+                                                   callpropvoid QName(PackageNamespace(""),"setTint"), 2
+                                                   returnvoid
+                                                end ; code
+                                             end ; body
+                                          end ; method
+                                       }
+                                       
+                                       private function parseXML(param1:XML = null) : Color
+                                       {
+                                          trait method QName(PrivateNamespace("fl.motion:Color"),"parseXML")
+                                             dispid 0
+                                             method
+                                                name ""
+                                                flag HAS_OPTIONAL
+                                                param QName(PackageNamespace(""),"XML")
+                                                optional Null()
+                                                returns QName(PackageNamespace("fl.motion"),"Color")
+                                                
+                                                body
+                                                   maxstack 4
+                                                   localcount 8
+                                                   initscopedepth 5
+                                                   maxscopedepth 6
+                                                   
+                                                   code
+                                                      getlocal0
+                                                      pushscope
+                                                      pushnull
+                                                      coerce QName(PackageNamespace(""),"XML")
+                                                      setlocal3
+                                                      pushnull
+                                                      coerce_s
+                                                      setlocal 4
+                                                      pushbyte 0
+                                                      convert_u
+                                                      setlocal 5
+                                                      getlocal1
+                                                      iftrue ofs0016
+                                                      getlocal0
+                                                      returnvalue
+                                             ofs0016:
+                                                      getlocal1
+                                                      callproperty Multiname("elements",[PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")]), 0
+                                                      pushbyte 0
+                                                      getproperty MultinameL([PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")])
+                                                      coerce QName(PackageNamespace(""),"XML")
+                                                      setlocal2
+                                                      getlocal2
+                                                      iftrue ofs002a
+                                                      getlocal0
+                                                      returnvalue
+                                             ofs002a:
+                                                      pushbyte 0
+                                                      setlocal 6
+                                                      getlocal2
+                                                      callproperty Multiname("attributes",[PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")]), 0
+                                                      coerce_a
+                                                      setlocal 7
+                                                      jump ofs007d
+                                             ofs003a:
+                                                      label
+                                                      getlocal 7
+                                                      getlocal 6
+                                                      nextvalue
+                                                      coerce QName(PackageNamespace(""),"XML")
+                                                      setlocal3
+                                                      getlocal3
+                                                      callproperty Multiname("localName",[PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")]), 0
+                                                      coerce_s
+                                                      dup
+                                                      setlocal 4
+                                                      pushstring "tintColor"
+                                                      ifne ofs006d
+                                                      findpropstrict QName(PackageNamespace(""),"Number")
+                                                      getlocal3
+                                                      callproperty Multiname("toString",[PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")]), 0
+                                                      callproperty QName(PackageNamespace(""),"Number"), 1
+                                                      getlex QName(PackageNamespace(""),"uint")
+                                                      astypelate
+                                                      convert_u
+                                                      setlocal 5
+                                                      getlocal0
+                                                      getlocal 5
+                                                      setproperty QName(PackageNamespace(""),"tintColor")
+                                                      jump ofs007d
+                                             ofs006d:
+                                                      getlocal0
+                                                      getlocal 4
+                                                      findpropstrict QName(PackageNamespace(""),"Number")
+                                                      getlocal3
+                                                      callproperty Multiname("toString",[PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")]), 0
+                                                      callproperty QName(PackageNamespace(""),"Number"), 1
+                                                      setproperty MultinameL([PrivateNamespace("fl.motion:Color"),PackageNamespace("fl.motion"),PackageNamespace(""),PrivateNamespace("Color.as$97"),PackageInternalNs("fl.motion"),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display"),ProtectedNamespace("fl.motion:Color"),StaticProtectedNs("fl.motion:Color"),StaticProtectedNs("flash.geom:ColorTransform"),StaticProtectedNs("Object")])
+                                             ofs007d:
+                                                      hasnext2 7, 6
+                                                      iftrue ofs003a
+                                                      kill 7
+                                                      kill 6
+                                                      getlocal0
+                                                      returnvalue
+                                                   end ; code
+                                                end ; body
+                                             end ; method
+                                          }
+                                       }
+                                    }
+                                    
+                                    method
+                                       name ""
+                                       returns null
+                                       
+                                       body
+                                          maxstack 2
+                                          localcount 1
+                                          initscopedepth 1
+                                          maxscopedepth 4
+                                          
+                                          code
+                                             getlocal0
+                                             pushscope
+                                             findpropstrict Multiname("Color",[PackageNamespace("fl.motion")])
+                                             getlex QName(PackageNamespace(""),"Object")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.geom"),"ColorTransform")
+                                             pushscope
+                                             getlex QName(PackageNamespace("flash.geom"),"ColorTransform")
+                                             newclass 34
+                                             popscope
+                                             popscope
+                                             initproperty QName(PackageNamespace("fl.motion"),"Color")
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                    

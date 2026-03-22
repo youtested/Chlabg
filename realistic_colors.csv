@@ -1,0 +1,492 @@
+Chemical,Type,State,Available,RName,CName,DName,Density1,Density2,Density3,Mm,Sol,Mp,Bp,KH,color1,alpha1,color2,alpha2,color3,alpha3,color4,alpha4,friction,restitution,JPN,CHN,TW,KR,Solk,MOH,KOH,MH,PTN
+Methane,Gas,0,1,Methane,Methane,Methane,0.668,1,0.001,16.04,0,-182.5,-161.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethane,Gas,0,1,Ethane,Ethane,Ethane,1.265,1,0.001,30.07,0,-183.3,-88.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propane,Gas,0,1,Propane,Propane,Propane,1.867,1,0.001,44.09,0,-187.7,-42.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butane,Gas,0,1,Butane,Butane,Butane,2.493,1,0.001,58.12,0,-138.3,-0.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene,Gas,0,1,Ethylene,Ethylene,Ethylene,0.001,1,0.001,28.05,0,-169.4,-103.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propylene,Gas,0,1,Propylene,Propylene,Propylene,0.001,1,0.001,42.08,0,-185.2,-47.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butene,Gas,0,1,Butene,Butene,Butene,0.001,1,0.001,56.11,0,-185.3,-6.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetylene,Gas,0,1,Acetylene,Acetylene,Acetylene,0.001,1,0.001,26.04,0,-80.8,-84,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propyne,Gas,0,1,Propyne,Propyne,Propyne,0.001,1,0.001,40.06,0,-102.7,-23.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Formaldehyde,Gas,0,1,Formaldehyde,Formaldehyde,Formaldehyde,0.815,1,0.001,30.03,0,-92,-19.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Methylamine,Gas,0,1,Methylamine,Methylamine,Methylamine,0.001,1,0.001,31.06,0,-93.5,-6.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethylamine,Gas,0,1,Dimethylamine,Dimethylamine,Dimethylamine,0.001,1,0.001,45.08,0,-92.2,7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Trimethylamine,Gas,0,1,Trimethylamine,Trimethylamine,Trimethylamine,0.001,1,0.001,59.11,0,-117.2,3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Vinyl Chloride,Gas,0,1,Vinyl Chloride,Vinyl Chloride,Vinyl Chloride,0.002,1,0.001,62.5,0,-153.8,-13.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Oxygen,Gas,0,1,Oxygen,Oxygen,Oxygen,0.001,1,0.001,32,0,-218.8,-182.9,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitrogen,Gas,0,1,Nitrogen,Nitrogen,Nitrogen,0.001,1,0.001,28.02,0,-210,-195.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hydrogen,Gas,0,1,Hydrogen,Hydrogen,Hydrogen,0.001,1,0.001,2.02,0,-259.14,-252.87,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorine,Gas,0,1,Chlorine,Chlorine,Chlorine,0.003,1,0.001,70.9,0,-101.5,-34.6,0.1,0xADFF2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Fluorine,Gas,0,1,Fluorine,Fluorine,Fluorine,0.002,1,0.001,38,0,-219.6,-188.1,0.1,0xFFFACD,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Carbon Dioxide,Gas,0,1,Carbon Dioxide,Carbon Dioxide,Carbon Dioxide,0.001,1,0.001,44.01,0,-78.5,-56.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Carbon Monoxide,Gas,0,1,Carbon Monoxide,Carbon Monoxide,Carbon Monoxide,0.001,1,0.001,28.01,0,-205,-191.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sulfur Dioxide,Gas,0,1,Sulfur Dioxide,Sulfur Dioxide,Sulfur Dioxide,0.003,1,0.001,64.07,0,-72.7,-10,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ozone,Gas,0,1,Ozone,Ozone,Ozone,0.002,1,0.001,48,0,-192.5,-111.4,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitrogen Dioxide,Gas,0,1,Nitrogen Dioxide,Nitrogen Dioxide,Nitrogen Dioxide,0.002,1,0.001,46.01,0,-11.2,21,0.1,0xFF6347,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitrogen Monoxide,Gas,0,1,Nitrogen Monoxide,Nitrogen Monoxide,Nitrogen Monoxide,0.001,1,0.001,30.01,0,-163.6,-151.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Argon,Gas,0,1,Argon,Argon,Argon,0.001,1,0.001,39.95,0,-189.3,-185.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diborane,Gas,0,1,Diborane,Diborane,Diborane,0.001,1,0.001,27.67,0,-165.5,-92.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyanogen,Gas,0,1,Cyanogen,Cyanogen,Cyanogen,0.002,1,0.001,52.03,0,-27.9,-21.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyanogen Chloride,Gas,0,1,Cyanogen Chloride,Cyanogen Chloride,Cyanogen Chloride,0.001,1,0.001,61.47,0,-6.5,13.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Boron Tribromide,Gas,0,1,Boron Tribromide,Boron Tribromide,Boron Tribromide,0.003,1,0.001,250.52,0,-46,91.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Boron Trichloride,Gas,0,1,Boron Trichloride,Boron Trichloride,Boron Trichloride,0.005,1,0.001,117.17,0,-107.3,12.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Boron Trifluoride,Gas,0,1,Boron Trifluoride,Boron Trifluoride,Boron Trifluoride,0.003,1,0.001,67.81,0,-126.7,-99.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bromomethane,Gas,0,1,Bromomethane,Bromomethane,Bromomethane,0.003,1,0.001,94.94,0,-93.7,3.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroethane,Gas,0,1,Chloroethane,Chloroethane,Chloroethane,0.002,1,0.001,64.51,0,-138.4,12.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroethylene,Gas,0,1,Chloroethylene,Chloroethylene,Chloroethylene,0.002,1,0.001,62.5,0,-153.8,-13.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloromethane,Gas,0,1,Chloromethane,Chloromethane,Chloromethane,0.002,1,0.001,50.49,0,-97.6,-24.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorine Dioxide,Gas,0,1,Chlorine Dioxide,Chlorine Dioxide,Chlorine Dioxide,0.003,1,0.001,67.45,0,-59,11,0.1,0xFFD700,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorine Trifluoride,Gas,0,1,Chlorine Trifluoride,Chlorine Trifluoride,Chlorine Trifluoride,0.004,1,0.001,92.45,0,-76.3,11.8,0.1,0xFFFACD,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Ether,Gas,0,1,Dimethyl Ether,Dimethyl Ether,Dimethyl Ether,0.002,1,0.001,46.07,0,-141.5,-24.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Chloride,Gas,0,1,Ethyl Chloride,Ethyl Chloride,Ethyl Chloride,0.002,1,0.001,64.51,0,-138.4,12.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Nitrite,Gas,0,1,Ethyl Nitrite,Ethyl Nitrite,Ethyl Nitrite,0.9,1,0.001,75.07,0,-50,17.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Oxide,Gas,0,1,Ethylene Oxide,Ethylene Oxide,Ethylene Oxide,0.001,1,0.001,44.05,0,-111.3,10.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Deuterium,Gas,0,1,Deuterium,Deuterium,Deuterium,0.001,1,0.001,4.03,0,-254.5,-249.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butadiene,Gas,0,1,Butadiene,Butadiene,Butadiene,0.001,1,0.001,54.09,0,-109,-4.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Pentane,Liquid,0,1,Pentane,Pentane,Pentane,0.626,1,0.001,72.15,0,-129.7,36.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hexane,Liquid,0,1,Hexane,Hexane,Hexane,0.659,1,0.001,86.18,0,-95.3,68.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Heptane,Liquid,0,1,Heptane,Heptane,Heptane,0.684,1,0.001,100.2,0,-90.6,98.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Octane,Liquid,0,1,Octane,Octane,Octane,0.703,1,0.001,114.23,0,-56.8,125.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nonane,Liquid,0,1,Nonane,Nonane,Nonane,0.718,1,0.001,128.25,0,-64,150.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Decane,Liquid,0,1,Decane,Decane,Decane,0.73,1,0.001,142.29,0,-29.7,174.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Undecane,Liquid,0,1,Undecane,Undecane,Undecane,0.74,1,0.001,156.31,0,-25.5,195.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dodecane,Liquid,0,1,Dodecane,Dodecane,Dodecane,0.75,1,0.001,170.33,0,-9.6,216.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tridecane,Liquid,0,1,Tridecane,Tridecane,Tridecane,0.76,1,0.001,184.36,0,-5.4,235.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tetradecane,Liquid,0,1,Tetradecane,Tetradecane,Tetradecane,0.76,1,0.001,198.39,0,5.9,253.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Pentadecane,Liquid,0,1,Pentadecane,Pentadecane,Pentadecane,0.77,1,0.001,212.41,0,10,270.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Pentene,Liquid,0,1,Pentene,Pentene,Pentene,0.64,1,0.001,70.13,0,-165.2,30,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hexene,Liquid,0,1,Hexene,Hexene,Hexene,0.67,1,0.001,84.16,0,-139.8,63.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Heptene,Liquid,0,1,Heptene,Heptene,Heptene,0.7,1,0.001,98.19,0,-119,93.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Octene,Liquid,0,1,Octene,Octene,Octene,0.71,1,0.001,112.21,0,-101.7,122.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Methanol,Liquid,0,1,Methanol,Methanol,Methanol,0.792,1,0.001,32.04,0,-97.6,64.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethanol,Liquid,0,1,Ethanol,Ethanol,Ethanol,0.789,1,0.001,46.07,0,-114.1,78.37,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propanol,Liquid,0,1,Propanol,Propanol,Propanol,0.804,1,0.001,60.1,0,-126.2,97.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Isopropyl Alcohol,Liquid,0,1,Isopropyl Alcohol,Isopropyl Alcohol,Isopropyl Alcohol,0.786,1,0.001,60.1,0,-89.5,82.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butanol,Liquid,0,1,Butanol,Butanol,Butanol,0.81,1,0.001,74.12,0,-89.5,117.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Isobutyl Alcohol,Liquid,0,1,Isobutyl Alcohol,Isobutyl Alcohol,Isobutyl Alcohol,0.802,1,0.001,74.12,0,-108,107.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Pentanol,Liquid,0,1,Pentanol,Pentanol,Pentanol,0.81,1,0.001,88.15,0,-79,138,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hexanol,Liquid,0,1,Hexanol,Hexanol,Hexanol,0.82,1,0.001,102.17,0,-52,157,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Heptanol,Liquid,0,1,Heptanol,Heptanol,Heptanol,0.82,1,0.001,116.2,0,-34,176,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Octanol,Liquid,0,1,Octanol,Octanol,Octanol,0.83,1,0.001,130.23,0,-15,195,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nonanol,Liquid,0,1,Nonanol,Nonanol,Nonanol,0.83,1,0.001,144.25,0,-5,214,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Decanol,Liquid,0,1,Decanol,Decanol,Decanol,0.83,1,0.001,158.28,0,7,232,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Glycol,Liquid,0,1,Glycol,Glycol,Glycol,1.11,1,0.001,62.07,0,-13,197.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Glycerol,Liquid,0,1,Glycerol,Glycerol,Glycerol,1.261,1,0.001,92.09,0,17.8,290,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Allyl Alcohol,Liquid,0,1,Allyl Alcohol,Allyl Alcohol,Allyl Alcohol,0.854,1,0.001,58.08,0,-129,97,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethanolamine,Liquid,0,1,Ethanolamine,Ethanolamine,Ethanolamine,1.02,1,0.001,61.08,0,10.3,171,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethanolamine,Liquid,0,1,Diethanolamine,Diethanolamine,Diethanolamine,1.09,1,0.001,105.14,0,28,269,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Glycol,Liquid,0,1,Ethylene Glycol,Ethylene Glycol,Ethylene Glycol,1.11,1,0.001,62.07,0,-13,197.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethylene Glycol,Liquid,0,1,Diethylene Glycol,Diethylene Glycol,Diethylene Glycol,1.12,1,0.001,106.12,0,-8,245,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetone,Liquid,0,1,Acetone,Acetone,Acetone,0.784,1,0.001,58.08,0,-94.9,56.08,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Methyl Ethyl Ketone,Liquid,0,1,Methyl Ethyl Ketone,Methyl Ethyl Ketone,Methyl Ethyl Ketone,0.8,1,0.001,72.11,0,-86,79.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Ketone,Liquid,0,1,Diethyl Ketone,Diethyl Ketone,Diethyl Ketone,0.81,1,0.001,86.13,0,-42,102.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetophenone,Liquid,0,1,Acetophenone,Acetophenone,Acetophenone,1.03,1,0.001,120.15,0,19.6,202,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclohexanone,Liquid,0,1,Cyclohexanone,Cyclohexanone,Cyclohexanone,0.95,1,0.001,98.14,0,-16.4,155,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Formic Acid,Liquid,0,1,Formic Acid,Formic Acid,Formic Acid,1.22,1,0.001,46.03,0,8.4,100.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetic Acid,Liquid,0,1,Acetic Acid,Acetic Acid,Acetic Acid,1.049,1,0.001,60.05,0,16.6,118.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propionic Acid,Liquid,0,1,Propionic Acid,Propionic Acid,Propionic Acid,0.99,1,0.001,74.08,0,-20.7,141.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butyric Acid,Liquid,0,1,Butyric Acid,Butyric Acid,Butyric Acid,0.964,1,0.001,88.11,0,-7.9,163.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Valeric Acid,Liquid,0,1,Valeric Acid,Valeric Acid,Valeric Acid,0.939,1,0.001,102.13,0,-34.5,186,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Caproic Acid,Liquid,0,1,Caproic Acid,Caproic Acid,Caproic Acid,0.93,1,0.001,116.16,0,-3,205,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroacetic Acid,Liquid,0,1,Chloroacetic Acid,Chloroacetic Acid,Chloroacetic Acid,1.58,1,0.001,94.5,0,61.3,189.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloroacetic Acid,Liquid,0,1,Dichloroacetic Acid,Dichloroacetic Acid,Dichloroacetic Acid,1.56,1,0.001,128.94,0,9.7,194,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bromoacetic Acid,Liquid,0,1,Bromoacetic Acid,Bromoacetic Acid,Bromoacetic Acid,1.93,1,0.001,138.95,0,49.3,208,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Methyl Acetate,Liquid,0,1,Methyl Acetate,Methyl Acetate,Methyl Acetate,0.93,1,0.001,74.08,0,-98.1,56.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Acetate,Liquid,0,1,Ethyl Acetate,Ethyl Acetate,Ethyl Acetate,0.9,1,0.001,88.11,0,-83.6,77.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propyl Acetate,Liquid,0,1,Propyl Acetate,Propyl Acetate,Propyl Acetate,0.89,1,0.001,102.13,0,-95,101.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butyl Acetate,Liquid,0,1,Butyl Acetate,Butyl Acetate,Butyl Acetate,0.88,1,0.001,116.16,0,-77.9,126.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Amyl Acetate,Liquid,0,1,Amyl Acetate,Amyl Acetate,Amyl Acetate,0.87,1,0.001,130.18,0,-70.8,142,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Acrylate,Liquid,0,1,Ethyl Acrylate,Ethyl Acrylate,Ethyl Acrylate,0.92,1,0.001,100.12,0,-71.2,99.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butyl Acrylate,Liquid,0,1,Butyl Acrylate,Butyl Acrylate,Butyl Acrylate,0.9,1,0.001,128.17,0,-64.6,145.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Butyrate,Liquid,0,1,Ethyl Butyrate,Ethyl Butyrate,Ethyl Butyrate,0.88,1,0.001,116.16,0,-93.2,121,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Propionate,Liquid,0,1,Ethyl Propionate,Ethyl Propionate,Ethyl Propionate,0.89,1,0.001,102.13,0,-73.9,99.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzyl Acetate,Liquid,0,1,Benzyl Acetate,Benzyl Acetate,Benzyl Acetate,1.06,1,0.001,150.16,0,-51.3,213,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Benzoate,Liquid,0,1,Ethyl Benzoate,Ethyl Benzoate,Ethyl Benzoate,1.05,1,0.001,150.17,0,-34.6,212.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Ether,Liquid,0,1,Diethyl Ether,Diethyl Ether,Diethyl Ether,0.71,1,0.001,74.12,0,-116.3,34.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tetrahydrofuran,Liquid,0,1,Tetrahydrofuran,Tetrahydrofuran,Tetrahydrofuran,0.89,1,0.001,72.11,0,-108.5,66,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dioxane,Liquid,0,1,Dioxane,Dioxane,Dioxane,1.03,1,0.001,88.11,0,11.8,101,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diisopropyl Ether,Liquid,0,1,Diisopropyl Ether,Diisopropyl Ether,Diisopropyl Ether,0.73,1,0.001,102.17,0,-85.5,68.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dibutyl Ether,Liquid,0,1,Dibutyl Ether,Dibutyl Ether,Dibutyl Ether,0.77,1,0.001,130.23,0,-95.2,141,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diglyme,Liquid,0,1,Diglyme,Diglyme,Diglyme,0.94,1,0.001,134.17,0,-68,162,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butyl Cellosolve,Liquid,0,1,Butyl Cellosolve,Butyl Cellosolve,Butyl Cellosolve,0.9,1,0.001,118.17,0,-40,171.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Cellosolve,Liquid,0,1,Ethyl Cellosolve,Ethyl Cellosolve,Ethyl Cellosolve,0.93,1,0.001,90.12,0,-70,135,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzene,Liquid,0,1,Benzene,Benzene,Benzene,0.879,1,0.001,78.11,0,5.5,80.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Toluene,Liquid,0,1,Toluene,Toluene,Toluene,0.867,1,0.001,92.14,0,-95,110.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Xylene,Liquid,0,1,Xylene,Xylene,Xylene,0.86,1,0.001,106.16,0,-47,138,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylbenzene,Liquid,0,1,Ethylbenzene,Ethylbenzene,Ethylbenzene,0.87,1,0.001,106.16,0,-95,136.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Styrene,Liquid,0,1,Styrene,Styrene,Styrene,0.906,1,0.001,104.15,0,-30.2,145.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cumene,Liquid,0,1,Cumene,Cumene,Cumene,0.86,1,0.001,120.19,0,-96,152.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cumene Hydroperoxide,Liquid,0,1,Cumene Hydroperoxide,Cumene Hydroperoxide,Cumene Hydroperoxide,1.03,1,0.001,152.19,0,-10,153,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclohexane,Liquid,0,1,Cyclohexane,Cyclohexane,Cyclohexane,0.779,1,0.001,84.16,0,6.5,80.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclopentane,Liquid,0,1,Cyclopentane,Cyclopentane,Cyclopentane,0.75,1,0.001,70.13,0,-93.9,49.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Decalin,Liquid,0,1,Decalin,Decalin,Decalin,0.88,1,0.001,138.25,0,-43,194,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichlorobenzene,Liquid,0,1,Dichlorobenzene,Dichlorobenzene,Dichlorobenzene,1.25,1,0.001,147,0,53,180,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Difluoroethane,Liquid,0,1,Difluoroethane,Difluoroethane,Difluoroethane,1.13,1,0.001,114.09,0,-13,88,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroform,Liquid,0,1,Chloroform,Chloroform,Chloroform,1.48,1,0.001,119.38,0,-63.5,60.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Carbon Tetrachloride,Liquid,0,1,Carbon Tetrachloride,Carbon Tetrachloride,Carbon Tetrachloride,1.594,1,0.001,153.82,0,-22.9,76.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloromethane,Liquid,0,1,Dichloromethane,Dichloromethane,Dichloromethane,1.33,1,0.001,84.93,0,-97.4,40,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Allyl Chloride,Liquid,0,1,Allyl Chloride,Allyl Chloride,Allyl Chloride,0.94,1,0.001,76.52,0,-134.5,45,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzyl Chloride,Liquid,0,1,Benzyl Chloride,Benzyl Chloride,Benzyl Chloride,1.1,1,0.001,126.58,0,-39,179.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzoyl Chloride,Liquid,0,1,Benzoyl Chloride,Benzoyl Chloride,Benzoyl Chloride,1.21,1,0.001,140.57,0,-1,197.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroacetyl Chloride,Liquid,0,1,Chloroacetyl Chloride,Chloroacetyl Chloride,Chloroacetyl Chloride,1.42,1,0.001,112.94,0,-22.5,106,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorobenzene,Liquid,0,1,Chlorobenzene,Chlorobenzene,Chlorobenzene,1.11,1,0.001,112.56,0,-45.2,131.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorobutane,Liquid,0,1,Chlorobutane,Chlorobutane,Chlorobutane,0.88,1,0.001,92.57,0,-123.1,78.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloropropane,Liquid,0,1,Chloropropane,Chloropropane,Chloropropane,0.89,1,0.001,78.54,0,-122.8,47.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloroethane,Liquid,0,1,Dichloroethane,Dichloroethane,Dichloroethane,1.25,1,0.001,98.96,0,-35.7,83.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloroethylene,Liquid,0,1,Dichloroethylene,Dichloroethylene,Dichloroethylene,1.26,1,0.001,96.94,0,-50,60,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloropropane,Liquid,0,1,Dichloropropane,Dichloropropane,Dichloropropane,1.16,1,0.001,112.99,0,-100,96,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichloropropene,Liquid,0,1,Dichloropropene,Dichloropropene,Dichloropropene,1.16,1,0.001,110.97,0,-50,94,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloroethanol,Liquid,0,1,Chloroethanol,Chloroethanol,Chloroethanol,1.2,1,0.001,80.51,0,-67.5,128.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Dichloride,Liquid,0,1,Ethylene Dichloride,Ethylene Dichloride,Ethylene Dichloride,1.25,1,0.001,98.96,0,-35.7,83.5,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Dibromide,Liquid,0,1,Ethylene Dibromide,Ethylene Dibromide,Ethylene Dibromide,2.17,1,0.001,187.86,0,9.9,131.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bromoethane,Liquid,0,1,Bromoethane,Bromoethane,Bromoethane,1.46,1,0.001,108.97,0,-118.6,38.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Iodide,Liquid,0,1,Ethyl Iodide,Ethyl Iodide,Ethyl Iodide,1.95,1,0.001,155.97,0,-108,72.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Chloroacetate,Liquid,0,1,Ethyl Chloroacetate,Ethyl Chloroacetate,Ethyl Chloroacetate,1.15,1,0.001,122.55,0,-26,144,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Oxalate,Liquid,0,1,Ethyl Oxalate,Ethyl Oxalate,Ethyl Oxalate,1.08,1,0.001,146.14,0,-40.6,185.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Lactate,Liquid,0,1,Ethyl Lactate,Ethyl Lactate,Ethyl Lactate,1.03,1,0.001,118.13,0,-25,154,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Formate,Liquid,0,1,Ethyl Formate,Ethyl Formate,Ethyl Formate,0.92,1,0.001,74.08,0,-80,54,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Carbonate,Liquid,0,1,Diethyl Carbonate,Diethyl Carbonate,Diethyl Carbonate,0.98,1,0.001,118.13,0,-43,126,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Carbonate,Liquid,0,1,Dimethyl Carbonate,Dimethyl Carbonate,Dimethyl Carbonate,1.07,1,0.001,90.08,0,3,91,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Nitrate,Liquid,0,1,Ethyl Nitrate,Ethyl Nitrate,Ethyl Nitrate,1.11,1,0.001,91.07,0,-102,87.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Sulfate,Liquid,0,1,Diethyl Sulfate,Diethyl Sulfate,Diethyl Sulfate,1.18,1,0.001,154.18,0,-25,208,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Sulfate,Liquid,0,1,Dimethyl Sulfate,Dimethyl Sulfate,Dimethyl Sulfate,1.33,1,0.001,126.13,0,-27,188,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Formamide,Liquid,0,1,Dimethyl Formamide,Dimethyl Formamide,Dimethyl Formamide,0.94,1,0.001,73.09,0,-60.4,153,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Acetamide,Liquid,0,1,Dimethyl Acetamide,Dimethyl Acetamide,Dimethyl Acetamide,0.94,1,0.001,87.12,0,-20,165,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Sulfoxide,Liquid,0,1,Dimethyl Sulfoxide,Dimethyl Sulfoxide,Dimethyl Sulfoxide,1.1,1,0.001,78.13,0,18.5,189,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dimethyl Sulfide,Liquid,0,1,Dimethyl Sulfide,Dimethyl Sulfide,Dimethyl Sulfide,0.85,1,0.001,62.13,0,-98.3,37.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Malonate,Liquid,0,1,Diethyl Malonate,Diethyl Malonate,Diethyl Malonate,1.05,1,0.001,160.17,0,-50,200,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Phthalate,Liquid,0,1,Diethyl Phthalate,Diethyl Phthalate,Diethyl Phthalate,1.12,1,0.001,222.24,0,-40.5,295,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Sebacate,Liquid,0,1,Diethyl Sebacate,Diethyl Sebacate,Diethyl Sebacate,0.96,1,0.001,258.4,0,-7,313,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethyl Ether,Liquid,0,1,Diethyl Ether,Diethyl Ether,Diethyl Ether,0.71,1,0.001,74.12,0,-116.3,34.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Mercaptan,Liquid,0,1,Ethyl Mercaptan,Ethyl Mercaptan,Ethyl Mercaptan,0.84,1,0.001,62.13,0,-147.3,35,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Phosphate,Liquid,0,1,Ethyl Phosphate,Ethyl Phosphate,Ethyl Phosphate,1.13,1,0.001,154.1,0,-90,215,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyl Silicate,Liquid,0,1,Ethyl Silicate,Ethyl Silicate,Ethyl Silicate,0.93,1,0.001,208.3,0,-77,168,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diallyl Phthalate,Liquid,0,1,Diallyl Phthalate,Diallyl Phthalate,Diallyl Phthalate,1.12,1,0.001,246.26,0,-70,290,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylaniline,Liquid,0,1,Ethylaniline,Ethylaniline,Ethylaniline,1.0,1,0.001,121.18,0,-65,210,0.1,0xA0522D,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethyleneimine,Liquid,0,1,Ethyleneimine,Ethyleneimine,Ethyleneimine,0.83,1,0.001,43.07,0,-78,56,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aniline,Liquid,0,1,Aniline,Aniline,Aniline,1.022,1,0.001,93.13,0,-6.3,184.4,0.1,0x8B4513,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitrobenzene,Liquid,0,1,Nitrobenzene,Nitrobenzene,Nitrobenzene,1.2,1,0.001,123.11,0,5.7,210.8,0.1,0xFFD700,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bromine,Liquid,0,1,Bromine,Bromine,Bromine,3.12,1,0.001,159.81,0,-7.2,58.8,0.1,0x8B0000,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bromine Pentafluoride,Liquid,0,1,Bromine Pentafluoride,Bromine Pentafluoride,Bromine Pentafluoride,2.47,1,0.001,149.9,0,-61.3,40.3,0.1,0xCD5C5C,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Furfural,Liquid,0,1,Furfural,Furfural,Furfural,1.16,1,0.001,96.08,0,-38.7,161.7,0.1,0xDAA520,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzaldehyde,Liquid,0,1,Benzaldehyde,Benzaldehyde,Benzaldehyde,1.04,1,0.001,106.12,0,-26,178.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acrolein,Liquid,0,1,Acrolein,Acrolein,Acrolein,0.84,1,0.001,56.06,0,-87,52.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetaldehyde,Liquid,0,1,Acetaldehyde,Acetaldehyde,Acetaldehyde,0.78,1,0.001,44.05,0,-123.4,20.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Propionaldehyde,Liquid,0,1,Propionaldehyde,Propionaldehyde,Propionaldehyde,0.81,1,0.001,58.08,0,-80,48,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butyraldehyde,Liquid,0,1,Butyraldehyde,Butyraldehyde,Butyraldehyde,0.8,1,0.001,72.11,0,-96,74.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Crotonic Acid,Liquid,0,1,Crotonic Acid,Crotonic Acid,Crotonic Acid,1.02,1,0.001,86.09,0,72,185,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetone Cyanohydrin,Liquid,0,1,Acetone Cyanohydrin,Acetone Cyanohydrin,Acetone Cyanohydrin,0.93,1,0.001,85.09,0,-20,82,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetyl Chloride,Liquid,0,1,Acetyl Chloride,Acetyl Chloride,Acetyl Chloride,1.1,1,0.001,78.5,0,-112,50.9,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloral,Liquid,0,1,Chloral,Chloral,Chloral,1.51,1,0.001,147.39,0,-57.5,97.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzonitrile,Liquid,0,1,Benzonitrile,Benzonitrile,Benzonitrile,1.01,1,0.001,103.12,0,-12.8,191.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzyl Alcohol,Liquid,0,1,Benzyl Alcohol,Benzyl Alcohol,Benzyl Alcohol,1.04,1,0.001,108.14,0,-15.4,205.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Anisole,Liquid,0,1,Anisole,Anisole,Anisole,0.99,1,0.001,108.14,0,-37.5,153.8,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Creosol,Liquid,0,1,Creosol,Creosol,Creosol,1.11,1,0.001,122.16,0,35.5,221,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cresol,Liquid,0,1,Cresol,Cresol,Cresol,1.03,1,0.001,108.14,0,30.5,202,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclohexanol,Liquid,0,1,Cyclohexanol,Cyclohexanol,Cyclohexanol,0.96,1,0.001,100.16,0,25.9,161.1,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclopentanol,Liquid,0,1,Cyclopentanol,Cyclopentanol,Cyclopentanol,0.95,1,0.001,86.13,0,-19,140.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cyclopentanone,Liquid,0,1,Cyclopentanone,Cyclopentanone,Cyclopentanone,0.95,1,0.001,84.12,0,-51.3,130.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diisobutyl Ketone,Liquid,0,1,Diisobutyl Ketone,Diisobutyl Ketone,Diisobutyl Ketone,0.81,1,0.001,142.24,0,-46,168,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butanediol,Liquid,0,1,Butanediol,Butanediol,Butanediol,1.02,1,0.001,90.12,0,52.4,204,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Butylamine,Liquid,0,1,Butylamine,Butylamine,Butylamine,0.74,1,0.001,73.14,0,-47.2,77.4,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Triethylamine,Liquid,0,1,Triethylamine,Triethylamine,Triethylamine,0.73,1,0.001,101.19,0,-114.7,89,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylamine,Liquid,0,1,Ethylamine,Ethylamine,Ethylamine,0.69,1,0.001,45.08,0,-81,16.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetonitrile,Liquid,0,1,Acetonitrile,Acetonitrile,Acetonitrile,0.79,1,0.001,41.05,0,-43.8,81.6,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acrylonitrile,Liquid,0,1,Acrylonitrile,Acrylonitrile,Acrylonitrile,0.8,1,0.001,53.06,0,-83.5,77.3,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aqua Regia,Liquid,0,1,Aqua Regia,Aqua Regia,Aqua Regia,1.12,1,0.001,140,0,-42,110,0.1,0xFFA500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chlorosulfonic Acid,Liquid,0,1,Chlorosulfonic Acid,Chlorosulfonic Acid,Chlorosulfonic Acid,1.75,1,0.001,116.52,0,-80,158,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromic Acid,Liquid,0,1,Chromic Acid,Chromic Acid,Chromic Acid,1.35,1,0.001,118,0,-20,196,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chloric Acid,Liquid,0,1,Chloric Acid,Chloric Acid,Chloric Acid,1.11,1,0.001,84.46,0,-20,110,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hydrochloric Acid,Liquid,0,1,Hydrochloric Acid,Hydrochloric Acid,Hydrochloric Acid,1.18,1,0.001,36.46,0,-27.3,110,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sulfuric Acid,Liquid,0,1,Sulfuric Acid,Sulfuric Acid,Sulfuric Acid,1.84,1,0.001,98.08,0,10,337,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitric Acid,Liquid,0,1,Nitric Acid,Nitric Acid,Nitric Acid,1.51,1,0.001,63.01,0,-42,83,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phosphoric Acid,Liquid,0,1,Phosphoric Acid,Phosphoric Acid,Phosphoric Acid,1.88,1,0.001,98,0,42.4,158,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hydrogen Peroxide,Liquid,0,1,Hydrogen Peroxide,Hydrogen Peroxide,Hydrogen Peroxide,1.45,1,0.001,34.01,0,-0.4,150.2,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonia,Liquid,0,1,Ammonia,Ammonia,Ammonia,0.73,1,0.001,17.03,0,-77.7,-33.3,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Deuterium Oxide,Liquid,0,1,Deuterium Oxide,Deuterium Oxide,Deuterium Oxide,1.11,1,0.001,20.03,0,3.8,101.4,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dibenzyl Ether,Liquid,0,1,Dibenzyl Ether,Dibenzyl Ether,Dibenzyl Ether,1.04,1,0.001,198.26,0,1.8,298,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diphenyl Ether,Liquid,0,1,Diphenyl Ether,Diphenyl Ether,Diphenyl Ether,1.07,1,0.001,170.21,0,26.9,258,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dihexyl Ether,Liquid,0,1,Dihexyl Ether,Dihexyl Ether,Dihexyl Ether,0.79,1,0.001,186.33,0,-43,226,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Cyanohydrin,Liquid,0,1,Ethylene Cyanohydrin,Ethylene Cyanohydrin,Ethylene Cyanohydrin,1.06,1,0.001,71.08,0,-46,228,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Diamine,Liquid,0,1,Ethylene Diamine,Ethylene Diamine,Ethylene Diamine,0.9,1,0.001,60.1,0,8.5,118,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diethylene Triamine,Liquid,0,1,Diethylene Triamine,Diethylene Triamine,Diethylene Triamine,0.99,1,0.001,103.17,0,-39,207,0.1,0xADD8E6,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dihydroxyacetone,Liquid,0,1,Dihydroxyacetone,Dihydroxyacetone,Dihydroxyacetone,1.03,1,0.001,110.11,0,23,202,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Chloride,Solid,0,1,Sodium Chloride,Sodium Chloride,Sodium Chloride,2.165,1,0.001,58.44,0,801,1413,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Chloride,Solid,0,1,Potassium Chloride,Potassium Chloride,Potassium Chloride,1.984,1,0.001,74.55,0,770,1420,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Chloride,Solid,0,1,Calcium Chloride,Calcium Chloride,Calcium Chloride,2.15,1,0.001,110.98,0,772,1935,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Chloride,Solid,0,1,Magnesium Chloride,Magnesium Chloride,Magnesium Chloride,2.32,1,0.001,95.21,0,714,1418,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lithium Chloride,Solid,0,1,Lithium Chloride,Lithium Chloride,Lithium Chloride,2.07,1,0.001,42.39,0,605,1382,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Chloride,Solid,0,1,Barium Chloride,Barium Chloride,Barium Chloride,3.86,1,0.001,208.23,0,962,1560,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Chloride,Solid,0,1,Strontium Chloride,Strontium Chloride,Strontium Chloride,3.05,1,0.001,158.53,0,875,1250,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Chloride,Solid,0,1,Zinc Chloride,Zinc Chloride,Zinc Chloride,2.91,1,0.001,136.29,0,283,732,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron(III) Chloride,Solid,0,1,Iron(III) Chloride,Iron(III) Chloride,Iron(III) Chloride,2.9,1,0.001,162.2,0,306,316,0.1,0xD4A017,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron(II) Chloride,Solid,0,1,Iron(II) Chloride,Iron(II) Chloride,Iron(II) Chloride,3.16,1,0.001,126.75,0,677,1024,0.1,0x90EE90,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Chloride,Solid,0,1,Copper Chloride,Copper Chloride,Copper Chloride,3.39,1,0.001,134.45,0,430,1490,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Chloride,Solid,0,1,Lead Chloride,Lead Chloride,Lead Chloride,5.85,1,0.001,278.1,0,501,950,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Chloride,Solid,0,1,Silver Chloride,Silver Chloride,Silver Chloride,5.56,1,0.001,143.32,0,455,1547,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Mercury Chloride,Solid,0,1,Mercury Chloride,Mercury Chloride,Mercury Chloride,5.44,1,0.001,271.52,0,277,304,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aluminum Chloride,Solid,0,1,Aluminum Chloride,Aluminum Chloride,Aluminum Chloride,2.48,1,0.001,133.34,0,192.6,180,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Chloride,Solid,0,1,Cobalt Chloride,Cobalt Chloride,Cobalt Chloride,3.356,1,0.001,129.84,0,726,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Chloride,Solid,0,1,Nickel Chloride,Nickel Chloride,Nickel Chloride,3.51,1,0.001,129.6,0,1001,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Hydroxide,Solid,0,1,Sodium Hydroxide,Sodium Hydroxide,Sodium Hydroxide,2.13,1,0.001,40,0,323,1388,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Hydroxide,Solid,0,1,Potassium Hydroxide,Potassium Hydroxide,Potassium Hydroxide,2.12,1,0.001,56.11,0,360,1327,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Hydroxide,Solid,0,1,Calcium Hydroxide,Calcium Hydroxide,Calcium Hydroxide,2.21,1,0.001,74.09,0,512,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Hydroxide,Solid,0,1,Magnesium Hydroxide,Magnesium Hydroxide,Magnesium Hydroxide,2.37,1,0.001,58.32,0,350,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Hydroxide,Solid,0,1,Barium Hydroxide,Barium Hydroxide,Barium Hydroxide,3.74,1,0.001,171.34,0,408,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Hydroxide,Solid,0,1,Zinc Hydroxide,Zinc Hydroxide,Zinc Hydroxide,3.05,1,0.001,99.39,0,125,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Hydroxide,Solid,0,1,Copper Hydroxide,Copper Hydroxide,Copper Hydroxide,3.37,1,0.001,97.56,0,0,0,0.1,0x87CEEB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron(III) Hydroxide,Solid,0,1,Iron(III) Hydroxide,Iron(III) Hydroxide,Iron(III) Hydroxide,3.9,1,0.001,106.87,0,0,0,0.1,0xD2691E,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aluminum Hydroxide,Solid,0,1,Aluminum Hydroxide,Aluminum Hydroxide,Aluminum Hydroxide,2.42,1,0.001,78,0,300,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Hydroxide,Solid,0,1,Lead Hydroxide,Lead Hydroxide,Lead Hydroxide,7.59,1,0.001,241.21,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Sulfate,Solid,0,1,Sodium Sulfate,Sodium Sulfate,Sodium Sulfate,2.66,1,0.001,142.04,0,884,1429,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Sulfate,Solid,0,1,Potassium Sulfate,Potassium Sulfate,Potassium Sulfate,2.66,1,0.001,174.26,0,1069,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Sulfate,Solid,0,1,Calcium Sulfate,Calcium Sulfate,Calcium Sulfate,2.96,1,0.001,136.14,0,1460,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Sulfate,Solid,0,1,Magnesium Sulfate,Magnesium Sulfate,Magnesium Sulfate,2.66,1,0.001,120.37,0,1124,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Sulfate,Solid,0,1,Barium Sulfate,Barium Sulfate,Barium Sulfate,4.49,1,0.001,233.39,0,1580,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Sulfate,Solid,0,1,Copper Sulfate,Copper Sulfate,Copper Sulfate,3.6,1,0.001,159.61,0,150,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron Sulfate,Solid,0,1,Iron Sulfate,Iron Sulfate,Iron Sulfate,3.65,1,0.001,151.91,0,64,0,0.1,0x90D6C0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron(II) Sulfate,Solid,0,1,Iron(II) Sulfate,Iron(II) Sulfate,Iron(II) Sulfate,3.65,1,0.001,151.91,0,64,0,0.1,0x90EE90,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Sulfate,Solid,0,1,Zinc Sulfate,Zinc Sulfate,Zinc Sulfate,3.54,1,0.001,161.47,0,680,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Sulfate,Solid,0,1,Lead Sulfate,Lead Sulfate,Lead Sulfate,6.2,1,0.001,303.26,0,1170,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aluminum Sulfate,Solid,0,1,Aluminum Sulfate,Aluminum Sulfate,Aluminum Sulfate,2.71,1,0.001,342.15,0,770,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Nitrate,Solid,0,1,Sodium Nitrate,Sodium Nitrate,Sodium Nitrate,2.26,1,0.001,84.99,0,308,380,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Nitrate,Solid,0,1,Potassium Nitrate,Potassium Nitrate,Potassium Nitrate,2.11,1,0.001,101.1,0,334,400,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Nitrate,Solid,0,1,Calcium Nitrate,Calcium Nitrate,Calcium Nitrate,2.5,1,0.001,164.09,0,561,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Nitrate,Solid,0,1,Magnesium Nitrate,Magnesium Nitrate,Magnesium Nitrate,1.46,1,0.001,148.31,0,129,330,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Nitrate,Solid,0,1,Barium Nitrate,Barium Nitrate,Barium Nitrate,3.24,1,0.001,261.34,0,592,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Nitrate,Solid,0,1,Lead Nitrate,Lead Nitrate,Lead Nitrate,4.53,1,0.001,331.2,0,470,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Nitrate,Solid,0,1,Silver Nitrate,Silver Nitrate,Silver Nitrate,4.35,1,0.001,169.87,0,212,440,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Nitrate,Solid,0,1,Zinc Nitrate,Zinc Nitrate,Zinc Nitrate,2.07,1,0.001,189.4,0,36,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Nitrate,Solid,0,1,Ammonium Nitrate,Ammonium Nitrate,Ammonium Nitrate,1.73,1,0.001,80.04,0,169,210,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Carbonate,Solid,0,1,Sodium Carbonate,Sodium Carbonate,Sodium Carbonate,2.54,1,0.001,105.99,0,851,1600,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Carbonate,Solid,0,1,Potassium Carbonate,Potassium Carbonate,Potassium Carbonate,2.43,1,0.001,138.21,0,891,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Carbonate,Solid,0,1,Calcium Carbonate,Calcium Carbonate,Calcium Carbonate,2.71,1,0.001,100.09,0,825,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Carbonate,Solid,0,1,Magnesium Carbonate,Magnesium Carbonate,Magnesium Carbonate,2.96,1,0.001,84.31,0,990,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Carbonate,Solid,0,1,Barium Carbonate,Barium Carbonate,Barium Carbonate,4.29,1,0.001,197.34,0,1740,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Carbonate,Solid,0,1,Strontium Carbonate,Strontium Carbonate,Strontium Carbonate,3.5,1,0.001,147.63,0,1494,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lithium Carbonate,Solid,0,1,Lithium Carbonate,Lithium Carbonate,Lithium Carbonate,2.11,1,0.001,73.89,0,723,1310,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Carbonate,Solid,0,1,Copper Carbonate,Copper Carbonate,Copper Carbonate,4.0,1,0.001,123.55,0,200,0,0.1,0x40E0D0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Carbonate,Solid,0,1,Zinc Carbonate,Zinc Carbonate,Zinc Carbonate,4.4,1,0.001,125.39,0,140,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron Carbonate,Solid,0,1,Iron Carbonate,Iron Carbonate,Iron Carbonate,3.9,1,0.001,115.86,0,0,0,0.1,0x90EE90,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Carbonate,Solid,0,1,Lead Carbonate,Lead Carbonate,Lead Carbonate,6.0,1,0.001,267.21,0,315,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Bicarbonate,Solid,0,1,Sodium Bicarbonate,Sodium Bicarbonate,Sodium Bicarbonate,2.2,1,0.001,84.01,0,50,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Bicarbonate,Solid,0,1,Potassium Bicarbonate,Potassium Bicarbonate,Potassium Bicarbonate,2.17,1,0.001,100.12,0,292,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Bicarbonate,Solid,0,1,Calcium Bicarbonate,Calcium Bicarbonate,Calcium Bicarbonate,2.2,1,0.001,162.11,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Bicarbonate,Solid,0,1,Ammonium Bicarbonate,Ammonium Bicarbonate,Ammonium Bicarbonate,1.58,1,0.001,79.06,0,107,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Phosphate,Solid,0,1,Sodium Phosphate,Sodium Phosphate,Sodium Phosphate,2.54,1,0.001,163.94,0,1340,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Phosphate,Solid,0,1,Calcium Phosphate,Calcium Phosphate,Calcium Phosphate,3.14,1,0.001,310.18,0,1670,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Sulfide,Solid,0,1,Sodium Sulfide,Sodium Sulfide,Sodium Sulfide,1.86,1,0.001,78.04,0,1180,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron Sulfide,Solid,0,1,Iron Sulfide,Iron Sulfide,Iron Sulfide,4.84,1,0.001,87.91,0,1194,0,0.1,0xB8860B,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Sulfide,Solid,0,1,Copper Sulfide,Copper Sulfide,Copper Sulfide,4.76,1,0.001,95.61,0,488,0,0.1,0x2F4F4F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Sulfide,Solid,0,1,Lead Sulfide,Lead Sulfide,Lead Sulfide,7.6,1,0.001,239.27,0,1114,0,0.1,0x1C1C1C,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Sulfide,Solid,0,1,Zinc Sulfide,Zinc Sulfide,Zinc Sulfide,4.09,1,0.001,97.47,0,1850,0,0.1,0xFFFFF0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Mercury Sulfide,Solid,0,1,Mercury Sulfide,Mercury Sulfide,Mercury Sulfide,8.1,1,0.001,232.66,0,820,0,0.1,0xDC143C,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Sulfide,Solid,0,1,Silver Sulfide,Silver Sulfide,Silver Sulfide,7.23,1,0.001,247.8,0,825,0,0.1,0x1C1C1C,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Antimony Sulfide,Solid,0,1,Antimony Sulfide,Antimony Sulfide,Antimony Sulfide,4.64,1,0.001,339.68,0,550,0,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Arsenic Sulfide,Solid,0,1,Arsenic Sulfide,Arsenic Sulfide,Arsenic Sulfide,3.43,1,0.001,246.04,0,320,0,0.1,0xFFD700,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iron Oxide,Solid,0,1,Iron Oxide,Iron Oxide,Iron Oxide,5.24,1,0.001,159.69,0,1566,0,0.1,0x8B0000,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Oxide,Solid,0,1,Copper Oxide,Copper Oxide,Copper Oxide,6.31,1,0.001,79.55,0,1326,0,0.1,0x2F4F4F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Oxide,Solid,0,1,Zinc Oxide,Zinc Oxide,Zinc Oxide,5.61,1,0.001,81.39,0,1975,0,0.1,0xFFFFF0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Magnesium Oxide,Solid,0,1,Magnesium Oxide,Magnesium Oxide,Magnesium Oxide,3.58,1,0.001,40.3,0,2852,3600,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Calcium Oxide,Solid,0,1,Calcium Oxide,Calcium Oxide,Calcium Oxide,3.34,1,0.001,56.08,0,2572,2850,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aluminum Oxide,Solid,0,1,Aluminum Oxide,Aluminum Oxide,Aluminum Oxide,3.95,1,0.001,101.96,0,2072,2977,0.1,0xD3D3D3,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silicon Dioxide,Solid,0,1,Silicon Dioxide,Silicon Dioxide,Silicon Dioxide,2.65,1,0.001,60.08,0,1710,2230,0.1,0xF5F5F5,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Oxide,Solid,0,1,Lead Oxide,Lead Oxide,Lead Oxide,9.53,1,0.001,223.2,0,888,1477,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Dioxide,Solid,0,1,Lead Dioxide,Lead Dioxide,Lead Dioxide,9.38,1,0.001,239.2,0,290,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tin Oxide,Solid,0,1,Tin Oxide,Tin Oxide,Tin Oxide,6.95,1,0.001,150.71,0,1127,1800,0.1,0xD3D3D3,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Oxide,Solid,0,1,Nickel Oxide,Nickel Oxide,Nickel Oxide,6.72,1,0.001,74.69,0,1955,2600,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Oxide,Solid,0,1,Cobalt Oxide,Cobalt Oxide,Cobalt Oxide,6.11,1,0.001,74.93,0,1935,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Manganese Dioxide,Solid,0,1,Manganese Dioxide,Manganese Dioxide,Manganese Dioxide,5.03,1,0.001,86.94,0,535,0,0.1,0x4A4A4A,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Oxide,Solid,0,1,Chromium Oxide,Chromium Oxide,Chromium Oxide,5.22,1,0.001,151.99,0,2439,3000,0.1,0x006400,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Titanium Dioxide,Solid,0,1,Titanium Dioxide,Titanium Dioxide,Titanium Dioxide,4.23,1,0.001,79.87,0,1843,2972,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Permanganate,Solid,0,1,Potassium Permanganate,Potassium Permanganate,Potassium Permanganate,2.7,1,0.001,158.03,0,240,0,0.1,0x800080,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Potassium Dichromate,Solid,0,1,Potassium Dichromate,Potassium Dichromate,Potassium Dichromate,2.68,1,0.001,294.19,0,398,0,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Cyanide,Solid,0,1,Copper Cyanide,Copper Cyanide,Copper Cyanide,2.9,1,0.001,89.56,0,473,0,0.1,0xE6E6FA,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Cyanide,Solid,0,1,Silver Cyanide,Silver Cyanide,Silver Cyanide,3.95,1,0.001,133.89,0,350,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sodium Thiosulfate,Solid,0,1,Sodium Thiosulfate,Sodium Thiosulfate,Sodium Thiosulfate,1.67,1,0.001,158.11,0,48.5,100,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Iodide,Solid,0,1,Lead Iodide,Lead Iodide,Lead Iodide,6.16,1,0.001,461.01,0,402,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sulfur,Solid,0,1,Sulfur,Sulfur,Sulfur,2.07,1,0.001,32.06,0,115.2,444.7,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phosphorus,Solid,0,1,Phosphorus,Phosphorus,Phosphorus,1.82,1,0.001,30.97,0,44.2,280,0.1,0xFF6600,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Iodine,Solid,0,1,Iodine,Iodine,Iodine,4.93,1,0.001,253.81,0,113.7,184.3,0.1,0x4B0082,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silicon,Solid,0,1,Silicon,Silicon,Silicon,2.33,1,0.001,28.09,0,1414,3265,0.1,0x808080,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Boron,Solid,0,1,Boron,Boron,Boron,2.34,1,0.001,10.81,0,2076,3927,0.1,0x808080,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzoic Acid,Solid,0,1,Benzoic Acid,Benzoic Acid,Benzoic Acid,1.27,1,0.001,122.12,0,122.4,249.2,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Salicylic Acid,Solid,0,1,Salicylic Acid,Salicylic Acid,Salicylic Acid,1.44,1,0.001,138.12,0,159,211,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Oxalic Acid,Solid,0,1,Oxalic Acid,Oxalic Acid,Oxalic Acid,1.9,1,0.001,90.03,0,189.5,157,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Citric Acid,Solid,0,1,Citric Acid,Citric Acid,Citric Acid,1.665,1,0.001,192.12,0,153,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tartaric Acid,Solid,0,1,Tartaric Acid,Tartaric Acid,Tartaric Acid,1.76,1,0.001,150.09,0,171,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Succinic Acid,Solid,0,1,Succinic Acid,Succinic Acid,Succinic Acid,1.56,1,0.001,118.09,0,188,235,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Malic Acid,Solid,0,1,Malic Acid,Malic Acid,Malic Acid,1.61,1,0.001,134.09,0,130,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acetamide,Solid,0,1,Acetamide,Acetamide,Acetamide,1.16,1,0.001,59.07,0,82.3,221.2,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Urea,Solid,0,1,Urea,Urea,Urea,1.32,1,0.001,60.06,0,133.3,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Caffeine,Solid,0,1,Caffeine,Caffeine,Caffeine,1.23,1,0.001,194.19,0,235.6,178,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phenol,Solid,0,1,Phenol,Phenol,Phenol,1.07,1,0.001,94.11,0,40.5,181.9,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Naphthalene,Solid,0,1,Naphthalene,Naphthalene,Naphthalene,1.02,1,0.001,128.17,0,80.2,218,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Anthracene,Solid,0,1,Anthracene,Anthracene,Anthracene,1.24,1,0.001,178.23,0,216.4,340,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Anthraquinone,Solid,0,1,Anthraquinone,Anthraquinone,Anthraquinone,1.42,1,0.001,208.21,0,286,380,0.1,0xFFD700,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzophenone,Solid,0,1,Benzophenone,Benzophenone,Benzophenone,1.11,1,0.001,182.22,0,48.5,305.4,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Biphenyl,Solid,0,1,Biphenyl,Biphenyl,Biphenyl,1.04,1,0.001,154.21,0,68.9,255,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diphenylamine,Solid,0,1,Diphenylamine,Diphenylamine,Diphenylamine,1.16,1,0.001,169.22,0,52.9,302,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Diphenylmethane,Solid,0,1,Diphenylmethane,Diphenylmethane,Diphenylmethane,1.0,1,0.001,168.23,0,25.4,265,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzoin,Solid,0,1,Benzoin,Benzoin,Benzoin,1.31,1,0.001,212.24,0,137,343,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzil,Solid,0,1,Benzil,Benzil,Benzil,1.23,1,0.001,210.23,0,95,348,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Benzamide,Solid,0,1,Benzamide,Benzamide,Benzamide,1.34,1,0.001,121.14,0,127.3,290,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bisphenol A,Solid,0,1,Bisphenol A,Bisphenol A,Bisphenol A,1.2,1,0.001,228.29,0,156,360,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dicyclopentadiene,Solid,0,1,Dicyclopentadiene,Dicyclopentadiene,Dicyclopentadiene,0.98,1,0.001,132.2,0,32.6,170,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylene Carbonate,Solid,0,1,Ethylene Carbonate,Ethylene Carbonate,Ethylene Carbonate,1.32,1,0.001,88.06,0,36.4,248,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Glycine,Solid,0,1,Glycine,Glycine,Glycine,1.6,1,0.001,75.07,0,233,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Alanine,Solid,0,1,Alanine,Alanine,Alanine,1.42,1,0.001,89.09,0,314,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Valine,Solid,0,1,Valine,Valine,Valine,1.23,1,0.001,117.15,0,315,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Leucine,Solid,0,1,Leucine,Leucine,Leucine,1.17,1,0.001,131.17,0,293,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Isoleucine,Solid,0,1,Isoleucine,Isoleucine,Isoleucine,1.19,1,0.001,131.17,0,284,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Serine,Solid,0,1,Serine,Serine,Serine,1.6,1,0.001,105.09,0,228,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Threonine,Solid,0,1,Threonine,Threonine,Threonine,1.6,1,0.001,119.12,0,255,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Aspartic Acid,Solid,0,1,Aspartic Acid,Aspartic Acid,Aspartic Acid,1.66,1,0.001,133.1,0,270,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Glutamic Acid,Solid,0,1,Glutamic Acid,Glutamic Acid,Glutamic Acid,1.54,1,0.001,147.13,0,199,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lysine,Solid,0,1,Lysine,Lysine,Lysine,1.12,1,0.001,146.19,0,224,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Arginine,Solid,0,1,Arginine,Arginine,Arginine,1.12,1,0.001,174.2,0,244,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phenylalanine,Solid,0,1,Phenylalanine,Phenylalanine,Phenylalanine,1.29,1,0.001,165.19,0,270,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tyrosine,Solid,0,1,Tyrosine,Tyrosine,Tyrosine,1.46,1,0.001,181.19,0,290,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tryptophan,Solid,0,1,Tryptophan,Tryptophan,Tryptophan,1.34,1,0.001,204.23,0,282,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cysteine,Solid,0,1,Cysteine,Cysteine,Cysteine,1.54,1,0.001,121.16,0,220,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Methionine,Solid,0,1,Methionine,Methionine,Methionine,1.34,1,0.001,149.21,0,281,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Histidine,Solid,0,1,Histidine,Histidine,Histidine,1.42,1,0.001,155.16,0,287,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Proline,Solid,0,1,Proline,Proline,Proline,1.35,1,0.001,115.13,0,201,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Tert-Butyl Alcohol,Solid,0,1,Tert-Butyl Alcohol,Tert-Butyl Alcohol,Tert-Butyl Alcohol,0.786,1,0.001,74.12,0,25.7,82.4,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Chloride,Solid,0,1,Ammonium Chloride,Ammonium Chloride,Ammonium Chloride,1.53,1,0.001,53.49,0,520,520,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Sulfate,Solid,0,1,Ammonium Sulfate,Ammonium Sulfate,Ammonium Sulfate,1.77,1,0.001,132.14,0,280,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Nitrate,Solid,0,1,Ammonium Nitrate,Ammonium Nitrate,Ammonium Nitrate,1.73,1,0.001,80.04,0,169,210,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Carbonate,Solid,0,1,Ammonium Carbonate,Ammonium Carbonate,Ammonium Carbonate,1.5,1,0.001,96.09,0,58,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Acetate,Solid,0,1,Ammonium Acetate,Ammonium Acetate,Ammonium Acetate,1.07,1,0.001,77.08,0,112,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Benzoate,Solid,0,1,Ammonium Benzoate,Ammonium Benzoate,Ammonium Benzoate,1.26,1,0.001,139.15,0,198,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Fluoride,Solid,0,1,Ammonium Fluoride,Ammonium Fluoride,Ammonium Fluoride,1.01,1,0.001,37.04,0,98,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Perchlorate,Solid,0,1,Ammonium Perchlorate,Ammonium Perchlorate,Ammonium Perchlorate,1.95,1,0.001,117.49,0,240,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Persulfate,Solid,0,1,Ammonium Persulfate,Ammonium Persulfate,Ammonium Persulfate,1.98,1,0.001,228.2,0,120,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Thiocyanate,Solid,0,1,Ammonium Thiocyanate,Ammonium Thiocyanate,Ammonium Thiocyanate,1.31,1,0.001,76.12,0,149,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Sulfamate,Solid,0,1,Ammonium Sulfamate,Ammonium Sulfamate,Ammonium Sulfamate,1.77,1,0.001,114.12,0,130,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Chromate,Solid,0,1,Ammonium Chromate,Ammonium Chromate,Ammonium Chromate,1.9,1,0.001,152.07,0,185,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ammonium Dichromate,Solid,0,1,Ammonium Dichromate,Ammonium Dichromate,Ammonium Dichromate,2.15,1,0.001,252.06,0,180,0,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Bromide,Solid,0,1,Barium Bromide,Barium Bromide,Barium Bromide,4.92,1,0.001,297.14,0,854,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Fluoride,Solid,0,1,Barium Fluoride,Barium Fluoride,Barium Fluoride,4.89,1,0.001,175.32,0,1355,2260,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Iodide,Solid,0,1,Barium Iodide,Barium Iodide,Barium Iodide,5.15,1,0.001,391.14,0,740,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Oxide,Solid,0,1,Barium Oxide,Barium Oxide,Barium Oxide,5.72,1,0.001,153.33,0,1923,2000,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Peroxide,Solid,0,1,Barium Peroxide,Barium Peroxide,Barium Peroxide,4.96,1,0.001,169.33,0,450,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Barium Sulfide,Solid,0,1,Barium Sulfide,Barium Sulfide,Barium Sulfide,4.25,1,0.001,169.39,0,1200,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Chloride,Solid,0,1,Cesium Chloride,Cesium Chloride,Cesium Chloride,3.99,1,0.001,168.36,0,645,1290,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Bromide,Solid,0,1,Cesium Bromide,Cesium Bromide,Cesium Bromide,4.44,1,0.001,212.81,0,638,1300,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Iodide,Solid,0,1,Cesium Iodide,Cesium Iodide,Cesium Iodide,4.51,1,0.001,259.81,0,621,1280,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Fluoride,Solid,0,1,Cesium Fluoride,Cesium Fluoride,Cesium Fluoride,4.12,1,0.001,151.9,0,703,1251,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Hydroxide,Solid,0,1,Cesium Hydroxide,Cesium Hydroxide,Cesium Hydroxide,3.68,1,0.001,149.91,0,342,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Carbonate,Solid,0,1,Cesium Carbonate,Cesium Carbonate,Cesium Carbonate,4.24,1,0.001,325.82,0,610,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Nitrate,Solid,0,1,Cesium Nitrate,Cesium Nitrate,Cesium Nitrate,3.69,1,0.001,194.91,0,414,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cesium Sulfate,Solid,0,1,Cesium Sulfate,Cesium Sulfate,Cesium Sulfate,4.24,1,0.001,361.87,0,1005,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Chloride,Solid,0,1,Cadmium Chloride,Cadmium Chloride,Cadmium Chloride,4.05,1,0.001,183.32,0,568,964,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Bromide,Solid,0,1,Cadmium Bromide,Cadmium Bromide,Cadmium Bromide,5.19,1,0.001,272.22,0,567,863,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Iodide,Solid,0,1,Cadmium Iodide,Cadmium Iodide,Cadmium Iodide,5.67,1,0.001,366.22,0,388,742,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Fluoride,Solid,0,1,Cadmium Fluoride,Cadmium Fluoride,Cadmium Fluoride,6.33,1,0.001,150.41,0,1100,1748,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Cyanide,Solid,0,1,Cadmium Cyanide,Cadmium Cyanide,Cadmium Cyanide,2.23,1,0.001,164.45,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Carbonate,Solid,0,1,Cadmium Carbonate,Cadmium Carbonate,Cadmium Carbonate,4.26,1,0.001,172.42,0,500,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Hydroxide,Solid,0,1,Cadmium Hydroxide,Cadmium Hydroxide,Cadmium Hydroxide,4.79,1,0.001,146.41,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Nitrate,Solid,0,1,Cadmium Nitrate,Cadmium Nitrate,Cadmium Nitrate,2.46,1,0.001,236.42,0,100,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Oxide,Solid,0,1,Cadmium Oxide,Cadmium Oxide,Cadmium Oxide,6.95,1,0.001,128.41,0,1500,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Sulfate,Solid,0,1,Cadmium Sulfate,Cadmium Sulfate,Cadmium Sulfate,4.69,1,0.001,208.47,0,1000,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Sulfide,Solid,0,1,Cadmium Sulfide,Cadmium Sulfide,Cadmium Sulfide,4.82,1,0.001,144.48,0,1750,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cadmium Acetate,Solid,0,1,Cadmium Acetate,Cadmium Acetate,Cadmium Acetate,2.34,1,0.001,230.5,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Acetate,Solid,0,1,Cobalt Acetate,Cobalt Acetate,Cobalt Acetate,1.71,1,0.001,177.02,0,0,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Bromide,Solid,0,1,Cobalt Bromide,Cobalt Bromide,Cobalt Bromide,5.6,1,0.001,218.74,0,678,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Carbonate,Solid,0,1,Cobalt Carbonate,Cobalt Carbonate,Cobalt Carbonate,4.2,1,0.001,118.94,0,0,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Fluoride,Solid,0,1,Cobalt Fluoride,Cobalt Fluoride,Cobalt Fluoride,4.46,1,0.001,96.93,0,1200,1400,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Hydroxide,Solid,0,1,Cobalt Hydroxide,Cobalt Hydroxide,Cobalt Hydroxide,3.6,1,0.001,92.95,0,0,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Iodide,Solid,0,1,Cobalt Iodide,Cobalt Iodide,Cobalt Iodide,5.68,1,0.001,312.74,0,0,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Nitrate,Solid,0,1,Cobalt Nitrate,Cobalt Nitrate,Cobalt Nitrate,2.49,1,0.001,182.94,0,55,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Sulfate,Solid,0,1,Cobalt Sulfate,Cobalt Sulfate,Cobalt Sulfate,3.71,1,0.001,155,0,96.8,0,0.1,0xFFC0CB,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Sulfide,Solid,0,1,Cobalt Sulfide,Cobalt Sulfide,Cobalt Sulfide,5.45,1,0.001,90.99,0,0,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Cobalt Thiocyanate,Solid,0,1,Cobalt Thiocyanate,Cobalt Thiocyanate,Cobalt Thiocyanate,1.87,1,0.001,175.1,0,0,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Acetate,Solid,0,1,Chromium Acetate,Chromium Acetate,Chromium Acetate,1.27,1,0.001,229.13,0,0,0,0.1,0x006400,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Chloride,Solid,0,1,Chromium Chloride,Chromium Chloride,Chromium Chloride,2.76,1,0.001,158.35,0,1152,1300,0.1,0x006400,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Nitrate,Solid,0,1,Chromium Nitrate,Chromium Nitrate,Chromium Nitrate,1.85,1,0.001,238.01,0,60,0,0.1,0x006400,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Sulfate,Solid,0,1,Chromium Sulfate,Chromium Sulfate,Chromium Sulfate,3.1,1,0.001,148.06,0,0,0,0.1,0x006400,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Chromium Trioxide,Solid,0,1,Chromium Trioxide,Chromium Trioxide,Chromium Trioxide,2.7,1,0.001,99.99,0,196,250,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Acetate,Solid,0,1,Copper Acetate,Copper Acetate,Copper Acetate,1.93,1,0.001,181.63,0,0,0,0.1,0x40E0D0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Acetylacetonate,Solid,0,1,Copper Acetylacetonate,Copper Acetylacetonate,Copper Acetylacetonate,1.42,1,0.001,263.76,0,284,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Bromide,Solid,0,1,Copper Bromide,Copper Bromide,Copper Bromide,4.77,1,0.001,223.37,0,498,900,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Fluoride,Solid,0,1,Copper Fluoride,Copper Fluoride,Copper Fluoride,4.23,1,0.001,101.54,0,836,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Gluconate,Solid,0,1,Copper Gluconate,Copper Gluconate,Copper Gluconate,1.8,1,0.001,453.84,0,0,0,0.1,0x40E0D0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Iodide,Solid,0,1,Copper Iodide,Copper Iodide,Copper Iodide,5.63,1,0.001,317.47,0,606,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Nitrate,Solid,0,1,Copper Nitrate,Copper Nitrate,Copper Nitrate,2.32,1,0.001,187.56,0,115,170,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Nitrite,Solid,0,1,Copper Nitrite,Copper Nitrite,Copper Nitrite,2.32,1,0.001,155.56,0,0,0,0.1,0x40E0D0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Copper Tartrate,Solid,0,1,Copper Tartrate,Copper Tartrate,Copper Tartrate,2.39,1,0.001,211.6,0,0,0,0.1,0x40E0D0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Acetate,Solid,0,1,Nickel Acetate,Nickel Acetate,Nickel Acetate,1.74,1,0.001,176.78,0,0,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Bromide,Solid,0,1,Nickel Bromide,Nickel Bromide,Nickel Bromide,4.89,1,0.001,218.5,0,963,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Carbonate,Solid,0,1,Nickel Carbonate,Nickel Carbonate,Nickel Carbonate,4.39,1,0.001,118.72,0,0,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Fluoride,Solid,0,1,Nickel Fluoride,Nickel Fluoride,Nickel Fluoride,4.72,1,0.001,96.69,0,1380,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Hydroxide,Solid,0,1,Nickel Hydroxide,Nickel Hydroxide,Nickel Hydroxide,4.1,1,0.001,92.71,0,0,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Iodide,Solid,0,1,Nickel Iodide,Nickel Iodide,Nickel Iodide,5.89,1,0.001,312.5,0,780,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Nitrate,Solid,0,1,Nickel Nitrate,Nickel Nitrate,Nickel Nitrate,2.05,1,0.001,182.7,0,57,137,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Sulfate,Solid,0,1,Nickel Sulfate,Nickel Sulfate,Nickel Sulfate,4.11,1,0.001,154.76,0,100,0,0.1,0x98FB98,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nickel Sulfide,Solid,0,1,Nickel Sulfide,Nickel Sulfide,Nickel Sulfide,5.64,1,0.001,90.76,0,797,0,0.1,0x2F2F2F,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Bromide,Solid,0,1,Zinc Bromide,Zinc Bromide,Zinc Bromide,4.2,1,0.001,225.19,0,394,702,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Fluoride,Solid,0,1,Zinc Fluoride,Zinc Fluoride,Zinc Fluoride,4.95,1,0.001,103.38,0,872,1500,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Iodide,Solid,0,1,Zinc Iodide,Zinc Iodide,Zinc Iodide,4.74,1,0.001,319.19,0,446,625,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Zinc Nitrate,Solid,0,1,Zinc Nitrate,Zinc Nitrate,Zinc Nitrate,2.07,1,0.001,189.4,0,36,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Bromide,Solid,0,1,Lead Bromide,Lead Bromide,Lead Bromide,6.66,1,0.001,367.01,0,373,892,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Fluoride,Solid,0,1,Lead Fluoride,Lead Fluoride,Lead Fluoride,8.45,1,0.001,245.22,0,855,1293,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Iodide,Solid,0,1,Lead Iodide,Lead Iodide,Lead Iodide,6.16,1,0.001,461.01,0,402,954,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Nitrate,Solid,0,1,Lead Nitrate,Lead Nitrate,Lead Nitrate,4.53,1,0.001,331.2,0,470,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Acetate,Solid,0,1,Lead Acetate,Lead Acetate,Lead Acetate,3.25,1,0.001,325.27,0,280,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Chromate,Solid,0,1,Lead Chromate,Lead Chromate,Lead Chromate,6.12,1,0.001,323.19,0,844,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Lead Thiocyanate,Solid,0,1,Lead Thiocyanate,Lead Thiocyanate,Lead Thiocyanate,3.82,1,0.001,323.36,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Bromide,Solid,0,1,Silver Bromide,Silver Bromide,Silver Bromide,6.47,1,0.001,187.77,0,432,1502,0.1,0xFFFFCC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Fluoride,Solid,0,1,Silver Fluoride,Silver Fluoride,Silver Fluoride,5.85,1,0.001,126.87,0,435,1159,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Iodide,Solid,0,1,Silver Iodide,Silver Iodide,Silver Iodide,5.68,1,0.001,234.77,0,558,1506,0.1,0xFFFFCC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Nitrite,Solid,0,1,Silver Nitrite,Silver Nitrite,Silver Nitrite,4.52,1,0.001,153.87,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Perchlorate,Solid,0,1,Silver Perchlorate,Silver Perchlorate,Silver Perchlorate,2.8,1,0.001,207.32,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Sulfite,Solid,0,1,Silver Sulfite,Silver Sulfite,Silver Sulfite,5.45,1,0.001,143.9,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silver Thiosulfate,Solid,0,1,Silver Thiosulfate,Silver Thiosulfate,Silver Thiosulfate,4.25,1,0.001,165.94,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bismuth Chloride,Solid,0,1,Bismuth Chloride,Bismuth Chloride,Bismuth Chloride,4.75,1,0.001,315.33,0,227,447,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bismuth Oxide,Solid,0,1,Bismuth Oxide,Bismuth Oxide,Bismuth Oxide,8.9,1,0.001,259.98,0,817,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bismuth Trichloride,Solid,0,1,Bismuth Trichloride,Bismuth Trichloride,Bismuth Trichloride,4.75,1,0.001,315.33,0,227,447,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Bismuth Trioxide,Solid,0,1,Bismuth Trioxide,Bismuth Trioxide,Bismuth Trioxide,8.9,1,0.001,259.98,0,817,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Antimony Pentachloride,Solid,0,1,Antimony Pentachloride,Antimony Pentachloride,Antimony Pentachloride,2.35,1,0.001,299.02,0,4,140,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Antimony Pentoxide,Solid,0,1,Antimony Pentoxide,Antimony Pentoxide,Antimony Pentoxide,3.78,1,0.001,287.52,0,450,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Antimony Trichloride,Solid,0,1,Antimony Trichloride,Antimony Trichloride,Antimony Trichloride,3.14,1,0.001,228.11,0,73.4,207,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Antimony Trioxide,Solid,0,1,Antimony Trioxide,Antimony Trioxide,Antimony Trioxide,5.2,1,0.001,291.5,0,656,1550,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Arsenic Pentoxide,Solid,0,1,Arsenic Pentoxide,Arsenic Pentoxide,Arsenic Pentoxide,4.7,1,0.001,229.84,0,315,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Arsenic Trioxide,Solid,0,1,Arsenic Trioxide,Arsenic Trioxide,Arsenic Trioxide,3.74,1,0.001,197.84,0,313,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Boron Trioxide,Solid,0,1,Boron Trioxide,Boron Trioxide,Boron Trioxide,2.46,1,0.001,69.62,0,450,1860,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Beryllium Chloride,Solid,0,1,Beryllium Chloride,Beryllium Chloride,Beryllium Chloride,1.9,1,0.001,79.97,0,415,520,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Beryllium Fluoride,Solid,0,1,Beryllium Fluoride,Beryllium Fluoride,Beryllium Fluoride,2.1,1,0.001,47.01,0,555,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Beryllium Hydroxide,Solid,0,1,Beryllium Hydroxide,Beryllium Hydroxide,Beryllium Hydroxide,1.92,1,0.001,43.03,0,0,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Beryllium Oxide,Solid,0,1,Beryllium Oxide,Beryllium Oxide,Beryllium Oxide,3.02,1,0.001,25.01,0,2507,3900,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Beryllium Sulfate,Solid,0,1,Beryllium Sulfate,Beryllium Sulfate,Beryllium Sulfate,2.37,1,0.001,105.07,0,550,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Bromide,Solid,0,1,Strontium Bromide,Strontium Bromide,Strontium Bromide,4.22,1,0.001,247.43,0,643,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Chloride,Solid,0,1,Strontium Chloride,Strontium Chloride,Strontium Chloride,3.05,1,0.001,158.53,0,875,1250,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Fluoride,Solid,0,1,Strontium Fluoride,Strontium Fluoride,Strontium Fluoride,4.24,1,0.001,125.62,0,1473,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Iodide,Solid,0,1,Strontium Iodide,Strontium Iodide,Strontium Iodide,4.59,1,0.001,341.43,0,538,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Nitrate,Solid,0,1,Strontium Nitrate,Strontium Nitrate,Strontium Nitrate,2.99,1,0.001,211.63,0,570,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Strontium Oxide,Solid,0,1,Strontium Oxide,Strontium Oxide,Strontium Oxide,4.7,1,0.001,103.62,0,2430,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Acrolein,Liquid,0,1,Acrolein,Acrolein,Acrolein,0.84,1,0.001,56.06,0,-87,52.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hexadecane,Liquid,0,1,Hexadecane,Hexadecane,Hexadecane,0.77,1,0.001,226.44,0,18.2,287,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Heptadecane,Liquid,0,1,Heptadecane,Heptadecane,Heptadecane,0.77,1,0.001,240.46,0,22,303,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Octadecane,Liquid,0,1,Octadecane,Octadecane,Octadecane,0.78,1,0.001,254.49,0,28.2,316.7,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nonadecane,Liquid,0,1,Nonadecane,Nonadecane,Nonadecane,0.78,1,0.001,268.52,0,32,330,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Eicosane,Liquid,0,1,Eicosane,Eicosane,Eicosane,0.79,1,0.001,282.55,0,36.8,343,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Decahydronaphthalene,Liquid,0,1,Decahydronaphthalene,Decahydronaphthalene,Decahydronaphthalene,0.88,1,0.001,138.25,0,-43,194,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dibromochloropropane,Liquid,0,1,Dibromochloropropane,Dibromochloropropane,Dibromochloropropane,1.98,1,0.001,236.88,0,-34.5,196,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dichlorophenol,Liquid,0,1,Dichlorophenol,Dichlorophenol,Dichlorophenol,1.54,1,0.001,163,0,45,210,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dinitrobenzene,Liquid,0,1,Dinitrobenzene,Dinitrobenzene,Dinitrobenzene,1.58,1,0.001,168.11,0,89,291,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Dinitrotoluene,Liquid,0,1,Dinitrotoluene,Dinitrotoluene,Dinitrotoluene,1.52,1,0.001,182.13,0,69.5,300,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Ethylbenzene,Liquid,0,1,Ethylbenzene,Ethylbenzene,Ethylbenzene,0.87,1,0.001,106.16,0,-95,136.2,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hydrazine,Liquid,0,1,Hydrazine,Hydrazine,Hydrazine,1.0,1,0.001,32.05,0,2,114,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Hydrazoic Acid,Liquid,0,1,Hydrazoic Acid,Hydrazoic Acid,Hydrazoic Acid,1.09,1,0.001,43.03,0,-80,37,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitromethane,Liquid,0,1,Nitromethane,Nitromethane,Nitromethane,1.14,1,0.001,61.04,0,-29,101,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitroethane,Liquid,0,1,Nitroethane,Nitroethane,Nitroethane,1.05,1,0.001,75.07,0,-90,114,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Nitopropane,Liquid,0,1,Nitopropane,Nitopropane,Nitopropane,1.0,1,0.001,89.09,0,-108,131,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phosphorus Trichloride,Liquid,0,1,Phosphorus Trichloride,Phosphorus Trichloride,Phosphorus Trichloride,1.57,1,0.001,137.33,0,-112,76,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phosphorus Pentoxide,Solid,0,1,Phosphorus Pentoxide,Phosphorus Pentoxide,Phosphorus Pentoxide,2.39,1,0.001,141.94,0,580,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Phosphorus Oxychloride,Liquid,0,1,Phosphorus Oxychloride,Phosphorus Oxychloride,Phosphorus Oxychloride,1.68,1,0.001,153.33,0,1,105,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Silicon Tetrachloride,Liquid,0,1,Silicon Tetrachloride,Silicon Tetrachloride,Silicon Tetrachloride,1.48,1,0.001,169.9,0,-68,57,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Thionyl Chloride,Liquid,0,1,Thionyl Chloride,Thionyl Chloride,Thionyl Chloride,1.64,1,0.001,118.97,0,-104.5,76,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Sulfuryl Chloride,Liquid,0,1,Sulfuryl Chloride,Sulfuryl Chloride,Sulfuryl Chloride,1.68,1,0.001,134.97,0,-54,69,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Vanadium Oxytrichloride,Liquid,0,1,Vanadium Oxytrichloride,Vanadium Oxytrichloride,Vanadium Oxytrichloride,1.83,1,0.001,173.78,0,-77,127,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0
+Titanium Tetrachloride,Liquid,0,1,Titanium Tetrachloride,Titanium Tetrachloride,Titanium Tetrachloride,1.73,1,0.001,189.71,0,-24,136,0.1,0xE8F4F8,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,,,,,0,0,0,0,0

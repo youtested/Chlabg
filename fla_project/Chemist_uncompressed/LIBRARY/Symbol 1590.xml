@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1590" itemID="69be9900-000002bb" lastModified="1774098374" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 1590" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="3.3" ty="-4.85" a="0.197265625" d="0.197265625"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#d79090" alpha="0.0" ratio="0.0"/>
+                                                            <GradientEntry color="#ffd246" alpha="0.32941177" ratio="0.5137255"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="1.0"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 3260 -98[ 3260 1225 2324 2161[ 1388 3097 65 3097[ -1257 3097 -2193 2161[ -3129 1225 -3129 -98[ -3129 -1421 -2193 -2357[ -1257 -3292 65 -3292[ 1388 -3292 2324 -2357[ 3260 -1421 3260 -98"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

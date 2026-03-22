@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1027" itemID="69be9900-0000020f" lastModified="1774098374">
+     <timeline>
+          <DOMTimeline name="Symbol 1027">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#c9407b" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1025" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#ffffff" alpha="0.2"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -2176 -1945| -440 -1945| 0 -2295| 440 -1945| 2177 -1945[ 2344 -1945 2462 -1827[ 2580 -1709 2580 -1542| 2580 1872[ 2580 2039 2462 2157[ 2344 2275 2177 2275| -2176 2275[ -2343 2275 -2461 2157[ -2579 2039 -2579 1872| -2579 -1542[ -2579 -1709 -2461 -1827[ -2343 -1945 -2176 -1945"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

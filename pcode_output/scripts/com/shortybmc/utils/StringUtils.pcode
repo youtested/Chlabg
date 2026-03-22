@@ -1,0 +1,452 @@
+package com.shortybmc.utils
+{
+   public class StringUtils
+   {
+      
+      public static var NEWLINE_TOKENS:Array;
+      
+      public static var WHITESPACE_TOKENS:Array;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 4
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "NEWLINE_TOKENS", 0, 7
+               findproperty QName(PackageNamespace(""),"NEWLINE_TOKENS")
+               findpropstrict Multiname("Array",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+               pushstring "\n"
+               pushstring "\r"
+               constructprop Multiname("Array",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+               setproperty QName(PackageNamespace(""),"NEWLINE_TOKENS")
+               debug 1, "WHITESPACE_TOKENS", 1, 12
+               findproperty QName(PackageNamespace(""),"WHITESPACE_TOKENS")
+               findpropstrict Multiname("Array",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+               pushstring " "
+               pushstring "\t"
+               constructprop Multiname("Array",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+               setproperty QName(PackageNamespace(""),"WHITESPACE_TOKENS")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function StringUtils()
+      {
+         method
+            name "com.shortybmc.utils:StringUtils/StringUtils"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                  debugline 122
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function count(haystack:String, needle:String, offset:Number = 0, length:Number = 0) : Number
+      {
+         trait method QName(PackageNamespace(""),"count")
+            flag FINAL
+            dispid 3
+            method
+               name "com.shortybmc.utils:StringUtils/count"
+               flag HAS_OPTIONAL
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"Number")
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               optional Integer(0)
+               optional Integer(0)
+               returns QName(PackageNamespace(""),"Number")
+               
+               body
+                  maxstack 3
+                  localcount 6
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                     debugline 29
+                     getlocal0
+                     pushscope
+                     debug 1, "haystack", 0, 29
+                     debug 1, "needle", 1, 29
+                     debug 1, "offset", 2, 29
+                     debug 1, "length", 3, 29
+                     debug 1, "result", 4, 33
+                     debugline 31
+                     getlocal 4
+                     pushbyte 0
+                     ifstrictne ofs0038
+                     debugline 32
+                     getlocal1
+                     getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                     convert_d
+                     setlocal 4
+            ofs0038:
+                     debugline 33
+                     pushbyte 0
+                     convert_d
+                     setlocal 5
+                     debugline 34
+                     getlocal1
+                     getlocal3
+                     getlocal 4
+                     callproperty Multiname("slice",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+                     coerce_s
+                     setlocal1
+                     jump ofs006c
+            ofs004f:
+                     label
+                     debugline 37
+                     getlocal1
+                     getlocal1
+                     getlocal2
+                     callproperty Multiname("indexOf",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                     getlocal2
+                     getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                     add
+                     callproperty Multiname("slice",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                     coerce_s
+                     setlocal1
+                     debugline 38
+                     getlocal 5
+                     increment
+                     convert_d
+                     setlocal 5
+            ofs006c:
+                     debugline 35
+                     getlocal1
+                     getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                     pushbyte 0
+                     greaterthan
+                     dup
+                     iffalse ofs0085
+                     pop
+                     getlocal1
+                     getlocal2
+                     callproperty Multiname("indexOf",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                     pushbyte -1
+                     equals
+                     not
+            ofs0085:
+                     iftrue ofs004f
+                     debugline 40
+                     getlocal 5
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function trim(str:String, charList:Array = null) : String
+         {
+            trait method QName(PackageNamespace(""),"trim")
+               flag FINAL
+               dispid 4
+               method
+                  name "com.shortybmc.utils:StringUtils/trim"
+                  flag HAS_OPTIONAL
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"Array")
+                  paramname "
+"
+                  paramname "
+"
+                  optional Null()
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 3
+                     localcount 4
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                        debugline 54
+                        getlocal0
+                        pushscope
+                        pushnull
+                        coerce QName(PackageNamespace(""),"Array")
+                        setlocal3
+                        debug 1, "str", 0, 54
+                        debug 1, "charList", 1, 54
+                        debug 1, "list", 2, 56
+                        debugline 57
+                        getlocal2
+                        iffalse ofs002e
+                        debugline 59
+                        getlocal2
+                        coerce QName(PackageNamespace(""),"Array")
+                        setlocal3
+                        jump ofs003d
+               ofs002e:
+                        debugline 63
+                        getlex Multiname("WHITESPACE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                        getlex Multiname("NEWLINE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                        callproperty Multiname("concat",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                        coerce QName(PackageNamespace(""),"Array")
+                        setlocal3
+               ofs003d:
+                        debugline 65
+                        findpropstrict Multiname("trimLeft",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                        getlocal1
+                        getlocal3
+                        callproperty Multiname("trimLeft",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+                        coerce_s
+                        setlocal1
+                        debugline 66
+                        findpropstrict Multiname("trimRight",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                        getlocal1
+                        getlocal3
+                        callproperty Multiname("trimRight",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+                        coerce_s
+                        setlocal1
+                        debugline 67
+                        getlocal1
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function trimLeft(str:String, charList:Array = null) : String
+            {
+               trait method QName(PackageNamespace(""),"trimLeft")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "com.shortybmc.utils:StringUtils/trimLeft"
+                     flag HAS_OPTIONAL
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"Array")
+                     paramname "
+"
+                     paramname "
+"
+                     optional Null()
+                     returns QName(PackageNamespace(""),"String")
+                     
+                     body
+                        maxstack 4
+                        localcount 4
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                           debugline 80
+                           getlocal0
+                           pushscope
+                           pushnull
+                           coerce QName(PackageNamespace(""),"Array")
+                           setlocal3
+                           debug 1, "str", 0, 80
+                           debug 1, "charList", 1, 80
+                           debug 1, "list", 2, 82
+                           debugline 83
+                           getlocal2
+                           iffalse ofs002e
+                           debugline 84
+                           getlocal2
+                           coerce QName(PackageNamespace(""),"Array")
+                           setlocal3
+                           jump ofs003d
+                  ofs002e:
+                           debugline 86
+                           getlex Multiname("WHITESPACE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                           getlex Multiname("NEWLINE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                           callproperty Multiname("concat",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                           coerce QName(PackageNamespace(""),"Array")
+                           setlocal3
+                  ofs003d:
+                           jump ofs004d
+                  ofs0041:
+                           label
+                           debugline 90
+                           getlocal1
+                           pushbyte 1
+                           callproperty Multiname("substr",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                           coerce_s
+                           setlocal1
+                  ofs004d:
+                           debugline 88
+                           getlocal3
+                           callproperty Multiname("toString",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 0
+                           getlocal1
+                           pushbyte 0
+                           pushbyte 1
+                           callproperty Multiname("substr",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+                           callproperty Multiname("indexOf",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                           pushbyte -1
+                           greaterthan
+                           dup
+                           iffalse ofs0071
+                           pop
+                           getlocal1
+                           getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                           pushbyte 0
+                           greaterthan
+                  ofs0071:
+                           iftrue ofs0041
+                           debugline 92
+                           getlocal1
+                           returnvalue
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public static function trimRight(str:String, charList:Array = null) : String
+               {
+                  trait method QName(PackageNamespace(""),"trimRight")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "com.shortybmc.utils:StringUtils/trimRight"
+                        flag HAS_OPTIONAL
+                        flag HAS_PARAM_NAMES
+                        param QName(PackageNamespace(""),"String")
+                        param QName(PackageNamespace(""),"Array")
+                        paramname "
+"
+                        paramname "
+"
+                        optional Null()
+                        returns QName(PackageNamespace(""),"String")
+                        
+                        body
+                           maxstack 4
+                           localcount 4
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                              debugline 105
+                              getlocal0
+                              pushscope
+                              pushnull
+                              coerce QName(PackageNamespace(""),"Array")
+                              setlocal3
+                              debug 1, "str", 0, 105
+                              debug 1, "charList", 1, 105
+                              debug 1, "list", 2, 107
+                              debugline 108
+                              getlocal2
+                              iffalse ofs002e
+                              debugline 109
+                              getlocal2
+                              coerce QName(PackageNamespace(""),"Array")
+                              setlocal3
+                              jump ofs003d
+                     ofs002e:
+                              debugline 111
+                              getlex Multiname("WHITESPACE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                              getlex Multiname("NEWLINE_TOKENS",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                              callproperty Multiname("concat",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                              coerce QName(PackageNamespace(""),"Array")
+                              setlocal3
+                     ofs003d:
+                              jump ofs0052
+                     ofs0041:
+                              label
+                              debugline 115
+                              getlocal1
+                              pushbyte 0
+                              getlocal1
+                              getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                              decrement
+                              callproperty Multiname("substr",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 2
+                              coerce_s
+                              setlocal1
+                     ofs0052:
+                              debugline 113
+                              getlocal3
+                              callproperty Multiname("toString",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 0
+                              getlocal1
+                              getlocal1
+                              getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                              decrement
+                              callproperty Multiname("substr",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                              callproperty Multiname("indexOf",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")]), 1
+                              pushbyte -1
+                              greaterthan
+                              dup
+                              iffalse ofs0077
+                              pop
+                              getlocal1
+                              getproperty Multiname("length",[PrivateNamespace("com.shortybmc.utils:StringUtils"),PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("com.shortybmc.utils:StringUtils"),StaticProtectedNs("com.shortybmc.utils:StringUtils")])
+                              pushbyte 0
+                              greaterthan
+                     ofs0077:
+                              iftrue ofs0041
+                              debugline 117
+                              getlocal1
+                              returnvalue
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }
+            
+            method
+               name ""
+               returns null
+               
+               body
+                  maxstack 2
+                  localcount 1
+                  initscopedepth 1
+                  maxscopedepth 3
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                     debugline 4
+                     findpropstrict Multiname("StringUtils",[PackageNamespace("com.shortybmc.utils")])
+                     getlex QName(PackageNamespace(""),"Object")
+                     pushscope
+                     getlex Multiname("Object",[PackageNamespace(""),PrivateNamespace("StringUtils.as$471"),PackageNamespace("com.shortybmc.utils"),PackageInternalNs("com.shortybmc.utils"),Namespace("http://adobe.com/AS3/2006/builtin")])
+                     newclass 31
+                     popscope
+                     initproperty QName(PackageNamespace("com.shortybmc.utils"),"StringUtils")
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development;com/shortybmc/utils;StringUtils.as"
+                     debugline 1
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+            

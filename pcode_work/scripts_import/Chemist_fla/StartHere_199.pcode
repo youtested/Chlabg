@@ -1,0 +1,207 @@
+package Chemist_fla
+{
+   import flash.accessibility.*;
+   import flash.desktop.*;
+   import flash.display.*;
+   import flash.errors.*;
+   import flash.events.*;
+   import flash.external.*;
+   import flash.filters.*;
+   import flash.geom.*;
+   import flash.media.*;
+   import flash.net.*;
+   import flash.net.drm.*;
+   import flash.sensors.*;
+   import flash.system.*;
+   import flash.text.*;
+   import flash.text.ime.*;
+   import flash.ui.*;
+   import flash.utils.*;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol1234")]
+   public dynamic class StartHere_199 extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var wso:SharedObject;
+      
+      public function StartHere_199()
+      {
+         method
+            name "Chemist_fla:StartHere_199/Chemist_fla:StartHere_199"
+            returns null
+            
+            body
+               maxstack 5
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  findpropstrict Multiname("addFrameScript",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugfile "Chemist_fla.StartHere_199::StartHere_199"
+                  debugline 1
+                  pushbyte 0
+                  getlocal0
+                  getproperty Multiname("frame1",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 35
+                  getlocal0
+                  getproperty Multiname("frame36",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("addFrameScript",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 4
+                  debugline 2
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      internal function frame1() : *
+      {
+         trait method QName(PackageInternalNs("Chemist_fla"),"frame1")
+            dispid 0
+            method
+               name "Chemist_fla:StartHere_199/Chemist_fla:frame1"
+               returns null
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     debugfile "Chemist_fla.StartHere_199::frame1"
+                     debugline 1
+                     getlocal0
+                     getlex Multiname("SharedObject",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushstring "ChemistWelcome3"
+                     callproperty Multiname("getLocal",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     initproperty Multiname("wso",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 2
+                     getlocal0
+                     getproperty Multiname("wso",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("data",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("pass",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushnull
+                     ifne ofs002f
+                     debugline 3
+                     findproperty Multiname("visible",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushtrue
+                     initproperty Multiname("visible",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+            ofs002f:
+                     debugline 5
+                     getlex Multiname("Window",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("getRes",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     pushbyte 1
+                     ifeq ofs004c
+                     debugline 6
+                     findproperty Multiname("x",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("x",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 40
+                     subtract
+                     initproperty Multiname("x",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+            ofs004c:
+                     debugline 8
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         internal function frame36() : *
+         {
+            trait method QName(PackageInternalNs("Chemist_fla"),"frame36")
+               dispid 0
+               method
+                  name "Chemist_fla:StartHere_199/Chemist_fla:frame36"
+                  returns null
+                  
+                  body
+                     maxstack 1
+                     localcount 1
+                     initscopedepth 10
+                     maxscopedepth 11
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        findpropstrict Multiname("stop",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        callpropvoid Multiname("stop",[PrivateNamespace("Chemist_fla:StartHere_199"),PrivateNamespace("$44"),PackageNamespace(""),PackageNamespace("Chemist_fla"),PackageInternalNs("Chemist_fla"),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("Chemist_fla:StartHere_199"),StaticProtectedNs("Chemist_fla:StartHere_199"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                        debugfile "Chemist_fla.StartHere_199::frame36"
+                        debugline 2
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 1
+            maxscopedepth 9
+            
+            code
+               getlocal0
+               pushscope
+               getscopeobject 0
+               getlex QName(PackageNamespace(""),"Object")
+               pushscope
+               getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"Sprite")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"MovieClip")
+               pushscope
+               getlex QName(PackageNamespace("flash.display"),"MovieClip")
+               newclass 112
+               popscope
+               popscope
+               popscope
+               popscope
+               popscope
+               popscope
+               popscope
+               initproperty QName(PackageNamespace("Chemist_fla"),"StartHere_199")
+               debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/"
+               debugline 24
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      

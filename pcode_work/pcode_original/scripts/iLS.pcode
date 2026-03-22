@@ -1,0 +1,111 @@
+package
+{
+   import flash.display.MovieClip;
+   
+   public class iLS extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var movBack:MovieClip;
+      
+      public function iLS()
+      {
+         method
+            name "iLS/iLS"
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLS.as"
+                  debugline 7
+                  getlocal0
+                  pushscope
+                  debugline 7
+                  getlocal0
+                  constructsuper 0
+                  debugline 8
+                  findpropstrict Multiname("stop",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("stop",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  debugline 9
+                  findpropstrict Multiname("gotoAndStop",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlex Multiname("iLoc",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getproperty Multiname("LG",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("gotoAndStop",[PrivateNamespace("iLS"),PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iLS"),StaticProtectedNs("iLS"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                  debugline 10
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 9
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLS.as"
+         debugline 6
+         findpropstrict Multiname("iLS",[PackageNamespace("")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"Sprite")
+         pushscope
+         getlex QName(PackageNamespace("flash.display"),"MovieClip")
+         pushscope
+         getlex Multiname("MovieClip",[PrivateNamespace("iLS.as$210"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display")])
+         newclass 204
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         popscope
+         initproperty QName(PackageNamespace(""),"iLS")
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iLS.as"
+         debugline 3
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

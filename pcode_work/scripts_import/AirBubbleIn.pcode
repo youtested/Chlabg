@@ -1,0 +1,347 @@
+package
+{
+   import fl.transitions.*;
+   import fl.transitions.easing.*;
+   import flash.display.MovieClip;
+   import flash.events.*;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol2144")]
+   public class AirBubbleIn extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var tw:Tween;
+      
+      private var scale:Number = 0;
+      
+      private var xp:Number;
+      
+      private var yp:Number;
+      
+      private var ysp:Number = 0;
+      
+      private var flag:Boolean = false;
+      
+      private var ht:Number = 0;
+      
+      public function AirBubbleIn()
+      {
+         method
+            name "AirBubbleIn/AirBubbleIn"
+            returns null
+            
+            body
+               maxstack 9
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;AirBubbleIn.as"
+                  debugline 13
+                  getlocal0
+                  pushscope
+                  debugline 13
+                  getlocal0
+                  constructsuper 0
+                  debugline 14
+                  findproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 0
+                  initproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 15
+                  findproperty Multiname("scaleX",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushdouble 0.01
+                  initproperty Multiname("scaleX",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 16
+                  findproperty Multiname("scaleY",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushdouble 0.01
+                  initproperty Multiname("scaleY",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 17
+                  getlocal0
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushbyte 6
+                  multiply
+                  pushbyte 1
+                  add
+                  initproperty Multiname("scale",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 18
+                  getlocal0
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushdouble 0.5
+                  subtract
+                  initproperty Multiname("xp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 19
+                  getlocal0
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushbyte 2
+                  multiply
+                  decrement
+                  initproperty Multiname("yp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 20
+                  findpropstrict Multiname("addEventListener",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlex Multiname("Event",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                  getproperty Multiname("ENTER_FRAME",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlocal0
+                  getproperty Multiname("timer",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("addEventListener",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                  debugline 21
+                  getlocal0
+                  findpropstrict Multiname("Tween",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("fl.transitions")])
+                  getlocal0
+                  pushstring "scaleX"
+                  getlex Multiname("None",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getproperty Multiname("easeNone",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushdouble 0.01
+                  getlocal0
+                  getproperty Multiname("scale",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  pushbyte 14
+                  divide
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushdouble 0.2
+                  add
+                  pushtrue
+                  constructprop Multiname("Tween",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("fl.transitions")]), 7
+                  initproperty Multiname("tw",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 22
+                  findproperty Multiname("rotation",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushshort 150
+                  multiply
+                  initproperty Multiname("rotation",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 23
+                  getlocal0
+                  getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                  pushbyte 120
+                  multiply
+                  initproperty Multiname("ht",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 24
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function timer(e:*) : void
+      {
+         trait method QName(PrivateNamespace("AirBubbleIn"),"timer")
+            dispid 0
+            method
+               name "AirBubbleIn/private:timer"
+               flag HAS_PARAM_NAMES
+               param null
+               paramname "Tween"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 5
+                  localcount 2
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;AirBubbleIn.as"
+                     debugline 25
+                     getlocal0
+                     pushscope
+                     debug 1, "e", 0, 25
+                     debugline 26
+                     findproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("scaleX",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 2
+                     multiply
+                     initproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 27
+                     getlex Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 1
+                     ifngt ofs0030
+                     debugline 28
+                     findproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 1
+                     initproperty Multiname("alpha",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+            ofs0030:
+                     debugline 30
+                     findproperty Multiname("scaleY",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("scaleX",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     initproperty Multiname("scaleY",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 31
+                     getlocal0
+                     getproperty Multiname("flag",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     iftrue ofs0095
+                     debugline 32
+                     getlex Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte -80
+                     getlocal0
+                     getproperty Multiname("ht",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     subtract
+                     ifnlt ofs0060
+                     debugline 33
+                     getlocal0
+                     pushtrue
+                     initproperty Multiname("flag",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     jump ofs0091
+            ofs0060:
+                     debugline 35
+                     findproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     getlocal0
+                     getproperty Multiname("ht",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 120
+                     divide
+                     add
+                     subtract
+                     initproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 36
+                     findproperty Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     pushdouble 0.5
+                     subtract
+                     add
+                     initproperty Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+            ofs0091:
+                     jump ofs00eb
+            ofs0095:
+                     debugline 39
+                     findproperty Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("xp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     pushdouble 0.5
+                     multiply
+                     add
+                     pushdouble 0.25
+                     subtract
+                     add
+                     initproperty Multiname("x",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 40
+                     getlocal0
+                     getlocal0
+                     getproperty Multiname("ysp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushdouble 0.01
+                     add
+                     initproperty Multiname("ysp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 41
+                     findproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     getlocal0
+                     getproperty Multiname("ht",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 120
+                     divide
+                     add
+                     subtract
+                     initproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 42
+                     findproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("ysp",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     add
+                     initproperty Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+            ofs00eb:
+                     debugline 44
+                     getlex Multiname("y",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushbyte 10
+                     getlex Multiname("Math",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callproperty Multiname("random",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     pushbyte 20
+                     multiply
+                     add
+                     ifngt ofs011e
+                     debugline 45
+                     findpropstrict Multiname("removeEventListener",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlex Multiname("Event",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                     getproperty Multiname("ENTER_FRAME",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     getproperty Multiname("timer",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("removeEventListener",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                     debugline 46
+                     getlex Multiname("parent",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getlocal0
+                     callpropvoid Multiname("removeChild",[PrivateNamespace("AirBubbleIn"),PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),ProtectedNamespace("AirBubbleIn"),StaticProtectedNs("AirBubbleIn"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+            ofs011e:
+                     debugline 48
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 9
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;AirBubbleIn.as"
+            debugline 7
+            findpropstrict Multiname("AirBubbleIn",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"Sprite")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"MovieClip")
+            pushscope
+            getlex Multiname("MovieClip",[PrivateNamespace("AirBubbleIn.as$1"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("fl.transitions.easing"),PackageNamespace("flash.display")])
+            newclass 71
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            initproperty QName(PackageNamespace(""),"AirBubbleIn")
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;AirBubbleIn.as"
+            debugline 5
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

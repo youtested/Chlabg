@@ -1,0 +1,240 @@
+package
+{
+   public class iSubscriptor
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function iSubscriptor()
+      {
+         method
+            name "iSubscriptor/iSubscriptor"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iSubscriptor.as"
+                  debugline 6
+                  getlocal0
+                  pushscope
+                  debugline 6
+                  getlocal0
+                  constructsuper 0
+                  debugline 8
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function iSub(st:String) : String
+      {
+         trait method QName(PackageNamespace(""),"iSub")
+            flag FINAL
+            dispid 3
+            method
+               name "iSubscriptor/iSub"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               paramname ""
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 4
+                  localcount 3
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iSubscriptor.as"
+                     debugline 9
+                     getlocal0
+                     pushscope
+                     debug 1, "st", 0, 9
+                     debug 1, "t", 1, 10
+                     debugline 10
+                     getlocal1
+                     coerce_s
+                     setlocal2
+                     debugline 11
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "1"
+                     pushstring "₁"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 12
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "2"
+                     pushstring "₂"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 13
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "3"
+                     pushstring "₃"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 14
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "4"
+                     pushstring "₄"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 15
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "5"
+                     pushstring "₅"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 16
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "6"
+                     pushstring "₆"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 17
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "7"
+                     pushstring "₇"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 18
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "8"
+                     pushstring "₈"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 19
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "9"
+                     pushstring "₉"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 20
+                     findpropstrict Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")])
+                     getlocal2
+                     pushstring "0"
+                     pushstring "₀"
+                     callproperty Multiname("strReplace",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 3
+                     coerce_s
+                     setlocal2
+                     debugline 21
+                     getlocal2
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private static function strReplace(str:String, search:String, replace:String) : String
+         {
+            trait method QName(PrivateNamespace("iSubscriptor"),"strReplace")
+               flag FINAL
+               dispid 4
+               method
+                  name "iSubscriptor/private:strReplace"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  paramname ""
+                  paramname ""
+                  paramname ""
+                  returns QName(PackageNamespace(""),"String")
+                  
+                  body
+                     maxstack 2
+                     localcount 4
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iSubscriptor.as"
+                        debugline 24
+                        getlocal0
+                        pushscope
+                        debug 1, "str", 0, 24
+                        debug 1, "search", 1, 24
+                        debug 1, "replace", 2, 24
+                        debugline 25
+                        getlocal1
+                        getlocal2
+                        callproperty Multiname("split",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 1
+                        getlocal3
+                        callproperty Multiname("join",[PrivateNamespace("iSubscriptor"),PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iSubscriptor"),StaticProtectedNs("iSubscriptor")]), 1
+                        returnvalue
+                     end ; code
+                  end ; body
+               end ; method
+            }
+         }
+      }
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 1
+            maxscopedepth 3
+            
+            code
+               getlocal0
+               pushscope
+               debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iSubscriptor.as"
+               debugline 4
+               findpropstrict Multiname("iSubscriptor",[PackageNamespace("")])
+               getlex QName(PackageNamespace(""),"Object")
+               pushscope
+               getlex Multiname("Object",[PrivateNamespace("iSubscriptor.as$300"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+               newclass 14
+               popscope
+               initproperty QName(PackageNamespace(""),"iSubscriptor")
+               debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iSubscriptor.as"
+               debugline 2
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      

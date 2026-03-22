@@ -1,0 +1,65 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 1738" itemID="69be9900-000002fe" lastModified="1774098374" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 1738" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0.32421875">
+                                                            <matrix>
+                                                                 <Matrix tx="9.7" ty="-40.65" a="0.0" d="0.0" b="-0.012786865234375" c="0.0332489013671875"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="0.0"/>
+                                                            <GradientEntry color="#000000" alpha="0.4509804" ratio="0.99215686"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <BitmapFill bitmapPath="Bitmap 1727.png">
+                                                            <matrix>
+                                                                 <Matrix tx="-43.85" ty="-19.7" a="11.111129760742188" d="-11.111129760742188"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="1" fillStyle1="2" strokeStyle="0" edges="! 53 -1017[ -58 -1008 -153 -979| -168 -974| -183 -968| -187 -966| -189 -966| -201 -963| -206 -959| -214 -957| -215 -957| -283 -923[ -360 -876 -365 -817| -365 -811| -365 -807| -364 -803| -364 -799| -358 -779[ -342 -737 -283 -701[ -249 -680 -201 -661[ -35 -600 194 -599| 195 -599[ 428 -599 592 -661| 594 -661| 648 -686| 686 -707[ 748 -750 754 -799| 755 -803| 755 -807| 755 -811| 753 -833[ 740 -886 663 -930| 648 -937| 629 -946| 592 -963[ 428 -1025 195 -1025| 53 -1017"/>
+                                                  <Edge fillStyle0="2" fillStyle1="0" strokeStyle="0" edges="! 901 -1194| -877 -1194| -877 -394| 901 -394| 901 -1194"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <BitmapFill bitmapPath="Bitmap 1737.png">
+                                                            <matrix>
+                                                                 <Matrix tx="-72.0" ty="-55.55" a="20.0" d="15.8843994140625" b="-2.20611572265625" c="0.0"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 53 -1017[ -58 -1008 -153 -979| -168 -974| -183 -968| -187 -966| -189 -966| -201 -963| -206 -959| -214 -957| -215 -957| -283 -923[ -360 -876 -365 -817| -365 -811| -365 -807| -364 -803| -364 -799| -358 -779[ -342 -737 -283 -701[ -249 -680 -201 -661[ -35 -600 194 -599| 195 -599[ 428 -599 592 -661| 594 -661| 648 -686| 686 -707[ 748 -750 754 -799| 755 -803| 755 -807| 755 -811| 753 -833[ 740 -886 663 -930| 648 -937| 629 -946| 592 -963[ 428 -1025 195 -1025| 53 -1017"/>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 1440 -1428| -1440 -1111| -1440 0| 1440 -318| 1440 -1428"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

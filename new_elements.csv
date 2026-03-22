@@ -1,0 +1,132 @@
+Symbol,Full Name,Atomic Number,Atomic Mass,Density g/cm3,Melting Point °C,Boiling Point °C,Electronegativity,State at Room Temp,Color Appearance,Solubility in Water,Common Oxidation States,Discovery Year,Radioactive
+H,Hydrogen,1,1.008,0.00008988,-259.14,-252.87,2.20,Gas,Colorless,Insoluble,+1,-1,1766,No
+He,Helium,2,4.0026,0.0001785,-272.20,-268.93,N/A,Gas,Colorless,Insoluble,0,1868,No
+Li,Lithium,3,6.94,0.534,180.50,1342,0.98,Solid,Silvery-white,Insoluble,+1,1817,No
+Be,Beryllium,4,9.0122,1.85,1287,2469,1.57,Solid,White-gray metallic,Insoluble,+2,1798,No
+B,Boron,5,10.81,2.34,2076,3927,2.04,Solid,Black/brown,Insoluble,+3,1808,No
+C,Carbon,6,12.011,2.267,3550,4027,2.55,Solid,Black/graphite/diamond,Insoluble,+4,+2,-4,Ancient,No
+N,Nitrogen,7,14.007,0.0012506,-210.00,-195.79,3.04,Gas,Colorless,Insoluble,+5,+4,+3,+2,+1,-1,-2,-3,1772,No
+O,Oxygen,8,15.999,0.001429,-218.79,-182.95,3.44,Gas,Colorless,Insoluble,-2,-1,1774,No
+F,Fluorine,9,18.998,0.001696,-219.67,-188.12,3.98,Gas,Pale yellow-green,Reacts violently,+1,-1,1886,No
+Ne,Neon,10,20.180,0.0008999,-248.59,-246.08,N/A,Gas,Colorless,Insoluble,0,1898,No
+Na,Sodium,11,22.990,0.971,97.79,882.94,0.93,Solid,Silvery white metallic,Reacts violently,+1,1807,No
+Mg,Magnesium,12,24.305,1.738,650,1090,1.31,Solid,Silvery white,Very slightly soluble,+2,1755,No
+Al,Aluminium,13,26.982,2.698,660.32,2519,1.61,Solid,Silvery gray metallic,Insoluble,+3,1825,No
+Si,Silicon,14,28.085,2.3296,1414,3265,1.90,Solid,Crystalline,Insoluble,+4,+2,-4,1824,No
+P,Phosphorus,15,30.974,1.82,44.15,280.5,2.19,Solid,White/red/black,Insoluble,+5,+3,-3,1669,No
+S,Sulfur,16,32.06,2.067,115.21,444.6,2.58,Solid,Yellow,Insoluble,+6,+4,+2,-2,Ancient,No
+Cl,Chlorine,17,35.45,0.003214,-101.5,-34.04,3.16,Gas,Pale yellow-green,Reacts,+7,+5,+3,+1,-1,1774,No
+Ar,Argon,18,39.948,0.0017837,-189.35,-185.85,N/A,Gas,Colorless,Insoluble,0,1894,No
+K,Potassium,19,39.098,0.862,63.5,759,0.82,Solid,Silvery gray,Reacts violently,+1,1807,No
+Ca,Calcium,20,40.078,1.54,842,1484,1.00,Solid,Silvery gray,Reacts slowly,+2,1808,No
+Sc,Scandium,21,44.956,2.989,1541,2836,1.36,Solid,Silvery white,Insoluble,+3,1879,No
+Ti,Titanium,22,47.867,4.54,1668,3287,1.54,Solid,Silvery grey-white,Insoluble,+4,+3,+2,1791,No
+V,Vanadium,23,50.942,6.11,1910,3407,1.63,Solid,Blue-silver-grey,Insoluble,+5,+4,+3,+2,1801,No
+Cr,Chromium,24,51.996,7.15,1907,2671,1.66,Solid,Silvery metallic,Insoluble,+6,+3,+2,1797,No
+Mn,Manganese,25,54.938,7.44,1246,2061,1.55,Solid,Silvery metallic,Insoluble,+7,+6,+4,+3,+2,1774,No
+Fe,Iron,26,55.845,7.874,1538,2861,1.83,Solid,Silvery gray metallic,Insoluble,+3,+2,Ancient,No
+Co,Cobalt,27,58.933,8.86,1495,2927,1.88,Solid,Hard lustrous gray,Insoluble,+3,+2,1735,No
+Ni,Nickel,28,58.693,8.912,1455,2913,1.91,Solid,Polished silver,Insoluble,+3,+2,1751,No
+Cu,Copper,29,63.546,8.96,1084.62,2562,1.90,Solid,Reddish orange,Insoluble,+2,+1,Ancient,No
+Zn,Zinc,30,65.38,7.134,419.53,907,1.65,Solid,Silver-gray,Insoluble,+2,Ancient,No
+Ga,Gallium,31,69.723,5.907,29.76,2204,1.81,Solid,Silvery blue,Very slightly soluble,+3,1875,No
+Ge,Germanium,32,72.630,5.323,938.25,2833,2.01,Solid,Grayish-white,Insoluble,+4,+2,1886,No
+As,Arsenic,33,74.922,5.776,817,614,2.18,Solid,Metallic gray,Insoluble,+5,+3,-3,Ancient,No
+Se,Selenium,34,78.971,4.809,221,685,2.55,Solid,Gray/black/red,Insoluble,+6,+4,-2,1817,No
+Br,Bromine,35,79.904,3.122,-7.2,58.8,2.96,Liquid,Reddish-brown,Soluble,+7,+5,+3,+1,-1,1826,No
+Kr,Krypton,36,83.798,0.003733,-157.36,-153.22,3.00,Gas,Colorless,Insoluble,+2,1898,No
+Rb,Rubidium,37,85.468,1.532,39.30,688,0.82,Solid,Grey white,Reacts,+1,1861,No
+Sr,Strontium,38,87.62,2.64,777,1382,0.95,Solid,Silvery white,Reacts,+2,1790,No
+Y,Yttrium,39,88.906,4.469,1526,3345,1.22,Solid,Silvery white,Insoluble,+3,1794,No
+Zr,Zirconium,40,91.224,6.506,1855,4409,1.33,Solid,Grayish-white,Insoluble,+4,1789,No
+Nb,Niobium,41,92.906,8.57,2477,4744,1.6,Solid,Gray metallic,Insoluble,+5,+3,1801,No
+Mo,Molybdenum,42,95.95,10.22,2623,4639,2.16,Solid,Gray silvery,Insoluble,+6,+5,+4,+3,+2,1781,No
+Tc,Technetium,43,98,11.5,2157,4265,1.9,Solid,Bright gray metallic,Insoluble,+7,+6,+4,1937,Yes
+Ru,Ruthenium,44,101.07,12.37,2334,4150,2.2,Solid,Silvery white,Insoluble,+8,+6,+4,+3,+2,1844,No
+Rh,Rhodium,45,102.91,12.41,1964,3695,2.28,Solid,Silvery white,Insoluble,+6,+4,+3,+2,+1,1803,No
+Pd,Palladium,46,106.42,12.02,1554.9,2963,2.20,Solid,Silvery white,Insoluble,+4,+2,1803,No
+Ag,Silver,47,107.87,10.501,961.78,2162,1.93,Solid,Silvery-white,Insoluble,+1,+2,Ancient,No
+Cd,Cadmium,48,112.41,8.69,321.07,767,1.69,Solid,Silvery grayish,Insoluble,+2,1817,No
+In,Indium,49,114.82,7.31,156.60,2072,1.78,Solid,Silvery gray,Insoluble,+3,1863,No
+Sn,Tin,50,118.71,7.287,231.93,2602,1.96,Solid,Silvery-white,Insoluble,+4,+2,Ancient,No
+Sb,Antimony,51,121.76,6.685,630.63,1587,2.05,Solid,Silvery-gray,lustrous,Insoluble,+5,+3,-3,Ancient,No
+Te,Tellurium,52,127.60,6.232,449.51,988,2.1,Solid,Silvery lustrous gray,Insoluble,+6,+4,-2,1783,No
+I,Iodine,53,126.90,4.93,113.7,184.3,2.66,Solid,Violet-black,lustrous,Slightly soluble,+7,+5,+1,-1,1811,No
+Xe,Xenon,54,131.29,0.005887,-111.75,-108.12,2.6,Gas,Colorless,Insoluble,+8,+6,+4,+2,1898,No
+Cs,Cesium,55,132.91,1.873,28.44,671,0.79,Solid,Silvery gold,Reacts violently,+1,1860,No
+Ba,Barium,56,137.33,3.594,727,1897,0.89,Solid,Silvery gray,Reacts,+2,1808,No
+La,Lanthanum,57,138.91,6.145,920,3464,1.10,Solid,Silvery white,Insoluble,+3,1839,No
+Ce,Cerium,58,140.12,6.77,798,3443,1.12,Solid,Silvery white,Insoluble,+4,+3,1803,No
+Pr,Praseodymium,59,140.91,6.773,931,3520,1.13,Solid,Greenish gray,Insoluble,+4,+3,1885,No
+Nd,Neodymium,60,144.24,7.007,1021,3074,1.14,Solid,Silvery white,Insoluble,+3,1885,No
+Pm,Promethium,61,145,7.26,1042,3000,1.13,Solid,Metallic,Insoluble,+3,1945,Yes
+Sm,Samarium,62,150.36,7.52,1072,1794,1.17,Solid,Silvery white,Insoluble,+3,+2,1879,No
+Eu,Europium,63,151.96,5.243,822,1529,1.2,Solid,Silvery white,Insoluble,+3,+2,1901,No
+Gd,Gadolinium,64,157.25,7.895,1313,3273,1.20,Solid,Silvery white,Insoluble,+3,1880,No
+Tb,Terbium,65,158.93,8.229,1356,3230,1.2,Solid,Silvery white,Insoluble,+4,+3,1843,No
+Dy,Dysprosium,66,162.50,8.55,1412,2567,1.22,Solid,Silvery white,Insoluble,+3,1886,No
+Ho,Holmium,67,164.93,8.795,1474,2700,1.23,Solid,Silvery white,Insoluble,+3,1878,No
+Er,Erbium,68,167.26,9.066,1529,2868,1.24,Solid,Silvery white,Insoluble,+3,1843,No
+Tm,Thulium,69,168.93,9.321,1545,1950,1.25,Solid,Silvery gray,Insoluble,+3,1879,No
+Yb,Ytterbium,70,173.05,6.965,819,1196,1.1,Solid,Silvery white,Insoluble,+3,+2,1878,No
+Lu,Lutetium,71,174.97,9.84,1663,3402,1.27,Solid,Silvery white,Insoluble,+3,1907,No
+Hf,Hafnium,72,178.49,13.31,2233,4603,1.3,Solid,Steel gray,Insoluble,+4,1923,No
+Ta,Tantalum,73,180.95,16.654,3017,5458,1.5,Solid,Gray blue,Insoluble,+5,1802,No
+W,Tungsten,74,183.84,19.25,3422,5555,2.36,Solid,Grayish-white,lustrous,Insoluble,+6,+5,+4,+3,+2,1783,No
+Re,Rhenium,75,186.21,21.02,3186,5596,1.9,Solid,Silvery-gray,Insoluble,+7,+6,+4,+2,-1,1925,No
+Os,Osmium,76,190.23,22.59,3033,5012,2.2,Solid,Silvery,blue cast,Insoluble,+8,+6,+4,+3,+2,1803,No
+Ir,Iridium,77,192.22,22.56,2466,4428,2.20,Solid,Silvery white,Insoluble,+6,+4,+3,+2,+1,1803,No
+Pt,Platinum,78,195.08,21.46,1768.3,3825,2.28,Solid,Silvery-white,Insoluble,+4,+2,1735,No
+Au,Gold,79,196.97,19.282,1064.18,2856,2.54,Solid,Metallic yellow,Insoluble,+3,+1,Ancient,No
+Hg,Mercury,80,200.59,13.5336,-38.83,356.73,2.00,Liquid,Silvery,Insoluble,+2,+1,Ancient,No
+Tl,Thallium,81,204.38,11.85,304,1473,1.62,Solid,Silvery white,Insoluble,+3,+1,1861,Yes
+Pb,Lead,82,207.2,11.342,327.46,1749,2.33,Solid,Metallic gray,Insoluble,+4,+2,Ancient,No
+Bi,Bismuth,83,208.98,9.807,271.5,1564,2.02,Solid,Lustrous silver,Insoluble,+5,+3,1753,No
+Po,Polonium,84,209,9.32,254,962,2.0,Solid,Silvery,Insoluble,+6,+4,+2,1898,Yes
+At,Astatine,85,210,7,302,337,2.2,Solid,Metallic,N/A,+7,+5,+3,+1,-1,1940,Yes
+Rn,Radon,86,222,0.00973,-71,-61.7,N/A,Gas,Colorless,N/A,+2,1900,Yes
+Fr,Francium,87,223,1.87,27,677,0.7,Solid,Metallic,N/A,+1,1939,Yes
+Ra,Radium,88,226,5.5,700,1737,0.9,Solid,Silvery white,Soluble,+2,1898,Yes
+Rf,Rutherfordium,104,267,23.2,2100,5500,N/A,Solid,Gray metallic,N/A,+4,1964,Yes
+Db,Dubnium,105,268,29.3,2300,5500,N/A,Solid,Gray metallic,N/A,+5,1967,Yes
+Sg,Seaborgium,106,269,35,2700,5500,N/A,Solid,Gray metallic,N/A,+6,1974,Yes
+Bh,Bohrium,107,270,37.1,2700,5200,N/A,Solid,Gray metallic,N/A,+7,1981,Yes
+Hs,Hassium,108,277,41,3300,5700,N/A,Solid,Gray metallic,N/A,+8,1984,Yes
+Mt,Meitnerium,109,278,37.4,2700,4200,N/A,Solid,Metallic,N/A,+9,+6,+4,+3,+1,1982,Yes
+Ds,Darmstadtium,110,281,34.8,2700,4400,N/A,Solid,Metallic,N/A,+8,+6,+4,+2,1994,Yes
+Rg,Roentgenium,111,282,28.7,2700,3900,N/A,Solid,Metallic,N/A,+5,+3,+1,-1,1994,Yes
+Cn,Copernicium,112,285,23.7,2700,3570,N/A,Solid,Metallic,N/A,+2,+1,1996,Yes
+Nh,Nihonium,113,286,16,700,1400,N/A,Solid,Metallic,N/A,+3,+1,2004,Yes
+Fl,Flerovium,114,289,14,70,150,N/A,Solid,Metallic,N/A,+4,+2,+1,1998,Yes
+Mc,Moscovium,115,290,13.5,670,1400,N/A,Solid,Metallic,N/A,+3,+1,2003,Yes
+Lv,Livermorium,116,293,12.9,709,1085,N/A,Solid,Metallic,N/A,+4,+2,-2,2000,Yes
+Ts,Tennessine,117,294,7.2,550,610,N/A,Solid,Metallic,N/A,+5,+3,+1,-1,2010,Yes
+Og,Oganesson,118,294,5.0,325,450,N/A,Solid,Metallic,N/A,+6,+4,+2,+1,+2,2002,Yes
+Uue,Ununennium,119,322,3.0,0-30,630,0.86,Solid,Metallic,N/A,+1,Not yet discovered,Yes
+Ubn,Unbinilium,120,325,7.0,680,1700,N/A,Solid,Metallic,N/A,+2,Not yet discovered,Yes
+Ubu,Unbiunium,121,330,10.0,900,1900,N/A,Solid,Metallic,N/A,+3,Not yet discovered,Yes
+Ubb,Unbibium,122,335,12.0,1100,2200,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Ubt,Unbitrium,123,340,14.0,1200,2400,N/A,Solid,Metallic,N/A,+3,Not yet discovered,Yes
+Ubq,Unbiquadium,124,345,15.5,1300,2600,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Ubp,Unbipentium,125,350,16.5,1350,2700,N/A,Solid,Metallic,N/A,+5,Not yet discovered,Yes
+Ubh,Unbihexium,126,355,17.5,1400,2800,N/A,Solid,Metallic,N/A,+6,Not yet discovered,Yes
+Ubs,Unbiseptium,127,360,18.5,1450,2900,N/A,Solid,Metallic,N/A,+7,Not yet discovered,Yes
+Ubo,Unbioctium,128,365,19.5,1500,3000,N/A,Solid,Metallic,N/A,+8,Not yet discovered,Yes
+Ube,Unbiennium,129,370,20.5,1550,3100,N/A,Solid,Metallic,N/A,+9,Not yet discovered,Yes
+Unn,Unnilennium,130,375,21.5,1600,3200,N/A,Solid,Metallic,N/A,+2,Not yet discovered,Yes
+Unu,Unununium,131,380,22.0,1650,3300,N/A,Solid,Metallic,N/A,+3,Not yet discovered,Yes
+Unb,Ununbium,132,385,22.5,1700,3400,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Unt,Ununtrium,133,390,23.0,1750,3500,N/A,Solid,Metallic,N/A,+5,Not yet discovered,Yes
+Unq,Ununquadium,134,395,23.5,1800,3600,N/A,Solid,Metallic,N/A,+6,Not yet discovered,Yes
+Unp,Ununpentium,135,400,24.0,1850,3700,N/A,Solid,Metallic,N/A,+7,Not yet discovered,Yes
+Unh,Ununhexium,136,406,24.5,1900,3800,N/A,Solid,Metallic,N/A,+8,Not yet discovered,Yes
+Uns,Ununseptium,137,411,25.0,1950,3900,N/A,Solid,Metallic,N/A,+7,Not yet discovered,Yes
+Uno,Ununoctium,138,417,25.5,2000,4000,N/A,Solid,Metallic,N/A,+6,Not yet discovered,Yes
+Uue,Biennium,139,422,26.0,2050,4100,N/A,Solid,Metallic,N/A,+5,Not yet discovered,Yes
+Bnn,Binilium,140,427,26.5,2100,4200,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Bnu,Bibinium,141,432,27.0,2150,4300,N/A,Solid,Metallic,N/A,+3,Not yet discovered,Yes
+Bnb,Trinilium,142,438,27.5,2200,4400,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Bnt,Biquadium,143,443,28.0,2250,4500,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Bnq,Biquadium,144,449,28.5,2300,4600,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes
+Bnp,Triennium,145,454,29.0,2350,4700,N/A,Solid,Metallic,N/A,+3,Not yet discovered,Yes
+Bnh,Quadhexium,146,459,29.5,2400,4800,N/A,Solid,Metallic,N/A,+4,Not yet discovered,Yes

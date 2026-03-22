@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 387" itemID="69be9900-000001cd" lastModified="1774098374" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 387" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="215.0" ty="208.0" a="-0.80810546875" d="0.32958984375"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ffffff" alpha="0.08235294" ratio="0.007843138"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.49803922" ratio="0.3137255"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.49019608" ratio="0.36078432"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.08627451" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -100 120| -100 -140| 80 -80| -100 120"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

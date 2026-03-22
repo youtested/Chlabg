@@ -1,0 +1,147 @@
+package
+{
+   import flash.accessibility.*;
+   import flash.desktop.*;
+   import flash.display.*;
+   import flash.errors.*;
+   import flash.events.*;
+   import flash.external.*;
+   import flash.filters.*;
+   import flash.geom.*;
+   import flash.media.*;
+   import flash.net.*;
+   import flash.net.drm.*;
+   import flash.sensors.*;
+   import flash.system.*;
+   import flash.text.*;
+   import flash.text.ime.*;
+   import flash.ui.*;
+   import flash.utils.*;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol1391")]
+   public dynamic class btnCo2 extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function btnCo2()
+      {
+         method
+            name "btnCo2/btnCo2"
+            returns null
+            
+            body
+               maxstack 3
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  findpropstrict Multiname("addFrameScript",[PrivateNamespace("btnCo2"),PrivateNamespace("$121"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("btnCo2"),StaticProtectedNs("btnCo2"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugfile "btnCo2::btnCo2"
+                  debugline 1
+                  pushbyte 0
+                  getlocal0
+                  getproperty Multiname("frame1",[PrivateNamespace("btnCo2"),PrivateNamespace("$121"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("btnCo2"),StaticProtectedNs("btnCo2"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("addFrameScript",[PrivateNamespace("btnCo2"),PrivateNamespace("$121"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("btnCo2"),StaticProtectedNs("btnCo2"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                  debugline 2
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      internal function frame1() : *
+      {
+         trait method QName(PackageInternalNs(""),"frame1")
+            dispid 0
+            method
+               name "btnCo2/frame1"
+               returns null
+               
+               body
+                  maxstack 1
+                  localcount 1
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     findpropstrict Multiname("stop",[PrivateNamespace("btnCo2"),PrivateNamespace("$121"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("btnCo2"),StaticProtectedNs("btnCo2"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     callpropvoid Multiname("stop",[PrivateNamespace("btnCo2"),PrivateNamespace("$121"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),Namespace("adobe.utils"),PackageNamespace("flash.accessibility"),PackageNamespace("flash.desktop"),PackageNamespace("flash.display"),PackageNamespace("flash.errors"),PackageNamespace("flash.events"),PackageNamespace("flash.external"),PackageNamespace("flash.filters"),PackageNamespace("flash.geom"),Namespace("flash.globalization"),PackageNamespace("flash.media"),PackageNamespace("flash.net"),PackageNamespace("flash.net.drm"),Namespace("flash.printing"),Namespace("flash.profiler"),Namespace("flash.sampler"),PackageNamespace("flash.sensors"),PackageNamespace("flash.system"),PackageNamespace("flash.text"),PackageNamespace("flash.text.ime"),Namespace("flash.text.engine"),PackageNamespace("flash.ui"),PackageNamespace("flash.utils"),Namespace("flash.xml"),ProtectedNamespace("btnCo2"),StaticProtectedNs("btnCo2"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                     debugfile "btnCo2::frame1"
+                     debugline 3
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 9
+         
+         code
+            getlocal0
+            pushscope
+            findpropstrict Multiname("btnCo2",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"Sprite")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"MovieClip")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"MovieClip")
+            newclass 161
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            initproperty QName(PackageNamespace(""),"btnCo2")
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/"
+            debugline 24
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

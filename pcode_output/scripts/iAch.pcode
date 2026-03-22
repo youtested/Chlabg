@@ -1,0 +1,906 @@
+package
+{
+   import flash.net.*;
+   import flash.utils.*;
+   
+   public class iAch
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var ConfigSo:SharedObject;
+      
+      public var iAchChart:Dictionary;
+      
+      public var iAchUn:Dictionary;
+      
+      public var iAchUnf:Number = 0;
+      
+      public var iAchUnc:Number = 0;
+      
+      public var iAchNum:Number = 0;
+      
+      public var iAchCnt:Number = 0;
+      
+      public var total:Number = 0;
+      
+      public var pP:iPan;
+      
+      public function iAch(p:*)
+      {
+         method
+            name "iAch/iAch"
+            flag HAS_PARAM_NAMES
+            param null
+            paramname null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 2
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                  debugline 16
+                  getlocal0
+                  pushscope
+                  debug 1, "p", 0, 16
+                  debugline 8
+                  getlocal0
+                  findpropstrict Multiname("Dictionary",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch"),PackageNamespace("flash.utils")])
+                  constructprop Multiname("Dictionary",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch"),PackageNamespace("flash.utils")]), 0
+                  initproperty QName(PackageNamespace(""),"iAchChart")
+                  debugline 9
+                  getlocal0
+                  findpropstrict Multiname("Dictionary",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch"),PackageNamespace("flash.utils")])
+                  constructprop Multiname("Dictionary",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch"),PackageNamespace("flash.utils")]), 0
+                  initproperty QName(PackageNamespace(""),"iAchUn")
+                  debugline 17
+                  getlocal0
+                  constructsuper 0
+                  debugline 18
+                  getlocal0
+                  getlex Multiname("SharedObject",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch"),PackageNamespace("flash.net")])
+                  pushstring "Chemix_ach"
+                  callproperty Multiname("getLocal",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                  initproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  debugline 19
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("pP",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  debugline 20
+                  getlocal0
+                  callpropvoid Multiname("iAchInit",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                  debugline 21
+                  getlocal0
+                  callpropvoid Multiname("iAchLoad",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                  debugline 22
+                  getlocal0
+                  getproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  findpropstrict Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  constructprop Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                  setproperty Multiname("f",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  debugline 23
+                  getlocal0
+                  getproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  findpropstrict Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  constructprop Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                  setproperty Multiname("c",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                  debugline 27
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function iAchLoad() : void
+      {
+         trait method QName(PackageNamespace(""),"iAchLoad")
+            dispid 0
+            method
+               name "iAch/iAchLoad"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 2
+                  localcount 1
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                     debugline 28
+                     getlocal0
+                     pushscope
+                     debugline 30
+                     getlocal0
+                     getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                     getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                     getproperty Multiname("iAchSaved",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                     pushnull
+                     ifeq ofs0018
+            ofs0018:
+                     debugline 39
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function iAchSave() : void
+         {
+            trait method QName(PackageNamespace(""),"iAchSave")
+               dispid 0
+               method
+                  name "iAch/iAchSave"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                        debugline 40
+                        getlocal0
+                        pushscope
+                        debugline 42
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchNum",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchNum",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 43
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchCnt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchCnt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 44
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 45
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 46
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 47
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getlocal0
+                        getproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        setproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 48
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        getproperty Multiname("data",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        pushtrue
+                        setproperty Multiname("iAchSaved",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        debugline 49
+                        getlocal0
+                        getproperty Multiname("ConfigSo",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                        callpropvoid Multiname("flush",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                        debugline 50
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function iAchAdd(nm:String, inst:String, pt:Number) : void
+            {
+               trait method QName(PrivateNamespace("iAch"),"iAchAdd")
+                  dispid 0
+                  method
+                     name "iAch/private:iAchAdd"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"Number")
+                     paramname "pP"
+                     paramname "pP"
+                     paramname "pP"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 3
+                        localcount 6
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                           debugline 51
+                           getlocal0
+                           pushscope
+                           debug 1, "nm", 0, 51
+                           debug 1, "inst", 1, 51
+                           debug 1, "pt", 2, 51
+                           debugline 53
+                           getlocal0
+                           getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           findpropstrict Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           constructprop Multiname("Object",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                           setproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           debugline 54
+                           getlocal0
+                           getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal2
+                           setproperty Multiname("inst",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           debugline 55
+                           getlocal0
+                           getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal3
+                           setproperty Multiname("pt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           debugline 56
+                           getlocal0
+                           getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           setproperty Multiname("nm",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           debugline 57
+                           getlocal0
+                           getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           getlocal1
+                           getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           pushbyte 2
+                           setproperty Multiname("cmp",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           debugline 59
+                           getlocal0
+                           dup
+                           setlocal 4
+                           getproperty Multiname("total",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           increment
+                           setlocal 5
+                           getlocal 4
+                           getlocal 5
+                           setproperty Multiname("total",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                           kill 5
+                           kill 4
+                           debugline 60
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function iGetAch(nm:*) : *
+               {
+                  trait method QName(PackageNamespace(""),"iGetAch")
+                     dispid 0
+                     method
+                        name "iAch/iGetAch"
+                        flag HAS_PARAM_NAMES
+                        param null
+                        paramname null
+                        returns null
+                        
+                        body
+                           maxstack 4
+                           localcount 4
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                              debugline 61
+                              getlocal0
+                              pushscope
+                              debug 1, "nm", 0, 61
+                              debugline 63
+                              getlocal0
+                              getproperty Multiname("pP",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("iStage",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("myDomain",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("LabType",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              pushbyte 0
+                              ifne ofs0078
+                              debugline 65
+                              getlocal0
+                              getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getlocal1
+                              getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              pushbyte 1
+                              setproperty Multiname("cmp",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              debugline 67
+                              getlocal0
+                              getlocal0
+                              getproperty Multiname("iAchNum",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getlocal0
+                              getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getlocal1
+                              getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("pt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              add
+                              initproperty Multiname("iAchNum",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              debugline 68
+                              getlocal0
+                              dup
+                              setlocal2
+                              getproperty Multiname("iAchCnt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              increment
+                              setlocal3
+                              getlocal2
+                              getlocal3
+                              setproperty Multiname("iAchCnt",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              kill 3
+                              kill 2
+                              debugline 69
+                              getlocal0
+                              getproperty Multiname("pP",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("iStage",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("myDomain",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getproperty Multiname("sAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              iffalse ofs0078
+                              debugline 71
+                              getlocal0
+                              getproperty Multiname("pP",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                              getlocal1
+                              callpropvoid Multiname("pAchPlay",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                     ofs0078:
+                              debugline 74
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function iUnAch(nm:*, tp:*) : *
+                  {
+                     trait method QName(PackageNamespace(""),"iUnAch")
+                        dispid 0
+                        method
+                           name "iAch/iUnAch"
+                           flag HAS_PARAM_NAMES
+                           param null
+                           param null
+                           paramname null
+                           paramname null
+                           returns null
+                           
+                           body
+                              maxstack 4
+                              localcount 6
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                                 debugline 75
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "nm", 0, 75
+                                 debug 1, "tp", 1, 75
+                                 debugline 77
+                                 getlocal0
+                                 getproperty Multiname("pP",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getproperty Multiname("iStage",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getproperty Multiname("myDomain",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getproperty Multiname("LabType",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 0
+                                 ifne ofs0235
+                                 debugline 79
+                                 getlocal2
+                                 pushstring "p"
+                                 ifne ofs0042
+                                 debugline 82
+                                 getlocal0
+                                 pushstring "p"
+                                 getlocal1
+                                 add
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs00a2
+                        ofs0042:
+                                 debugline 84
+                                 getlocal2
+                                 pushstring "s"
+                                 ifne ofs005c
+                                 debugline 86
+                                 getlocal0
+                                 pushstring "s"
+                                 getlocal1
+                                 add
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs00a2
+                        ofs005c:
+                                 debugline 90
+                                 getlocal0
+                                 getproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getlocal2
+                                 getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getlocal1
+                                 getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getlex Multiname("undefined",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 ifne ofs00a2
+                                 debugline 92
+                                 getlocal0
+                                 getproperty Multiname("iAchUn",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getlocal2
+                                 getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 getlocal1
+                                 pushbyte 1
+                                 setproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 debugline 93
+                                 getlocal0
+                                 dup
+                                 setlocal3
+                                 pushstring "iAchUn"
+                                 getlocal2
+                                 add
+                                 dup
+                                 setlocal 4
+                                 getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 increment
+                                 setlocal 5
+                                 getlocal3
+                                 getlocal 4
+                                 getlocal 5
+                                 setproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 kill 5
+                                 kill 3
+                                 kill 4
+                        ofs00a2:
+                                 debugline 96
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 1
+                                 ifne ofs00bc
+                                 debugline 98
+                                 getlocal0
+                                 pushstring "ef1"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs00bc:
+                                 debugline 100
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 5
+                                 ifne ofs00d6
+                                 debugline 102
+                                 getlocal0
+                                 pushstring "ef5"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs00d6:
+                                 debugline 104
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 10
+                                 ifne ofs00f0
+                                 debugline 106
+                                 getlocal0
+                                 pushstring "ef10"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs00f0:
+                                 debugline 108
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 20
+                                 ifne ofs010a
+                                 debugline 110
+                                 getlocal0
+                                 pushstring "ef20"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs010a:
+                                 debugline 112
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 30
+                                 ifne ofs0124
+                                 debugline 114
+                                 getlocal0
+                                 pushstring "ef30"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs0124:
+                                 debugline 116
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 40
+                                 ifne ofs013e
+                                 debugline 118
+                                 getlocal0
+                                 pushstring "ef40"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs013e:
+                                 debugline 119
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 50
+                                 ifne ofs0158
+                                 debugline 121
+                                 getlocal0
+                                 pushstring "ef50"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs016e
+                        ofs0158:
+                                 debugline 122
+                                 getlocal0
+                                 getproperty Multiname("iAchUnf",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 60
+                                 ifne ofs016e
+                                 debugline 124
+                                 getlocal0
+                                 pushstring "ef60"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                        ofs016e:
+                                 debugline 127
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 5
+                                 ifne ofs0189
+                                 debugline 129
+                                 getlocal0
+                                 pushstring "ec5"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs0189:
+                                 debugline 131
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 10
+                                 ifne ofs01a5
+                                 debugline 133
+                                 getlocal0
+                                 pushstring "ec10"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs01a5:
+                                 debugline 135
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 20
+                                 ifne ofs01c1
+                                 debugline 137
+                                 getlocal0
+                                 pushstring "ec20"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs01c1:
+                                 debugline 139
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 30
+                                 ifne ofs01dd
+                                 debugline 141
+                                 getlocal0
+                                 pushstring "ec30"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs01dd:
+                                 debugline 143
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 40
+                                 ifne ofs01f9
+                                 debugline 145
+                                 getlocal0
+                                 pushstring "ec40"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs01f9:
+                                 debugline 146
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 50
+                                 ifne ofs0215
+                                 debugline 148
+                                 getlocal0
+                                 pushstring "ec50"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                 jump ofs022d
+                        ofs0215:
+                                 debugline 149
+                                 getlocal0
+                                 getproperty Multiname("iAchUnc",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                 pushbyte 60
+                                 ifne ofs022d
+                                 debugline 151
+                                 getlocal0
+                                 pushstring "ec60"
+                                 callpropvoid Multiname("iTryAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                        ofs022d:
+                                 debugline 153
+                                 getlocal0
+                                 callpropvoid Multiname("iAchSave",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                        ofs0235:
+                                 debugline 155
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function iTryAch(nm:*) : *
+                     {
+                        trait method QName(PackageNamespace(""),"iTryAch")
+                           dispid 0
+                           method
+                              name "iAch/iTryAch"
+                              flag HAS_PARAM_NAMES
+                              param null
+                              paramname null
+                              returns null
+                              
+                              body
+                                 maxstack 2
+                                 localcount 2
+                                 initscopedepth 4
+                                 maxscopedepth 5
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                                    debugline 156
+                                    getlocal0
+                                    pushscope
+                                    debug 1, "nm", 0, 156
+                                    debugline 158
+                                    getlocal0
+                                    getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    getlocal1
+                                    getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    getlex Multiname("undefined",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    ifeq ofs0046
+                                    debugline 161
+                                    getlocal0
+                                    getproperty Multiname("iAchChart",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    getlocal1
+                                    getproperty MultinameL([PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    getproperty Multiname("cmp",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")])
+                                    pushbyte 2
+                                    ifne ofs0046
+                                    debugline 163
+                                    getlocal0
+                                    getlocal1
+                                    callpropvoid Multiname("iGetAch",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 1
+                                    debugline 164
+                                    getlocal0
+                                    callpropvoid Multiname("iAchSave",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 0
+                           ofs0046:
+                                    debugline 167
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        public function iAchInit() : *
+                        {
+                           trait method QName(PackageNamespace(""),"iAchInit")
+                              dispid 0
+                              method
+                                 name "iAch/iAchInit"
+                                 returns null
+                                 
+                                 body
+                                    maxstack 4
+                                    localcount 1
+                                    initscopedepth 4
+                                    maxscopedepth 5
+                                    
+                                    code
+                                       debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                                       debugline 168
+                                       getlocal0
+                                       pushscope
+                                       debugline 170
+                                       getlocal0
+                                       pushstring "ef1"
+                                       pushstring "Discover a new formula"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 171
+                                       getlocal0
+                                       pushstring "ef5"
+                                       pushstring "Discover 5 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 172
+                                       getlocal0
+                                       pushstring "ef10"
+                                       pushstring "Discover 10 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 173
+                                       getlocal0
+                                       pushstring "ef20"
+                                       pushstring "Discover 20 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 174
+                                       getlocal0
+                                       pushstring "ef30"
+                                       pushstring "Discover 30 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 175
+                                       getlocal0
+                                       pushstring "ef40"
+                                       pushstring "Discover 40 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 176
+                                       getlocal0
+                                       pushstring "ef50"
+                                       pushstring "Discover 50 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 177
+                                       getlocal0
+                                       pushstring "ef60"
+                                       pushstring "Discover 60 formulas"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 179
+                                       getlocal0
+                                       pushstring "ec5"
+                                       pushstring "Discover 5 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 180
+                                       getlocal0
+                                       pushstring "ec10"
+                                       pushstring "Discover 10 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 181
+                                       getlocal0
+                                       pushstring "ec20"
+                                       pushstring "Discover 20 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 182
+                                       getlocal0
+                                       pushstring "ec30"
+                                       pushstring "Discover 30 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 183
+                                       getlocal0
+                                       pushstring "ec40"
+                                       pushstring "Discover 40 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 184
+                                       getlocal0
+                                       pushstring "ec50"
+                                       pushstring "Discover 50 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 185
+                                       getlocal0
+                                       pushstring "ec60"
+                                       pushstring "Discover 60 chemicals"
+                                       pushbyte 5
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 187
+                                       getlocal0
+                                       pushstring "pO2"
+                                       pushstring "Produce Oxygen(O2)"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 188
+                                       getlocal0
+                                       pushstring "pH2"
+                                       pushstring "Produce Hydrogen(H2)"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 189
+                                       getlocal0
+                                       pushstring "pCO2"
+                                       pushstring "Produce Carbon dioxide(CO2)"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 190
+                                       getlocal0
+                                       pushstring "pH2O"
+                                       pushstring "Produce Water(H2O)"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 192
+                                       getlocal0
+                                       pushstring "sd"
+                                       pushstring "Decomposition reaction"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 193
+                                       getlocal0
+                                       pushstring "sdr"
+                                       pushstring "Double replacement reaction"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 194
+                                       getlocal0
+                                       pushstring "ss"
+                                       pushstring "Synthesis reaction"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 195
+                                       getlocal0
+                                       pushstring "ssr"
+                                       pushstring "Single replacement reaction"
+                                       pushbyte 10
+                                       callpropvoid Multiname("iAchAdd",[PrivateNamespace("iAch"),PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAch"),StaticProtectedNs("iAch")]), 3
+                                       debugline 198
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                        }
+                     }
+                     
+                     method
+                        name ""
+                        returns null
+                        
+                        body
+                           maxstack 2
+                           localcount 1
+                           initscopedepth 1
+                           maxscopedepth 3
+                           
+                           code
+                              getlocal0
+                              pushscope
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                              debugline 5
+                              findpropstrict Multiname("iAch",[PackageNamespace("")])
+                              getlex QName(PackageNamespace(""),"Object")
+                              pushscope
+                              getlex Multiname("Object",[PrivateNamespace("iAch.as$251"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                              newclass 0
+                              popscope
+                              initproperty QName(PackageNamespace(""),"iAch")
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAch.as"
+                              debugline 4
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                     

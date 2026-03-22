@@ -1,0 +1,145 @@
+package
+{
+   public class cHeater
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var cName:String;
+      
+      public var cNumber:Number;
+      
+      public var cType:String;
+      
+      public var cLife:Boolean;
+      
+      public var cKind:String;
+      
+      public function cHeater(inType:*, inDm:*)
+      {
+         method
+            name "cHeater/cHeater"
+            flag HAS_PARAM_NAMES
+            param null
+            param null
+            paramname null
+            paramname null
+            returns null
+            
+            body
+               maxstack 2
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cHeater.as"
+                  debugline 15
+                  getlocal0
+                  pushscope
+                  debug 1, "inType", 0, 15
+                  debug 1, "inDm", 1, 15
+                  debugline 8
+                  getlocal0
+                  findpropstrict Multiname("String",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")])
+                  constructprop Multiname("String",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")]), 0
+                  initproperty QName(PackageNamespace(""),"cName")
+                  debugline 9
+                  getlocal0
+                  findpropstrict Multiname("Number",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")])
+                  constructprop Multiname("Number",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")]), 0
+                  initproperty QName(PackageNamespace(""),"cNumber")
+                  debugline 10
+                  getlocal0
+                  findpropstrict Multiname("String",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")])
+                  constructprop Multiname("String",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")]), 0
+                  initproperty QName(PackageNamespace(""),"cType")
+                  debugline 16
+                  getlocal0
+                  constructsuper 0
+                  debugline 17
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("cType",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")])
+                  debugline 18
+                  getlocal0
+                  pushtrue
+                  initproperty Multiname("cLife",[PrivateNamespace("cHeater"),PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cHeater"),StaticProtectedNs("cHeater")])
+                  debugline 19
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function cExist() : *
+      {
+         trait method QName(PackageNamespace(""),"cExist")
+            dispid 0
+            method
+               name "cHeater/cExist"
+               returns null
+               
+               body
+                  maxstack 1
+                  localcount 1
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cHeater.as"
+                     debugline 22
+                     getlocal0
+                     pushscope
+                     debugline 25
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 3
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cHeater.as"
+            debugline 5
+            findpropstrict Multiname("cHeater",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex Multiname("Object",[PrivateNamespace("cHeater.as$268"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+            newclass 5
+            popscope
+            initproperty QName(PackageNamespace(""),"cHeater")
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

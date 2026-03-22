@@ -1,0 +1,141 @@
+package
+{
+   public class cStructure
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var cName:String;
+      
+      public var cNumber:Number;
+      
+      public var cType:String;
+      
+      public var cLife:Boolean = true;
+      
+      public var cKind:String;
+      
+      public function cStructure(inType:*, inDm:*)
+      {
+         method
+            name "cStructure/cStructure"
+            flag HAS_PARAM_NAMES
+            param null
+            param null
+            paramname null
+            paramname null
+            returns null
+            
+            body
+               maxstack 2
+               localcount 3
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cStructure.as"
+                  debugline 15
+                  getlocal0
+                  pushscope
+                  debug 1, "inType", 0, 15
+                  debug 1, "inDm", 1, 15
+                  debugline 8
+                  getlocal0
+                  findpropstrict Multiname("String",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")])
+                  constructprop Multiname("String",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")]), 0
+                  initproperty QName(PackageNamespace(""),"cName")
+                  debugline 9
+                  getlocal0
+                  findpropstrict Multiname("Number",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")])
+                  constructprop Multiname("Number",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")]), 0
+                  initproperty QName(PackageNamespace(""),"cNumber")
+                  debugline 10
+                  getlocal0
+                  findpropstrict Multiname("String",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")])
+                  constructprop Multiname("String",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")]), 0
+                  initproperty QName(PackageNamespace(""),"cType")
+                  debugline 16
+                  getlocal0
+                  constructsuper 0
+                  debugline 17
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("cType",[PrivateNamespace("cStructure"),PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("cStructure"),StaticProtectedNs("cStructure")])
+                  debugline 18
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function cExist() : *
+      {
+         trait method QName(PackageNamespace(""),"cExist")
+            dispid 0
+            method
+               name "cStructure/cExist"
+               returns null
+               
+               body
+                  maxstack 1
+                  localcount 1
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cStructure.as"
+                     debugline 20
+                     getlocal0
+                     pushscope
+                     debugline 23
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 3
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;cStructure.as"
+            debugline 5
+            findpropstrict Multiname("cStructure",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex Multiname("Object",[PrivateNamespace("cStructure.as$270"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+            newclass 6
+            popscope
+            initproperty QName(PackageNamespace(""),"cStructure")
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   

@@ -1,0 +1,83 @@
+package com.adobe.images
+{
+   public class BitString
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var len:int = 0;
+      
+      public var val:int = 0;
+      
+      public function BitString()
+      {
+         method
+            name "com.adobe.images:BitString/BitString"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  getlocal0
+                  pushscope
+                  getlocal0
+                  constructsuper 0
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;com/adobe/images;BitString.as"
+                  debugline 40
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+   }
+}
+
+method
+   name ""
+   returns null
+   
+   body
+      maxstack 2
+      localcount 1
+      initscopedepth 1
+      maxscopedepth 3
+      
+      code
+         getlocal0
+         pushscope
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;com/adobe/images;BitString.as"
+         debugline 34
+         findpropstrict Multiname("BitString",[PackageNamespace("com.adobe.images")])
+         getlex QName(PackageNamespace(""),"Object")
+         pushscope
+         getlex Multiname("Object",[PackageNamespace(""),PackageNamespace("com.adobe.images"),PrivateNamespace("BitString.as$393"),PackageInternalNs("com.adobe.images"),Namespace("http://adobe.com/AS3/2006/builtin")])
+         newclass 29
+         popscope
+         initproperty QName(PackageNamespace("com.adobe.images"),"BitString")
+         debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;com/adobe/images;BitString.as"
+         debugline 32
+         returnvoid
+      end ; code
+   end ; body
+end ; method
+

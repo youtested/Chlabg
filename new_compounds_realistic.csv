@@ -1,0 +1,50 @@
+Chemical,Type,State,Available,RName,CName,DName,Density1,Density2,Density3,Mm,Sol,Mp,Bp,KH,color1,alpha1,color2,alpha2,color3,alpha3,color4,alpha4,friction,restitution,JPN,CHN,TW,KR,Solk,MOH,KOH,MH,PTN
+Methane,Organic,Solid,1,Methane,CH4,CH4,0.668,1,0.001,16.04,0,-182,-164,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,メタン,甲烷,甲烷,메탄,0,0,0,0,0,0
+Ethane,Organic,Solid,1,Ethane,C2H6,C2H6,1.265,1,0.001,30.07,0,-183,-89,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,エタン,乙烷,乙烷,에탄,0,0,0,0,0,0
+Propane,Organic,Solid,1,Propane,C3H8,C3H8,1.867,1,0.001,44.09,0,-188,-42,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,プロパン,丙烷,丙烷,프로판,0,0,0,0,0,0
+Butane,Organic,Solid,1,Butane,C4H10,C4H10,2.493,1,0.001,58.12,0,-138,-1,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ブタン,丁烷,丁烷,부탄,0,0,0,0,0,0
+Pentane,Organic,Liquid,1,Pentane,C5H12,C5H12,0.626,1,0.001,72.15,0,-130,36,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ペンタン,戊烷,戊烷,펜탄,0,0,0,0,0,0
+Hexane,Organic,Liquid,1,Hexane,C6H14,C6H14,0.659,1,0.001,86.18,0,-95,69,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ヘキサン,己烷,己烷,핵산,0,0,0,0,0,0
+Heptane,Organic,Liquid,1,Heptane,C7H16,C7H16,0.684,1,0.001,100.2,0,-91,98,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ヘプタン,庚烷,庚烷,헵탄,0,0,0,0,0,0
+Octane,Organic,Liquid,1,Octane,C8H18,C8H18,0.703,1,0.001,114.23,0,-57,126,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,オクタール,辛烷,辛烷,옥탄,0,0,0,0,0,0
+Nonane,Organic,Liquid,1,Nonane,C9H20,C9H20,0.718,1,0.001,128.25,0,-64,151,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ノナン,壬烷,壬烷,노난,0,0,0,0,0,0
+Decane,Organic,Liquid,1,Decane,C10H22,C10H22,0.73,1,0.001,142.29,0,-30,174,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,デカン,癸烷,癸烷,데칸,0,0,0,0,0,0
+Benzene,Organic,Liquid,1,Benzene,C6H6,C6H6,0.879,1,0.001,78.11,0,5.5,80.1,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ベンゼン,苯,苯,벤젠,0,0,0,0,0,0
+Toluene,Organic,Liquid,1,Toluene,C7H8,C7H8,0.867,1,0.001,92.14,0,-95,111,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,トルエン,甲苯,甲苯,톨루엔,0,0,0,0,0,0
+Xylene,Organic,Liquid,1,Xylene,C8H10,C8H10,0.86,1,0.001,106.16,0,-47,138,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,キシレン,二甲苯,二甲苯,자일렌,0,0,0,0,0,0
+Acetone,Organic,Liquid,1,Acetone,C3H6O,C3H6O,0.784,1,0.001,58.08,0,-95,56,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,アセトン,丙酮,丙酮,아세톤,0,0,0,0,0,0
+Ethanol,Organic,Liquid,1,Ethanol,C2H5OH,C2H5OH,0.789,1,0.001,46.07,0,-114,78,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,エチルアルコール,乙醇,乙醇,에탄올,0,0,0,0,0,0
+Methanol,Organic,Liquid,1,Methanol,CH3OH,CH3OH,0.792,1,0.001,32.04,0,-98,65,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,メタノール,甲醇,甲醇,메탄올,0,0,0,0,0,0
+Acetic Acid,Organic,Liquid,1,Acetic Acid,CH3COOH,CH3COOH,1.049,1,0.001,60.05,0,17,118,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,酢酸,乙酸,乙酸,아세트산,0,0,0,0,0,0
+Formaldehyde,Organic,Liquid,1,Formaldehyde,CH2O,CH2O,0.815,1,0.001,30.03,0,-92,-19,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ホルマリン,甲醛,甲醛,포름알데히드,0,0,0,0,0,0
+Acetylene,Organic,Solid,1,Acetylene,C2H2,C2H2,0.001,1,0.001,26.04,0,-82,-84,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,アセチレン,乙炔,乙炔,아세틸렌,0,0,0,0,0,0
+Ethylene,Organic,Solid,1,Ethylene,C2H4,C2H4,0.001,1,0.001,28.05,0,-169,-104,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,エチレン,乙烯,乙烯,에틸렌,0,0,0,0,0,0
+Cyclohexane,Organic,Liquid,1,Cyclohexane,C6H12,C6H12,0.779,1,0.001,84.16,0,6.5,81,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,シクロヘキサン,环己烷,環己烷,사이클로헥산,0,0,0,0,0,0
+Chloroform,Organic,Liquid,1,Chloroform,CHCl3,CHCl3,1.48,1,0.001,119.38,0,-64,61,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,クロロホルム,氯仿,氯仿,클로로포름,0,0,0,0,0,0
+Carbon Tetrachloride,Organic,Liquid,1,Carbon Tetrachloride,CCl4,CCl4,1.594,1,0.001,153.82,0,-23,77,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,四塩化炭素,四氯化碳,四氯化碳,사염화탄소,0,0,0,0,0,0
+Nitrobenzene,Organic,Liquid,1,Nitrobenzene,C6H5NO2,C6H5NO2,1.2,1,0.001,123.11,0,6,211,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ニトロベンゼン,硝基苯,硝基苯,나이트로벤젠,0,0,0,0,0,0
+Phenol,Organic,Solid,1,Phenol,C6H5OH,C6H5OH,1.07,1,0.001,94.11,0,41,182,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,フェノール,苯酚,苯酚,페놀,0,0,0,0,0,0
+Aniline,Organic,Liquid,1,Aniline,C6H5NH2,C6H5NH2,1.022,1,0.001,93.13,0,-6,184,0.1,0xC4A000,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,アニリン,苯胺,苯胺,아닐린,0,0,0,0,0,0
+Glycerol,Organic,Liquid,1,Glycerol,C3H8O3,C3H8O3,1.261,1,0.001,92.09,0,18,290,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,グリセロール,甘油,甘油,글리세롤,0,0,0,0,0,0
+Sucrose,Organic,Solid,1,Sucrose,C12H22O11,C12H22O11,1.588,1,0.001,342.3,0,186,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ショ糖,蔗糖,蔗糖,수크로오스,0,0,0,0,0,0
+Glucose,Organic,Solid,1,Glucose,C6H12O6,C6H12O6,1.54,1,0.001,180.16,0,146,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,葡萄糖,葡萄糖,葡萄糖,포도당,0,0,0,0,0,0
+Citric Acid,Organic,Solid,1,Citric Acid,C6H8O7,C6H8O7,1.665,1,0.001,192.12,0,153,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,クエン酸,柠檬酸,檸檬酸,시트르산,0,0,0,0,0,0
+Sodium Acetate,Organic,Solid,1,Sodium Acetate,CH3COONa,CH3COONa,1.528,1,0.001,82.03,0,324,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,酢酸ナトリウム,乙酸钠,乙酸鈉,아세트산나트륨,0,0,0,0,0,0
+Potassium Permanganate,Inorganic,Solid,1,Potassium Permanganate,KMnO4,KMnO4,2.7,1,0.001,158.03,0,240,0,0.1,0x800080,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,過マンガン酸カリウム,高锰酸钾,高錳酸鉀,과망가루산칼륨,0,0,0,0,0,0
+Copper Sulfate,Inorganic,Solid,1,Copper Sulfate,CuSO4,CuSO4,3.6,1,0.001,159.61,0,150,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硫酸銅(II),硫酸铜,硫酸銅,황산구리,0,0,0,0,0,0
+Iron Sulfate,Inorganic,Solid,1,Iron Sulfate,FeSO4,FeSO4,3.65,1,0.001,151.91,0,64,0,0.1,0x90D6C0,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硫酸鉄(II),硫酸亚铁,硫酸亞鐵,황산제일철,0,0,0,0,0,0
+Cobalt Chloride,Inorganic,Solid,1,Cobalt Chloride,CoCl2,CoCl2,3.356,1,0.001,129.84,0,726,0,0.1,0x0066CC,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,塩化コバルト(II),氯化钴,氯化鈷,염화코발트,0,0,0,0,0,0
+Potassium Dichromate,Inorganic,Solid,1,Potassium Dichromate,K2Cr2O7,K2Cr2O7,2.676,1,0.001,294.19,0,398,0,0.1,0xFF4500,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,二クロム酸カリウム,重铬酸钾,重鉻酸鉀,중크롬산칼륨,0,0,0,0,0,0
+Sodium Hydroxide,Inorganic,Solid,1,Sodium Hydroxide,NaOH,NaOH,2.13,1,0.001,40,0,323,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,水酸化ナトリウム,氢氧化钠,氫氧化鈉,수산화나트륨,0,0,0,0,0,0
+Hydrochloric Acid,Inorganic,Liquid,1,Hydrochloric Acid,HCl,HCl,1.18,1,0.001,36.46,0,-27,110,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,塩酸,盐酸,鹽酸,염화수소산,0,0,0,0,0,0
+Sulfuric Acid,Inorganic,Liquid,1,Sulfuric Acid,H2SO4,H2SO4,1.84,1,0.001,98.08,0,10,337,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,濃硫酸,硫酸,硫酸,황산,0,0,0,0,0,0
+Nitric Acid,Inorganic,Liquid,1,Nitric Acid,HNO3,HNO3,1.51,1,0.001,63.01,0,-42,83,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硝酸,硝酸,硝酸,질산,0,0,0,0,0,0
+Ammonia,Inorganic,Liquid,1,Ammonia,NH3,NH3,0.73,1,0.001,17.03,0,-78,-33,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,アンモニア,氨,氨,암모니아,0,0,0,0,0,0
+Hydrogen Peroxide,Inorganic,Liquid,1,Hydrogen Peroxide,H2O2,H2O2,1.45,1,0.001,34.01,0,-0.4,150,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,過酸化水素,过氧化氢,過氧化氫,과산화수소,0,0,0,0,0,0
+Sodium Chloride,Inorganic,Solid,1,Sodium Chloride,NaCl,NaCl,2.165,1,0.001,58.44,0,801,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,塩化ナトリウム,氯化钠,氯化鈉,염화나트륨,0,0,0,0,0,0
+Potassium Chloride,Inorganic,Solid,1,Potassium Chloride,KCl,KCl,1.984,1,0.001,74.55,0,770,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,塩化カリウム,氯化钾,氯化鉀,염화칼륨,0,0,0,0,0,0
+Calcium Carbonate,Inorganic,Solid,1,Calcium Carbonate,CaCO3,CaCO3,2.71,1,0.001,100.09,0,825,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,炭酸カルシウム,碳酸钙,碳酸鈣,탄산칼슘,0,0,0,0,0,0
+Magnesium Sulfate,Inorganic,Solid,1,Magnesium Sulfate,MgSO4,MgSO4,2.66,1,0.001,120.37,0,1124,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硫酸マグネシウム,硫酸镁,硫酸鎂,황산마그네슘,0,0,0,0,0,0
+Barium Sulfate,Inorganic,Solid,1,Barium Sulfate,BaSO4,BaSO4,4.49,1,0.001,233.39,0,1580,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硫酸バリウム,硫酸钡,硫酸鋇,황산바륨,0,0,0,0,0,0
+Silver Nitrate,Inorganic,Solid,1,Silver Nitrate,AgNO3,AgNO3,4.35,1,0.001,169.87,0,212,0,0.1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,硝酸銀,硝酸银,硝酸銀,질산은,0,0,0,0,0,0
+Lead Iodide,Inorganic,Solid,1,Lead Iodide,PbI2,PbI2,6.16,1,0.001,461.01,0,402,0,0.1,0xFFFF00,1,0xFFFFFF,1,0xFFFFFF,1,0xFFFFFF,1,0.4,0.3,ヨウ化鉛(II),碘化铅,碘化鉛,요오화납,0,0,0,0,0,0

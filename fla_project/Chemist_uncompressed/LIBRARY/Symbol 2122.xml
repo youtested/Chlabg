@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 2122" itemID="69be9900-00000373" lastModified="1774098374">
+     <timeline>
+          <DOMTimeline name="Symbol 2122">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#e769a1" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <BitmapFill bitmapPath="Bitmap 2120.png">
+                                                            <matrix>
+                                                                 <Matrix tx="-21.7" ty="-1.15" a="29.166259765625" d="20.0"/>
+                                                            </matrix>
+                                                       </BitmapFill>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -51 39[ 0 79 0 135[ 0 191 -51 230[ -102 270 -175 270[ -247 270 -299 230[ -350 191 -350 135[ -350 79 -299 39[ -247 0 -175 0[ -102 0 -51 39"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

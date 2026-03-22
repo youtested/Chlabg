@@ -1,0 +1,337 @@
+package
+{
+   import flash.events.*;
+   import flash.net.*;
+   
+   public class CSVLoader
+   {
+      
+      private static var csv:CSV;
+      
+      private static var csvr:CSV;
+      
+      private static var csvo:CSV;
+      
+      private static var csvor:CSV;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "csv", 0, 8
+               findproperty QName(PrivateNamespace("CSVLoader"),"csv")
+               findpropstrict Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")])
+               constructprop Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")]), 0
+               setproperty QName(PrivateNamespace("CSVLoader"),"csv")
+               debug 1, "csvr", 1, 9
+               findproperty QName(PrivateNamespace("CSVLoader"),"csvr")
+               findpropstrict Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")])
+               constructprop Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")]), 0
+               setproperty QName(PrivateNamespace("CSVLoader"),"csvr")
+               debug 1, "csvo", 2, 10
+               findproperty QName(PrivateNamespace("CSVLoader"),"csvo")
+               findpropstrict Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")])
+               constructprop Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")]), 0
+               setproperty QName(PrivateNamespace("CSVLoader"),"csvo")
+               debug 1, "csvor", 3, 11
+               findproperty QName(PrivateNamespace("CSVLoader"),"csvor")
+               findpropstrict Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")])
+               constructprop Multiname("CSV",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),Namespace("com.shortybmc.data.parser")]), 0
+               setproperty QName(PrivateNamespace("CSVLoader"),"csvor")
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function CSVLoader()
+      {
+         method
+            name "CSVLoader/CSVLoader"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                  debugline 12
+                  getlocal0
+                  pushscope
+                  debugline 12
+                  getlocal0
+                  constructsuper 0
+                  debugline 15
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function Load() : void
+      {
+         trait method QName(PackageNamespace(""),"Load")
+            flag FINAL
+            dispid 3
+            method
+               name "CSVLoader/Load"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                     debugline 16
+                     getlocal0
+                     pushscope
+                     debugline 17
+                     getlex Multiname("csv",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                     getlex Multiname("Event",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.events")])
+                     getproperty Multiname("COMPLETE",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                     getlex Multiname("loaded",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                     callpropvoid Multiname("addEventListener",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 2
+                     debugline 18
+                     getlex Multiname("csv",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                     findpropstrict Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")])
+                     pushstring "/CSV/cdb.csv"
+                     constructprop Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")]), 1
+                     callpropvoid Multiname("load",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                     debugline 21
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private static function loaded(e:*) : void
+         {
+            trait method QName(PrivateNamespace("CSVLoader"),"loaded")
+               flag FINAL
+               dispid 4
+               method
+                  name "CSVLoader/private:loaded"
+                  flag HAS_PARAM_NAMES
+                  param null
+                  paramname "flash.events"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 2
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                        debugline 22
+                        getlocal0
+                        pushscope
+                        debug 1, "e", 0, 22
+                        debugline 23
+                        getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        getlex Multiname("csv",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        getproperty Multiname("data",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        callpropvoid Multiname("Install",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                        debugline 24
+                        getlex Multiname("csvo",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        getlex Multiname("Event",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.events")])
+                        getproperty Multiname("COMPLETE",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        getlex Multiname("loadedo",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        callpropvoid Multiname("addEventListener",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 2
+                        debugline 25
+                        getlex Multiname("csvo",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                        findpropstrict Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")])
+                        pushstring "/CSV/odb.csv"
+                        constructprop Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")]), 1
+                        callpropvoid Multiname("load",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                        debugline 26
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private static function loadedo(e:*) : void
+            {
+               trait method QName(PrivateNamespace("CSVLoader"),"loadedo")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "CSVLoader/private:loadedo"
+                     flag HAS_PARAM_NAMES
+                     param null
+                     paramname "flash.events"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                           debugline 27
+                           getlocal0
+                           pushscope
+                           debug 1, "e", 0, 27
+                           debugline 28
+                           getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           getlex Multiname("csvo",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           getproperty Multiname("data",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           callpropvoid Multiname("Install",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                           debugline 29
+                           getlex Multiname("csvr",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           getlex Multiname("Event",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.events")])
+                           getproperty Multiname("COMPLETE",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           getlex Multiname("loadedr",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           callpropvoid Multiname("addEventListener",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 2
+                           debugline 30
+                           getlex Multiname("csvr",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           findpropstrict Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")])
+                           pushstring "/CSV/rdb.csv"
+                           constructprop Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")]), 1
+                           callpropvoid Multiname("load",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                           debugline 31
+                           getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                           callpropvoid Multiname("finishUp",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 0
+                           debugline 32
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               private static function loadedr(e:*) : void
+               {
+                  trait method QName(PrivateNamespace("CSVLoader"),"loadedr")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "CSVLoader/private:loadedr"
+                        flag HAS_PARAM_NAMES
+                        param null
+                        paramname "flash.events"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 2
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                              debugline 33
+                              getlocal0
+                              pushscope
+                              debug 1, "e", 0, 33
+                              debugline 34
+                              getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              getlex Multiname("csvr",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              getproperty Multiname("data",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              callpropvoid Multiname("InstallReaction",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                              debugline 35
+                              getlex Multiname("csvor",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              getlex Multiname("Event",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.events")])
+                              getproperty Multiname("COMPLETE",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              getlex Multiname("loadedor",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              callpropvoid Multiname("addEventListener",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 2
+                              debugline 36
+                              getlex Multiname("csvor",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                              findpropstrict Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")])
+                              pushstring "/CSV/ordb.csv"
+                              constructprop Multiname("URLRequest",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader"),PackageNamespace("flash.net")]), 1
+                              callpropvoid Multiname("load",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                              debugline 37
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private static function loadedor(e:*) : void
+                  {
+                     trait method QName(PrivateNamespace("CSVLoader"),"loadedor")
+                        flag FINAL
+                        dispid 7
+                        method
+                           name "CSVLoader/private:loadedor"
+                           flag HAS_PARAM_NAMES
+                           param null
+                           paramname "flash.events"
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 3
+                              maxscopedepth 4
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                                 debugline 38
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "e", 0, 38
+                                 debugline 39
+                                 getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                                 getlex Multiname("csvor",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                                 getproperty Multiname("data",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                                 callpropvoid Multiname("InstallReaction",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 1
+                                 debugline 40
+                                 getlex Multiname("Database",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")])
+                                 callpropvoid Multiname("iLoad",[PrivateNamespace("CSVLoader"),PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("CSVLoader"),StaticProtectedNs("CSVLoader")]), 0
+                                 debugline 41
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                  }
+               }
+               
+               method
+                  name ""
+                  returns null
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 1
+                     maxscopedepth 3
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                        debugline 7
+                        findpropstrict Multiname("CSVLoader",[PackageNamespace("")])
+                        getlex QName(PackageNamespace(""),"Object")
+                        pushscope
+                        getlex Multiname("Object",[PrivateNamespace("CSVLoader.as$412"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                        newclass 30
+                        popscope
+                        initproperty QName(PackageNamespace(""),"CSVLoader")
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;CSVLoader.as"
+                        debugline 5
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+               

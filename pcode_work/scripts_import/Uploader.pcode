@@ -1,0 +1,415 @@
+package
+{
+   import com.adobe.images.*;
+   import flash.display.*;
+   import flash.events.*;
+   import flash.geom.*;
+   import flash.net.*;
+   
+   public class Uploader
+   {
+      
+      public static var evts:EventDispatcher;
+      
+      private static var SendRequest:URLRequest;
+      
+      private static var SendLoader:URLLoader;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 2
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "evts", 0, 18
+               findproperty QName(PackageNamespace(""),"evts")
+               findpropstrict Multiname("EventDispatcher",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")])
+               constructprop Multiname("EventDispatcher",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")]), 0
+               setproperty QName(PackageNamespace(""),"evts")
+               debug 1, "SendRequest", 1, 19
+               debug 1, "SendLoader", 2, 20
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function Uploader()
+      {
+         method
+            name "Uploader/Uploader"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                  debugline 22
+                  getlocal0
+                  pushscope
+                  debugline 23
+                  getlocal0
+                  constructsuper 0
+                  debugline 24
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private static function RDM() : Number
+      {
+         trait method QName(PrivateNamespace("Uploader"),"RDM")
+            flag FINAL
+            dispid 3
+            method
+               name "Uploader/private:RDM"
+               returns QName(PackageNamespace(""),"Number")
+               
+               body
+                  maxstack 3
+                  localcount 1
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                     debugline 25
+                     getlocal0
+                     pushscope
+                     debugline 27
+                     getlex Multiname("Math",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                     getlex Multiname("Math",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                     callproperty Multiname("random",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                     pushint 9999999
+                     multiply
+                     callproperty Multiname("round",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function iUploadThumb(stg:*, Name:String) : *
+         {
+            trait method QName(PackageNamespace(""),"iUploadThumb")
+               flag FINAL
+               dispid 4
+               method
+                  name "Uploader/iUploadThumb"
+                  flag HAS_PARAM_NAMES
+                  param null
+                  param QName(PackageNamespace(""),"String")
+                  paramname null
+                  paramname null
+                  returns null
+                  
+                  body
+                     maxstack 5
+                     localcount 11
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                        debugline 29
+                        getlocal0
+                        pushscope
+                        debug 1, "stg", 0, 29
+                        debug 1, "Name", 1, 29
+                        debug 1, "form", 2, 31
+                        debug 1, "scale", 3, 33
+                        debug 1, "matrix", 4, 34
+                        debug 1, "bitmap_data", 5, 35
+                        debug 1, "jpg", 6, 38
+                        debug 1, "req", 7, 43
+                        debug 1, "header", 8, 45
+                        debug 1, "loader", 9, 50
+                        debugline 31
+                        findpropstrict Multiname("MsMultiPartFormData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        constructprop Multiname("MsMultiPartFormData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                        coerce QName(PackageNamespace(""),"MsMultiPartFormData")
+                        setlocal3
+                        debugline 32
+                        getlocal3
+                        pushstring "act"
+                        pushstring "1"
+                        callpropvoid Multiname("AddFormField",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 2
+                        debugline 33
+                        pushdouble 0.5
+                        convert_d
+                        setlocal 4
+                        debugline 34
+                        findpropstrict Multiname("Matrix",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.geom")])
+                        constructprop Multiname("Matrix",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.geom")]), 0
+                        coerce QName(PackageNamespace("flash.geom"),"Matrix")
+                        setlocal 5
+                        debugline 35
+                        findpropstrict Multiname("BitmapData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.display")])
+                        pushshort 1024
+                        pushshort 768
+                        pushfalse
+                        constructprop Multiname("BitmapData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.display")]), 3
+                        coerce QName(PackageNamespace("flash.display"),"BitmapData")
+                        setlocal 6
+                        debugline 36
+                        getlocal 6
+                        getlocal1
+                        getlocal 5
+                        callpropvoid Multiname("draw",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 2
+                        debugline 38
+                        findpropstrict Multiname("JPGEncoder",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("com.adobe.images")])
+                        pushbyte 80
+                        constructprop Multiname("JPGEncoder",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("com.adobe.images")]), 1
+                        coerce QName(PackageNamespace("com.adobe.images"),"JPGEncoder")
+                        setlocal 7
+                        debugline 40
+                        getlocal3
+                        pushstring "fileUpload"
+                        getlocal2
+                        pushstring ".jpg"
+                        add
+                        getlocal 7
+                        getlocal 6
+                        callproperty Multiname("encode",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                        callpropvoid Multiname("AddStreamFile",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 3
+                        debugline 41
+                        getlocal3
+                        callpropvoid Multiname("PrepareFormData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                        debugline 43
+                        findpropstrict Multiname("URLRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")])
+                        pushstring "http://thixlab.com/CloudLab/LabThumb.aspx?name="
+                        getlocal2
+                        add
+                        pushstring "&id="
+                        add
+                        findpropstrict Multiname("RDM",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        callproperty Multiname("RDM",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                        add
+                        constructprop Multiname("URLRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")]), 1
+                        coerce QName(PackageNamespace("flash.net"),"URLRequest")
+                        setlocal 8
+                        debugline 45
+                        findpropstrict Multiname("URLRequestHeader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")])
+                        pushstring "Content-Type"
+                        pushstring "multipart/form-data; boundary="
+                        getlocal3
+                        getproperty Multiname("Boundary",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        add
+                        constructprop Multiname("URLRequestHeader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")]), 2
+                        coerce QName(PackageNamespace("flash.net"),"URLRequestHeader")
+                        setlocal 9
+                        debugline 47
+                        getlocal 8
+                        getproperty Multiname("requestHeaders",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        getlocal 9
+                        callpropvoid Multiname("push",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                        debugline 48
+                        getlocal 8
+                        pushstring "POST"
+                        setproperty Multiname("method",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        debugline 49
+                        getlocal 8
+                        getlocal3
+                        callproperty Multiname("GetFormData",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                        setproperty Multiname("data",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                        debugline 50
+                        findpropstrict Multiname("URLLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")])
+                        getlocal 8
+                        constructprop Multiname("URLLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")]), 1
+                        coerce QName(PackageNamespace("flash.net"),"URLLoader")
+                        setlocal 10
+                        debugline 51
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function iSend(cnt:String, txt:String) : void
+            {
+               trait method QName(PackageNamespace(""),"iSend")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "Uploader/iSend"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"String")
+                     paramname "PrepareFormData"
+                     paramname "PrepareFormData"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 4
+                        localcount 3
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                           debugline 52
+                           getlocal0
+                           pushscope
+                           debug 1, "cnt", 0, 52
+                           debug 1, "txt", 1, 52
+                           debugline 54
+                           findproperty Multiname("SendRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           findpropstrict Multiname("URLRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")])
+                           pushstring "http://www.thixlab.com/CloudLab/LabSend.aspx?act=csend&object="
+                           getlocal2
+                           add
+                           pushstring "&content="
+                           add
+                           getlocal1
+                           add
+                           pushstring "&id="
+                           add
+                           findpropstrict Multiname("RDM",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           callproperty Multiname("RDM",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 0
+                           add
+                           constructprop Multiname("URLRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")]), 1
+                           setproperty Multiname("SendRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           debugline 55
+                           findproperty Multiname("SendLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           findpropstrict Multiname("URLLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")])
+                           constructprop Multiname("URLLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.net")]), 0
+                           setproperty Multiname("SendLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           debugline 56
+                           getlex Multiname("SendLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           getlex Multiname("SendRequest",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           callpropvoid Multiname("load",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                           debugline 57
+                           getlex Multiname("SendLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           getlex Multiname("Event",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")])
+                           getproperty Multiname("COMPLETE",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           getlex Multiname("cmp",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                           callpropvoid Multiname("addEventListener",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 2
+                           debugline 58
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public static function cmp(e:*) : void
+               {
+                  trait method QName(PackageNamespace(""),"cmp")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "Uploader/cmp"
+                        flag HAS_PARAM_NAMES
+                        param null
+                        paramname "PrepareFormData"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 2
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                              debugline 59
+                              getlocal0
+                              pushscope
+                              debug 1, "e", 0, 59
+                              debugline 61
+                              getlex Multiname("evts",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                              findpropstrict Multiname("Event",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")])
+                              getlex Multiname("Event",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")])
+                              getproperty Multiname("COMPLETE",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                              constructprop Multiname("Event",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")]), 1
+                              callpropvoid Multiname("dispatchEvent",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                              debugline 62
+                              getlex Multiname("SendLoader",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                              getlex Multiname("Event",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader"),PackageNamespace("flash.events")])
+                              getproperty Multiname("COMPLETE",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                              getlex Multiname("cmp",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 2
+                              debugline 63
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private static function loaderIOErrorHandler(e:IOErrorEvent) : void
+                  {
+                     trait method QName(PrivateNamespace("Uploader"),"loaderIOErrorHandler")
+                        flag FINAL
+                        dispid 7
+                        method
+                           name "Uploader/private:loaderIOErrorHandler"
+                           flag HAS_PARAM_NAMES
+                           param QName(PackageNamespace("flash.events"),"IOErrorEvent")
+                           paramname "PrepareFormData"
+                           returns QName(PackageNamespace(""),"void")
+                           
+                           body
+                              maxstack 2
+                              localcount 2
+                              initscopedepth 3
+                              maxscopedepth 4
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                                 debugline 64
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "e", 0, 64
+                                 debugline 66
+                                 findpropstrict Multiname("trace",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                                 getlocal1
+                                 getproperty Multiname("text",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")])
+                                 callpropvoid Multiname("trace",[PrivateNamespace("Uploader"),PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("Uploader"),StaticProtectedNs("Uploader")]), 1
+                                 debugline 67
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                  }
+               }
+               
+               method
+                  name ""
+                  returns null
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 1
+                     maxscopedepth 3
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                        debugline 16
+                        findpropstrict Multiname("Uploader",[PackageNamespace("")])
+                        getlex QName(PackageNamespace(""),"Object")
+                        pushscope
+                        getlex Multiname("Object",[PackageNamespace(""),PrivateNamespace("Uploader.as$309"),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                        newclass 17
+                        popscope
+                        initproperty QName(PackageNamespace(""),"Uploader")
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;Uploader.as"
+                        debugline 14
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+               

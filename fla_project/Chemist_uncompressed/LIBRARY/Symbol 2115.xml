@@ -1,0 +1,19 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 2115" itemID="69be9900-00000370" lastModified="1774098374" linkageClassName="iBroken" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 2115">
+               <layers>
+                    <DOMLayer name="Script Layer" color="#0799f7">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <Actionscript>
+                                        <script>stop();
+</script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

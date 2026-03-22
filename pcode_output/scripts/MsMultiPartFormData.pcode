@@ -1,0 +1,408 @@
+package
+{
+   import flash.text.*;
+   import flash.utils.*;
+   
+   public class MsMultiPartFormData
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var Boundary:String = "---------------------------7db1851cd1158";
+      
+      private var fieldName:String = "Content-Disposition: form-data; name=\"XXXX\"";
+      
+      private var fieldValue:String = "XXXX";
+      
+      private var fileField:String = "Content-Disposition: form-data; name=\"XXXX\"; filename=\"XXXXXXXX\"";
+      
+      private var fileContentType:String = "Content-Type: XXXX";
+      
+      private var formData:ByteArray;
+      
+      public function MsMultiPartFormData()
+      {
+         method
+            name "MsMultiPartFormData/MsMultiPartFormData"
+            returns null
+            
+            body
+               maxstack 2
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                  debugline 29
+                  getlocal0
+                  pushscope
+                  debugline 30
+                  getlocal0
+                  constructsuper 0
+                  debugline 31
+                  getlocal0
+                  findpropstrict Multiname("ByteArray",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                  constructprop Multiname("ByteArray",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 0
+                  initproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                  debugline 32
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function AddFormField(FieldName:String, FieldValue:String) : void
+      {
+         trait method QName(PackageNamespace(""),"AddFormField")
+            dispid 0
+            method
+               name "MsMultiPartFormData/AddFormField"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"String")
+               param QName(PackageNamespace(""),"String")
+               paramname "flash.utils"
+               paramname "flash.utils"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 5
+                  initscopedepth 4
+                  maxscopedepth 5
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                     debugline 38
+                     getlocal0
+                     pushscope
+                     debug 1, "FieldName", 0, 38
+                     debug 1, "FieldValue", 1, 38
+                     debug 1, "newFieldName", 2, 40
+                     debug 1, "newFieldValue", 3, 41
+                     debugline 40
+                     getlocal0
+                     getproperty Multiname("fieldName",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     coerce_s
+                     setlocal3
+                     debugline 41
+                     getlocal0
+                     getproperty Multiname("fieldValue",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     coerce_s
+                     setlocal 4
+                     debugline 43
+                     getlocal3
+                     pushstring "XXXX"
+                     getlocal1
+                     callproperty Multiname("replace",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                     coerce_s
+                     setlocal3
+                     debugline 44
+                     getlocal 4
+                     pushstring "XXXX"
+                     getlocal2
+                     callproperty Multiname("replace",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                     coerce_s
+                     setlocal 4
+                     debugline 46
+                     getlocal0
+                     getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     pushstring "--"
+                     getlocal0
+                     getproperty Multiname("Boundary",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     add
+                     pushstring "\r\n"
+                     add
+                     pushstring "UTF-8"
+                     callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                     debugline 47
+                     getlocal0
+                     getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     getlocal3
+                     pushstring "\r\n\r\n"
+                     add
+                     pushstring "UTF-8"
+                     callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                     debugline 48
+                     getlocal0
+                     getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                     getlocal 4
+                     pushstring "\r\n"
+                     add
+                     pushstring "UTF-8"
+                     callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                     debugline 49
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function AddFile(FieldName:String, FileName:String, FileContent:ByteArray, ContentType:String) : void
+         {
+            trait method QName(PackageNamespace(""),"AddFile")
+               dispid 0
+               method
+                  name "MsMultiPartFormData/AddFile"
+                  flag HAS_PARAM_NAMES
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace(""),"String")
+                  param QName(PackageNamespace("flash.utils"),"ByteArray")
+                  param QName(PackageNamespace(""),"String")
+                  paramname "flash.utils"
+                  paramname "flash.utils"
+                  paramname "flash.utils"
+                  paramname "flash.utils"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 4
+                     localcount 7
+                     initscopedepth 4
+                     maxscopedepth 5
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                        debugline 56
+                        getlocal0
+                        pushscope
+                        debug 1, "FieldName", 0, 56
+                        debug 1, "FileName", 1, 56
+                        debug 1, "FileContent", 2, 56
+                        debug 1, "ContentType", 3, 56
+                        debug 1, "newFileField", 4, 58
+                        debug 1, "newFileContentType", 5, 59
+                        debugline 58
+                        getlocal0
+                        getproperty Multiname("fileField",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        coerce_s
+                        setlocal 5
+                        debugline 59
+                        getlocal0
+                        getproperty Multiname("fileContentType",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        coerce_s
+                        setlocal 6
+                        debugline 61
+                        getlocal 5
+                        pushstring "XXXX"
+                        getlocal1
+                        callproperty Multiname("replace",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        coerce_s
+                        setlocal 5
+                        debugline 62
+                        getlocal 5
+                        pushstring "XXXXXXXX"
+                        getlocal2
+                        callproperty Multiname("replace",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        coerce_s
+                        setlocal 5
+                        debugline 64
+                        getlocal 6
+                        pushstring "XXXX"
+                        getlocal 4
+                        callproperty Multiname("replace",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        coerce_s
+                        setlocal 6
+                        debugline 66
+                        getlocal0
+                        getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        pushstring "--"
+                        getlocal0
+                        getproperty Multiname("Boundary",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        add
+                        pushstring "\r\n"
+                        add
+                        pushstring "UTF-8"
+                        callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        debugline 67
+                        getlocal0
+                        getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        getlocal 5
+                        pushstring "\r\n"
+                        add
+                        pushstring "UTF-8"
+                        callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        debugline 68
+                        getlocal0
+                        getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        getlocal 6
+                        pushstring "\r\n\r\n"
+                        add
+                        pushstring "UTF-8"
+                        callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        debugline 70
+                        getlocal0
+                        getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        getlocal3
+                        pushbyte 0
+                        getlocal3
+                        getproperty Multiname("length",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        callpropvoid Multiname("writeBytes",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 3
+                        debugline 72
+                        getlocal0
+                        getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                        pushstring "\r\n"
+                        pushstring "UTF-8"
+                        callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                        debugline 73
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public function AddStreamFile(FieldName:String, FileName:String, FileContent:ByteArray) : void
+            {
+               trait method QName(PackageNamespace(""),"AddStreamFile")
+                  dispid 0
+                  method
+                     name "MsMultiPartFormData/AddStreamFile"
+                     flag HAS_PARAM_NAMES
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace(""),"String")
+                     param QName(PackageNamespace("flash.utils"),"ByteArray")
+                     paramname "flash.utils"
+                     paramname "flash.utils"
+                     paramname "flash.utils"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 5
+                        localcount 4
+                        initscopedepth 4
+                        maxscopedepth 5
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                           debugline 79
+                           getlocal0
+                           pushscope
+                           debug 1, "FieldName", 0, 79
+                           debug 1, "FileName", 1, 79
+                           debug 1, "FileContent", 2, 79
+                           debugline 81
+                           getlocal0
+                           getlocal1
+                           getlocal2
+                           getlocal3
+                           pushstring "application/octet-stream"
+                           callpropvoid Multiname("AddFile",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 4
+                           debugline 82
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public function PrepareFormData() : void
+               {
+                  trait method QName(PackageNamespace(""),"PrepareFormData")
+                     dispid 0
+                     method
+                        name "MsMultiPartFormData/PrepareFormData"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 4
+                           maxscopedepth 5
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                              debugline 88
+                              getlocal0
+                              pushscope
+                              debugline 90
+                              getlocal0
+                              getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                              pushstring "--"
+                              getlocal0
+                              getproperty Multiname("Boundary",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                              add
+                              pushstring "--"
+                              add
+                              pushstring "UTF-8"
+                              callpropvoid Multiname("writeMultiByte",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")]), 2
+                              debugline 91
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  public function GetFormData() : ByteArray
+                  {
+                     trait method QName(PackageNamespace(""),"GetFormData")
+                        dispid 0
+                        method
+                           name "MsMultiPartFormData/GetFormData"
+                           returns QName(PackageNamespace("flash.utils"),"ByteArray")
+                           
+                           body
+                              maxstack 1
+                              localcount 1
+                              initscopedepth 4
+                              maxscopedepth 5
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                                 debugline 97
+                                 getlocal0
+                                 pushscope
+                                 debugline 99
+                                 getlocal0
+                                 getproperty Multiname("formData",[PrivateNamespace("MsMultiPartFormData"),PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils"),ProtectedNamespace("MsMultiPartFormData"),StaticProtectedNs("MsMultiPartFormData")])
+                                 returnvalue
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                  }
+               }
+               
+               method
+                  name ""
+                  returns null
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 1
+                     maxscopedepth 3
+                     
+                     code
+                        getlocal0
+                        pushscope
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                        debugline 10
+                        findpropstrict Multiname("MsMultiPartFormData",[PackageNamespace("")])
+                        getlex QName(PackageNamespace(""),"Object")
+                        pushscope
+                        getlex Multiname("Object",[PrivateNamespace("MsMultiPartFormData.as$365"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.text"),PackageNamespace("flash.utils")])
+                        newclass 26
+                        popscope
+                        initproperty QName(PackageNamespace(""),"MsMultiPartFormData")
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;MsMultiPartFormData.as"
+                        debugline 5
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+               

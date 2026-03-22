@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 310" itemID="69be9900-000001a3" lastModified="1774098374" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 310" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#e4e3c2"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1043| 1590 -1043| 1590 -994| -1590 -994| -1590 -1043"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1148| 1590 -1148| 1590 -1099| -1590 -1099| -1590 -1148"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1253| 1590 -1253| 1590 -1204| -1590 -1204| -1590 -1253"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1359| 1590 -1359| 1590 -1308| -1590 -1308| -1590 -1359"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1673| 1590 -1673| 1590 -1623| -1590 -1623| -1590 -1673"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1569| 1590 -1569| 1590 -1518| -1590 -1518| -1590 -1569"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -1463| 1590 -1463| 1590 -1413| -1590 -1413| -1590 -1463"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -938| 1590 -938| 1590 -889| -1590 -889| -1590 -938"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -728| 1590 -728| 1590 -679| -1590 -679| -1590 -728"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -623| 1590 -623| 1590 -573| -1590 -573| -1590 -623"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -833| 1590 -833| 1590 -784| -1590 -784| -1590 -833"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -308| 1590 -308| 1590 -258| -1590 -258| -1590 -308"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -414| 1590 -414| 1590 -363| -1590 -363| -1590 -414"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -204| 1590 -204| 1590 -153| -1590 -153| -1590 -204"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -97| 1590 -97| 1590 -48| -1590 -48| -1590 -97"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 -518| 1590 -518| 1590 -469| -1590 -469| -1590 -518"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 112| 1590 112| 1590 162| -1590 162| -1590 112"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 7| 1590 7| 1590 58| -1590 58| -1590 7"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 322| 1590 322| 1590 372| -1590 372| -1590 322"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 217| 1590 217| 1590 268| -1590 268| -1590 217"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 427| 1590 427| 1590 477| -1590 477| -1590 427"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 848| 1590 848| 1590 897| -1590 897| -1590 848"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 637| 1590 637| 1590 687| -1590 687| -1590 637"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 743| 1590 743| 1590 792| -1590 792| -1590 743"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 532| 1590 532| 1590 582| -1590 582| -1590 532"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 1162| 1590 1162| 1590 1212| -1590 1212| -1590 1162"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 1400| 1590 1400| 1590 1450| -1590 1450| -1590 1400"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 1268| 1590 1268| 1590 1317| -1590 1317| -1590 1268"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 1058| 1590 1058| 1590 1107| -1590 1107| -1590 1058"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1590 952| 1590 952| 1590 1003| -1590 1003| -1590 952"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

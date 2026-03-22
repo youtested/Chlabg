@@ -1,0 +1,317 @@
+package
+{
+   import flash.events.*;
+   
+   public class eAlpha
+   {
+      
+      private static var iAlphaObj:*;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "iAlphaObj", 0, 10
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function eAlpha()
+      {
+         method
+            name "eAlpha/eAlpha"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                  debugline 8
+                  getlocal0
+                  pushscope
+                  debugline 8
+                  getlocal0
+                  constructsuper 0
+                  debugline 9
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function iAlpha(o:*, dir:Number) : void
+      {
+         trait method QName(PackageNamespace(""),"iAlpha")
+            flag FINAL
+            dispid 3
+            method
+               name "eAlpha/iAlpha"
+               flag HAS_PARAM_NAMES
+               param null
+               param QName(PackageNamespace(""),"Number")
+               paramname "http://adobe.com/AS3/2006/builtin"
+               paramname "http://adobe.com/AS3/2006/builtin"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                     debugline 11
+                     getlocal0
+                     pushscope
+                     debug 1, "o", 0, 11
+                     debug 1, "dir", 1, 11
+                     debugline 13
+                     findproperty Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     getlocal1
+                     setproperty Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     debugline 14
+                     getlocal2
+                     pushbyte 1
+                     ifne ofs0042
+                     debugline 15
+                     getlocal1
+                     getlex Multiname("Event",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha"),PackageNamespace("flash.events")])
+                     getproperty Multiname("ENTER_FRAME",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     getlex Multiname("alphaTimer1",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     callpropvoid Multiname("addEventListener",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 2
+                     debugline 16
+                     getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     pushfalse
+                     setproperty Multiname("mouseEnabled",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     jump ofs0052
+            ofs0042:
+                     debugline 18
+                     getlocal1
+                     getlex Multiname("Event",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha"),PackageNamespace("flash.events")])
+                     getproperty Multiname("ENTER_FRAME",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     getlex Multiname("alphaTimer2",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                     callpropvoid Multiname("addEventListener",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 2
+            ofs0052:
+                     debugline 21
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         private static function alphaTimer1(e:*) : void
+         {
+            trait method QName(PrivateNamespace("eAlpha"),"alphaTimer1")
+               flag FINAL
+               dispid 4
+               method
+                  name "eAlpha/private:alphaTimer1"
+                  flag HAS_PARAM_NAMES
+                  param null
+                  paramname "http://adobe.com/AS3/2006/builtin"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 2
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                        debugline 22
+                        getlocal0
+                        pushscope
+                        debug 1, "e", 0, 22
+                        debugline 23
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        getlex Multiname("Event",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha"),PackageNamespace("flash.events")])
+                        getproperty Multiname("ENTER_FRAME",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        getlex Multiname("alphaTimer2",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        callpropvoid Multiname("removeEventListener",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 2
+                        debugline 24
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        getproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        pushbyte 0
+                        ifngt ofs0042
+                        debugline 25
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        getproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        pushdouble 0.1
+                        subtract
+                        setproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        jump ofs005e
+               ofs0042:
+                        debugline 27
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        pushbyte 0
+                        setproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        debugline 28
+                        getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        pushfalse
+                        setproperty Multiname("visible",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        debugline 29
+                        findpropstrict Multiname("StopAlpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                        callpropvoid Multiname("StopAlpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 0
+               ofs005e:
+                        debugline 31
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private static function alphaTimer2(e:*) : void
+            {
+               trait method QName(PrivateNamespace("eAlpha"),"alphaTimer2")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "eAlpha/private:alphaTimer2"
+                     flag HAS_PARAM_NAMES
+                     param null
+                     paramname "http://adobe.com/AS3/2006/builtin"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 3
+                        localcount 2
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                           debugline 32
+                           getlocal0
+                           pushscope
+                           debug 1, "e", 0, 32
+                           debugline 33
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           iffalse ofs005e
+                           debugline 34
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           getproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           pushbyte 1
+                           ifnlt ofs0042
+                           debugline 35
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           pushtrue
+                           setproperty Multiname("visible",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           debugline 36
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           getproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           pushdouble 0.1
+                           add
+                           setproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           jump ofs005e
+                  ofs0042:
+                           debugline 38
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           pushbyte 1
+                           setproperty Multiname("alpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           debugline 39
+                           getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           pushtrue
+                           setproperty Multiname("mouseEnabled",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           debugline 40
+                           findpropstrict Multiname("StopAlpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                           callpropvoid Multiname("StopAlpha",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 0
+                  ofs005e:
+                           debugline 43
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               private static function StopAlpha() : void
+               {
+                  trait method QName(PrivateNamespace("eAlpha"),"StopAlpha")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "eAlpha/private:StopAlpha"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 1
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                              debugline 44
+                              getlocal0
+                              pushscope
+                              debugline 45
+                              getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              getlex Multiname("Event",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha"),PackageNamespace("flash.events")])
+                              getproperty Multiname("ENTER_FRAME",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              getlex Multiname("alphaTimer1",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 2
+                              debugline 46
+                              getlex Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              getlex Multiname("Event",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha"),PackageNamespace("flash.events")])
+                              getproperty Multiname("ENTER_FRAME",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              getlex Multiname("alphaTimer2",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")]), 2
+                              debugline 47
+                              findproperty Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              pushnull
+                              setproperty Multiname("iAlphaObj",[PrivateNamespace("eAlpha"),PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("eAlpha"),StaticProtectedNs("eAlpha")])
+                              debugline 48
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }
+            
+            method
+               name ""
+               returns null
+               
+               body
+                  maxstack 2
+                  localcount 1
+                  initscopedepth 1
+                  maxscopedepth 3
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                     debugline 7
+                     findpropstrict Multiname("eAlpha",[PackageNamespace("")])
+                     getlex QName(PackageNamespace(""),"Object")
+                     pushscope
+                     getlex Multiname("Object",[PrivateNamespace("eAlpha.as$311"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                     newclass 18
+                     popscope
+                     initproperty QName(PackageNamespace(""),"eAlpha")
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Effects;;eAlpha.as"
+                     debugline 4
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+            

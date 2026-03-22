@@ -1,0 +1,896 @@
+package
+{
+   import flash.display.MovieClip;
+   import flash.events.*;
+   import flash.geom.*;
+   
+   public class iNumberStepper extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      private var Ele:iElement;
+      
+      private var pIsMove:Boolean = false;
+      
+      private var movex:Number;
+      
+      private var movecnt:uint = 0;
+      
+      private var movesp:*;
+      
+      private var gomovesp:Number;
+      
+      private var isPass:Boolean = false;
+      
+      private var px:Number = 0;
+      
+      private var dx:Number = 0;
+      
+      public function iNumberStepper()
+      {
+         method
+            name "iNumberStepper/iNumberStepper"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                  debugline 12
+                  getlocal0
+                  pushscope
+                  debugline 13
+                  getlocal0
+                  constructsuper 0
+                  debugline 15
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public function Set(n:Number, e:iElement) : void
+      {
+         trait method QName(PackageNamespace(""),"Set")
+            dispid 0
+            method
+               name "iNumberStepper/Set"
+               flag HAS_PARAM_NAMES
+               param QName(PackageNamespace(""),"Number")
+               param QName(PackageNamespace(""),"iElement")
+               paramname "iNumberStepper/iNumberStepper"
+               paramname "iNumberStepper/iNumberStepper"
+               returns QName(PackageNamespace(""),"void")
+               
+               body
+                  maxstack 3
+                  localcount 3
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                     debugline 16
+                     getlocal0
+                     pushscope
+                     debug 1, "n", 0, 16
+                     debug 1, "e", 1, 16
+                     debugline 17
+                     getlocal0
+                     pushstring "iNbar"
+                     getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushdouble -34.3
+                     getlocal1
+                     multiply
+                     setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 18
+                     getlocal0
+                     getlocal2
+                     initproperty Multiname("Ele",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     debugline 19
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public function init() : void
+         {
+            trait method QName(PackageNamespace(""),"init")
+               dispid 0
+               method
+                  name "iNumberStepper/init"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 3
+                     localcount 1
+                     initscopedepth 10
+                     maxscopedepth 11
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                        debugline 20
+                        getlocal0
+                        pushscope
+                        debugline 22
+                        getlocal0
+                        getlex Multiname("MouseEvent",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                        getproperty Multiname("MOUSE_DOWN",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        getlocal0
+                        getproperty Multiname("md",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                        callpropvoid Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                        debugline 23
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            private function md(e:*) : void
+            {
+               trait method QName(PrivateNamespace("iNumberStepper"),"md")
+                  dispid 0
+                  method
+                     name "iNumberStepper/private:md"
+                     flag HAS_PARAM_NAMES
+                     param null
+                     paramname "iNumberStepper/iNumberStepper"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 7
+                        localcount 2
+                        initscopedepth 10
+                        maxscopedepth 11
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                           debugline 24
+                           getlocal0
+                           pushscope
+                           debug 1, "e", 0, 24
+                           debugline 26
+                           findpropstrict Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                           getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           getproperty Multiname("timer",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           callpropvoid Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                           debugline 27
+                           findpropstrict Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                           getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           getproperty Multiname("traymove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                           debugline 28
+                           getlocal0
+                           pushstring "iNbar"
+                           getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           pushfalse
+                           findpropstrict Multiname("Rectangle",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.geom")])
+                           getlocal0
+                           pushstring "iNbar"
+                           getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("width",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           negate
+                           pushbyte 25
+                           add
+                           pushbyte 0
+                           getlocal0
+                           pushstring "iNbar"
+                           getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getproperty Multiname("width",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           pushbyte 25
+                           subtract
+                           pushbyte 0
+                           constructprop Multiname("Rectangle",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.geom")]), 4
+                           callpropvoid Multiname("startDrag",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                           debugline 29
+                           getlex Multiname("stage",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("MouseEvent",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                           getproperty Multiname("MOUSE_UP",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           getproperty Multiname("mu",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           callpropvoid Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                           debugline 30
+                           getlex Multiname("stage",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlex Multiname("MouseEvent",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                           getproperty Multiname("MOUSE_MOVE",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           getlocal0
+                           getproperty Multiname("mm",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           callpropvoid Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                           debugline 31
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               private function mu(e:*) : void
+               {
+                  trait method QName(PrivateNamespace("iNumberStepper"),"mu")
+                     dispid 0
+                     method
+                        name "iNumberStepper/private:mu"
+                        flag HAS_PARAM_NAMES
+                        param null
+                        paramname "iNumberStepper/iNumberStepper"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 3
+                           localcount 2
+                           initscopedepth 10
+                           maxscopedepth 11
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                              debugline 33
+                              getlocal0
+                              pushscope
+                              debug 1, "e", 0, 33
+                              debugline 35
+                              getlocal0
+                              pushstring "iNbar"
+                              getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              callpropvoid Multiname("stopDrag",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                              debugline 36
+                              getlocal0
+                              callpropvoid Multiname("pRel",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                              debugline 37
+                              getlex Multiname("stage",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlex Multiname("MouseEvent",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                              getproperty Multiname("MOUSE_UP",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal0
+                              getproperty Multiname("mu",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                              debugline 38
+                              getlex Multiname("stage",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlex Multiname("MouseEvent",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                              getproperty Multiname("MOUSE_MOVE",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              getlocal0
+                              getproperty Multiname("mm",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                              debugline 39
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+                  
+                  private function mm(e:*) : *
+                  {
+                     trait method QName(PrivateNamespace("iNumberStepper"),"mm")
+                        dispid 0
+                        method
+                           name "iNumberStepper/private:mm"
+                           flag HAS_PARAM_NAMES
+                           param null
+                           paramname null
+                           returns null
+                           
+                           body
+                              maxstack 3
+                              localcount 4
+                              initscopedepth 10
+                              maxscopedepth 11
+                              
+                              code
+                                 debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                 debugline 44
+                                 getlocal0
+                                 pushscope
+                                 debug 1, "e", 0, 44
+                                 debugline 46
+                                 getlocal0
+                                 dup
+                                 setlocal2
+                                 getproperty Multiname("movecnt",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 increment
+                                 setlocal3
+                                 getlocal2
+                                 getlocal3
+                                 setproperty Multiname("movecnt",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 kill 3
+                                 kill 2
+                                 debugline 47
+                                 getlocal0
+                                 pushtrue
+                                 initproperty Multiname("pIsMove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 debugline 48
+                                 getlocal0
+                                 getlex Multiname("mouseX",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 getlocal0
+                                 getproperty Multiname("movex",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 subtract
+                                 initproperty Multiname("movesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 debugline 49
+                                 getlocal0
+                                 getlex Multiname("mouseX",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 initproperty Multiname("movex",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                 debugline 50
+                                 returnvoid
+                              end ; code
+                           end ; body
+                        end ; method
+                     }
+                     
+                     public function pRel() : *
+                     {
+                        trait method QName(PackageNamespace(""),"pRel")
+                           dispid 0
+                           method
+                              name "iNumberStepper/pRel"
+                              returns null
+                              
+                              body
+                                 maxstack 3
+                                 localcount 1
+                                 initscopedepth 10
+                                 maxscopedepth 11
+                                 
+                                 code
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                    debugline 51
+                                    getlocal0
+                                    pushscope
+                                    debugline 53
+                                    getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    getlocal0
+                                    getproperty Multiname("movesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    callproperty Multiname("abs",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                    pushbyte 3
+                                    greaterthan
+                                    dup
+                                    iffalse ofs0024
+                                    pop
+                                    getlocal0
+                                    getproperty Multiname("movecnt",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    pushbyte 5
+                                    greaterequals
+                           ofs0024:
+                                    iffalse ofs0036
+                                    debugline 54
+                                    getlocal0
+                                    getlocal0
+                                    getproperty Multiname("movesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    initproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    jump ofs0046
+                           ofs0036:
+                                    debugline 57
+                                    getlocal0
+                                    pushbyte 0
+                                    initproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    debugline 58
+                                    getlocal0
+                                    pushbyte 0
+                                    initproperty Multiname("movesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                           ofs0046:
+                                    debugline 60
+                                    findpropstrict Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                    getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    getlocal0
+                                    getproperty Multiname("traymove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    callpropvoid Multiname("addEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                                    debugline 61
+                                    getlocal0
+                                    pushbyte 0
+                                    initproperty Multiname("movecnt",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    debugline 62
+                                    getlocal0
+                                    pushfalse
+                                    initproperty Multiname("pIsMove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    debugline 63
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                        }
+                        
+                        private function timer(e:*) : *
+                        {
+                           trait method QName(PrivateNamespace("iNumberStepper"),"timer")
+                              dispid 0
+                              method
+                                 name "iNumberStepper/private:timer"
+                                 flag HAS_PARAM_NAMES
+                                 param null
+                                 paramname null
+                                 returns null
+                                 
+                                 body
+                                    maxstack 6
+                                    localcount 2
+                                    initscopedepth 10
+                                    maxscopedepth 11
+                                    
+                                    code
+                                       debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                       debugline 67
+                                       getlocal0
+                                       pushscope
+                                       debug 1, "e", 0, 67
+                                       debugline 68
+                                       getlocal0
+                                       getlocal0
+                                       getproperty Multiname("dx",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       getlocal0
+                                       getproperty Multiname("px",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       getlocal0
+                                       pushstring "iNbar"
+                                       getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       subtract
+                                       callproperty Multiname("abs",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                       add
+                                       initproperty Multiname("dx",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       debugline 69
+                                       getlocal0
+                                       getlocal0
+                                       pushstring "iNbar"
+                                       getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       initproperty Multiname("px",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       debugline 70
+                                       getlocal0
+                                       getproperty Multiname("dx",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       pushbyte 33
+                                       ifngt ofs0064
+                                       debugline 71
+                                       getlex Multiname("root",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       pushstring "Sounder"
+                                       getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                       pushstring "te"
+                                       callpropvoid Multiname("gotoAndPlay",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                       debugline 72
+                                       getlocal0
+                                       pushbyte 0
+                                       initproperty Multiname("dx",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                              ofs0064:
+                                       debugline 74
+                                       returnvoid
+                                    end ; code
+                                 end ; body
+                              end ; method
+                           }
+                           
+                           public function getValue() : Number
+                           {
+                              trait method QName(PackageNamespace(""),"getValue")
+                                 dispid 0
+                                 method
+                                    name "iNumberStepper/getValue"
+                                    returns QName(PackageNamespace(""),"Number")
+                                    
+                                    body
+                                       maxstack 3
+                                       localcount 1
+                                       initscopedepth 10
+                                       maxscopedepth 11
+                                       
+                                       code
+                                          debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                          debugline 75
+                                          getlocal0
+                                          pushscope
+                                          debugline 76
+                                          getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          getlocal0
+                                          pushstring "iNbar"
+                                          getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                          negate
+                                          pushdouble 34.3
+                                          divide
+                                          callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                          returnvalue
+                                       end ; code
+                                    end ; body
+                                 end ; method
+                              }
+                              
+                              private function traymove(e:*) : *
+                              {
+                                 trait method QName(PrivateNamespace("iNumberStepper"),"traymove")
+                                    dispid 0
+                                    method
+                                       name "iNumberStepper/private:traymove"
+                                       flag HAS_PARAM_NAMES
+                                       param null
+                                       paramname null
+                                       returns null
+                                       
+                                       body
+                                          maxstack 5
+                                          localcount 4
+                                          initscopedepth 10
+                                          maxscopedepth 11
+                                          
+                                          code
+                                             debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                             debugline 78
+                                             getlocal0
+                                             pushscope
+                                             pushnan
+                                             setlocal3
+                                             debug 1, "e", 0, 78
+                                             debug 1, "type", 1, 80
+                                             debugline 80
+                                             pushbyte 0
+                                             convert_d
+                                             setlocal2
+                                             debugline 81
+                                             getlex Multiname("name",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushstring "q1"
+                                             ifne ofs0031
+                                             debugline 82
+                                             pushbyte 1
+                                             convert_d
+                                             setlocal2
+                                             jump ofs0037
+                                    ofs0031:
+                                             debugline 84
+                                             pushbyte 2
+                                             convert_d
+                                             setlocal2
+                                    ofs0037:
+                                             debugline 86
+                                             getlex Multiname("iKnowEle",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("Ele",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("iNm",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             callproperty Multiname("getValue",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 0
+                                             getlocal2
+                                             callpropvoid Multiname("Set",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 3
+                                             debugline 87
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("width",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushbyte 25
+                                             add
+                                             lessthan
+                                             dup
+                                             iftrue ofs007b
+                                             pop
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushbyte 0
+                                             greaterthan
+                                    ofs007b:
+                                             iffalse ofs00f6
+                                             debugline 88
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("width",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushbyte 25
+                                             add
+                                             ifnlt ofs00b7
+                                             debugline 89
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("width",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushbyte 25
+                                             add
+                                             setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    ofs00b7:
+                                             debugline 91
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushbyte 0
+                                             ifngt ofs00d7
+                                             debugline 92
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushbyte 0
+                                             setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    ofs00d7:
+                                             debugline 94
+                                             getlocal0
+                                             pushbyte 0
+                                             initproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             debugline 95
+                                             findpropstrict Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                             getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("traymove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                                             jump ofs029a
+                                    ofs00f6:
+                                             debugline 97
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             callproperty Multiname("abs",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             pushdouble 0.3
+                                             ifngt ofs0152
+                                             debugline 98
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             add
+                                             setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             debugline 99
+                                             getlocal0
+                                             getproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushbyte 0
+                                             ifngt ofs0141
+                                             debugline 100
+                                             getlocal0
+                                             getlocal0
+                                             getproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushdouble 0.1
+                                             subtract
+                                             initproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             jump ofs014e
+                                    ofs0141:
+                                             debugline 102
+                                             getlocal0
+                                             getlocal0
+                                             getproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             pushdouble 0.1
+                                             add
+                                             initproperty Multiname("gomovesp",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                    ofs014e:
+                                             jump ofs029a
+                                    ofs0152:
+                                             debug 1, "xr", 2, 105
+                                             debugline 105
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushdouble 34.3
+                                             divide
+                                             callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             pushdouble 34.3
+                                             multiply
+                                             add
+                                             callproperty Multiname("abs",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             convert_d
+                                             setlocal3
+                                             debugline 106
+                                             getlocal3
+                                             pushdouble 34.43
+                                             ifnlt ofs029a
+                                             debugline 107
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushdouble 34.3
+                                             divide
+                                             callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             negate
+                                             pushdouble 34.3
+                                             multiply
+                                             pushdouble 0.4
+                                             subtract
+                                             ifnlt ofs0202
+                                             debugline 108
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushdouble 34.3
+                                             divide
+                                             callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             negate
+                                             pushdouble 34.3
+                                             multiply
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             subtract
+                                             pushbyte 7
+                                             divide
+                                             convert_d
+                                             setlocal3
+                                             debugline 109
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal3
+                                             add
+                                             setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             jump ofs029a
+                                    ofs0202:
+                                             debugline 110
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushdouble 34.3
+                                             divide
+                                             callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             negate
+                                             pushdouble 34.3
+                                             multiply
+                                             pushdouble 0.4
+                                             add
+                                             ifngt ofs0274
+                                             debugline 111
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Math",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             negate
+                                             pushdouble 34.3
+                                             divide
+                                             callproperty Multiname("round",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                                             pushdouble 34.3
+                                             multiply
+                                             add
+                                             pushbyte 7
+                                             divide
+                                             convert_d
+                                             setlocal3
+                                             debugline 112
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             pushstring "iNbar"
+                                             getproperty MultinameL([PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal3
+                                             subtract
+                                             setproperty Multiname("x",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             jump ofs029a
+                                    ofs0274:
+                                             debugline 114
+                                             findpropstrict Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                             getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("traymove",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                                             debugline 115
+                                             findpropstrict Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlex Multiname("Event",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                                             getproperty Multiname("ENTER_FRAME",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             getlocal0
+                                             getproperty Multiname("timer",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                                             callpropvoid Multiname("removeEventListener",[PrivateNamespace("iNumberStepper"),PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iNumberStepper"),StaticProtectedNs("iNumberStepper"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                                    ofs029a:
+                                             debugline 121
+                                             returnvoid
+                                          end ; code
+                                       end ; body
+                                    end ; method
+                                 }
+                              }
+                           }
+                           
+                           method
+                              name ""
+                              returns null
+                              
+                              body
+                                 maxstack 2
+                                 localcount 1
+                                 initscopedepth 1
+                                 maxscopedepth 9
+                                 
+                                 code
+                                    getlocal0
+                                    pushscope
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                    debugline 8
+                                    findpropstrict Multiname("iNumberStepper",[PackageNamespace("")])
+                                    getlex QName(PackageNamespace(""),"Object")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.display"),"Sprite")
+                                    pushscope
+                                    getlex QName(PackageNamespace("flash.display"),"MovieClip")
+                                    pushscope
+                                    getlex Multiname("MovieClip",[PrivateNamespace("iNumberStepper.as$213"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display")])
+                                    newclass 207
+                                    popscope
+                                    popscope
+                                    popscope
+                                    popscope
+                                    popscope
+                                    popscope
+                                    popscope
+                                    initproperty QName(PackageNamespace(""),"iNumberStepper")
+                                    debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iNumberStepper.as"
+                                    debugline 7
+                                    returnvoid
+                                 end ; code
+                              end ; body
+                           end ; method
+                           

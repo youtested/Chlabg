@@ -1,0 +1,213 @@
+package
+{
+   public class ChemStore
+   {
+      
+      private static var MainIAP:IAP;
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 3
+            maxscopedepth 4
+            
+            code
+               getlocal0
+               pushscope
+               debug 1, "MainIAP", 0, 4
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public function ChemStore()
+      {
+         method
+            name "ChemStore/ChemStore"
+            returns null
+            
+            body
+               maxstack 1
+               localcount 1
+               initscopedepth 4
+               maxscopedepth 5
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                  debugline 5
+                  getlocal0
+                  pushscope
+                  debugline 5
+                  getlocal0
+                  constructsuper 0
+                  debugline 7
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      public static function getPrice(_id:*) : String
+      {
+         trait method QName(PackageNamespace(""),"getPrice")
+            flag FINAL
+            dispid 3
+            method
+               name "ChemStore/getPrice"
+               flag HAS_PARAM_NAMES
+               param null
+               paramname ""
+               returns QName(PackageNamespace(""),"String")
+               
+               body
+                  maxstack 2
+                  localcount 2
+                  initscopedepth 3
+                  maxscopedepth 4
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                     debugline 8
+                     getlocal0
+                     pushscope
+                     debug 1, "_id", 0, 8
+                     debugline 9
+                     getlex Multiname("MainIAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                     getlocal1
+                     callproperty Multiname("getProductPrice",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")]), 1
+                     returnvalue
+                  end ; code
+               end ; body
+            end ; method
+         }
+         
+         public static function Setup() : void
+         {
+            trait method QName(PackageNamespace(""),"Setup")
+               flag FINAL
+               dispid 4
+               method
+                  name "ChemStore/Setup"
+                  returns QName(PackageNamespace(""),"void")
+                  
+                  body
+                     maxstack 2
+                     localcount 1
+                     initscopedepth 3
+                     maxscopedepth 4
+                     
+                     code
+                        debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                        debugline 11
+                        getlocal0
+                        pushscope
+                        debugline 12
+                        findproperty Multiname("MainIAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                        findpropstrict Multiname("IAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                        constructprop Multiname("IAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")]), 0
+                        setproperty Multiname("MainIAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                        debugline 13
+                        returnvoid
+                     end ; code
+                  end ; body
+               end ; method
+            }
+            
+            public static function restorePurchase() : void
+            {
+               trait method QName(PackageNamespace(""),"restorePurchase")
+                  flag FINAL
+                  dispid 5
+                  method
+                     name "ChemStore/restorePurchase"
+                     returns QName(PackageNamespace(""),"void")
+                     
+                     body
+                        maxstack 1
+                        localcount 1
+                        initscopedepth 3
+                        maxscopedepth 4
+                        
+                        code
+                           debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                           debugline 14
+                           getlocal0
+                           pushscope
+                           debugline 15
+                           getlex Multiname("MainIAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                           callpropvoid Multiname("restorePurchses",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")]), 0
+                           debugline 16
+                           returnvoid
+                        end ; code
+                     end ; body
+                  end ; method
+               }
+               
+               public static function Buy(_id:*) : void
+               {
+                  trait method QName(PackageNamespace(""),"Buy")
+                     flag FINAL
+                     dispid 6
+                     method
+                        name "ChemStore/Buy"
+                        flag HAS_PARAM_NAMES
+                        param null
+                        paramname "_id"
+                        returns QName(PackageNamespace(""),"void")
+                        
+                        body
+                           maxstack 2
+                           localcount 2
+                           initscopedepth 3
+                           maxscopedepth 4
+                           
+                           code
+                              debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                              debugline 17
+                              getlocal0
+                              pushscope
+                              debug 1, "_id", 0, 17
+                              debugline 18
+                              getlex Multiname("MainIAP",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")])
+                              getlocal1
+                              callpropvoid Multiname("makePurchase",[PrivateNamespace("ChemStore"),PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("ChemStore"),StaticProtectedNs("ChemStore")]), 1
+                              debugline 19
+                              returnvoid
+                           end ; code
+                        end ; body
+                     end ; method
+                  }
+               }
+            }
+            
+            method
+               name ""
+               returns null
+               
+               body
+                  maxstack 2
+                  localcount 1
+                  initscopedepth 1
+                  maxscopedepth 3
+                  
+                  code
+                     getlocal0
+                     pushscope
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/CoreScript;;ChemStore.as"
+                     debugline 3
+                     findpropstrict Multiname("ChemStore",[PackageNamespace("")])
+                     getlex QName(PackageNamespace(""),"Object")
+                     pushscope
+                     getlex Multiname("Object",[PrivateNamespace("ChemStore.as$294"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin")])
+                     newclass 10
+                     popscope
+                     initproperty QName(PackageNamespace(""),"ChemStore")
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+            

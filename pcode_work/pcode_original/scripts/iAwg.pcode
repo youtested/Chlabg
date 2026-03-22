@@ -1,0 +1,161 @@
+package
+{
+   import flash.display.MovieClip;
+   import flash.events.*;
+   
+   public class iAwg extends MovieClip
+   {
+      
+      method
+         name ""
+         returns null
+         
+         body
+            maxstack 1
+            localcount 1
+            initscopedepth 9
+            maxscopedepth 10
+            
+            code
+               getlocal0
+               pushscope
+               returnvoid
+            end ; code
+         end ; body
+      end ; method
+      
+      public var iStl:iSteelRing;
+      
+      public function iAwg(inStl:*)
+      {
+         method
+            name "iAwg/iAwg"
+            flag HAS_PARAM_NAMES
+            param null
+            paramname null
+            returns null
+            
+            body
+               maxstack 3
+               localcount 2
+               initscopedepth 10
+               maxscopedepth 11
+               
+               code
+                  debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAwg.as"
+                  debugline 10
+                  getlocal0
+                  pushscope
+                  debug 1, "inStl", 0, 10
+                  debugline 10
+                  getlocal0
+                  constructsuper 0
+                  debugline 11
+                  getlocal0
+                  getlocal1
+                  initproperty Multiname("iStl",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  debugline 12
+                  getlocal0
+                  getlex Multiname("MouseEvent",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher"),PackageNamespace("flash.events")])
+                  getproperty Multiname("MOUSE_DOWN",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  getlocal0
+                  getproperty Multiname("startDrag_press",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                  callpropvoid Multiname("addEventListener",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 2
+                  debugline 13
+                  returnvoid
+               end ; code
+            end ; body
+         end ; method
+      }
+      
+      private function startDrag_press(e:*) : *
+      {
+         trait method QName(PrivateNamespace("iAwg"),"startDrag_press")
+            dispid 0
+            method
+               name "iAwg/private:startDrag_press"
+               flag HAS_PARAM_NAMES
+               param null
+               paramname null
+               returns null
+               
+               body
+                  maxstack 2
+                  localcount 2
+                  initscopedepth 10
+                  maxscopedepth 11
+                  
+                  code
+                     debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAwg.as"
+                     debugline 15
+                     getlocal0
+                     pushscope
+                     debug 1, "e", 0, 15
+                     debugline 16
+                     getlocal0
+                     getproperty Multiname("iStl",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushfalse
+                     callpropvoid Multiname("iDoAwg",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     debugline 17
+                     getlocal0
+                     getproperty Multiname("iStl",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("iStr",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     getproperty Multiname("iLabs",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")])
+                     pushtrue
+                     callpropvoid Multiname("iDoAwg",[PrivateNamespace("iAwg"),PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),ProtectedNamespace("iAwg"),StaticProtectedNs("iAwg"),StaticProtectedNs("flash.display:MovieClip"),StaticProtectedNs("flash.display:Sprite"),StaticProtectedNs("flash.display:DisplayObjectContainer"),StaticProtectedNs("flash.display:InteractiveObject"),StaticProtectedNs("flash.display:DisplayObject"),StaticProtectedNs("flash.events:EventDispatcher")]), 1
+                     debugline 18
+                     returnvoid
+                  end ; code
+               end ; body
+            end ; method
+         }
+      }
+   }
+   
+   method
+      name ""
+      returns null
+      
+      body
+         maxstack 2
+         localcount 1
+         initscopedepth 1
+         maxscopedepth 9
+         
+         code
+            getlocal0
+            pushscope
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAwg.as"
+            debugline 7
+            findpropstrict Multiname("iAwg",[PackageNamespace("")])
+            getlex QName(PackageNamespace(""),"Object")
+            pushscope
+            getlex QName(PackageNamespace("flash.events"),"EventDispatcher")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"InteractiveObject")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"DisplayObjectContainer")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"Sprite")
+            pushscope
+            getlex QName(PackageNamespace("flash.display"),"MovieClip")
+            pushscope
+            getlex Multiname("MovieClip",[PrivateNamespace("iAwg.as$263"),PackageNamespace(""),PackageInternalNs(""),Namespace("http://adobe.com/AS3/2006/builtin"),PackageNamespace("flash.display")])
+            newclass 208
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            popscope
+            initproperty QName(PackageNamespace(""),"iAwg")
+            debugfile "/Users/liyang/SMTH/THIX/CHEMIST/Development/Interface;;iAwg.as"
+            debugline 5
+            returnvoid
+         end ; code
+      end ; body
+   end ; method
+   
